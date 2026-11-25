@@ -152,5 +152,6 @@
     </div>
 
 <script src="<?= base_url('assets/js/products-table.js') ?>?v=20261122-quick-reasons" defer></script>
+<?= view('partials/product_action_review', [], ['saveData' => false]) ?>
 
 <?= $this->endSection() ?>

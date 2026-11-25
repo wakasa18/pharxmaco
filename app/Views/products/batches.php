@@ -44,7 +44,7 @@
                     <td data-label="Supplier"><?= esc($suppliers[$b['supplier_id'] ?? 0] ?? '—') ?></td>
                     <?php if ($canCorrect): ?>
                     <td data-label="Correct details">
-                        <form class="batch-edit" method="post" action="<?= site_url('products/batches/correct/' . (int) $b['id']) ?>">
+                        <form class="batch-edit" method="post" action="<?= site_url('products/batches/correct/' . (int) $b['id']) ?>" data-action-review="batch" data-review-product="<?= esc($row['product_name'], 'attr') ?>" data-review-branch="<?= esc($row['branch_name'], 'attr') ?>" data-review-batch="<?= esc(\App\Libraries\StockBatches::label($b['batch_no'] ?? null, $batchNumbers[(int) $b['id']] ?? null), 'attr') ?>" data-original-lot="<?= esc($b['batch_no'] ?? '', 'attr') ?>" data-original-expiry="<?= esc($expiry ?? '', 'attr') ?>">
                             <?= csrf_field() ?>
                             <input class="input" type="text" name="batch_no" maxlength="60" value="<?= esc($b['batch_no'] ?? '', 'attr') ?>" placeholder="Lot no." aria-label="Lot number">
                             <input class="input" type="date" name="expiration_date" value="<?= esc($expiry ?? '', 'attr') ?>" aria-label="Expiration date">
@@ -66,4 +66,5 @@
         <?php if (session('role') === 'admin'): ?><a class="btn secondary" href="<?= site_url('admin/expiry-report?branch_id=' . (int) $row['branch_id']) ?>">Expiry report</a><?php endif; ?>
     </div>
 </div>
+<?php if ($canCorrect): ?><?= view('partials/product_action_review', [], ['saveData' => false]) ?><?php endif; ?>
 <?= $this->endSection() ?>

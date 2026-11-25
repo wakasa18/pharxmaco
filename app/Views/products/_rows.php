@@ -58,7 +58,7 @@
                                         session()->set($stockTokenKey, $stockToken);
                                     }
                                 ?>
-                                <form method="post" action="<?= site_url('products/update-stock') ?>" class="stock-update-form" data-unit-singular="<?= esc($singularUnit, 'attr') ?>" data-unit-plural="<?= esc($pluralUnit, 'attr') ?>">
+                                <form method="post" action="<?= site_url('products/update-stock') ?>" class="stock-update-form" data-action-review="stock" data-review-product="<?= esc($product['product_name'], 'attr') ?>" data-review-branch="<?= esc($product['branch_name'] ?? '', 'attr') ?>" data-review-sku="<?= esc((string) ($product['sku'] ?? ''), 'attr') ?>" data-unit-singular="<?= esc($singularUnit, 'attr') ?>" data-unit-plural="<?= esc($pluralUnit, 'attr') ?>">
                                     <?= csrf_field() ?>
                                     <input type="hidden" name="stock_token" value="<?= esc($stockToken, 'attr') ?>">
                                     <input type="hidden" name="product_id" value="<?= esc($product['id']) ?>">
@@ -150,7 +150,7 @@
                                     <a href="<?= site_url('products/edit/' . $product['id'] . '?branch_id=' . urlencode($product['branch_id'] ?? ($branchId ?? ''))) ?>" class="btn btn-secondary btn-sm">Edit</a>
                                     <?php if ((int)($product['branch_id'] ?? 0) > 0): ?>
                                     <form method="post" action="<?= site_url('products/delete/' . $product['id']) ?>" class="inline-action-form"
-                                        onsubmit="return confirm(this.dataset.confirm)" data-confirm="<?= esc('Move ' . $product['product_name'] . ' to Trash in ' . ($product['branch_name'] ?? 'this branch') . ' only? Its stock will be retained. Other branches will keep this product.', 'attr') ?>">
+                                        data-action-review="trash" data-review-product="<?= esc($product['product_name'], 'attr') ?>" data-review-branch="<?= esc($product['branch_name'] ?? '', 'attr') ?>" data-review-sku="<?= esc((string) ($product['sku'] ?? ''), 'attr') ?>" data-review-stock="<?= (int) $stockValue ?>" data-review-unit="<?= esc((string) ($product['unit'] ?? ''), 'attr') ?>" data-review-status="<?= esc(ucfirst((string) $statusValue), 'attr') ?>" data-confirm="<?= esc('Move ' . $product['product_name'] . ' to Trash in ' . ($product['branch_name'] ?? 'this branch') . ' only? Its stock will be retained. Other branches will keep this product.', 'attr') ?>">
                                         <?= csrf_field() ?>
                                         <input type="hidden" name="branch_id" value="<?= (int)($product['branch_id'] ?? 0) ?>">
                                         <button type="submit" class="btn btn-danger btn-sm" data-busy-label="Moving…">Move to Trash</button>

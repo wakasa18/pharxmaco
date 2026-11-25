@@ -51,7 +51,7 @@
                 <div><dt>Adding to</dt><dd><?= esc($branch['branch_name']) ?></dd></div>
             </dl></div>
         </div>
-        <form class="card" method="post" action="<?= site_url('products/add-existing') ?>" data-management-form="catalog">
+        <form class="card" method="post" action="<?= site_url('products/add-existing') ?>" data-management-form="catalog" data-action-review="catalog" data-review-product="<?= esc($selected['product_name'], 'attr') ?>" data-review-branch="<?= esc($branch['branch_name'], 'attr') ?>" data-review-sku="<?= esc((string) ($selected['sku'] ?? ''), 'attr') ?>" data-review-unit="<?= esc((string) ($selected['unit'] ?? ''), 'attr') ?>">
             <?= csrf_field() ?>
             <input type="hidden" name="product_id" value="<?= (int) $selected['id'] ?>">
             <div class="card-head"><div><h2>Set up your branch stock</h2><p>Enter the stock physically received at <?= esc($branch['branch_name']) ?>.</p></div></div>
@@ -132,4 +132,5 @@
         </div>
     <?php endif; ?>
 </div>
+<?php if ($selected): ?><?= view('partials/product_action_review', [], ['saveData' => false]) ?><?php endif; ?>
 <?= $this->endSection() ?>

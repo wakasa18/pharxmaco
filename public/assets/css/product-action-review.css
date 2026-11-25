@@ -1,0 +1,9 @@
+/* Extras for the shared Products action overview; layout comes from product-create-review.css. */
+#product-action-review .product-review-body [hidden] { display: none !important; }
+#product-action-review .product-review-identity { padding-bottom: 16px; }
+#product-action-review .product-review-fields dd { overflow-wrap: anywhere; white-space: pre-wrap; }
+#product-action-review .par-notes-section { padding-top: 16px; }
+#product-action-review .par-notes-section:first-child { border-top: 0; padding-top: 0; }
+.par-notes { margin: 0; padding: 0 0 0 18px; color: var(--text-2); font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
+.par-notes li + li { margin-top: 4px; }
+#product-action-review .product-review-dialog[data-tone="danger"] .par-notes { border-left: 3px solid var(--danger); padding-left: 32px; margin-left: 0; }

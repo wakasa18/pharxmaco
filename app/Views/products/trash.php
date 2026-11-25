@@ -49,12 +49,12 @@
                         <td style="font-size:13px;color:var(--muted);"><?= esc(\App\Libraries\DisplayDate::dateTime($p['deleted_at'])) ?></td>
                         <td>
                             <div style="display:flex;gap:6px;flex-wrap:wrap;">
-                                <form method="post" action="<?= site_url('products/restore/' . $p['id']) ?>" class="inline-action-form" onsubmit="return confirm(this.dataset.confirm)" data-confirm="<?= esc('Restore this product in ' . ($p['branch_name'] ?? 'this branch') . ' only?', 'attr') ?>">
+                                <form method="post" action="<?= site_url('products/restore/' . $p['id']) ?>" class="inline-action-form" data-action-review="restore" data-review-product="<?= esc($p['product_name'], 'attr') ?>" data-review-branch="<?= esc($p['branch_name'] ?? '', 'attr') ?>" data-review-sku="<?= esc((string) ($p['sku'] ?? ''), 'attr') ?>" data-review-stock="<?= (int) ($p['branch_stock'] ?? 0) ?>" data-review-unit="<?= esc((string) ($p['unit'] ?? ''), 'attr') ?>" data-confirm="<?= esc('Restore this product in ' . ($p['branch_name'] ?? 'this branch') . ' only?', 'attr') ?>">
                                     <?= csrf_field() ?>
                                     <input type="hidden" name="branch_id" value="<?= (int)($p['branch_id'] ?? 0) ?>">
                                     <button type="submit" class="btn btn-sm btn-secondary" data-busy-label="Restoring…">Restore</button>
                                 </form>
-                                <form method="post" action="<?= site_url('products/force-delete/' . $p['id']) ?>" class="inline-action-form" onsubmit="return confirm(this.dataset.confirm)" data-confirm="<?= esc('Delete this product permanently from ' . ($p['branch_name'] ?? 'this branch') . ' and remove it from Trash? Other branches are unaffected. Its database record and stock history are retained. You cannot restore it here.', 'attr') ?>">
+                                <form method="post" action="<?= site_url('products/force-delete/' . $p['id']) ?>" class="inline-action-form" data-action-review="delete" data-review-product="<?= esc($p['product_name'], 'attr') ?>" data-review-branch="<?= esc($p['branch_name'] ?? '', 'attr') ?>" data-review-sku="<?= esc((string) ($p['sku'] ?? ''), 'attr') ?>" data-review-stock="<?= (int) ($p['branch_stock'] ?? 0) ?>" data-review-unit="<?= esc((string) ($p['unit'] ?? ''), 'attr') ?>" data-confirm="<?= esc('Delete this product permanently from ' . ($p['branch_name'] ?? 'this branch') . ' and remove it from Trash? Other branches are unaffected. Its database record and stock history are retained. You cannot restore it here.', 'attr') ?>">
                                     <?= csrf_field() ?><input type="hidden" name="branch_id" value="<?= (int)($p['branch_id'] ?? 0) ?>">
                                     <button type="submit" class="btn btn-sm btn-danger" data-busy-label="Removing…">Delete permanently</button>
                                 </form>
@@ -78,14 +78,16 @@
         <tbody><?php foreach ($legacyProducts as $legacy): ?><tr>
             <td><?= esc($legacy['product_name']) ?></td><td><?= esc($legacy['sku'] ?: '—') ?></td>
             <td><?= esc(\App\Libraries\DisplayDate::dateTime($legacy['deleted_at'])) ?></td>
-            <td><div style="display:flex;gap:6px;flex-wrap:wrap;"><form method="post" action="<?= site_url('products/restore/' . $legacy['id']) ?>" class="inline-action-form" onsubmit="return confirm('Restore this older shared product for all of its branches?');">
+            <td><div style="display:flex;gap:6px;flex-wrap:wrap;"><form method="post" action="<?= site_url('products/restore/' . $legacy['id']) ?>" class="inline-action-form" data-action-review="legacy-restore" data-review-product="<?= esc($legacy['product_name'], 'attr') ?>" data-review-sku="<?= esc((string) ($legacy['sku'] ?? ''), 'attr') ?>" data-confirm="Restore this older shared product for all of its branches?">
                 <?= csrf_field() ?><input type="hidden" name="legacy_restore" value="1"><button type="submit" class="btn btn-secondary btn-sm">Restore Shared Product</button>
-            </form><form method="post" action="<?= site_url('products/force-delete/' . $legacy['id']) ?>" class="inline-action-form" onsubmit="return confirm('Permanently hide this older shared deletion from Trash? Its existing branch records and transaction history are retained. You cannot restore the shared product here afterward.');">
+            </form><form method="post" action="<?= site_url('products/force-delete/' . $legacy['id']) ?>" class="inline-action-form" data-action-review="legacy-delete" data-review-product="<?= esc($legacy['product_name'], 'attr') ?>" data-review-sku="<?= esc((string) ($legacy['sku'] ?? ''), 'attr') ?>" data-confirm="Permanently hide this older shared deletion from Trash? Its existing branch records and transaction history are retained. You cannot restore the shared product here afterward.">
                 <?= csrf_field() ?><input type="hidden" name="legacy_delete" value="1"><button type="submit" class="btn btn-danger btn-sm" data-busy-label="Removing…">Delete permanently</button>
             </form></div></td>
         </tr><?php endforeach; ?></tbody>
     </table></div>
 </div>
 <?php endif; ?>
+
+<?= view('partials/product_action_review', [], ['saveData' => false]) ?>
 
 <?= $this->endSection() ?>
