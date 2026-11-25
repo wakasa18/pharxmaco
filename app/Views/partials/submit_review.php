@@ -31,4 +31,4 @@ $reviewId = $reviewFormId . '-review';
         </footer>
     </section>
 </div>
-<script src="<?= base_url('assets/js/form-submit-review.js') ?>?v=20261020" defer></script>
+<script src="<?= base_url('assets/js/form-submit-review.js') ?>?v=20261125-1" defer></script>

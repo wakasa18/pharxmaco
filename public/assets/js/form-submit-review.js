@@ -62,18 +62,17 @@
         };
         const signature = () => JSON.stringify([...new FormData(form).entries()]);
         const close = () => modal.close(overlay);
+        // The reason field only exists when the product has no branch record; on a branch edit stock is read-only.
         const updateStockReason = () => {
             if (!product) return;
-            const reason = input('stock_reason');
-            const changed = Number(input('stock').value) !== Number(original.stock || 0);
+            const reason = input('stock_reason'), stock = input('stock');
+            if (!reason || !stock) return;
+            const changed = Number(stock.value) !== Number(original.stock || 0);
             reason.required = changed;
             reason.setCustomValidity(changed && reason.value.trim().length < 3 ? 'Enter a short reason for changing the stock quantity.' : '');
         };
         if (product) {
-            input('stock').addEventListener('input', updateStockReason);
-            input('stock_reason').addEventListener('input', updateStockReason);
-            input('stock').addEventListener('change', updateStockReason);
-            input('stock_reason').addEventListener('change', updateStockReason);
+            ['stock', 'stock_reason'].forEach(name => ['input', 'change'].forEach(type => input(name)?.addEventListener(type, updateStockReason)));
             updateStockReason();
         }
         function render() {
@@ -104,7 +103,7 @@
             overlay.querySelector('[data-review-empty]').hidden = !editMode || changed.length > 0;
             confirm.disabled = editMode && changed.length === 0;
             note.textContent = product
-                ? (changed.some(field => field[0] === 'stock') ? 'Reason for stock change: ' + input('stock_reason').value.trim() : '')
+                ? (changed.some(field => field[0] === 'stock') && input('stock_reason') ? 'Reason for stock change: ' + input('stock_reason').value.trim() : '')
                 : (state.applies_to === 'all' ? 'Cashiers select this offer from the Discount dropdown.'
                     : 'This offer applies automatically to matching ' + (state.applies_to === 'product' ? 'product' : 'category') + ' lines when its dates and purchase requirements are met.');
             if (!product && state.status === 'inactive') note.textContent += '\nSaved as unavailable to cashiers until activated.';
