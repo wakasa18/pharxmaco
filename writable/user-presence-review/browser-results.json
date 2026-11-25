@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "initial online count and per-user statuses",
+    "stateless scoped headers and correct heartbeat/list methods",
+    "updates off-page rows while preserving page/order and POST actions",
+    "quick search sees current presence values",
+    "live changes preserve and reapply quick search",
+    "shrinking filtered results clamp to a valid page",
+    "network errors show unavailable rather than stale online/offline claims",
+    "successful retry restores current presence",
+    "responsive Users layout 320/false",
+    "responsive Users layout 320/true",
+    "responsive Users layout 390/false",
+    "responsive Users layout 390/true",
+    "responsive Users layout 768/false",
+    "responsive Users layout 768/true",
+    "responsive Users layout 1440/false",
+    "responsive Users layout 1440/true",
+    "revoked presence stops polling without forcing an authentication logout",
+    "cashier page sends heartbeats without requesting user-list status"
+  ],
+  "javascript_errors": [],
+  "application_records_changed": false
+}

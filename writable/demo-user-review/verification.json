@@ -1,0 +1,18 @@
+{
+    "sql_sha256": "a9f45565318ed4b24c8bdae06b1cbafae9f8c85a7c62b910ae3443d544ac8bb9",
+    "demo_accounts": 3,
+    "real_logins_verified": [
+        "demo_admin",
+        "demo_cashier1",
+        "demo_cashier2"
+    ],
+    "checks": [
+        "Existing users preserved.",
+        "Both cashiers assigned to active Main Branch.",
+        "Reimport leaves accounts and passwords unchanged.",
+        "Owner-edited permissions, password and inactive status preserved.",
+        "No active branch creates no accounts.",
+        "Real Auth controller and session validation passed for all three accounts."
+    ],
+    "live_application_modified": false
+}

@@ -1,0 +1,17 @@
+{
+    "checks": [
+        "Real MySQL list matches explicit damaged-return\/inspection criteria",
+        "Real MySQL damaged quantity matches source ledger",
+        "No returned line is duplicated",
+        "Three source filters partition the full list exactly",
+        "Branch filter matches original selling branch 1",
+        "Detail matches list for damaged return 14",
+        "All application tables and migration rows unchanged by list\/filter\/detail reads"
+    ],
+    "damaged_records": 1,
+    "damaged_units": 1,
+    "quarantine_inspections_included": true,
+    "table_hashes_preserved": 27,
+    "database_writes": false,
+    "hosting_changed": false
+}

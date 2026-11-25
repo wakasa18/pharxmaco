@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="12" assertions="114" errors="1" failures="0" skipped="0" time="0.264920">
+    <testcase name="testExchangeCommitsLinkedRecordsAndRepeatedSubmitDoesNotDuplicate" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1310" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="16" time="0.047482"/>
+    <testcase name="testExchangeCheaperReplacementPaysOnlyDifferenceAndQuarantineNeverRestocks" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1427" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.031571"/>
+    <testcase name="testCorrectionUsesLockedItemsAndRejectsCompetingRevision" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1772" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.009784"/>
+    <testcase name="testValidCorrectionAdjustsStockOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1786" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.007348"/>
+    <testcase name="testDiscountedCorrectionRepricesOriginalPricesAndCollectsExactAdditionalPayment" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1859" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.012624"/>
+    <testcase name="testDiscountedCorrectionPaysBackDifferenceAndPreservesPreviouslyReturnedChange" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1888" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.007456"/>
+    <testcase name="testCorrectionRequiresExactSettlementAndNonCashReferenceWithoutUsingOriginalChange" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1942" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="16" time="0.042490"/>
+    <testcase name="testDiscountedCorrectionsRejectInvalidStockAndPermissionsWithoutChangingRows" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2019" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.047335"/>
+    <testcase name="testStatutoryRefundsPayOnlyRecordedNetAmountAcrossPartialReturns" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2557" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.011817"/>
+    <testcase name="testRefundConditionsControlStockAndKeepPayoutRecords" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2732" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.009199"/>
+    <testcase name="testUpdatedRefundAndReportViewsRender" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3204" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="0" time="0.023019">
+      <error type="ErrorException">BusinessLogicTest::testUpdatedRefundAndReportViewsRender&#13;
+ErrorException: Undefined array key "refundable_amount"
+&#13;
+C:\UniServerZ\www\pharxmaco\app\Views\cashier\sales\refund_partial.php:381
+C:\UniServerZ\www\pharxmaco\system\View\View.php:238
+C:\UniServerZ\www\pharxmaco\system\View\View.php:241
+C:\UniServerZ\www\pharxmaco\system\Common.php:1250
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:3210</error>
+    </testcase>
+    <testcase name="testEqualTotalCorrectionRecordsProductMovementsWithoutChangingDrawerCash" file="C:\UniServerZ\www\pharxmaco\tests\unit\LatestFixCases.php" line="67" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.014795"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,24 @@
+---
+title: "Payment reference research — 28 October 2026"
+type: source-snapshot
+status: historical
+updated: 2026-10-29
+generated_by: tools/docs/sync.cjs
+source_path: "writable/pos-catalog-reorder-payments-20261028/research.md"
+source_sha256: 767dcbc465518847c9ecfaa7f9b3f080187745b4facf18efd651037d34b6170b
+tags: [documentation, archive]
+---
+> [!info] Dated source snapshot
+> Source: `writable/pos-catalog-reorder-payments-20261028/research.md`. Findings and test counts refer to the original work. Read [Current state](../../project/Current-State.md) and [Known issues](../../project/Known-Issues.md) for subsequent changes.
+
+# Payment reference research — 28 October 2026
+
+- GCash Digital QR merchant guidance explicitly identifies the customer's 13-digit Transaction Reference ID: https://help.gcash.com/hc/en-us/articles/59390640942745-What-is-Digital-QR . This supports a 13-ASCII-digit input for the supported manual customer GCash confirmation workflow. It does not establish the length of every provider-side GCash/QRPH identifier.
+- GCash's general QR-payment support also requests QRPH Reference or Invoice Number without specifying length: https://help.gcash.com/hc/en-us/articles/61819791535129-Did-not-receive-money . No primary source was found for a universal 10–13-digit claim.
+- Maya's terminal workflow says to encode the Approval Code / Transaction Reference Number into the cash register: https://developers.maya.ph/docs/accept-in-person-payments-using-maya-terminals . Its official card-payment samples include eight-character `approvalCode` values, 12-character receipt numbers and UUID transaction references: https://developers.maya.ph/page/webhook-sample-json-data . A blanket six-character card-reference rule would therefore be inappropriate.
+- Visa's API documents a six-character issuer approval code and a separate 12-character Retrieval Reference Number: https://developer.visa.com/api-reference/visa_direct/reference . Visa's ISO transaction auth-code schema identifies a six-character alphanumeric code: https://developer.visa.com/api-reference/installment-transaction-service . These are different data elements.
+- Adyen documents a 16-character PSP reference: https://docs.adyen.com/account/manage-payments/ . It separately notes that acquirer authorization codes are not unique reconciliation identifiers: https://docs.adyen.com/reporting/settlement-reconciliation/transaction-level/external-settlement-detail-report . Receipt fields distinguish authCode, rrn, stan, merchant reference and masked card summary: https://docs.adyen.com/point-of-sale/basic-tapi-integration/generate-receipts .
+
+The application's card allowlist (1–100 ASCII letters/digits plus space, dot, underscore, slash and hyphen, containing an alphanumeric character) is an application validation policy, not a universal payment-network standard. Preserve reference case and leading zeros. The field records a terminal approval/transaction reference, never a full card number, CVV or PIN. Format validation does not confirm that a payment settled.
+
+Existing code paths needing consistent validation: POS checkout (`reference_no`), exchange quote/confirmation (`reference`, required for a nonzero payment/payout difference and optional but validated when supplied for even exchange), and administrator sale correction (new/changed references or monetary differences). Preserve unchanged historical references during metadata-only corrections.

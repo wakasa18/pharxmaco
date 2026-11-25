@@ -1,0 +1,149 @@
+{
+    "quarantine_release_reporting": {
+        "stock_before": 10,
+        "stock_after": 12,
+        "refund_condition": "quarantined",
+        "resolution": "released",
+        "before": {
+            "cogs": 20,
+            "gross_profit": 10
+        },
+        "after": {
+            "cogs": 20,
+            "gross_profit": 10
+        },
+        "expected_recovered_cost": 8,
+        "expected_cogs_after": 12,
+        "expected_gross_profit_after": 18
+    },
+    "digital_gcash": {
+        "id": 2,
+        "final_total": 10,
+        "amount_paid": 100,
+        "change_amount": 90,
+        "payment_method": "gcash",
+        "reference_no": null,
+        "status": "completed"
+    },
+    "digital_card": {
+        "id": 2,
+        "final_total": 10,
+        "amount_paid": 100,
+        "change_amount": 90,
+        "payment_method": "card",
+        "reference_no": null,
+        "status": "completed"
+    },
+    "automatic_promo_empty_selection": {
+        "id": 2,
+        "total_amount": 10,
+        "discount_amount": 0,
+        "final_total": 10,
+        "status": "completed"
+    },
+    "reorder_future_low": [
+        {
+            "product_id": 1,
+            "branch_id": 1,
+            "product_name": "Test Item",
+            "sku": "TEST",
+            "branch_name": "Branch A",
+            "stock": 10,
+            "reorder_level": 100,
+            "avg_daily_demand": 5,
+            "monthly_quantity": 155,
+            "price": 10,
+            "days_left": 2,
+            "suggested_qty": 140,
+            "urgency": "critical"
+        }
+    ],
+    "reorder_expired_low": [
+        {
+            "product_id": 1,
+            "branch_id": 1,
+            "product_name": "Test Item",
+            "sku": "TEST",
+            "branch_name": "Branch A",
+            "stock": 10,
+            "reorder_level": 100,
+            "avg_daily_demand": 5,
+            "monthly_quantity": 155,
+            "price": 10,
+            "days_left": 2,
+            "suggested_qty": 140,
+            "urgency": "critical"
+        }
+    ],
+    "reorder_expired_above_threshold": [],
+    "pwd_promo_flag_disabled": {
+        "id": 2,
+        "total_amount": 112,
+        "discount_amount": 20,
+        "final_total": 80,
+        "status": "completed"
+    },
+    "sales_csv": {
+        "error": {
+            "message": "Undefined array key \"pdfMode\"",
+            "file": "app\\Controllers\\Admin\\ReportsController.php",
+            "line": 500
+        },
+        "history_rows_after_failure": 1
+    },
+    "fully_refunded_damaged_report": {
+        "salesSummary": {
+            "total_transactions": 0,
+            "gross_sales": 0,
+            "original_sales": 0,
+            "total_discount": 0,
+            "total_vat_relief": 0,
+            "total_refunds": 0,
+            "net_sales": 0
+        },
+        "profitSummary": {
+            "cogs": 20,
+            "gross_profit": -20
+        },
+        "reportHistory": [
+            {
+                "period_key": "2026-09-14",
+                "period_date": "2026-09-14",
+                "report_date": "2026-09-14",
+                "total_transactions": 0,
+                "gross_sales": 0,
+                "original_sales": 0,
+                "total_vat_relief": 0,
+                "total_refunds": 0,
+                "total_discount": 0,
+                "net_sales": 0,
+                "cogs": 20,
+                "gross_profit": -20
+            }
+        ],
+        "cash_movements": {
+            "rows": [
+                {
+                    "date": "2026-09-14",
+                    "method": "cash",
+                    "receipts": 50,
+                    "refunds": 50,
+                    "net": 0
+                }
+            ],
+            "totals": {
+                "receipts": 50,
+                "refunds": 50,
+                "net": 0,
+                "cash_net": 0,
+                "unknown_refunds": 0
+            },
+            "returns": [
+                {
+                    "return_condition": "damaged",
+                    "quantity": 5
+                }
+            ]
+        }
+    }
+}

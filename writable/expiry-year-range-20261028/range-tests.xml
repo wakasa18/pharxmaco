@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\UniServerZ\www\pharxmaco\phpunit.xml.dist" tests="19" assertions="129" errors="0" failures="0" skipped="0" time="0.201755">
+    <testsuite name="App" tests="19" assertions="129" errors="0" failures="0" skipped="0" time="0.201755">
+      <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="19" assertions="129" errors="0" failures="0" skipped="0" time="0.201755">
+        <testcase name="testExpiryYearRangeExactCalendarYearBoundsAndLeapDay" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="31" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.041756"/>
+        <testcase name="testExpiryYearRangeUsesConfiguredHorizonAndInvalidSettingsFallBack" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="45" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.005676"/>
+        <testcase name="testExpiryYearRangeRejectsInvalidAndNonfutureChangedDatesEvenWithApproval" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="62" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.004830"/>
+        <testcase name="testExpiryYearRangeReviewRequiresAdministratorExactAcknowledgementAndReason" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="72" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.004738"/>
+        <testcase name="testExpiryYearRangeReviewCountsUnicodeCharactersAndKeepsUnchangedHistory" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="89" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.004353"/>
+        <testcase name="testExpiryYearRangeProductStoreRejectsUnreviewedAndForgedApprovalWithoutWrites" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="103" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.029062"/>
+        <testcase name="testExpiryYearRangeAdministratorStoreReviewIsAuditedAndPreservesExistingInventory" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="116" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.007605"/>
+        <testcase name="testExpiryYearRangeProductEditRejectsChangedDateAndAllowsUnchangedHistoricalDates" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="134" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.009890"/>
+        <testcase name="testExpiryYearRangeCatalogRejectsForgedReviewButAcceptsNormalMaximum" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="150" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.009733"/>
+        <testcase name="testExpiryYearRangeReplacementRequiresNewStockReviewEvenIfDateMatchesOldRecord" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="167" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.011201"/>
+        <testcase name="testExpiryYearRangeUsesPhilippineDateRegardlessOfDefaultTimezone" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="190" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.004231"/>
+        <testcase name="testExpiryYearRangeAdministratorEditRecordsReviewWithoutRewritingSaleSnapshots" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="201" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.006680"/>
+        <testcase name="testExpiryYearRangeFailedCreateAuditRollsBackProductStockAndLogs" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="215" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.013008"/>
+        <testcase name="testExpiryYearRangeFailedEditAuditRollsBackAllProductChanges" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="226" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.009421"/>
+        <testcase name="testExpiryYearRangeFailedReplacementAuditRollsBackDeliveryAndMovements" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="236" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.006993"/>
+        <testcase name="testExpiryYearRangeForgedOriginalDateCannotGrandfatherAChangedEdit" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="253" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.007233"/>
+        <testcase name="testExpiryYearRangeAdministratorExistingProductAssignmentIsReviewedAndAudited" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="262" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.007431"/>
+        <testcase name="testExpiryYearRangeFailedAssignmentAuditRollsBackBranchAndMasterStock" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="281" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.010340"/>
+        <testcase name="testExpiryYearRangeReplacementRejectsWhitespaceAndStoresTheNormalizedReviewedDate" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryYearRangeCases.php" line="293" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.007574"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,122 @@
+[
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 1440,
+    "dark": true
+  }
+]

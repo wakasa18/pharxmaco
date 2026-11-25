@@ -1,0 +1,26 @@
+/* Product entry review uses the workspace's shared dialog and form tokens. */
+.product-review-overlay { z-index: 700; align-items: center; }
+.product-review-dialog { width: min(760px, 100%); min-height: 0; max-height: calc(100dvh - 48px); border: 1px solid var(--line); border-radius: 16px; }
+.product-review-dialog .inventory-modal-title { margin: 0; }
+.product-review-body { overflow-y: auto; min-height: 0; padding: 22px 24px; overscroll-behavior: contain; }
+.product-review-identity { padding-bottom: 20px; overflow-wrap: anywhere; }
+.product-review-identity h3 { font-family: var(--heading-font); font-size: 19px; line-height: 1.45; margin: 0 0 5px; color: var(--text); }
+.product-review-identity p { margin: 0; color: var(--text-2); font-size: 13px; line-height: 1.5; }
+.product-review-section { padding: 18px 0; border-top: 1px solid var(--line); }
+.product-review-section:last-child { padding-bottom: 0; }
+.product-review-section > h3 { margin: 0 0 14px; color: var(--text); font-size: 14px; line-height: 1.5; }
+.product-review-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; margin: 0; }
+.product-review-fields > div { min-width: 0; overflow-wrap: anywhere; }
+.product-review-fields dt { color: var(--muted); font-size: 12px; line-height: 1.5; margin-bottom: 3px; }
+.product-review-fields dd { margin: 0; color: var(--text); font-size: 14px; line-height: 1.5; font-variant-numeric: tabular-nums; }
+.product-review-actions { display: flex; justify-content: flex-end; flex-shrink: 0; gap: 10px; padding: 16px 24px; border-top: 1px solid var(--line); }
+.product-review-actions .btn { min-height: 44px; }
+.product-review-dialog :is(button, [tabindex="0"]):focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+@media (max-width: 600px) {
+    .product-review-overlay { padding: 12px; }
+    .product-review-dialog { max-height: calc(100dvh - 24px); }
+    .product-review-body { padding: 18px; }
+    .product-review-fields { grid-template-columns: minmax(0, 1fr); gap: 13px; }
+    .product-review-actions { padding: 14px 18px; }
+    .product-review-actions .btn { flex: 1; min-width: 0; white-space: normal; }
+}

@@ -1,0 +1,11 @@
+{
+    "file": "C:\\UniServerZ\\www\\pharxmaco\/build\/hostinger-pos-checkout-fix-2026-10-15.zip",
+    "files": 3,
+    "bytes": 39589,
+    "sha256": "cd0b6ce49f4f4c1b31d5bb46018f11896b9d6c92d100d790d8ca4ad70cd0887c",
+    "entries": {
+        "app\/Controllers\/Cashier\/SalesController.php": "c52323c0b63360cb7d186e4172fdee152ec0544342d878b5aa2c0050284eedbe",
+        "app\/Views\/cashier\/sales\/index.php": "cd04173c36538e172c6d5271db4ce733713e8c3e0f42955ebc6e30b8e5e277bf",
+        "INSTALL.md": "352c950b3dc411f1b179cdea2138669896628a026e2cc44c2cf94339e3d4b081"
+    }
+}

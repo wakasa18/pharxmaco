@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\UniServerZ\www\pharxmaco\phpunit.xml.dist" tests="8" assertions="88" errors="0" failures="0" skipped="0" time="0.173400">
+    <testsuite name="App" tests="8" assertions="88" errors="0" failures="0" skipped="0" time="0.173400">
+      <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="8" assertions="88" errors="0" failures="0" skipped="0" time="0.173400">
+        <testcase name="testCheckoutRepairBlankSelectionStillAppliesServerPromotionWithoutPreview" file="C:\UniServerZ\www\pharxmaco\tests\unit\CheckoutRepairCases.php" line="12" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.082898"/>
+        <testcase name="testCheckoutRepairBenefitCannotDisableFavorablePromoByRemovingOrChangingFlag" file="C:\UniServerZ\www\pharxmaco\tests\unit\CheckoutRepairCases.php" line="27" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="16" time="0.018217"/>
+        <testcase name="testCheckoutRepairLegacyProductSelectorStillAppliesOtherMatchingPromos" file="C:\UniServerZ\www\pharxmaco\tests\unit\CheckoutRepairCases.php" line="43" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.011415"/>
+        <testcase name="testCheckoutRepairBlankSelectionRejectsStaleSubmittedPromotionPreview" file="C:\UniServerZ\www\pharxmaco\tests\unit\CheckoutRepairCases.php" line="57" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.012260"/>
+        <testcase name="testCheckoutRepairNewBetterOfferDuringCheckoutRollsBackSaleAndStock" file="C:\UniServerZ\www\pharxmaco\tests\unit\CheckoutRepairCases.php" line="68" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.010559"/>
+        <testcase name="testCheckoutRepairDigitalPaymentsRequireExactTotalAndReference" file="C:\UniServerZ\www\pharxmaco\tests\unit\CheckoutRepairCases.php" line="84" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="40" time="0.017535"/>
+        <testcase name="testCheckoutRepairExactDigitalPaymentsSaveZeroChangeAndReference" file="C:\UniServerZ\www\pharxmaco\tests\unit\CheckoutRepairCases.php" line="96" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.010704"/>
+        <testcase name="testCheckoutRepairNoncashUsesDiscountedExactAmountAndCashStillReturnsChange" file="C:\UniServerZ\www\pharxmaco\tests\unit\CheckoutRepairCases.php" line="109" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.009811"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

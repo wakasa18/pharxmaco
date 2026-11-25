@@ -1,0 +1,33 @@
+{
+  "source_sha256": "3436403d03724597a9e03539b16e83aafc92428114cb430888233f714169579e",
+  "source_only": true,
+  "hosted_database_accessed": false,
+  "range": [
+    "2026-09-21",
+    "2026-10-20"
+  ],
+  "transactions": 374,
+  "original_sales": 140108,
+  "discounts": 739.02,
+  "vat_exemption": 5.89,
+  "refunds": 440,
+  "legacy_gross_after_refunds": 139668,
+  "net_sales": 138923.09,
+  "other_adjustments": 0,
+  "screenshot": {
+    "gross": 238422,
+    "discount": 779.02,
+    "net": 237637.09,
+    "unexplained": 5.89
+  },
+  "with_prepared_demo": {
+    "transactions": 633,
+    "original_sales": 238862,
+    "gross_after_refunds": 238422,
+    "discounts": 779.02,
+    "vat_exemption": 5.89,
+    "refunds": 440,
+    "net_sales": 237637.09
+  },
+  "screenshot_matches_prepared_data": true
+}

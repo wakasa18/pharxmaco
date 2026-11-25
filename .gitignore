@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------
+# Pharxmaco (CodeIgniter 4) - .gitignore
+# Copy this file to the project root as ".gitignore"
+# ---------------------------------------------------------------
+
+# Secrets / local config (set these as Railway Variables instead)
+.env
+.env.*
+!.env.example
+
+# Dependencies (Railway runs `composer install` from composer.lock)
+/vendor/
+/node_modules/
+composer.phar
+
+# NOTE: do NOT ignore /system/ -- the CI4 framework lives there and
+# composer.json autoloads "CodeIgniter\" from system/.
+# NOTE: do NOT ignore *.min.js -- public/assets/vendor/ needs them.
+
+# CodeIgniter runtime files (keep the folders via .gitkeep)
+/writable/cache/*
+/writable/logs/*
+/writable/session/*
+/writable/uploads/*
+/writable/debugbar/*
+!.gitkeep
+
+# Database dumps and backups (contain real/demo user data)
+/backup_before_batches.sql
+/database/exports/
+*.sql.gz
+
+# Old copies, build output, scratch files
+/app_backup_before_batches/
+/build/
+/tmp/
+/output/
+/chrome-profile-*/
+/graphify-out/
+*.zip
+*.log
+*.bak
+*.cache
+
+# Tooling / OS / editor
+/.phpunit.cache/
+/coverage/
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db

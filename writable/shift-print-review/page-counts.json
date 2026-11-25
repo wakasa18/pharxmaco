@@ -1,0 +1,22 @@
+[
+    {
+        "state":  "open",
+        "pages":  1
+    },
+    {
+        "state":  "closed",
+        "pages":  1
+    },
+    {
+        "state":  "busy",
+        "pages":  5
+    },
+    {
+        "state":  "busy-summary",
+        "pages":  1
+    },
+    {
+        "state":  "notes",
+        "pages":  2
+    }
+]

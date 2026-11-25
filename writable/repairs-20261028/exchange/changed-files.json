@@ -1,0 +1,5 @@
+[
+  "app/Libraries/ProductExchange.php",
+  "app/Controllers/Cashier/ExchangeController.php",
+  "app/Views/cashier/sales/exchange.php"
+]

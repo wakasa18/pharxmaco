@@ -1,0 +1,10 @@
+{
+    "passed_before_failure": [
+        "Committed phpMyAdmin SQL matches migration definitions",
+        "Native migration refuses orphan references before DDL",
+        "phpMyAdmin preflight refusal preserves every row and adds no constraints\/registration",
+        "Mismatched branch key type is refused before DDL",
+        "Upgrade refuses disabled foreign-key checks"
+    ],
+    "error": "Cannot create a JSON value from a string with CHARACTER SET 'binary'."
+}

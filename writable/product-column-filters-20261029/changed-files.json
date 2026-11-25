@@ -1,0 +1,5 @@
+[
+  "app/Views/products/index.php",
+  "app/Views/layouts/staff.php",
+  "public/assets/js/datatables-init.js"
+]

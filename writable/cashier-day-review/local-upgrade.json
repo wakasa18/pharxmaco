@@ -1,0 +1,60 @@
+{
+    "database": "pharxmaco_drugstore",
+    "cashier_upgrade_applied": true,
+    "repeated_import_passed": true,
+    "preserved": {
+        "products": {
+            "count": 55,
+            "sha256": "09fba3c6edae4403a0c8321f096a1dfa673da7c2187a9aed2c58a92c8d0e3ca5"
+        },
+        "branch_products": {
+            "count": 105,
+            "sha256": "ad320a46b4996c1d2e9defed4e84aa6e3109fe537a1b5edd4df74cd9e65be8dd"
+        },
+        "sales": {
+            "count": 474,
+            "sha256": "6c8cd125eb4379fd18236b4b82a7c0b2a997f43f203be1eefe378a93359fbcef"
+        },
+        "sale_items": {
+            "count": 972,
+            "sha256": "305c34cfe925417b64e271dcc37a4665ea5e178751c67309051479321c7e5651"
+        },
+        "refund_items": {
+            "count": 21,
+            "sha256": "574cb358693eeda129a11c033d4a16d33ff768ba27e1e37e456b4541a88e3817"
+        },
+        "users": {
+            "count": 4,
+            "sha256": "5168f588a987005eb7b6b7ee1ddd9491a25b44f61b44ff5e07ddfe92019f1efb"
+        },
+        "discounts": {
+            "count": 2,
+            "sha256": "b9adedd02ee54c8f8d059748c27f1cebe33af85128e7d62cb6f430889d05d4cb"
+        },
+        "stock_logs": {
+            "count": 1012,
+            "sha256": "37812bf61be771abe3285f7fdc9d6f47c0aead37894c25deac1f819a5db61078"
+        },
+        "activity_logs": {
+            "count": 275,
+            "sha256": "41e49a35747a3f697fe47f26194325cd892beb37b2468f6962716e01b6b959aa"
+        },
+        "receipt_invoice_sequences": {
+            "count": 1,
+            "sha256": "6f449a3cd8592f79a71e74d1b3bee26dbcfa7d26a439f359cb20d2048d96466b"
+        }
+    },
+    "drawers": [
+        {
+            "branch_id": "1",
+            "drawer_name": "Main drawer",
+            "status": "active"
+        },
+        {
+            "branch_id": "3",
+            "drawer_name": "Main drawer",
+            "status": "active"
+        }
+    ],
+    "shift_count": 0
+}

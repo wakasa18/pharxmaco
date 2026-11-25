@@ -1,0 +1,11 @@
+{
+    "calibri": {
+        "normal": "C:\\UniServerZ\\www\\pharxmaco\\writable\\system-manual\/cache\/fonts\/calibri_normal_9cad1b247b243aea789440ef669e6cb1",
+        "bold": "C:\\UniServerZ\\www\\pharxmaco\\writable\\system-manual\/cache\/fonts\/calibri_bold_1729bf991c4242d822de188ff5951598",
+        "italic": "C:\\UniServerZ\\www\\pharxmaco\\writable\\system-manual\/cache\/fonts\/calibri_italic_a148ca026aab61d1105f8d11f4e7b9f6",
+        "bold_italic": "calibri_bold_italic_4a78fb2d3566e604c8d9bd646a063a56"
+    },
+    "calibri light": {
+        "normal": "calibri_light_normal_1953199c8faaec0cd045d53ebcc7b3d4"
+    }
+}

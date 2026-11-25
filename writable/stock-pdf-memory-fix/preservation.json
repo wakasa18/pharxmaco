@@ -1,0 +1,40 @@
+{
+    "source_tables_unchanged": [
+        "activity_logs",
+        "branch_products",
+        "branches",
+        "cashier_drawers",
+        "cashier_event_reviews",
+        "cashier_events",
+        "cashier_held_sales",
+        "cashier_login_sessions",
+        "cashier_shift_actions",
+        "cashier_shift_reviews",
+        "cashier_shifts",
+        "categories",
+        "discounts",
+        "forecasting_data",
+        "migrations",
+        "phx_backup_20261016_sale41_refunds",
+        "products",
+        "quarantine_resolutions",
+        "receipt_invoice_sequences",
+        "refund_items",
+        "report_exports",
+        "sale_items",
+        "sales",
+        "stock_logs",
+        "suppliers",
+        "users"
+    ],
+    "concurrent_source_changes": [
+        {
+            "table": "user_presence_sessions",
+            "before_rows": 11,
+            "after_rows": 11
+        }
+    ],
+    "scratch_schema_removed": true,
+    "application_data_written_by_tests": false,
+    "hosting_changed": false
+}

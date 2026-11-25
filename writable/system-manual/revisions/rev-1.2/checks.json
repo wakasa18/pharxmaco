@@ -1,0 +1,210 @@
+{
+  "pages": 37,
+  "chapters": 34,
+  "revision": "1.2",
+  "body_font": "Calibri",
+  "display_font": "Calibri Light",
+  "body_font_pt": 11,
+  "linked_contents_annotations": 68,
+  "checked": [
+    "Chapter starts and table-of-contents page numbers match.",
+    "Every page has its correct footer number.",
+    "Every chapter retains its final paragraph on its own page.",
+    "No body text enters the footer area.",
+    "All navigation modules and invoice configuration fields are covered.",
+    "Training discount amounts checked.",
+    "TrueType typography embedded in the PDF.",
+    "Operating instructions retained from the previous edition.",
+    "All PDF text uses black fill, including running headers and footers."
+  ],
+  "geometry": [
+    {
+      "page": 1,
+      "body_text_items": 26,
+      "lowest_baseline_points": 163.109
+    },
+    {
+      "page": 2,
+      "body_text_items": 55,
+      "lowest_baseline_points": 98.55
+    },
+    {
+      "page": 3,
+      "body_text_items": 114,
+      "lowest_baseline_points": 173.026
+    },
+    {
+      "page": 4,
+      "body_text_items": 57,
+      "lowest_baseline_points": 119.685
+    },
+    {
+      "page": 5,
+      "body_text_items": 63,
+      "lowest_baseline_points": 199.119
+    },
+    {
+      "page": 6,
+      "body_text_items": 49,
+      "lowest_baseline_points": 222.272
+    },
+    {
+      "page": 7,
+      "body_text_items": 57,
+      "lowest_baseline_points": 217.312
+    },
+    {
+      "page": 8,
+      "body_text_items": 56,
+      "lowest_baseline_points": 179.762
+    },
+    {
+      "page": 9,
+      "body_text_items": 50,
+      "lowest_baseline_points": 256.155
+    },
+    {
+      "page": 10,
+      "body_text_items": 45,
+      "lowest_baseline_points": 187.922
+    },
+    {
+      "page": 11,
+      "body_text_items": 53,
+      "lowest_baseline_points": 172.27
+    },
+    {
+      "page": 12,
+      "body_text_items": 53,
+      "lowest_baseline_points": 245.031
+    },
+    {
+      "page": 13,
+      "body_text_items": 58,
+      "lowest_baseline_points": 215.272
+    },
+    {
+      "page": 14,
+      "body_text_items": 51,
+      "lowest_baseline_points": 165.555
+    },
+    {
+      "page": 15,
+      "body_text_items": 53,
+      "lowest_baseline_points": 205.755
+    },
+    {
+      "page": 16,
+      "body_text_items": 57,
+      "lowest_baseline_points": 185.651
+    },
+    {
+      "page": 17,
+      "body_text_items": 42,
+      "lowest_baseline_points": 225.011
+    },
+    {
+      "page": 18,
+      "body_text_items": 58,
+      "lowest_baseline_points": 191.841
+    },
+    {
+      "page": 19,
+      "body_text_items": 61,
+      "lowest_baseline_points": 252.05
+    },
+    {
+      "page": 20,
+      "body_text_items": 51,
+      "lowest_baseline_points": 235.28
+    },
+    {
+      "page": 21,
+      "body_text_items": 65,
+      "lowest_baseline_points": 235.183
+    },
+    {
+      "page": 22,
+      "body_text_items": 46,
+      "lowest_baseline_points": 231.88
+    },
+    {
+      "page": 23,
+      "body_text_items": 51,
+      "lowest_baseline_points": 184.935
+    },
+    {
+      "page": 24,
+      "body_text_items": 52,
+      "lowest_baseline_points": 204.209
+    },
+    {
+      "page": 25,
+      "body_text_items": 67,
+      "lowest_baseline_points": 178.36
+    },
+    {
+      "page": 26,
+      "body_text_items": 58,
+      "lowest_baseline_points": 222.054
+    },
+    {
+      "page": 27,
+      "body_text_items": 49,
+      "lowest_baseline_points": 195.013
+    },
+    {
+      "page": 28,
+      "body_text_items": 51,
+      "lowest_baseline_points": 219.319
+    },
+    {
+      "page": 29,
+      "body_text_items": 61,
+      "lowest_baseline_points": 212.422
+    },
+    {
+      "page": 30,
+      "body_text_items": 63,
+      "lowest_baseline_points": 182.743
+    },
+    {
+      "page": 31,
+      "body_text_items": 45,
+      "lowest_baseline_points": 176.141
+    },
+    {
+      "page": 32,
+      "body_text_items": 50,
+      "lowest_baseline_points": 153.905
+    },
+    {
+      "page": 33,
+      "body_text_items": 57,
+      "lowest_baseline_points": 186.572
+    },
+    {
+      "page": 34,
+      "body_text_items": 32,
+      "lowest_baseline_points": 136.451
+    },
+    {
+      "page": 35,
+      "body_text_items": 30,
+      "lowest_baseline_points": 205.069
+    },
+    {
+      "page": 36,
+      "body_text_items": 33,
+      "lowest_baseline_points": 141.353
+    },
+    {
+      "page": 37,
+      "body_text_items": 46,
+      "lowest_baseline_points": 140.256
+    }
+  ],
+  "pdf_sha256": "e6da7f0bc4329e0e2210932b14a4dc31d5f7d62cb115d243ab1464925874e412",
+  "source_sha256": "46c147a4adbe75da703678d84ae98d570803c2dba341f593b6bc5872b2ce1b77",
+  "application_records_modified": false
+}

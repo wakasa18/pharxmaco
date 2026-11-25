@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="191" assertions="22590" errors="3" failures="9" skipped="0" time="3.495564">
+    <testcase name="testTrashAndRestoreRetainEveryDeletableRecordAndReferences" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="158" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="67" time="0.055965"/>
+    <testcase name="testModelsRejectPermanentDeletionAndUnscopedTrash" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="186" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="55" time="0.009910"/>
+    <testcase name="testFlagOnlyAndLegacyTrashAreExcludedAndPaginateCorrectly" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="202" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="12" time="0.011966"/>
+    <testcase name="testPermanentDeleteEndpointsRequireTrashAndAdministrator" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="225" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="18" time="0.027547"/>
+    <testcase name="testRestoreControllersClearBothDeletionMarkers" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="240" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.009753"/>
+    <testcase name="testPermanentDeletionHidesRecordsFromTrashButRetainsAllReferences" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="256" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="47" time="0.010731"/>
+    <testcase name="testPermanentDeleteControllersRetainUsedRecordsAndRejectRestoration" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="283" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="18" time="0.038716"/>
+    <testcase name="testPermanentDeletionRollsBackIfAuditCannotBeWritten" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="305" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.008274"/>
+    <testcase name="testPermanentBranchDeletionRetainsStockAndOtherBranches" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="317" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.022334"/>
+    <testcase name="testPermanentBranchDeletionRequiresTrashAndDoesNotGuessBranch" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="346" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="12" time="0.012368"/>
+    <testcase name="testPermanentBranchDeletionRollsBackOnAuditFailure" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="360" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.008697"/>
+    <testcase name="testLegacyPermanentDeletionRequiresExplicitSharedAction" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="372" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.012592"/>
+    <testcase name="testPermanentDeleteMigrationIsAdditiveAndRepeatable" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="386" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.012176"/>
+    <testcase name="testResettingPermanentFlagAllowsRestoreWithoutErasingTimestamp" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="406" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="33" time="0.009066"/>
+    <testcase name="testBranchFlagResetReturnsOnlySelectedAssignmentToTrashAndPos" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="429" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.028987"/>
+    <testcase name="testPermanentFlagAloneHidesRowsWhenTimestampsAreMissing" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="452" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="26" time="0.009439"/>
+    <testcase name="testHistoricalPermanentDatesDoNotHideRecoveredInventory" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="465" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.018429"/>
+    <testcase name="testPermanentFlagMigrationBackfillsOnceAndPreservesRecovery" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="481" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.013522"/>
+    <testcase name="testSoftDeleteMigrationBackfillsWithoutLosingFlagsOrData" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="504" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.017161"/>
+    <testcase name="testFlagOnlyBranchTrashIsIsolatedAndCannotBeSoldOrChanged" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="530" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.011558"/>
+    <testcase name="testFlagOnlyTrashIsRecheckedAtCheckoutLock" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="557" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.007266"/>
+    <testcase name="testBranchTrashAndRestoreKeepOtherBranchesAndSharedDetails" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="569" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="20" time="0.007207"/>
+    <testcase name="testBranchTrashControllerRequiresBranchAndAdministrator" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="598" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.009071"/>
+    <testcase name="testBranchTrashRollbackPreservesInventoryIfAuditFails" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="620" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.007260"/>
+    <testcase name="testBranchTrashListsOnlySelectedBranchAndKeepsLegacyRestoreExplicit" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="631" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.030050"/>
+    <testcase name="testBranchTrashIsExcludedFromPosExpiryDashboardAndReplacementSelection" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="659" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.009591"/>
+    <testcase name="testBranchTrashIsRecheckedAtCheckoutLock" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="688" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.006126"/>
+    <testcase name="testBranchTrashMigrationCanRunTwiceWithoutChangingInventory" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="700" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.006603"/>
+    <testcase name="testCatalogAssignmentReusesMasterAndKeepsBranchesSeparate" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="730" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.008110"/>
+    <testcase name="testCatalogAssignmentAcceptsNoSkuAndZeroStock" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="757" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.005788"/>
+    <testcase name="testCatalogAssignmentRejectsInvalidInputAndUnavailableRecords" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="770" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.013978"/>
+    <testcase name="testCatalogAssignmentRollsBackWhenAuditFails" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="793" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.009616"/>
+    <testcase name="testCatalogBrowseSearchAndSelectionExcludeAssignedInactiveAndDeletedProducts" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="803" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.032642"/>
+    <testcase name="testCheckoutRecordsLockedDeliveryAndExpiryWithoutChangingOlderItems" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="854" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="1" time="0.020528">
+      <error type="TypeError">BusinessLogicTest::testCheckoutRecordsLockedDeliveryAndExpiryWithoutChangingOlderItems&#13;
+TypeError: PHPUnit\Framework\Assert::assertMatchesRegularExpression(): Argument #2 ($string) must be of type string, null given, called in C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php on line 862
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:862</error>
+    </testcase>
+    <testcase name="testRefundRejectsExpiredOriginalDeliveryAfterReplacementAndAllowsQuarantine" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="868" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="1" time="0.010699">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">BusinessLogicTest::testRefundRejectsExpiredOriginalDeliveryAfterReplacementAndAllowsQuarantine&#13;
+Failed asserting that 21 is identical to 20.
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:877</failure>
+    </testcase>
+    <testcase name="testReplacementWithTheSameExpiryStillHasDifferentDeliveryIdentity" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="887" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="1" time="0.006295">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">BusinessLogicTest::testReplacementWithTheSameExpiryStillHasDifferentDeliveryIdentity&#13;
+Failed asserting that two strings are not identical.
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:893</failure>
+    </testcase>
+    <testcase name="testLegacyAndUnknownExpiryReturnsCannotBeRestocked" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="898" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.009900">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">BusinessLogicTest::testLegacyAndUnknownExpiryReturnsCannotBeRestocked&#13;
+Failed asserting that 11 is identical to 10.
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:909</failure>
+    </testcase>
+    <testcase name="testExchangeRejectsOldDeliveryAndCapturesReplacementProvenance" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="915" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="1" time="0.006225">
+      <failure type="PHPUnit\Framework\AssertionFailedError">BusinessLogicTest::testExchangeRejectsOldDeliveryAndCapturesReplacementProvenance&#13;
+Old delivery accepted into new stock
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:922</failure>
+    </testcase>
+    <testcase name="testExchangeReviewRejectsReplacementExpiryChangedBeforeConfirmation" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="937" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="1" time="0.007454">
+      <failure type="PHPUnit\Framework\AssertionFailedError">BusinessLogicTest::testExchangeReviewRejectsReplacementExpiryChangedBeforeConfirmation&#13;
+Stale expiry quote accepted
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:945</failure>
+    </testcase>
+    <testcase name="testQuantityCorrectionsCannotMixDeliveriesOrRestockExpiredItems" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="953" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="0" time="0.010244">
+      <error type="TypeError">BusinessLogicTest::testQuantityCorrectionsCannotMixDeliveriesOrRestockExpiredItems&#13;
+TypeError: PHPUnit\Framework\Assert::assertStringContainsString(): Argument #2 ($haystack) must be of type string, CodeIgniter\HTTP\RedirectResponse given, called in C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php on line 958
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:958</error>
+    </testcase>
+    <testcase name="testMedicineTypeCreateEditAndValidationAreIndependentOfGenericName" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="976" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.016026"/>
+    <testcase name="testMedicineTypeProductFilterRetainsCashierBranchAccess" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1010" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.020530"/>
+    <testcase name="testProductEditRejectsForgedExpiryChangeBeforeSavingOtherFields" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1034" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.011814">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">BusinessLogicTest::testProductEditRejectsForgedExpiryChangeBeforeSavingOtherFields&#13;
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'2099-01-01'
++'2099-02-01'
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1039</failure>
+    </testcase>
+    <testcase name="testExpiryCorrectionIsAdminOnlyAuditedAndDoesNotRewriteSales" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1049" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="0" time="0.005417">
+      <error type="InvalidArgumentException">BusinessLogicTest::testExpiryCorrectionIsAdminOnlyAuditedAndDoesNotRewriteSales&#13;
+InvalidArgumentException: Select a valid expiry-stock action.
+&#13;
+C:\UniServerZ\www\pharxmaco\app\Libraries\ExpiryStockResolution.php:19
+C:\UniServerZ\www\pharxmaco\app\Libraries\ExpiryStockResolution.php:58
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1055</error>
+    </testcase>
+    <testcase name="testExpiryCorrectionRejectsStaleOrInvalidRequestsAndRollsBackAuditFailure" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1069" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.006755">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">BusinessLogicTest::testExpiryCorrectionRejectsStaleOrInvalidRequestsAndRollsBackAuditFailure&#13;
+Failed asserting that 'Select a valid expiry-stock action.' [ASCII](length: 35) contains "changed" [ASCII](length: 7).
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1087</failure>
+    </testcase>
+    <testcase name="testExpiryProvenanceMigrationIsAdditiveAndIdempotent" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1101" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.008648"/>
+    <testcase name="testManualReplenishmentInvalidatesOldReturnsButRemovalKeepsIdentity" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1120" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.009076">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">BusinessLogicTest::testManualReplenishmentInvalidatesOldReturnsButRemovalKeepsIdentity&#13;
+Failed asserting that two strings are not identical.
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1126</failure>
+    </testcase>
+    <testcase name="testRefundRechecksDeliveryAtTheInventoryLock" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1130" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="1" time="0.008017">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">BusinessLogicTest::testRefundRechecksDeliveryAtTheInventoryLock&#13;
+Failed asserting that 11 is identical to 10.
+&#13;
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1138</failure>
+    </testcase>
+    <testcase name="testExpiryReplacementPreservesOldExpiryAndRecordsBothMovementsOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1142" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.006185"/>
+    <testcase name="testExpiryDisposalCanBePartialAndKeepsExpiry" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1169" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.005371"/>
+    <testcase name="testExpiryDeactivationIsAdminOnlyAndBranchSpecific" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1181" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.005462"/>
+    <testcase name="testExpiryRejectsOtherBranchesInvalidCountsDatesAndUnconfirmedRequests" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1201" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.006784"/>
+    <testcase name="testExpiryRejectsStaleStockAndRollsBackFailedLog" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1216" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.006831"/>
+    <testcase name="testExpiryControllerDeniesCashierDeactivationEvenWithForgedPost" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1232" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.005451"/>
+    <testcase name="testExpiryDeactivationIsRecheckedDuringCheckout" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1245" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.006069"/>
+    <testcase name="testExpiryControllerSavesValidRemovalAndHistorySurvivesTrash" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1256" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.016348"/>
+    <testcase name="testExpiryLongReasonsFitExistingLogAndInactiveInventoryCannotChange" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1276" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.006742"/>
+    <testcase name="testExchangeCommitsLinkedRecordsAndRepeatedSubmitDoesNotDuplicate" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1290" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="16" time="0.008714"/>
+    <testcase name="testExchangeOriginalMinimumIncludesKeptProductsAndRepeatedExchange" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1333" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.009181"/>
+    <testcase name="testExchangeFixedDiscountUsesRemainingAllowanceIncludingSiblingReplacements" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1354" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.009850"/>
+    <testcase name="testExchangePercentageCapIsSharedWithUnchangedItems" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1369" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.005802"/>
+    <testcase name="testExchangeMinimumAndScopeFailuresExplainTheirDifferentReasons" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1378" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.009265"/>
+    <testcase name="testExchangeOriginalDiscountPreselectsButPreservesExplicitNoDiscount" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1394" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.020344"/>
+    <testcase name="testExchangeCheaperReplacementPaysOnlyDifferenceAndQuarantineNeverRestocks" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1407" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.009766"/>
+    <testcase name="testExchangeEvenSwapHasNoCashMovement" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1430" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.006934"/>
+    <testcase name="testExchangeKeepsDiscountedReturnCentavosAndAppliesReplacementDiscount" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1443" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.006680"/>
+    <testcase name="testExchangeRejectsStalePricesAndRollsBackAllWritesOnFailure" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1460" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.008880"/>
+    <testcase name="testExchangeRejectsInvalidQuantitiesProductsAndSettlement" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1480" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="12" time="0.007282"/>
+    <testcase name="testExchangeRejectsOtherBranchesInactiveAndExpiredInventory" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1491" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.005511"/>
+    <testcase name="testExchangeRechecksReturnsAfterLockAndRequiresReviewToken" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1508" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.005849"/>
+    <testcase name="testExchangeFormExcludesEveryOriginalProductIncludingKeptAndPreviouslyReturnedItems" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1519" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="18" time="0.020565"/>
+    <testcase name="testExchangeFormExplainsWhenNoDifferentProductsAreAvailable" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1536" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.012695"/>
+    <testcase name="testExchangeReviewRejectsOriginalProductsEvenIfNotSelectedForReturn" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1546" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.008255"/>
+    <testcase name="testExchangeCompleteRechecksDifferentProductPolicyAndLeavesRecordsUnchanged" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1562" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="16" time="0.006893"/>
+    <testcase name="testExchangeControllerReviewsDifferentProductThenCommitsAndRendersBothReceipts" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1578" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.020579"/>
+    <testcase name="testAccountChangesRevokeAnExistingSession" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1608" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.005781"/>
+    <testcase name="testLoginPageRedirectsAuthenticatedUsersToTheirAllowedHome" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1620" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.005945"/>
+    <testcase name="testLoginPageRendersForGuestsAndRevokedSessions" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1638" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.008218"/>
+    <testcase name="testPasswordRoleAndBranchChangesRevokeSessions" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1658" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.005016"/>
+    <testcase name="testStaleStockCountIsRejectedAndDeliveryAddsToCurrentStock" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1667" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.006941"/>
+    <testcase name="testCashierAddsAndRemovesUnitsWithAccurateLogsAndNoDuplicateSubmit" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1686" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.008010"/>
+    <testcase name="testCashierStockRejectsTooManyUnitsStaleCountsAndOtherBranches" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1706" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.009441"/>
+    <testcase name="testCashierStockRequiresReasonAndTokenAndChecksLockedCount" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1722" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.007479"/>
+    <testcase name="testCorrectionUsesLockedItemsAndRejectsCompetingRevision" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1751" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.005839"/>
+    <testcase name="testValidCorrectionAdjustsStockOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1765" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.007989"/>
+    <testcase name="testDiscountedQuantityChangesWithoutRecordedRuleAreRejected" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1783" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.020025"/>
+    <testcase name="testPromotionChangesCannotAlterHistoricalDiscounts" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1800" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.012113"/>
+    <testcase name="testDiscountedSaleAllowsNotesAndPaymentCorrections" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1812" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.012667"/>
+    <testcase name="testDiscountedCorrectionRepricesOriginalPricesAndCollectsExactAdditionalPayment" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1838" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.008793"/>
+    <testcase name="testDiscountedCorrectionPaysBackDifferenceAndPreservesPreviouslyReturnedChange" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1867" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.006846"/>
+    <testcase name="testCorrectionRechecksFixedDiscountMinimumAndPercentageCap" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1883" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.010538"/>
+    <testcase name="testCorrectionAllocatesDiscountCentavosAndRecalculatesOnlyEligibleItems" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1904" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.007555"/>
+    <testcase name="testCorrectionRequiresExactSettlementAndNonCashReferenceWithoutUsingOriginalChange" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1921" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="16" time="0.028178"/>
+    <testcase name="testCorrectionRejectsStaleDiscountAndStillPreservesMetadataOnlyEdits" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1940" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.014374"/>
+    <testcase name="testCorrectionCanUseRetainedExpiredDiscountAndRollsBackIfAuditCannotBeSaved" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1957" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.011359"/>
+    <testcase name="testCorrectionRespectsCategoryEligibilityAndAllocatesExactCentavosAcrossLines" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1976" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.008645"/>
+    <testcase name="testDiscountedCorrectionsRejectInvalidStockAndPermissionsWithoutChangingRows" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1998" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.067870"/>
+    <testcase name="testCorrectionRefusesToRebillInconsistentTenderButAllowsNotes" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2018" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.026399"/>
+    <testcase name="testCheckoutRollsBackSaleAndStockWhenAuditFails" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2038" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.016744"/>
+    <testcase name="testCheckoutRechecksPriceCostAndSharedProductAfterLock" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2052" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="20" time="0.014396"/>
+    <testcase name="testCheckoutRejectsAmountsOutsideDatabaseRange" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2066" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.006996"/>
+    <testcase name="testCheckoutRechecksBranchAndDiscountBeforeCommit" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2076" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="12" time="0.012070"/>
+    <testcase name="testCheckoutProductDiscountOnlyChangesMatchingProductTotals" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2091" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="12" time="0.008106"/>
+    <testcase name="testAutomaticProductPromotionSavesOnlyMatchingLineAndNormalSnapshot" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2116" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.008239"/>
+    <testcase name="testAutomaticProductPromotionRejectsStaleOrForgedPreview" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2134" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="12" time="0.007832"/>
+    <testcase name="testAutomaticBelowMinimumAndExplicitNoDiscountDoNotApplyPromotion" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2148" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.009795"/>
+    <testcase name="testCheckoutProductDiscountMinimumExcludesOtherProductsAndFixedAmountAppliesOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2164" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.009428"/>
+    <testcase name="testCheckoutCategoryDiscountCapAllocatesExactCentavosOnlyToMatchingItems" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2189" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.013636"/>
+    <testcase name="testCheckoutRejectsUnmatchedInactiveAndOutOfDateDiscountsWithoutSaving" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2213" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="24" time="0.018239"/>
+    <testcase name="testCombinedBenefitCheckoutKeepsPromoOnOtherItemAndSnapshotsBothDiscounts" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2247" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="43" time="0.084252"/>
+    <testcase name="testMultipleProductPromotionsPersistInAutoSeniorAndPwdAndRefundTheirSavedNetAmounts" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2283" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="42" time="0.090085"/>
+    <testcase name="testMultipleProductPromotionPreviewAndEveryRuleAreRechecked" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2326" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="24" time="0.017568"/>
+    <testcase name="testAutomaticCategoryCheckoutPersistsAllocatedSharesWithSeniorPwdAndRefunds" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2348" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="39" time="0.067961"/>
+    <testcase name="testAutomaticCategoryRulesCategoryDeletionAndReclassificationAreRechecked" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2392" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="34" time="0.050399"/>
+    <testcase name="testCombinedBenefitOverlapUsesLowerPayableAndCorrectVatClassification" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2422" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="12" time="0.015455"/>
+    <testcase name="testCombinedBenefitRejectsStalePromoAndRechecksChosenRuleUnderLock" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2439" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.010320"/>
+    <testcase name="testStatutoryCheckoutOnlyExemptsSelectedProductsAndPersistsBeneficiary" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2458" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="17" time="0.007634"/>
+    <testcase name="testStatutoryCheckoutRetryKeepsOriginalBeneficiaryAndChargesOnlyOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2487" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.007624"/>
+    <testcase name="testStatutoryCheckoutRejectsMissingBeneficiaryAndUnconfirmedProductsWithoutSaving" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2507" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.008966"/>
+    <testcase name="testStatutoryCheckoutRechecksEligibilityAndTaxClassificationAtInventoryLock" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2522" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.008204"/>
+    <testcase name="testStatutoryRefundsPayOnlyRecordedNetAmountAcrossPartialReturns" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2536" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.011544"/>
+    <testcase name="testStatutoryProductReportDeductsVatReliefAndActualRefunds" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2560" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.013373"/>
+    <testcase name="testStatutoryCorrectionsPreserveRecordedBenefitsAndQuantityChangesRequireNewSale" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2575" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.008448"/>
+    <testcase name="testCheckoutWithRecoveryColumnCommitsOnceAndKeepsExactTotals" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2591" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.010337"/>
+    <testcase name="testInvoiceCheckoutPersistsDiscountAndLockedMedicineDetailsOnRetry" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2613" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.018460"/>
+    <testcase name="testInvoiceExhaustedRangeExplainsFailureAndDisabledNumberingAllowsCheckout" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2635" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.015098"/>
+    <testcase name="testInvoiceExchangePersistsReplacementMedicineDetails" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2665" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.013918"/>
+    <testcase name="testCheckoutRollsBackWhenLineOrStockLogCannotBeSaved" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2680" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="12" time="0.025044"/>
+    <testcase name="testCheckoutWorksWithoutNewColumnsAndRoundsBeforeSubtracting" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2696" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.006564"/>
+    <testcase name="testRefundConditionsControlStockAndKeepPayoutRecords" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2711" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.010179"/>
+    <testcase name="testExpiredInventoryCannotBeRestocked" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2726" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.004536"/>
+    <testcase name="testDiscountsPreserveExactCentavosAcrossManyItems" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2733" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="20301" time="0.081147"/>
+    <testcase name="testForecastRanksAllCandidatesAndSnapshotsAreNotDisplayLimited" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2748" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.028449"/>
+    <testcase name="testForecastPreviewDoesNotWriteSavedRecords" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2762" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.006134"/>
+    <testcase name="testForecastSnapshotsPersistAcrossBranchesAndSkipSameDayDuplicates" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2772" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.007016"/>
+    <testcase name="testManualForecastRefreshesMatchingRowsAndKeepsScheduledHistory" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2797" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.010135"/>
+    <testcase name="testManualForecastAggregatesBranchesAndSavesAllProducts" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2823" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.027592"/>
+    <testcase name="testManualForecastRollsBackPartialWrites" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2842" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="1" time="0.017116"/>
+    <testcase name="testManualForecastActionSavesThenRedirectsAndRejectsBadFilters" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2855" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.030037"/>
+    <testcase name="testSalesForecastSnapshotsMatchChartForEveryIntervalAndRefreshWithoutDuplicates" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2875" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="98" time="0.032961"/>
+    <testcase name="testSalesForecastSaveRollsBackIfProductSaveFails" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2912" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.022107"/>
+    <testcase name="testSalesForecastTargetWeekHandlesIsoYearBoundary" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2921" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.008651"/>
+    <testcase name="testBranchAvailabilityOnlyShowsSellableOtherBranchStockAndPreservesCart" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2930" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.054915"/>
+    <testcase name="testFailedAuthenticationDoesNotRetainPasswordsOrUnrelatedInput" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2967" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.178589"/>
+    <testcase name="testInvalidNewAccountDoesNotRetainEitherPassword" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2979" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.007513"/>
+    <testcase name="testGetRequestCannotLogOutAnAuthenticatedUser" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2989" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.005049"/>
+    <testcase name="testLogoutRequiresValidCsrfTokenAndPostRoute" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2998" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.011662"/>
+    <testcase name="testRejectedBackupRestoreDoesNotRememberAdminPassword" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3022" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.009939"/>
+    <testcase name="testMalformedLoginFieldsAreRejectedWithoutAnException" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3033" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.014194"/>
+    <testcase name="testStockAdjustmentRollsBackIfActivityAuditFails" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3043" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.014064"/>
+    <testcase name="testStockAdjustmentRejectsPermanentFlagSetDuringLockAndCountOverflow" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3053" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.012695"/>
+    <testcase name="testAuthenticationFailuresAndThrottleAreAuditedWithoutSecrets" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3066" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.017327"/>
+    <testcase name="testAuthenticationSuccessInactiveAndLogoutHaveAccountAuditContext" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3086" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.163565"/>
+    <testcase name="testSavedForecastLogReturnsLatestRecordsAndProductNames" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3108" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.009656"/>
+    <testcase name="testRefundPayoutDateAndMethodAreIndependentOfOriginalSale" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3129" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.006292"/>
+    <testcase name="testLegacyRefundMethodRemainsUnknown" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3144" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.004962"/>
+    <testcase name="testNonResellableFullRefundRetainsInventoryCost" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3152" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.004724"/>
+    <testcase name="testMigrationPreservesExistingRowsAndLegacyReturnBehavior" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3164" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.008915"/>
+    <testcase name="testUpdatedRefundAndReportViewsRender" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3182" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.011037"/>
+    <testcase name="testRefundSlipsSeparateEventsInTheSameSecond" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3196" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.019652"/>
+    <testcase name="testAdminWithoutAssignedBranchStartsShiftBeforeEnteringPos" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="8" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="19" time="0.030064"/>
+    <testcase name="testAdminPosUsesChosenDrawerBranchWithoutChangingAccountAssignment" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="48" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="18" time="0.026826"/>
+    <testcase name="testCashierSignsInToStartPageAndContinuesToPosAfterOpening" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="97" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="19" time="0.113979"/>
+    <testcase name="testCashierDrawerOwnershipHandoverAndCountedOpening" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="148" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.010005"/>
+    <testcase name="testCashierCloseDetectsNewMoneyRequiresReasonsAndFreezesReport" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="170" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.010864"/>
+    <testcase name="testCashierPersistentHeldCartsAreScopedAndBlockClosing" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="188" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.007682"/>
+    <testcase name="testCashierCheckoutRequiresShiftRecordsNetCashAndRetriesOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="202" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.011317"/>
+    <testcase name="testAjaxCheckoutShowsValidationWithoutConsumingFlashOrLosingRetryTokens" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="221" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.008763"/>
+    <testcase name="testCheckoutWithoutShiftPointsToStartForAdminAndCashierAndKeepsCart" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="247" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="21" time="0.010599"/>
+    <testcase name="testAjaxCheckoutSuccessReturnsCompletedSaleAndRecordsDrawerOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="272" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.010920"/>
+    <testcase name="testCashierHeldResumeUsesCurrentPricesAndKeepsUnavailableCarts" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="293" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.008475"/>
+    <testcase name="testCashierRefundBelongsToOperatorAndDoesNotRewriteOriginalShift" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="305" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.015019"/>
+    <testcase name="testCashierExchangeCountsOnlyActualDifferenceAndRetryAfterClose" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="324" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.010242"/>
+    <testcase name="testCashierLegacyCorrectionKeepsOriginalDayAndRecordsAdjustmentNow" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="337" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.011242"/>
+    <testcase name="testCashierPaymentReclassificationIsRestrictedToOriginalOpenShift" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="350" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.018555"/>
+    <testcase name="testCashierDateScopeLegacyUnknownPayoutAndMoneyValidation" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="365" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="17" time="0.007561"/>
+    <testcase name="testCashierWorkspaceRendersOperationalPagesAndAccessIsScoped" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="377" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.094528"/>
+    <testcase name="testCentavoWinningPromoCombinationIsPersistedForBothBenefitsAndTaxStatuses" file="C:\UniServerZ\www\pharxmaco\tests\unit\LatestFixCases.php" line="6" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="33" time="0.015847"/>
+    <testcase name="testOldCheckoutRecoveryPreservesTheNextCustomersCartAndToken" file="C:\UniServerZ\www\pharxmaco\tests\unit\LatestFixCases.php" line="38" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.008103"/>
+    <testcase name="testEqualTotalCorrectionRecordsProductMovementsWithoutChangingDrawerCash" file="C:\UniServerZ\www\pharxmaco\tests\unit\LatestFixCases.php" line="67" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.012357"/>
+    <testcase name="testShiftPrintIncludesEveryMovementAndKeepsClosedFinancialSnapshot" file="C:\UniServerZ\www\pharxmaco\tests\unit\ShiftPrintCases.php" line="5" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.037741"/>
+    <testcase name="testShiftPrintShowsOpeningDifferenceAndPreservesLongEscapedNotes" file="C:\UniServerZ\www\pharxmaco\tests\unit\ShiftPrintCases.php" line="36" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.012483"/>
+    <testcase name="testPdfSalesReconcilesRecordedVatAndPartialRefundAcrossGroupings" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfExportCases.php" line="5" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="68" time="0.064281"/>
+    <testcase name="testSalesReconciliationExplainsScreenshotAndKeepsUnknownDifferencesSeparate" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfExportCases.php" line="47" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="17" time="0.010100"/>
+    <testcase name="testInventoryPdfsShowStableIdsUnitsTrueMovementAndRecordedReferences" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfExportCases.php" line="68" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="19" time="0.010278"/>
+    <testcase name="testManagementRulesAllowFieldPunctuationAndRejectUnsupportedSymbols" file="C:\UniServerZ\www\pharxmaco\tests\unit\ManagementFormCases.php" line="34" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="68" time="0.004772"/>
+    <testcase name="testRequiredSkuAndProductCharacterRulesCannotBeBypassedOnCreateOrEdit" file="C:\UniServerZ\www\pharxmaco\tests\unit\ManagementFormCases.php" line="55" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="142" time="0.025795"/>
+    <testcase name="testManagementCreateAndUpdateKeepSupportedSymbolsAndPasswordPunctuation" file="C:\UniServerZ\www\pharxmaco\tests\unit\ManagementFormCases.php" line="82" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="21" time="0.116038"/>
+    <testcase name="testEveryManagementControllerRejectsSymbolOnlyNamesOnCreateAndUpdate" file="C:\UniServerZ\www\pharxmaco\tests\unit\ManagementFormCases.php" line="101" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="24" time="0.026807"/>
+    <testcase name="testManagementCodesContactsAndAmountsRejectBadSymbolsOnServer" file="C:\UniServerZ\www\pharxmaco\tests\unit\ManagementFormCases.php" line="115" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="44" time="0.058280"/>
+    <testcase name="testSupplierValidationErrorsAppearAfterTheRedirect" file="C:\UniServerZ\www\pharxmaco\tests\unit\ManagementFormCases.php" line="138" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.014057"/>
+  </testsuite>
+</testsuites>

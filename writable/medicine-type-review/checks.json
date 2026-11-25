@@ -1,0 +1,503 @@
+[
+  {
+    "view": "pos",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "pos",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "pos",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "pos",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "pos",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "pos",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "pos",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "pos",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "filters": "Branded/Generic/Non-medicine/Not specified, combined ingredient search, empty state and reset"
+  },
+  {
+    "filterAlignment": true,
+    "width": 320,
+    "dark": false,
+    "densityAndTextCombinations": 6
+  },
+  {
+    "view": "products",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "filterAlignment": true,
+    "width": 320,
+    "dark": true,
+    "densityAndTextCombinations": 6
+  },
+  {
+    "view": "products",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "filterAlignment": true,
+    "width": 390,
+    "dark": false,
+    "densityAndTextCombinations": 6
+  },
+  {
+    "view": "products",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "filterAlignment": true,
+    "width": 390,
+    "dark": true,
+    "densityAndTextCombinations": 6
+  },
+  {
+    "view": "products",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "filterAlignment": true,
+    "width": 768,
+    "dark": false,
+    "densityAndTextCombinations": 6
+  },
+  {
+    "view": "products",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "filterAlignment": true,
+    "width": 768,
+    "dark": true,
+    "densityAndTextCombinations": 6
+  },
+  {
+    "view": "products",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "filterAlignment": true,
+    "width": 1440,
+    "dark": false,
+    "densityAndTextCombinations": 6
+  },
+  {
+    "view": "products",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "filterAlignment": true,
+    "width": 1440,
+    "dark": true,
+    "densityAndTextCombinations": 6
+  },
+  {
+    "view": "products",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "catalog",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "catalog",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "catalog",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "catalog",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "catalog",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "catalog",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "catalog",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "catalog",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "catalog-selected",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "catalog-selected",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "catalog-selected",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "catalog-selected",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "catalog-selected",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "catalog-selected",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "catalog-selected",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "catalog-selected",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "create",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "create",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "create",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "create",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "create",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "create",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "create",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "create",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "edit",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "edit",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "edit",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "edit",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "edit",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "edit",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "edit",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "edit",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "edit-nonmedicine",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "edit-nonmedicine",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "edit-nonmedicine",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "edit-nonmedicine",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "edit-nonmedicine",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "edit-nonmedicine",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "edit-nonmedicine",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "edit-nonmedicine",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "sale-details-senior_citizen",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "sale-details-pwd",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "sale-details-plain",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "statutory": "Senior/PWD verification, product selection, VAT relief and No Discount keeps product promos",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "statutory": "Senior/PWD verification, product selection, VAT relief and No Discount keeps product promos",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "statutory": "Senior/PWD verification, product selection, VAT relief and No Discount keeps product promos",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "statutory": "Senior/PWD verification, product selection, VAT relief and No Discount keeps product promos",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "statutory": "Senior/PWD verification, product selection, VAT relief and No Discount keeps product promos",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "statutory": "Senior/PWD verification, product selection, VAT relief and No Discount keeps product promos",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "statutory": "Beneficiary, saved VAT exemption and mixed tax receipt",
+    "paper": "58",
+    "width": 390
+  },
+  {
+    "statutory": "Beneficiary, saved VAT exemption and mixed tax receipt",
+    "paper": "58",
+    "width": 1440
+  },
+  {
+    "statutory": "Beneficiary, saved VAT exemption and mixed tax receipt",
+    "paper": "80",
+    "width": 390
+  },
+  {
+    "statutory": "Beneficiary, saved VAT exemption and mixed tax receipt",
+    "paper": "80",
+    "width": 1440
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "checks": [
+    "correct singular/plural labels and unchanged measurement abbreviation",
+    "blank quantity/reason keeps actions disabled",
+    "quantity alone and blank/short trimmed reasons cannot submit",
+    "valid positive quantity and reason enables action with unit-aware balance",
+    "zero/negative/fractional/over-limit/exponent quantities rejected",
+    "removal remains limited to available stock",
+    "removal preview uses singular unit",
+    "expiry date and status grouped together",
+    "date sorting remains functional",
+    "no clipping/overflow 320/false",
+    "no clipping/overflow 320/true",
+    "no clipping/overflow 390/false",
+    "no clipping/overflow 390/true",
+    "no clipping/overflow 768/false",
+    "no clipping/overflow 768/true",
+    "no clipping/overflow 1440/false",
+    "no clipping/overflow 1440/true",
+    "valid native POST trims reason and retains stock token"
+  ],
+  "fixture_posts": 1,
+  "javascript_errors": [],
+  "application_database_accessed": false
+}

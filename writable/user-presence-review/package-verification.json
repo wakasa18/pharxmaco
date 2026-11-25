@@ -1,0 +1,10 @@
+{
+    "archive": "C:\\UniServerZ\\www\\pharxmaco\/build\/hostinger-user-presence-2026-10-21.zip",
+    "runtime_files": 15,
+    "sql_files": 1,
+    "bytes": 45740,
+    "sha256": "d4c97d72085443ed9a2904c3247b9d5f86d2723a96f8f83a0c181f6970fc5784",
+    "local_schema_applied": true,
+    "existing_records_preserved": true,
+    "hosting_deployed": false
+}

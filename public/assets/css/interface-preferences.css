@@ -1,0 +1,34 @@
+/* Preferences load after the workspace skin so fixed component styles cannot mask them. */
+html[data-text-size="large"] { --pref-body-size: 15px; --pref-small-size: 13px; }
+html[data-text-size="extra-large"] { --pref-body-size: 16px; --pref-small-size: 14px; }
+html:is([data-text-size="large"], [data-text-size="extra-large"]) .content :is(.page-header, .rp-header, .pos-page-header) h1 {
+    font-size: calc(clamp(26px, 2.5vw, 34px) * var(--ui-font-scale)) !important;
+}
+html:is([data-text-size="large"], [data-text-size="extra-large"]) .content :is(.page-header p, .card-head p, .section-head p, label, .label, .btn, .tag, .badge):not(.interface-preview *) {
+    font-size: var(--pref-body-size) !important;
+}
+html:is([data-text-size="large"], [data-text-size="extra-large"]) .content :is(input, select, textarea):not(.sample-input) {
+    font-size: var(--pref-body-size) !important;
+}
+html:is([data-text-size="large"], [data-text-size="extra-large"]) .content table:not(.sample-table) td { font-size: var(--pref-body-size) !important; }
+html:is([data-text-size="large"], [data-text-size="extra-large"]) .content table:not(.sample-table) th { font-size: var(--pref-small-size) !important; }
+/* Inline sizes in record values must also follow the selected reading size. */
+html:is([data-text-size="large"], [data-text-size="extra-large"]) .content table:not(.sample-table) td [style*="font-size"] { font-size: inherit !important; }
+html:is([data-text-size="large"], [data-text-size="extra-large"]) .content .mobile-record-ready td::before { font-size: var(--pref-small-size) !important; }
+
+html[data-density="compact"] { --pref-head-pad: 13px 15px; --pref-body-pad: 13px 15px; --pref-th-pad: 8px 10px; --pref-td-pad: 9px 10px; --pref-record-pad: 12px; --pref-record-gap: 9px; }
+html[data-density="spacious"] { --pref-head-pad: 22px 24px; --pref-body-pad: 22px 24px; --pref-th-pad: 14px 17px; --pref-td-pad: 16px 17px; --pref-record-pad: 20px; --pref-record-gap: 18px; }
+html:is([data-density="compact"], [data-density="spacious"]) .content :is(.card-head, .editor-page .card-head) { padding: var(--pref-head-pad); }
+html:is([data-density="compact"], [data-density="spacious"]) .content :is(.card-body, .editor-page .card-body, .editor-page .card > form) { padding: var(--pref-body-pad); }
+html:is([data-density="compact"], [data-density="spacious"]) .content .table-wrap > table:not(.sample-table) > thead > tr > th { padding: var(--pref-th-pad); }
+html:is([data-density="compact"], [data-density="spacious"]) .content .table-wrap > table:not(.sample-table) > tbody > tr > td { padding: var(--pref-td-pad); }
+@media (max-width: 900px) {
+    html:is([data-density="compact"], [data-density="spacious"]) .content .table-wrap > .mobile-record-ready > tbody > tr { padding: var(--pref-record-pad); gap: var(--pref-record-gap); }
+    html:is([data-density="compact"], [data-density="spacious"]) .content .table-wrap > .mobile-record-ready > tbody > tr > td { padding: 0; }
+    html:is([data-density="compact"], [data-density="spacious"]) .content .mobile-record-ready td.record-title { padding-bottom: var(--pref-record-gap); }
+    html:is([data-density="compact"], [data-density="spacious"]) .content .mobile-record-ready td.record-actions { padding-top: var(--pref-record-gap); }
+}
+@media (max-width: 600px) {
+    html[data-density="spacious"] { --pref-head-pad: 17px; --pref-body-pad: 17px; }
+    html:is([data-text-size="large"], [data-text-size="extra-large"]) .content :is(input, select, textarea):not(.sample-input) { font-size: 16px !important; }
+}

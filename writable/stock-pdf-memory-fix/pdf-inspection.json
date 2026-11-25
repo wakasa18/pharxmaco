@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "name": "stock-complete",
+      "pages": 113,
+      "record_ids_verified": 1087,
+      "order_complete": true,
+      "page_numbers_and_headers": true,
+      "rendered_pages": [
+        1,
+        2,
+        56,
+        113
+      ]
+    },
+    {
+      "name": "stock-filtered",
+      "pages": 7,
+      "record_ids_verified": 55,
+      "order_complete": true,
+      "page_numbers_and_headers": true,
+      "rendered_pages": [
+        1,
+        2,
+        3,
+        7
+      ]
+    },
+    {
+      "name": "stock-search",
+      "pages": 1,
+      "record_ids_verified": 1,
+      "order_complete": true,
+      "page_numbers_and_headers": true,
+      "rendered_pages": [
+        1
+      ]
+    },
+    {
+      "name": "stock-empty",
+      "pages": 1,
+      "record_ids_verified": 0,
+      "order_complete": true,
+      "page_numbers_and_headers": true,
+      "rendered_pages": [
+        1
+      ]
+    },
+    {
+      "name": "stock-cashier",
+      "pages": 7,
+      "record_ids_verified": 55,
+      "order_complete": true,
+      "page_numbers_and_headers": true,
+      "rendered_pages": [
+        1,
+        2,
+        3,
+        7
+      ]
+    },
+    {
+      "name": "stock-other",
+      "pages": 1,
+      "record_ids_verified": 1,
+      "order_complete": true,
+      "page_numbers_and_headers": true,
+      "rendered_pages": [
+        1
+      ]
+    },
+    {
+      "name": "stress-10000",
+      "pages": 1029,
+      "record_ids_verified": 10000,
+      "order_complete": true,
+      "page_numbers_and_headers": true,
+      "rendered_pages": [
+        1,
+        2,
+        514,
+        1029
+      ]
+    }
+  ],
+  "rendered_pages": 19
+}

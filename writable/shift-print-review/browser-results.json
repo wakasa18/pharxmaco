@@ -1,0 +1,127 @@
+[
+  {
+    "state": "open",
+    "title": "SHIFT-000001 - Interim report",
+    "heading": "Interim shift report",
+    "controlsHidden": true,
+    "bodyText": "PHARXMACO DRUGSTORE\n\nInterim shift report\n\nBranch A · Main drawer\n\nSHIFT-000001\nInterim · Still open\nGenerated October 16, 2026 at 12:05 PM PHT\nCashier\nTest Staff\nClosed by\nShift still open\nOpened · PHT\nOctober 16, 2026 at 12:05 PM\nClosed · PHT\n—\nSales recorded\n₱10.00\nSales transactions\n1\nUnits sold\n1\nRefund payouts\n₱0.00\nDiscounts\n₱0.00\nNet collections\n₱10.00\n\nSales are after discounts and VAT relief (₱0.00). Refunds are separate. Net collections exclude the opening float and cash added/removed.\n\nCash drawer reconciliation\nOpening cash\n₱100.00\nCash payments received\n₱10.00\nLess cash payouts\n₱0.00\nCash added\n₱20.00\nLess cash removed\n₱0.00\nExpected cash\n₱130.00\nPhysical closing count\nNot counted yet\n\nOpening cash + cash received − cash payouts + cash added − cash removed.\n\nPayment breakdown\nMethod\tReceived\tPaid out\tNet\nCash\t₱10.00\t₱0.00\t₱10.00\nGCash\t₱0.00\t₱0.00\t₱0.00\nCard\t₱0.00\t₱0.00\t₱0.00\n\nDigital payments are excluded from physical drawer cash.\n\nOpening handover\nPrevious cash left / expected\nNot recorded\nOpening physical count\n₱100.00\nOpening over / short\nNot applicable\n\nHandover: Recorded when the shift closes\n\nManager review: Pending shift close\n\nCashier signature\nTest Staff · Date / time: __________________\nReceiving cashier / manager\nName: __________________ · Date / time: __________________\n\nInterim figures only; the drawer remains open · Details available with “Print with details”.",
+    "productRows": 1,
+    "activityRows": 2,
+    "width": 794,
+    "viewport": 794,
+    "cards": [],
+    "signature": {
+      "x": 0,
+      "y": 584.703125,
+      "width": 794,
+      "height": 35.984375
+    },
+    "summary": {
+      "x": 0,
+      "y": 0,
+      "width": 794,
+      "height": 651.28125
+    },
+    "detailsVisible": false
+  },
+  {
+    "state": "closed",
+    "title": "SHIFT-000001 - Closing report",
+    "heading": "Shift closing report",
+    "controlsHidden": true,
+    "bodyText": "PHARXMACO DRUGSTORE\n\nShift closing report\n\nBranch A · Main drawer\n\nSHIFT-000001\nFinal · Closed\nGenerated October 16, 2026 at 12:05 PM PHT\nCashier\nTest Staff\nClosed by\nTest Staff\nOpened · PHT\nOctober 16, 2026 at 12:05 PM\nClosed · PHT\nOctober 16, 2026 at 12:05 PM\nSales recorded\n₱10.00\nSales transactions\n1\nUnits sold\n1\nRefund payouts\n₱0.00\nDiscounts\n₱0.00\nNet collections\n₱10.00\n\nSales are after discounts and VAT relief (₱0.00). Refunds are separate. Net collections exclude the opening float and cash added/removed.\n\nCash drawer reconciliation\nOpening cash\n₱100.00\nCash payments received\n₱10.00\nLess cash payouts\n₱0.00\nCash added\n₱20.00\nLess cash removed\n₱0.00\nExpected cash\n₱130.00\nCash counted\n₱130.00\nClosing over / short\nBalanced ₱0.00\nLeft in drawer\n₱100.00\nRemoved at closing\n₱30.00\n\nOpening cash + cash received − cash payouts + cash added − cash removed.\n\nPayment breakdown\nMethod\tReceived\tPaid out\tNet\nCash\t₱10.00\t₱0.00\t₱10.00\nGCash\t₱0.00\t₱0.00\t₱0.00\nCard\t₱0.00\t₱0.00\t₱0.00\n\nDigital payments are excluded from physical drawer cash.\n\nOpening handover\nPrevious cash left / expected\nNot recorded\nOpening physical count\n₱100.00\nOpening over / short\nNot applicable\n\nHandover: Next Cashier · Pending\n\nManager review: Awaiting review\n\nClosing note: End of shift\n\nCashier signature\nTest Staff · Date / time: __________________\nReceiving cashier / manager\nName: __________________ · Date / time: __________________\n\nSaved closing totals · Details available with “Print with details”.",
+    "productRows": 1,
+    "activityRows": 2,
+    "width": 794,
+    "viewport": 794,
+    "cards": [],
+    "signature": {
+      "x": 0,
+      "y": 641.4375,
+      "width": 794,
+      "height": 35.984375
+    },
+    "summary": {
+      "x": 0,
+      "y": 0,
+      "width": 794,
+      "height": 708.015625
+    },
+    "detailsVisible": false
+  },
+  {
+    "state": "busy",
+    "title": "SHIFT-000001 - Closing report",
+    "heading": "Shift closing report",
+    "controlsHidden": true,
+    "bodyText": "PHARXMACO DRUGSTORE\n\nShift closing report\n\nBranch A · Main drawer\n\nSHIFT-000001\nFinal · Closed\nGenerated October 16, 2026 at 12:05 PM PHT\nCashier\nTest Staff\nClosed by\nTest Staff\nOpened · PHT\nOctober 16, 2026 at 12:05 PM\nClosed · PHT\nOctober 16, 2026 at 12:05 PM\nSales recorded\n₱120.00\nSales transactions\n120\nUnits sold\n120\nRefund payouts\n₱0.00\nDiscounts\n₱0.00\nNet collections\n₱120.00\n\nSales are after discounts and VAT relief (₱0.00). Refunds are separate. Net collections exclude the opening float and cash added/removed.\n\nCash drawer reconciliation\nOpening cash\n₱100.00\nCash payments received\n₱120.00\nLess cash payouts\n₱0.00\nCash added\n₱0.00\nLess cash removed\n₱0.00\nExpected cash\n₱220.00\nCash counted\n₱220.00\nClosing over / short\nBalanced ₱0.00\nLeft in drawer\n₱100.00\nRemoved at closing\n₱120.00\n\nOpening cash + cash received − cash payouts + cash added − cash removed.\n\nPayment breakdown\nMethod\tReceived\tPaid out\tNet\nCash\t₱120.00\t₱0.00\t₱120.00\nGCash\t₱0.00\t₱0.00\t₱0.00\nCard\t₱0.00\t₱0.00\t₱0.00\n\nDigital payments are excluded from physical drawer cash.\n\nOpening handover\nPrevious cash left / expected\nNot recorded\nOpening physical count\n₱100.00\nOpening over / short\nNot applicable\n\nHandover: Next Cashier · Pending\n\nManager review: Awaiting review\n\nClosing note: Layout stress test, synthetic data only\n\nCashier signature\nTest Staff · Date / time: __________________\nReceiving cashier / manager\nName: __________________ · Date / time: __________________\n\nSaved closing totals · Details available with “Print with details”.\n\nSHIFT-000001 · Branch A\nProducts sold and returned\n\n24 products · Amounts after discounts and VAT relief, with returns deducted.\n\nProduct\tSold\tReturned\tReplaced\tQty corrections\tAmount\nDemo medicine 1 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 10 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 11 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 12 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 13 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 14 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 15 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 16 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 17 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 18 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 19 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 2 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 20 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 21 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 22 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 23 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 24 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 3 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 4 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 5 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 6 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 7 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 8 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nDemo medicine 9 - extended product description and strength for line wrapping\t5\t0\t0\t0\t₱5.00\nSHIFT-000001 · Branch A\nComplete shift activity\n\nAll 120 movements · Oldest first · Opening float and closing removal appear on the summary.\n\nDate / time · PHT\tActivity\tInvoice / reason\tMethod\tAmount\nOctober 16, 2026 at 12:05 PM\tSale #1\tDEMO-SHIFT-000001\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #2\tDEMO-SHIFT-000002\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #3\tDEMO-SHIFT-000003\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #4\tDEMO-SHIFT-000004\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #5\tDEMO-SHIFT-000005\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #6\tDEMO-SHIFT-000006\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #7\tDEMO-SHIFT-000007\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #8\tDEMO-SHIFT-000008\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #9\tDEMO-SHIFT-000009\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #10\tDEMO-SHIFT-000010\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #11\tDEMO-SHIFT-000011\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #12\tDEMO-SHIFT-000012\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #13\tDEMO-SHIFT-000013\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #14\tDEMO-SHIFT-000014\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #15\tDEMO-SHIFT-000015\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #16\tDEMO-SHIFT-000016\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #17\tDEMO-SHIFT-000017\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #18\tDEMO-SHIFT-000018\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #19\tDEMO-SHIFT-000019\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #20\tDEMO-SHIFT-000020\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #21\tDEMO-SHIFT-000021\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #22\tDEMO-SHIFT-000022\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #23\tDEMO-SHIFT-000023\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #24\tDEMO-SHIFT-000024\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #25\tDEMO-SHIFT-000025\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #26\tDEMO-SHIFT-000026\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #27\tDEMO-SHIFT-000027\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #28\tDEMO-SHIFT-000028\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #29\tDEMO-SHIFT-000029\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #30\tDEMO-SHIFT-000030\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #31\tDEMO-SHIFT-000031\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #32\tDEMO-SHIFT-000032\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #33\tDEMO-SHIFT-000033\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #34\tDEMO-SHIFT-000034\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #35\tDEMO-SHIFT-000035\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #36\tDEMO-SHIFT-000036\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #37\tDEMO-SHIFT-000037\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #38\tDEMO-SHIFT-000038\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #39\tDEMO-SHIFT-000039\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #40\tDEMO-SHIFT-000040\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #41\tDEMO-SHIFT-000041\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #42\tDEMO-SHIFT-000042\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #43\tDEMO-SHIFT-000043\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #44\tDEMO-SHIFT-000044\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #45\tDEMO-SHIFT-000045\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #46\tDEMO-SHIFT-000046\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #47\tDEMO-SHIFT-000047\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #48\tDEMO-SHIFT-000048\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #49\tDEMO-SHIFT-000049\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #50\tDEMO-SHIFT-000050\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #51\tDEMO-SHIFT-000051\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #52\tDEMO-SHIFT-000052\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #53\tDEMO-SHIFT-000053\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #54\tDEMO-SHIFT-000054\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #55\tDEMO-SHIFT-000055\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #56\tDEMO-SHIFT-000056\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #57\tDEMO-SHIFT-000057\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #58\tDEMO-SHIFT-000058\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #59\tDEMO-SHIFT-000059\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #60\tDEMO-SHIFT-000060\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #61\tDEMO-SHIFT-000061\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #62\tDEMO-SHIFT-000062\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #63\tDEMO-SHIFT-000063\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #64\tDEMO-SHIFT-000064\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #65\tDEMO-SHIFT-000065\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #66\tDEMO-SHIFT-000066\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #67\tDEMO-SHIFT-000067\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #68\tDEMO-SHIFT-000068\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #69\tDEMO-SHIFT-000069\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #70\tDEMO-SHIFT-000070\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #71\tDEMO-SHIFT-000071\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #72\tDEMO-SHIFT-000072\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #73\tDEMO-SHIFT-000073\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #74\tDEMO-SHIFT-000074\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #75\tDEMO-SHIFT-000075\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #76\tDEMO-SHIFT-000076\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #77\tDEMO-SHIFT-000077\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #78\tDEMO-SHIFT-000078\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #79\tDEMO-SHIFT-000079\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #80\tDEMO-SHIFT-000080\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #81\tDEMO-SHIFT-000081\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #82\tDEMO-SHIFT-000082\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #83\tDEMO-SHIFT-000083\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #84\tDEMO-SHIFT-000084\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #85\tDEMO-SHIFT-000085\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #86\tDEMO-SHIFT-000086\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #87\tDEMO-SHIFT-000087\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #88\tDEMO-SHIFT-000088\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #89\tDEMO-SHIFT-000089\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #90\tDEMO-SHIFT-000090\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #91\tDEMO-SHIFT-000091\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #92\tDEMO-SHIFT-000092\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #93\tDEMO-SHIFT-000093\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #94\tDEMO-SHIFT-000094\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #95\tDEMO-SHIFT-000095\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #96\tDEMO-SHIFT-000096\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #97\tDEMO-SHIFT-000097\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #98\tDEMO-SHIFT-000098\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #99\tDEMO-SHIFT-000099\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #100\tDEMO-SHIFT-000100\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #101\tDEMO-SHIFT-000101\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #102\tDEMO-SHIFT-000102\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #103\tDEMO-SHIFT-000103\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #104\tDEMO-SHIFT-000104\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #105\tDEMO-SHIFT-000105\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #106\tDEMO-SHIFT-000106\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #107\tDEMO-SHIFT-000107\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #108\tDEMO-SHIFT-000108\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #109\tDEMO-SHIFT-000109\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #110\tDEMO-SHIFT-000110\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #111\tDEMO-SHIFT-000111\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #112\tDEMO-SHIFT-000112\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #113\tDEMO-SHIFT-000113\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #114\tDEMO-SHIFT-000114\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #115\tDEMO-SHIFT-000115\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #116\tDEMO-SHIFT-000116\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #117\tDEMO-SHIFT-000117\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #118\tDEMO-SHIFT-000118\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #119\tDEMO-SHIFT-000119\tCASH\t₱1.00\nOctober 16, 2026 at 12:05 PM\tSale #120\tDEMO-SHIFT-000120\tCASH\t₱1.00",
+    "productRows": 24,
+    "activityRows": 120,
+    "width": 794,
+    "viewport": 794,
+    "cards": [],
+    "signature": {
+      "x": 0,
+      "y": 641.4375,
+      "width": 794,
+      "height": 35.984375
+    },
+    "summary": {
+      "x": 0,
+      "y": 0,
+      "width": 794,
+      "height": 708.015625
+    },
+    "detailsVisible": true
+  },
+  {
+    "state": "busy-summary",
+    "title": "SHIFT-000001 - Closing report",
+    "heading": "Shift closing report",
+    "controlsHidden": true,
+    "bodyText": "PHARXMACO DRUGSTORE\n\nShift closing report\n\nBranch A · Main drawer\n\nSHIFT-000001\nFinal · Closed\nGenerated October 16, 2026 at 12:05 PM PHT\nCashier\nTest Staff\nClosed by\nTest Staff\nOpened · PHT\nOctober 16, 2026 at 12:05 PM\nClosed · PHT\nOctober 16, 2026 at 12:05 PM\nSales recorded\n₱120.00\nSales transactions\n120\nUnits sold\n120\nRefund payouts\n₱0.00\nDiscounts\n₱0.00\nNet collections\n₱120.00\n\nSales are after discounts and VAT relief (₱0.00). Refunds are separate. Net collections exclude the opening float and cash added/removed.\n\nCash drawer reconciliation\nOpening cash\n₱100.00\nCash payments received\n₱120.00\nLess cash payouts\n₱0.00\nCash added\n₱0.00\nLess cash removed\n₱0.00\nExpected cash\n₱220.00\nCash counted\n₱220.00\nClosing over / short\nBalanced ₱0.00\nLeft in drawer\n₱100.00\nRemoved at closing\n₱120.00\n\nOpening cash + cash received − cash payouts + cash added − cash removed.\n\nPayment breakdown\nMethod\tReceived\tPaid out\tNet\nCash\t₱120.00\t₱0.00\t₱120.00\nGCash\t₱0.00\t₱0.00\t₱0.00\nCard\t₱0.00\t₱0.00\t₱0.00\n\nDigital payments are excluded from physical drawer cash.\n\nOpening handover\nPrevious cash left / expected\nNot recorded\nOpening physical count\n₱100.00\nOpening over / short\nNot applicable\n\nHandover: Next Cashier · Pending\n\nManager review: Awaiting review\n\nClosing note: Layout stress test, synthetic data only\n\nCashier signature\nTest Staff · Date / time: __________________\nReceiving cashier / manager\nName: __________________ · Date / time: __________________\n\nSaved closing totals · Details available with “Print with details”.",
+    "productRows": 24,
+    "activityRows": 120,
+    "width": 794,
+    "viewport": 794,
+    "cards": [],
+    "signature": {
+      "x": 0,
+      "y": 641.4375,
+      "width": 794,
+      "height": 35.984375
+    },
+    "summary": {
+      "x": 0,
+      "y": 0,
+      "width": 794,
+      "height": 708.015625
+    },
+    "detailsVisible": false
+  },
+  {
+    "state": "notes",
+    "title": "SHIFT-000002 - Interim report",
+    "heading": "Interim shift report",
+    "controlsHidden": true,
+    "bodyText": "PHARXMACO DRUGSTORE\n\nInterim shift report\n\nBranch A · Main drawer\n\nSHIFT-000002\nInterim · Still open\nGenerated October 16, 2026 at 12:05 PM PHT\nCashier\nNext Cashier\nClosed by\nShift still open\nOpened · PHT\nOctober 16, 2026 at 12:05 PM\nClosed · PHT\n—\nSales recorded\n₱0.00\nSales transactions\n0\nUnits sold\n0\nRefund payouts\n₱0.00\nDiscounts\n₱0.00\nNet collections\n₱0.00\n\nSales are after discounts and VAT relief (₱0.00). Refunds are separate. Net collections exclude the opening float and cash added/removed.\n\nCash drawer reconciliation\nOpening cash\n₱70.00\nCash payments received\n₱0.00\nLess cash payouts\n₱0.00\nCash added\n₱0.00\nLess cash removed\n₱0.00\nExpected cash\n₱70.00\nPhysical closing count\nNot counted yet\n\nOpening cash + cash received − cash payouts + cash added − cash removed.\n\nPayment breakdown\nMethod\tReceived\tPaid out\tNet\nCash\t₱0.00\t₱0.00\t₱0.00\nGCash\t₱0.00\t₱0.00\t₱0.00\nCard\t₱0.00\t₱0.00\t₱0.00\n\nDigital payments are excluded from physical drawer cash.\n\nOpening handover\nPrevious cash left / expected\n₱75.00\nOpening physical count\n₱70.00\nOpening over / short\nShort ₱5.00\n\nHandover: Recorded when the shift closes\n\nManager review: Pending shift close\n\nOpening note: <script>alert(\"note\")</script> Physical count checked by both cashiers. Physical count checked by both cashiers. Physical count checked by both cashiers. Physic… See notes continuation.\n\nCashier signature\nNext Cashier · Date / time: __________________\nReceiving cashier / manager\nName: __________________ · Date / time: __________________\n\nInterim figures only; the drawer remains open · Details available with “Print with details”.\n\nSHIFT-000002 · Branch A\nNotes continuation\nOpening note\n\n<script>alert(\"note\")</script> Physical count checked by both cashiers. Physical count checked by both cashiers. Physical count checked by both cashiers. Physical count checked by both cashiers. Physical count checked by both cashiers. Physical count checked by both cashiers. Physical count checked by both cashiers. Physical count checked by both cashiers. Physical count checked by both cashiers. Physical count checked by both cashiers. End of complete note.",
+    "productRows": 1,
+    "activityRows": 1,
+    "width": 794,
+    "viewport": 794,
+    "cards": [],
+    "signature": {
+      "x": 0,
+      "y": 614.296875,
+      "width": 794,
+      "height": 35.984375
+    },
+    "summary": {
+      "x": 0,
+      "y": 0,
+      "width": 794,
+      "height": 680.875
+    },
+    "detailsVisible": false
+  }
+]

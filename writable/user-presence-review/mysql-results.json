@@ -1,0 +1,15 @@
+{
+    "checks": [
+        "Repeatable phpMyAdmin import creates no fabricated presence",
+        "Native migration agrees with imported schema",
+        "Multiple administrator sessions aggregate to one online user",
+        "Reimport preserves active presence capabilities",
+        "Same-second MySQL heartbeats retain authorization",
+        "Logout revokes one capability without ending another browser",
+        "Presence never renews the cashier lease",
+        "Expired cashier ownership blocks presence",
+        "Account revocation immediately removes online status"
+    ],
+    "scratch_database_removed": true,
+    "application_records_changed": false
+}

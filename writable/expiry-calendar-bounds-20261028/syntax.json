@@ -1,0 +1,177 @@
+[
+  {
+    "file": "app/Config/InventoryExpiry.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Config/InventoryExpiry.php"
+  },
+  {
+    "file": "app/Controllers/Admin/ReportsController.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Controllers/Admin/ReportsController.php"
+  },
+  {
+    "file": "app/Controllers/Admin/SaleCorrection.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Controllers/Admin/SaleCorrection.php"
+  },
+  {
+    "file": "app/Controllers/Cashier/ExchangeController.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Controllers/Cashier/ExchangeController.php"
+  },
+  {
+    "file": "app/Controllers/Cashier/SalesController.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Controllers/Cashier/SalesController.php"
+  },
+  {
+    "file": "app/Controllers/Products.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Controllers/Products.php"
+  },
+  {
+    "file": "app/Libraries/BenefitProductPromotion.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/BenefitProductPromotion.php"
+  },
+  {
+    "file": "app/Libraries/CsvExport.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/CsvExport.php"
+  },
+  {
+    "file": "app/Libraries/DiscountAllocator.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/DiscountAllocator.php"
+  },
+  {
+    "file": "app/Libraries/DiscountPolicy.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/DiscountPolicy.php"
+  },
+  {
+    "file": "app/Libraries/DisplayDate.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/DisplayDate.php"
+  },
+  {
+    "file": "app/Libraries/ExpiryDatePolicy.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/ExpiryDatePolicy.php"
+  },
+  {
+    "file": "app/Libraries/ExpiryStockResolution.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/ExpiryStockResolution.php"
+  },
+  {
+    "file": "app/Libraries/PdfFactory.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/PdfFactory.php"
+  },
+  {
+    "file": "app/Libraries/ProductExchange.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/ProductExchange.php"
+  },
+  {
+    "file": "app/Libraries/ProductPromotion.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/ProductPromotion.php"
+  },
+  {
+    "file": "app/Libraries/ReceiptInvoice.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/ReceiptInvoice.php"
+  },
+  {
+    "file": "app/Libraries/ReportPdf.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/ReportPdf.php"
+  },
+  {
+    "file": "app/Libraries/ReturnCondition.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/ReturnCondition.php"
+  },
+  {
+    "file": "app/Libraries/StockExpiryProvenance.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/StockExpiryProvenance.php"
+  },
+  {
+    "file": "app/Models/BranchProductModel.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Models/BranchProductModel.php"
+  },
+  {
+    "file": "app/Models/SaleItemModel.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Models/SaleItemModel.php"
+  },
+  {
+    "file": "app/Views/admin/reports/expiry_action.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/admin/reports/expiry_action.php"
+  },
+  {
+    "file": "app/Views/admin/reports/index.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/admin/reports/index.php"
+  },
+  {
+    "file": "app/Views/admin/reports/reports_pdf.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/admin/reports/reports_pdf.php"
+  },
+  {
+    "file": "app/Views/cashier/sales/exchange.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/cashier/sales/exchange.php"
+  },
+  {
+    "file": "app/Views/cashier/sales/index.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/cashier/sales/index.php"
+  },
+  {
+    "file": "app/Views/cashier/sales/refund_partial.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/cashier/sales/refund_partial.php"
+  },
+  {
+    "file": "app/Views/layouts/staff.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/layouts/staff.php"
+  },
+  {
+    "file": "app/Views/partials/expiry_date_field.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/partials/expiry_date_field.php"
+  },
+  {
+    "file": "app/Views/products/catalog.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/products/catalog.php"
+  },
+  {
+    "file": "app/Views/products/create.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/products/create.php"
+  },
+  {
+    "file": "app/Views/products/edit.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/products/edit.php"
+  },
+  {
+    "file": "public/assets/js/date-picker.js",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "file": "public/assets/js/expiry-date-field.js",
+    "exit_code": 0,
+    "output": ""
+  }
+]

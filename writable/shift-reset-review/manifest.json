@@ -1,0 +1,28 @@
+{
+  "source_path": "C:\\Users\\warre\\Downloads\\u315645644_pharxmacotest (6).sql",
+  "source_sha256": "34bcab5ab03ff7aa542e39afe6d5be400fe2c918081988bee0a10515c46fc4cc",
+  "cleaned_export": "C:\\UniServerZ\\www\\pharxmaco\\database\\exports\\u315645644_pharxmacotest-without-cashier-shifts-2026-10-16.sql",
+  "cleaned_sha256": "9c58f73341bbc5f77d70a471e4d1c8df18f2b3a77bd0f90f48edc524655b56c0",
+  "patch": "C:\\UniServerZ\\www\\pharxmaco\\database\\upgrades\\2026-10-16-clear-cashier-shifts.sql",
+  "original_row_counts": {
+    "activity_logs": 260,
+    "branches": 2,
+    "branch_products": 116,
+    "cashier_drawers": 2,
+    "cashier_events": 1,
+    "cashier_shifts": 2,
+    "cashier_shift_actions": 3,
+    "categories": 11,
+    "discounts": 6,
+    "forecasting_data": 446,
+    "migrations": 17,
+    "products": 66,
+    "refund_items": 16,
+    "report_exports": 27,
+    "sales": 780,
+    "sale_items": 1330,
+    "stock_logs": 1330,
+    "suppliers": 5,
+    "users": 7
+  }
+}

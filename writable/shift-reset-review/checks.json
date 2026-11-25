@@ -1,0 +1,37 @@
+{
+    "source_sha256": "34bcab5ab03ff7aa542e39afe6d5be400fe2c918081988bee0a10515c46fc4cc",
+    "cleaned_sha256": "9c58f73341bbc5f77d70a471e4d1c8df18f2b3a77bd0f90f48edc524655b56c0",
+    "shifts_removed": 2,
+    "actions_removed": 3,
+    "shift_reviews_removed": 0,
+    "preserved_row_counts": {
+        "activity_logs": 260,
+        "branches": 2,
+        "branch_products": 116,
+        "cashier_drawers": 2,
+        "cashier_events": 1,
+        "cashier_event_reviews": 0,
+        "cashier_held_sales": 0,
+        "categories": 11,
+        "discounts": 6,
+        "forecasting_data": 446,
+        "migrations": 17,
+        "products": 66,
+        "receipt_invoice_sequences": 0,
+        "refund_items": 16,
+        "report_exports": 27,
+        "sales": 780,
+        "sale_items": 1330,
+        "stock_logs": 1330,
+        "suppliers": 5,
+        "users": 7
+    },
+    "verified": [
+        "Existing-database patch imported twice.",
+        "All fields outside shift records and explicit shift links preserved.",
+        "Daily sales, payment and product totals unchanged.",
+        "Cleaned full export restores to exactly the patched data.",
+        "A cashier can open a new shift without old cash or reused shift IDs."
+    ],
+    "local_application_database_modified": false
+}

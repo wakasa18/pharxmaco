@@ -1,0 +1,87 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "label": "Cash tender is editable and reference optional"
+    },
+    {
+      "width": 1440,
+      "label": "Cash change remains available"
+    },
+    {
+      "width": 1440,
+      "label": "GCash fills exact total and locks tender"
+    },
+    {
+      "width": 1440,
+      "label": "GCash reference required and no cash change"
+    },
+    {
+      "width": 1440,
+      "label": "Whitespace reference keeps completion disabled"
+    },
+    {
+      "width": 1440,
+      "label": "Valid reference permits completion"
+    },
+    {
+      "width": 1440,
+      "label": "Cart quantity changes update exact noncash total"
+    },
+    {
+      "width": 1440,
+      "label": "Benefit recalculation updates exact noncash tender"
+    },
+    {
+      "width": 1440,
+      "label": "Card uses exact discounted amount and required reference"
+    },
+    {
+      "width": 1440,
+      "label": "Cash re-enables tender after switching back"
+    },
+    {
+      "width": 390,
+      "label": "Cash tender is editable and reference optional"
+    },
+    {
+      "width": 390,
+      "label": "Cash change remains available"
+    },
+    {
+      "width": 390,
+      "label": "GCash fills exact total and locks tender"
+    },
+    {
+      "width": 390,
+      "label": "GCash reference required and no cash change"
+    },
+    {
+      "width": 390,
+      "label": "Whitespace reference keeps completion disabled"
+    },
+    {
+      "width": 390,
+      "label": "Valid reference permits completion"
+    },
+    {
+      "width": 390,
+      "label": "Cart quantity changes update exact noncash total"
+    },
+    {
+      "width": 390,
+      "label": "Benefit recalculation updates exact noncash tender"
+    },
+    {
+      "width": 390,
+      "label": "Card uses exact discounted amount and required reference"
+    },
+    {
+      "width": 390,
+      "label": "Cash re-enables tender after switching back"
+    }
+  ],
+  "exceptions": [],
+  "application_database_accessed": false,
+  "fixture_only": true
+}

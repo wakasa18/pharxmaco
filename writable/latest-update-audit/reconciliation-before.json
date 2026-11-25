@@ -1,0 +1,175 @@
+{
+    "sale": {
+        "id": "41",
+        "invoice_no": "INV-20260617103518-97E5EE",
+        "total_amount": "625.00",
+        "discount_amount": "125.00",
+        "final_total": "500.00",
+        "payment_method": "cash",
+        "amount_paid": "1000.00",
+        "change_amount": "500.00",
+        "status": "refunded",
+        "notes": "",
+        "sale_date": "2026-06-17 10:35:18"
+    },
+    "items": [
+        {
+            "id": "57",
+            "product_id": "7",
+            "quantity": "3",
+            "price": "75.00",
+            "subtotal": "225.00",
+            "discount_applied": "45.00",
+            "vat_exemption_amount": "0.00"
+        },
+        {
+            "id": "58",
+            "product_id": "10",
+            "quantity": "4",
+            "price": "50.00",
+            "subtotal": "200.00",
+            "discount_applied": "40.00",
+            "vat_exemption_amount": "0.00"
+        },
+        {
+            "id": "59",
+            "product_id": "12",
+            "quantity": "1",
+            "price": "200.00",
+            "subtotal": "200.00",
+            "discount_applied": "40.00",
+            "vat_exemption_amount": "0.00"
+        }
+    ],
+    "refunds": [
+        {
+            "id": "3",
+            "sale_item_id": "58",
+            "quantity_refunded": "2",
+            "price_at_sale": "50.00",
+            "refund_subtotal": "100.00",
+            "reason": "eaweawdaw",
+            "refund_method": null,
+            "refund_event_id": null,
+            "return_condition": "resellable",
+            "created_at": "2026-06-17 10:35:40"
+        },
+        {
+            "id": "4",
+            "sale_item_id": "57",
+            "quantity_refunded": "1",
+            "price_at_sale": "75.00",
+            "refund_subtotal": "75.00",
+            "reason": "reqwrqwrqwrqw",
+            "refund_method": null,
+            "refund_event_id": null,
+            "return_condition": "resellable",
+            "created_at": "2026-06-17 10:42:51"
+        },
+        {
+            "id": "5",
+            "sale_item_id": "57",
+            "quantity_refunded": "1",
+            "price_at_sale": "75.00",
+            "refund_subtotal": "75.00",
+            "reason": "test",
+            "refund_method": null,
+            "refund_event_id": null,
+            "return_condition": "resellable",
+            "created_at": "2026-06-17 10:48:39"
+        },
+        {
+            "id": "6",
+            "sale_item_id": "57",
+            "quantity_refunded": "1",
+            "price_at_sale": "75.00",
+            "refund_subtotal": "75.00",
+            "reason": "rawrawdaw",
+            "refund_method": null,
+            "refund_event_id": null,
+            "return_condition": "resellable",
+            "created_at": "2026-06-26 10:47:59"
+        },
+        {
+            "id": "7",
+            "sale_item_id": "58",
+            "quantity_refunded": "2",
+            "price_at_sale": "50.00",
+            "refund_subtotal": "100.00",
+            "reason": "rawrawdaw",
+            "refund_method": null,
+            "refund_event_id": null,
+            "return_condition": "resellable",
+            "created_at": "2026-06-26 10:47:59"
+        },
+        {
+            "id": "8",
+            "sale_item_id": "59",
+            "quantity_refunded": "1",
+            "price_at_sale": "200.00",
+            "refund_subtotal": "200.00",
+            "reason": "rawrawdaw",
+            "refund_method": null,
+            "refund_event_id": null,
+            "return_condition": "resellable",
+            "created_at": "2026-06-26 10:47:59"
+        }
+    ],
+    "events": [],
+    "stock": [
+        {
+            "id": "2",
+            "product_name": "Erceflora (variant unrecorded)",
+            "master_stock": "16",
+            "branch_stock": "99"
+        },
+        {
+            "id": "4",
+            "product_name": "Erceflora (variant unrecorded)",
+            "master_stock": "100",
+            "branch_stock": "99"
+        },
+        {
+            "id": "7",
+            "product_name": "Neozep Forte tablet",
+            "master_stock": "80",
+            "branch_stock": "113"
+        },
+        {
+            "id": "8",
+            "product_name": "Alaxan FR 200 mg \/ 325 mg capsule",
+            "master_stock": "35",
+            "branch_stock": "79"
+        },
+        {
+            "id": "10",
+            "product_name": "Cetirizine 10 mg",
+            "master_stock": "90",
+            "branch_stock": "130"
+        },
+        {
+            "id": "11",
+            "product_name": "Amoxicillin 500 mg",
+            "master_stock": "70",
+            "branch_stock": "90"
+        },
+        {
+            "id": "12",
+            "product_name": "Vitamin C 500 mg",
+            "master_stock": "50",
+            "branch_stock": "67"
+        },
+        {
+            "id": "14",
+            "product_name": "Loperamide 2 mg",
+            "master_stock": "65",
+            "branch_stock": "82"
+        },
+        {
+            "id": "15",
+            "product_name": "Mefenamic acid 500 mg",
+            "master_stock": "55",
+            "branch_stock": "84"
+        }
+    ]
+}

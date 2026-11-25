@@ -1,0 +1,328 @@
+{
+  "checks": [
+    {
+      "view": "product-create",
+      "field": "product_name",
+      "rejected": "Vitamin<script>",
+      "accepted": "Vitamin C + Zinc (10%)"
+    },
+    {
+      "view": "product-create",
+      "field": "generic_name",
+      "rejected": "@@@",
+      "accepted": "Ascorbic Acid + Zinc"
+    },
+    {
+      "view": "product-create",
+      "field": "strength",
+      "rejected": "500<script>",
+      "accepted": "500 mg / 5 mL (10%)"
+    },
+    {
+      "view": "product-create",
+      "field": "unit",
+      "rejected": "!!!",
+      "accepted": "tablet"
+    },
+    {
+      "view": "product-create",
+      "field": "manufacturer",
+      "rejected": "@@@",
+      "accepted": "O’Connor & Sons, Inc."
+    },
+    {
+      "view": "product-create",
+      "field": "sku",
+      "rejected": "SKU 500",
+      "accepted": "RX_500-A.1/02"
+    },
+    {
+      "view": "product-create",
+      "field": "cost_price",
+      "rejected": "1e2",
+      "accepted": "4.50"
+    },
+    {
+      "view": "product-create",
+      "field": "price",
+      "rejected": "1e2",
+      "accepted": "7.50"
+    },
+    {
+      "view": "product-create",
+      "field": "stock",
+      "rejected": "1e2",
+      "accepted": "120"
+    },
+    {
+      "view": "product-create",
+      "field": "reorder_level",
+      "rejected": "1e2",
+      "accepted": "20"
+    },
+    {
+      "view": "product-create",
+      "required_sku": true,
+      "no_post": true
+    },
+    {
+      "view": "product-edit",
+      "field": "product_name",
+      "rejected": "Vitamin<script>",
+      "accepted": "Vitamin C + Zinc (10%)"
+    },
+    {
+      "view": "product-edit",
+      "field": "generic_name",
+      "rejected": "@@@",
+      "accepted": "Ascorbic Acid + Zinc"
+    },
+    {
+      "view": "product-edit",
+      "field": "strength",
+      "rejected": "500<script>",
+      "accepted": "500 mg / 5 mL (10%)"
+    },
+    {
+      "view": "product-edit",
+      "field": "unit",
+      "rejected": "!!!",
+      "accepted": "tablet"
+    },
+    {
+      "view": "product-edit",
+      "field": "manufacturer",
+      "rejected": "@@@",
+      "accepted": "O’Connor & Sons, Inc."
+    },
+    {
+      "view": "product-edit",
+      "field": "sku",
+      "rejected": "SKU 500",
+      "accepted": "RX_500-A.1/02"
+    },
+    {
+      "view": "product-edit",
+      "field": "cost_price",
+      "rejected": "1e2",
+      "accepted": "4.50"
+    },
+    {
+      "view": "product-edit",
+      "field": "price",
+      "rejected": "1e2",
+      "accepted": "7.50"
+    },
+    {
+      "view": "product-edit",
+      "field": "stock",
+      "rejected": "1e2",
+      "accepted": "120"
+    },
+    {
+      "view": "product-edit",
+      "field": "reorder_level",
+      "rejected": "1e2",
+      "accepted": "20"
+    },
+    {
+      "view": "product-edit",
+      "required_sku": true,
+      "no_post": true
+    },
+    {
+      "view": "category-create",
+      "field": "category_name",
+      "rejected": "@@@",
+      "accepted": "Cough, Cold & Allergy"
+    },
+    {
+      "view": "category-edit",
+      "field": "category_name",
+      "rejected": "@@@",
+      "accepted": "Cough, Cold & Allergy"
+    },
+    {
+      "view": "user-create",
+      "field": "full_name",
+      "rejected": "Ana123",
+      "accepted": "Ma. José O’Connor-Santos"
+    },
+    {
+      "view": "user-create",
+      "field": "username",
+      "rejected": "ana@cruz",
+      "accepted": "ana.cruz-2"
+    },
+    {
+      "view": "user-create",
+      "password_symbols_allowed": true
+    },
+    {
+      "view": "user-edit",
+      "field": "full_name",
+      "rejected": "Ana123",
+      "accepted": "Ma. José O’Connor-Santos"
+    },
+    {
+      "view": "user-edit",
+      "field": "username",
+      "rejected": "ana@cruz",
+      "accepted": "ana.cruz-2"
+    },
+    {
+      "view": "branch-create",
+      "field": "branch_name",
+      "rejected": "@@@",
+      "accepted": "St. Niño - Main (2)"
+    },
+    {
+      "view": "branch-create",
+      "field": "branch_code",
+      "rejected": "BR@02",
+      "accepted": "BR_02-A"
+    },
+    {
+      "view": "branch-create",
+      "field": "contact_number",
+      "rejected": "0917+1234567",
+      "accepted": "+63 (917) 123-4567"
+    },
+    {
+      "view": "branch-create",
+      "field": "address",
+      "rejected": "<b>Address</b>",
+      "accepted": "Unit #3, 12/F, St. Niño St.\nCagayan de Oro"
+    },
+    {
+      "view": "branch-edit",
+      "field": "branch_name",
+      "rejected": "@@@",
+      "accepted": "St. Niño - Main (2)"
+    },
+    {
+      "view": "branch-edit",
+      "field": "branch_code",
+      "rejected": "BR@02",
+      "accepted": "BR_02-A"
+    },
+    {
+      "view": "branch-edit",
+      "field": "contact_number",
+      "rejected": "0917+1234567",
+      "accepted": "+63 (917) 123-4567"
+    },
+    {
+      "view": "branch-edit",
+      "field": "address",
+      "rejected": "<b>Address</b>",
+      "accepted": "Unit #3, 12/F, St. Niño St.\nCagayan de Oro"
+    },
+    {
+      "view": "supplier-create",
+      "field": "supplier_name",
+      "rejected": "Maker<script>",
+      "accepted": "O’Connor & Sons, Inc."
+    },
+    {
+      "view": "supplier-create",
+      "field": "contact_person",
+      "rejected": "Ana123",
+      "accepted": "Santos, Juan Jr."
+    },
+    {
+      "view": "supplier-create",
+      "field": "contact_number",
+      "rejected": "0917+1234567",
+      "accepted": "+63 (917) 123-4567"
+    },
+    {
+      "view": "supplier-create",
+      "field": "address",
+      "rejected": "<b>Address</b>",
+      "accepted": "Unit #3, 12/F, St. Niño St.\nCagayan de Oro"
+    },
+    {
+      "view": "supplier-create",
+      "email_plus_allowed": true
+    },
+    {
+      "view": "supplier-edit",
+      "field": "supplier_name",
+      "rejected": "Maker<script>",
+      "accepted": "O’Connor & Sons, Inc."
+    },
+    {
+      "view": "supplier-edit",
+      "field": "contact_person",
+      "rejected": "Ana123",
+      "accepted": "Santos, Juan Jr."
+    },
+    {
+      "view": "supplier-edit",
+      "field": "contact_number",
+      "rejected": "0917+1234567",
+      "accepted": "+63 (917) 123-4567"
+    },
+    {
+      "view": "supplier-edit",
+      "field": "address",
+      "rejected": "<b>Address</b>",
+      "accepted": "Unit #3, 12/F, St. Niño St.\nCagayan de Oro"
+    },
+    {
+      "view": "supplier-edit",
+      "email_plus_allowed": true
+    },
+    {
+      "view": "discount-create",
+      "field": "discount_name",
+      "rejected": "@@@",
+      "accepted": "Vitamin C + Zinc (20% off)"
+    },
+    {
+      "view": "discount-create",
+      "field": "discount_value",
+      "rejected": "1e2",
+      "accepted": "20"
+    },
+    {
+      "view": "discount-create",
+      "field": "minimum_purchase",
+      "rejected": "1e2",
+      "accepted": "100"
+    },
+    {
+      "view": "discount-create",
+      "field": "max_discount_amount",
+      "rejected": "1e2",
+      "accepted": "50"
+    },
+    {
+      "view": "discount-edit",
+      "field": "discount_name",
+      "rejected": "@@@",
+      "accepted": "Vitamin C + Zinc (20% off)"
+    },
+    {
+      "view": "discount-edit",
+      "field": "discount_value",
+      "rejected": "1e2",
+      "accepted": "20"
+    },
+    {
+      "view": "discount-edit",
+      "field": "minimum_purchase",
+      "rejected": "1e2",
+      "accepted": "100"
+    },
+    {
+      "view": "discount-edit",
+      "field": "max_discount_amount",
+      "rejected": "1e2",
+      "accepted": "50"
+    }
+  ],
+  "posts": 0,
+  "application_database_accessed": false
+}

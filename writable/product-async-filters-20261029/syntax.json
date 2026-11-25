@@ -1,0 +1,198 @@
+[
+  {
+    "file": "app/Commands/GenerateReorderForecast.php",
+    "passed": true
+  },
+  {
+    "file": "app/Config/InventoryExpiry.php",
+    "passed": true
+  },
+  {
+    "file": "app/Controllers/Admin/ReportsController.php",
+    "passed": true
+  },
+  {
+    "file": "app/Controllers/Admin/SaleCorrection.php",
+    "passed": true
+  },
+  {
+    "file": "app/Controllers/Cashier/ExchangeController.php",
+    "passed": true
+  },
+  {
+    "file": "app/Controllers/Cashier/SalesController.php",
+    "passed": true
+  },
+  {
+    "file": "app/Controllers/Products.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/BenefitProductPromotion.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/CsvExport.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/DiscountAllocator.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/DiscountPolicy.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/DisplayDate.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/ExpiryDatePolicy.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/ExpiryStockResolution.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/PaymentReference.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/PdfFactory.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/ProductExchange.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/ProductPromotion.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/ReceiptInvoice.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/ReportPdf.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/ReturnCondition.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/StockExpiryProvenance.php",
+    "passed": true
+  },
+  {
+    "file": "app/Libraries/TopbarNotificationService.php",
+    "passed": true
+  },
+  {
+    "file": "app/Models/BranchProductModel.php",
+    "passed": true
+  },
+  {
+    "file": "app/Models/SaleItemModel.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/admin/reports/expiry_action.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/admin/reports/index.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/admin/reports/reports_pdf.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/admin/sale_correction/edit.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/cashier/sales/exchange.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/cashier/sales/index.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/cashier/sales/product_rows.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/cashier/sales/refund_partial.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/layouts/low_stock_modal.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/layouts/staff.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/partials/expiry_date_field.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/partials/payment_reference_assets.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/products/_rows.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/products/catalog.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/products/create.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/products/edit.php",
+    "passed": true
+  },
+  {
+    "file": "app/Views/products/index.php",
+    "passed": true
+  },
+  {
+    "file": "public/assets/js/datatables-init.js",
+    "passed": true
+  },
+  {
+    "file": "public/assets/js/date-picker.js",
+    "passed": true
+  },
+  {
+    "file": "public/assets/js/expiry-date-field.js",
+    "passed": true
+  },
+  {
+    "file": "public/assets/js/payment-reference.js",
+    "passed": true
+  },
+  {
+    "file": "public/assets/js/products-table.js",
+    "passed": true
+  },
+  {
+    "file": "public/assets/js/reports.js",
+    "passed": true
+  },
+  {
+    "file": "tests/unit/ProductListFilterCases.php",
+    "passed": true
+  }
+]

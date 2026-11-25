@@ -1,0 +1,79 @@
+[
+    {
+        "name": "sales-daily",
+        "pages": 3,
+        "bytes": 32681,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-weekly",
+        "pages": 3,
+        "bytes": 33065,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-monthly",
+        "pages": 3,
+        "bytes": 32438,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-empty",
+        "pages": 3,
+        "bytes": 30172,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-long",
+        "pages": 8,
+        "bytes": 44358,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "expiry-normal",
+        "pages": 1,
+        "bytes": 26155,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "expiry-empty",
+        "pages": 1,
+        "bytes": 24310,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "expiry-long",
+        "pages": 4,
+        "bytes": 35097,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "stock-normal",
+        "pages": 1,
+        "bytes": 24757,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "stock-empty",
+        "pages": 1,
+        "bytes": 23570,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "stock-long",
+        "pages": 10,
+        "bytes": 43513,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    }
+]

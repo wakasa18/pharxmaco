@@ -1,0 +1,848 @@
+{
+  "advisories": {
+    "codeigniter4/framework": [
+      {
+        "advisoryId": "PKSA-kcm9-w3rf-jxsk",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-mmj4-63m4-r6h5",
+        "title": "CodeIgniter: Uploaded file extension validation bypass in `is_image` and `mime_in` rules",
+        "link": "https://github.com/advisories/GHSA-mmj4-63m4-r6h5",
+        "cve": "CVE-2026-63223",
+        "affectedVersions": "<4.7.4",
+        "source": "GitHub",
+        "reportedAt": "2026-08-07 18:24:21",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-mmj4-63m4-r6h5"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-ykyc-889h-7jxf",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-hhmc-q9hp-r662",
+        "title": "CodeIgniter: Path traversal in UploadedFile::move() when using client-provided filenames",
+        "link": "https://github.com/advisories/GHSA-hhmc-q9hp-r662",
+        "cve": "CVE-2026-63222",
+        "affectedVersions": "<4.7.4",
+        "source": "GitHub",
+        "reportedAt": "2026-08-07 18:23:46",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-hhmc-q9hp-r662"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-t8h5-ngj8-z43w",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-c9w5-rwh3-7pm9",
+        "title": "CodeIgniter: SQL injection in Query Builder deleteBatch() when used with where() conditions",
+        "link": "https://github.com/advisories/GHSA-c9w5-rwh3-7pm9",
+        "cve": "CVE-2026-63221",
+        "affectedVersions": ">=4.3.0,<4.7.4",
+        "source": "GitHub",
+        "reportedAt": "2026-08-07 18:22:59",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-c9w5-rwh3-7pm9"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-kcc6-gffv-vchj",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-7wmf-pw8j-mc78",
+        "title": "CodeIgniter: Spoofable forwarded HTTPS headers in IncomingRequest::isSecure()",
+        "link": "https://github.com/advisories/GHSA-7wmf-pw8j-mc78",
+        "cve": "CVE-2026-63220",
+        "affectedVersions": "<4.7.4",
+        "source": "GitHub",
+        "reportedAt": "2026-08-07 18:21:54",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-7wmf-pw8j-mc78"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-217t-qqjr-nkt3",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-2gr4-ppc7-7mhx",
+        "title": "CodeIgniter4 has a validation bypass when uploading file extensions via `ext_in` rule",
+        "link": "https://github.com/advisories/GHSA-2gr4-ppc7-7mhx",
+        "cve": "CVE-2026-48062",
+        "affectedVersions": "<4.7.2",
+        "source": "GitHub",
+        "reportedAt": "2026-06-11 17:16:09",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-2gr4-ppc7-7mhx"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-7ybs-j1bv-y5mc",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-9952-gv64-x94c",
+        "title": "CodeIgniter4's ImageMagick Handler has Command Injection Vulnerability",
+        "link": "https://github.com/advisories/GHSA-9952-gv64-x94c",
+        "cve": "CVE-2025-54418",
+        "affectedVersions": "<4.6.2",
+        "source": "GitHub",
+        "reportedAt": "2025-07-28 16:08:20",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-9952-gv64-x94c"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-qbjf-dc24-wrff",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-x5mq-jjr3-vmx6",
+        "title": "Missing validation of header name and value in codeigniter4/framework",
+        "link": "https://github.com/advisories/GHSA-x5mq-jjr3-vmx6",
+        "cve": "CVE-2025-24013",
+        "affectedVersions": "<4.5.8",
+        "source": "GitHub",
+        "reportedAt": "2025-01-21 21:13:40",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-x5mq-jjr3-vmx6"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-j54j-8c7k-rccq",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-39fp-mqmm-gxj6",
+        "title": "CodeIgniter4 DoS Vulnerability",
+        "link": "https://github.com/advisories/GHSA-39fp-mqmm-gxj6",
+        "cve": "CVE-2024-29904",
+        "affectedVersions": "<4.4.7",
+        "source": "GitHub",
+        "reportedAt": "2024-03-29 16:36:38",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-39fp-mqmm-gxj6"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-mscv-ktn8-2rsz",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-hwxf-qxj7-7rfj",
+        "title": "CodeIgniter4 vulnerable to information disclosure when detailed error report is displayed in production environment ",
+        "link": "https://github.com/advisories/GHSA-hwxf-qxj7-7rfj",
+        "cve": "CVE-2023-46240",
+        "affectedVersions": "<=4.4.2",
+        "source": "GitHub",
+        "reportedAt": "2023-10-30 15:18:56",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-hwxf-qxj7-7rfj"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-3xnc-9vd8-pd26",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-m6m8-6gq8-c9fj",
+        "title": "Remote Code Execution Vulnerability in Validation Placeholders in CodeIgniter4",
+        "link": "https://github.com/advisories/GHSA-m6m8-6gq8-c9fj",
+        "cve": "CVE-2023-32692",
+        "affectedVersions": "<4.3.5",
+        "source": "GitHub",
+        "reportedAt": "2023-05-22 19:49:11",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-m6m8-6gq8-c9fj"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-fdn3-tjqj-tbrj",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "codeigniter4/framework/CVE-2022-46170.yaml",
+        "title": "CVE-2022-46170: Potential Session Handlers Vulnerability ",
+        "link": "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-6cq5-8cj7-g558",
+        "cve": "CVE-2022-46170",
+        "affectedVersions": "<4.2.11",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-12-22 02:49:45",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "codeigniter4/framework/CVE-2022-46170.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-6cq5-8cj7-g558"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-5qsc-rptw-773m",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "codeigniter4/framework/CVE-2022-23556.yaml",
+        "title": "CVE-2022-23556: Attackers may spoof IP address when using proxy",
+        "link": "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-ghw3-5qvm-3mqc",
+        "cve": "CVE-2022-23556",
+        "affectedVersions": "<4.2.11",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-12-22 02:49:45",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "codeigniter4/framework/CVE-2022-23556.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-ghw3-5qvm-3mqc"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-gdkx-2hq2-gzns",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "codeigniter4/framework/CVE-2022-39284.yaml",
+        "title": "CVE-2022-39284: Config\\Cookie Secure or HttpOnly flag not set in CodeIgniter4",
+        "link": "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-745p-r637-7vvp",
+        "cve": "CVE-2022-39284",
+        "affectedVersions": "<4.2.7",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-10-06 09:39:42",
+        "composerRepository": "https://packagist.org",
+        "severity": "low",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "codeigniter4/framework/CVE-2022-39284.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-745p-r637-7vvp"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-65g7-hfqn-nn47",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-jwqp-wh5g-4gmm",
+        "title": "CodeIgniter Improper Privilege Management",
+        "link": "https://github.com/advisories/GHSA-jwqp-wh5g-4gmm",
+        "cve": "CVE-2020-10793",
+        "affectedVersions": "<=4.0.0",
+        "source": "GitHub",
+        "reportedAt": "2022-05-24 17:12:13",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-jwqp-wh5g-4gmm"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-rzt7-sq65-pynd",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "GHSA-j9f9-8j39-4g97",
+        "title": "CodeIgniter HTTP Header Injection",
+        "link": "https://github.com/advisories/GHSA-j9f9-8j39-4g97",
+        "cve": "CVE-2017-1000247",
+        "affectedVersions": "=3.1.3",
+        "source": "GitHub",
+        "reportedAt": "2022-05-17 00:18:34",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-j9f9-8j39-4g97"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-q6wy-cnms-5v5g",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "codeigniter4/framework/CVE-2022-24711.yaml",
+        "title": "CVE-2022-24711: Remote CLI Command Execution Vulnerability in CodeIgniter4",
+        "link": "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-xjp4-6w75-qrj7",
+        "cve": "CVE-2022-24711",
+        "affectedVersions": "<4.1.9",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-02-26 00:51:52",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "codeigniter4/framework/CVE-2022-24711.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-xjp4-6w75-qrj7"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-kyt6-rr9s-bbsy",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "codeigniter4/framework/CVE-2022-24712.yaml",
+        "title": "CVE-2022-24712: Cross-Site Request Forgery (CSRF) Protection Bypass Vulnerability in CodeIgniter4 ",
+        "link": "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-4v37-24gm-h554",
+        "cve": "CVE-2022-24712",
+        "affectedVersions": "<4.1.9",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-02-26 00:51:52",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "codeigniter4/framework/CVE-2022-24712.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-4v37-24gm-h554"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-nrxq-vnmr-47kd",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "codeigniter4/framework/CVE-2022-21715.yaml",
+        "title": "CVE-2022-21715: XSS Vulnerability in API\\ResponseTrait in CodeIgniter4",
+        "link": "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7528-7jg5-6g62",
+        "cve": "CVE-2022-21715",
+        "affectedVersions": "<4.1.8",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-01-24 17:41:56",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "codeigniter4/framework/CVE-2022-21715.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-7528-7jg5-6g62"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-tmzy-nc2k-32nq",
+        "packageName": "codeigniter4/framework",
+        "remoteId": "codeigniter4/framework/CVE-2022-21647.yaml",
+        "title": "CVE-2022-21647: Deserialization of Untrusted Data in Codeigniter4",
+        "link": "https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-w6jr-wj64-mc9x",
+        "cve": "CVE-2022-21647",
+        "affectedVersions": "<4.1.6",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-01-04 00:59:31",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "codeigniter4/framework/CVE-2022-21647.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-w6jr-wj64-mc9x"
+          }
+        ]
+      }
+    ],
+    "dompdf/dompdf": [
+      {
+        "advisoryId": "PKSA-cv56-2228-pzr6",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-j8qw-6jw8-r297",
+        "title": "Dompdf: Embedded SVG images can leak existence of files and directories within the filesystem",
+        "link": "https://github.com/advisories/GHSA-j8qw-6jw8-r297",
+        "cve": "CVE-2026-59943",
+        "affectedVersions": "<3.1.6",
+        "source": "GitHub",
+        "reportedAt": "2026-07-22 22:52:44",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-j8qw-6jw8-r297"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-6r8f-nxsb-67bq",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-f5gf-2cj8-52g2",
+        "title": "Dompdf: Denial of Service (DoS) via Resource Exhaustion using Oversized Image Bitmaps",
+        "link": "https://github.com/advisories/GHSA-f5gf-2cj8-52g2",
+        "cve": "CVE-2026-59942",
+        "affectedVersions": "<3.1.6",
+        "source": "GitHub",
+        "reportedAt": "2026-07-22 22:51:40",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-f5gf-2cj8-52g2"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-gh7h-hhy4-byg7",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-8hg6-c449-896m",
+        "title": "Dompdf: Uncontrolled resource consumption based on declared BMP dimensions",
+        "link": "https://github.com/advisories/GHSA-8hg6-c449-896m",
+        "cve": "CVE-2026-59941",
+        "affectedVersions": "<3.1.6",
+        "source": "GitHub",
+        "reportedAt": "2026-07-22 22:50:34",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-8hg6-c449-896m"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-mwt3-h9tv-kx78",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-cx96-42px-69fm",
+        "title": "Dompdf: Local file read due to improper file path validation in SVG images encoded as data-URI",
+        "link": "https://github.com/advisories/GHSA-cx96-42px-69fm",
+        "cve": "CVE-2026-56722",
+        "affectedVersions": "<3.1.6",
+        "source": "GitHub",
+        "reportedAt": "2026-07-22 21:30:01",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-cx96-42px-69fm"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-hp6n-n4kz-21wk",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-7x2p-4jvh-6384",
+        "title": "Dompdf: File existence oracle via font-face stylesheet declaration",
+        "link": "https://github.com/advisories/GHSA-7x2p-4jvh-6384",
+        "cve": "CVE-2026-55555",
+        "affectedVersions": "<3.1.6",
+        "source": "GitHub",
+        "reportedAt": "2026-07-22 21:07:07",
+        "composerRepository": "https://packagist.org",
+        "severity": "low",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-7x2p-4jvh-6384"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-mckv-s5hg-868k",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-wvh6-f5jh-8gw4",
+        "title": "Dompdf: Chroot Validation Bypass",
+        "link": "https://github.com/advisories/GHSA-wvh6-f5jh-8gw4",
+        "cve": "CVE-2026-55554",
+        "affectedVersions": "<3.1.6",
+        "source": "GitHub",
+        "reportedAt": "2026-07-22 21:06:48",
+        "composerRepository": "https://packagist.org",
+        "severity": "low",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-wvh6-f5jh-8gw4"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-qstp-ffwg-8hp6",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-3vjh-xrhf-v9xh",
+        "title": "Improper Restriction of XML External Entity Reference in dompdf/dompdf",
+        "link": "https://github.com/advisories/GHSA-3vjh-xrhf-v9xh",
+        "cve": "CVE-2021-3902",
+        "affectedVersions": "<2.0.0",
+        "source": "GitHub",
+        "reportedAt": "2024-11-15 12:31:44",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-3vjh-xrhf-v9xh"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-5vz3-q51h-7mg4",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-577p-7j7h-2jgf",
+        "title": "Deserialization of Untrusted Data in dompdf/dompdf",
+        "link": "https://github.com/advisories/GHSA-577p-7j7h-2jgf",
+        "cve": "CVE-2021-3838",
+        "affectedVersions": "<2.0.0",
+        "source": "GitHub",
+        "reportedAt": "2024-11-15 12:31:44",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-577p-7j7h-2jgf"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-7ztm-rpt3-qqzk",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2023-50262.yaml",
+        "title": "Denial of service caused by infinite recursion when parsing SVG images",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-50262",
+        "cve": "CVE-2023-50262",
+        "affectedVersions": "<2.0.4",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2023-12-12 09:17:00",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2023-50262.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-3qx2-6f78-w2j2"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-2kw5-jd8w-5mvh",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-56gj-mvh6-rp75",
+        "title": "URI validation failure on SVG parsing. Bypass of CVE-2023-23924",
+        "link": "https://github.com/advisories/GHSA-56gj-mvh6-rp75",
+        "cve": "CVE-2023-24813",
+        "affectedVersions": "=2.0.2",
+        "source": "GitHub",
+        "reportedAt": "2023-02-07 18:16:23",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-56gj-mvh6-rp75"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-4jrs-y99s-q8j6",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2023-23924.yaml",
+        "title": "Dompdf vulnerable to URI validation failure on SVG parsing",
+        "link": "https://github.com/advisories/GHSA-3cw5-7cxw-v5qg",
+        "cve": "CVE-2023-23924",
+        "affectedVersions": "<2.0.2",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2023-01-31 14:30:00",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2023-23924.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-3cw5-7cxw-v5qg"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-hbk6-2vfz-8f8n",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2022-41343.yaml",
+        "title": "Remote file inclusion",
+        "link": "https://github.com/advisories/GHSA-6x28-7h8c-chx4",
+        "cve": "CVE-2022-41343",
+        "affectedVersions": "<2.0.1",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-09-22 13:54:00",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2022-41343.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-6x28-7h8c-chx4"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-kj9c-tr41-t8mj",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "GHSA-5qj8-6xxj-hp9h",
+        "title": "Dompdf before v2.0.0 vulnerable to chroot check bypass",
+        "link": "https://github.com/advisories/GHSA-5qj8-6xxj-hp9h",
+        "cve": "CVE-2022-2400",
+        "affectedVersions": "<2.0.0",
+        "source": "GitHub",
+        "reportedAt": "2022-07-19 00:00:26",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-5qj8-6xxj-hp9h"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-872h-8556-2chm",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2022-0085.yaml",
+        "title": "Server-Side Request Forgery in dompdf/dompdf",
+        "link": "https://github.com/advisories/GHSA-pf6p-25r2-fx45",
+        "cve": "CVE-2022-0085",
+        "affectedVersions": "<2.0.0",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-06-23 13:55:00",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2022-0085.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-pf6p-25r2-fx45"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-99tj-gg5v-4g74",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2022-28368.yaml",
+        "title": "Remote code injection via remote fonts",
+        "link": "https://github.com/advisories/GHSA-x752-qjv4-c4hc",
+        "cve": "CVE-2022-28368",
+        "affectedVersions": "<1.2.1",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2022-03-24 13:59:00",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2022-28368.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-x752-qjv4-c4hc"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-5s2b-r7bs-gpkz",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2014-5012.yaml",
+        "title": "Denial Of Service Vector",
+        "link": "https://github.com/dompdf/dompdf/releases/tag/v0.6.2",
+        "cve": "CVE-2014-5012",
+        "affectedVersions": ">=0.6,<0.6.2",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2015-12-07 00:07:13",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2014-5012.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-q83c-64c9-c42m"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-cy5h-xj19-9vd7",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2014-5013.yaml",
+        "title": "Remote Code Execution (complement of CVE-2014-2383)",
+        "link": "https://github.com/dompdf/dompdf/releases/tag/v0.6.2",
+        "cve": "CVE-2014-5013",
+        "affectedVersions": ">=0.6,<0.6.2",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2015-12-07 00:07:13",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2014-5013.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-jjwj-w3gc-gcw4"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-jkcx-z3k3-bbrv",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2014-5011.yaml",
+        "title": "Information Disclosure",
+        "link": "https://github.com/dompdf/dompdf/releases/tag/v0.6.2",
+        "cve": "CVE-2014-5011",
+        "affectedVersions": ">=0.6,<0.6.2",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2015-12-07 00:07:13",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2014-5011.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-jwf8-mjj8-r8hq"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-pw9z-cywx-mmj2",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2010-4879.yaml",
+        "title": "PHP remote file inclusion vulnerability in dompdf.php",
+        "link": "https://github.com/dompdf/dompdf/releases/tag/v0.6.2",
+        "cve": "CVE-2010-4879",
+        "affectedVersions": ">=0.6,<0.6.1",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2014-03-10 21:57:58",
+        "composerRepository": "https://packagist.org",
+        "severity": "high",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2010-4879.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-48r9-4v93-x4wh"
+          }
+        ]
+      },
+      {
+        "advisoryId": "PKSA-s5g4-3y43-c9p2",
+        "packageName": "dompdf/dompdf",
+        "remoteId": "dompdf/dompdf/CVE-2014-2383.yaml",
+        "title": "Arbitrary file read in dompdf",
+        "link": "https://www.portcullis-security.com/security-research-and-downloads/security-advisories/cve-2014-2383/",
+        "cve": "CVE-2014-2383",
+        "affectedVersions": ">=0.6.0,<0.6.1",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2014-03-10 21:57:58",
+        "composerRepository": "https://packagist.org",
+        "severity": "medium",
+        "sources": [
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "dompdf/dompdf/CVE-2014-2383.yaml"
+          },
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-qr6q-w4gj-3865"
+          }
+        ]
+      }
+    ],
+    "sabberworm/php-css-parser": [
+      {
+        "advisoryId": "PKSA-2b5y-mhcw-mt5g",
+        "packageName": "sabberworm/php-css-parser",
+        "remoteId": "sabberworm/php-css-parser/CVE-2020-13756.yaml",
+        "title": "Code injection vulnerability in allSelectors()",
+        "link": "https://packetstormsecurity.com/files/cve/CVE-2020-13756",
+        "cve": "CVE-2020-13756",
+        "affectedVersions": ">=8.3.0,<8.3.1|>=8.2.0,<8.2.1|>=8.1.0,<8.1.1|>=8.0.0,<8.0.1|>=7.0.0,<7.0.4|>=6.0.0,<6.0.2|>=5.2.0,<5.2.1|>=5.1.0,<5.1.3|>=5.0.0,<5.0.9|>=4.0.0,<4.0.1|>=3.0.0,<3.0.1|>=2.0.0,<2.0.1|>=1.0.0,<1.0.1",
+        "source": "FriendsOfPHP/security-advisories",
+        "reportedAt": "2020-01-01 00:00:00",
+        "composerRepository": "https://packagist.org",
+        "severity": "critical",
+        "sources": [
+          {
+            "name": "GitHub",
+            "remoteId": "GHSA-phrq-v4q2-hmq6"
+          },
+          {
+            "name": "FriendsOfPHP/security-advisories",
+            "remoteId": "sabberworm/php-css-parser/CVE-2020-13756.yaml"
+          }
+        ]
+      }
+    ],
+    "dompdf/php-font-lib": [],
+    "dompdf/php-svg-lib": [],
+    "laminas/laminas-escaper": [],
+    "masterminds/html5": [],
+    "psr/log": [],
+    "thecodingmachine/safe": []
+  }
+}

@@ -1,0 +1,181 @@
+/* DataTables skin for Pharxmaco: toolbar, sortable headers and pager follow the workspace tokens
+   (light, dark, accent colours, text size and large-controls preferences). */
+
+/* ── Toolbar (search, rows per page, mobile sort) ───────────────────────── */
+.dt-toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--line);
+    background: var(--surface);
+}
+.dt-controls {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+}
+
+.dt-clear { min-height: 42px; }
+.dt-clear[hidden] { display: none; }
+.dt-date .input { min-width: 150px; }
+.dt-link-note {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    padding: 9px 12px;
+    border-radius: 10px;
+    background: var(--primary-lighter);
+    border: 1px solid var(--line-2);
+    color: var(--text-2);
+    font-size: 13px;
+}
+.dt-export-bar {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 20px 0;
+}
+.dt-field { display: flex; flex-direction: column; gap: 5px; margin: 0; min-width: 0; }
+.dt-field > span {
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    line-height: 1.4;
+}
+.dt-field .input { min-height: 42px; width: 100%; }
+.dt-search { flex: 1 1 260px; max-width: 420px; }
+.dt-length { flex: 0 0 auto; }
+.dt-length .input { width: auto; min-width: 84px; }
+.dt-sort { display: none; flex: 1 1 100%; }
+
+/* ── Column filters (second header row on desktop, panel on small screens) ── */
+.content .table-wrap > table > thead > tr.dt-filter-row > th {
+    padding: 8px 10px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line-2);
+    font-weight: 400;
+    vertical-align: middle;
+}
+.dt-filter-row .dt-col-filter {
+    width: 100%;
+    min-width: 96px;
+    min-height: 36px;
+    padding: 6px 9px;
+    font-size: 12.5px;
+    font-weight: 400;
+}
+.dt-mobile-filters {
+    display: none;
+    flex: 1 1 100%;
+    border: 1px solid var(--line-2);
+    border-radius: 10px;
+    background: var(--surface-2);
+}
+.dt-mobile-filters > summary {
+    padding: 11px 14px;
+    min-height: 44px;
+    box-sizing: border-box;
+    color: var(--text-2);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.dt-mobile-filter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px 12px;
+    padding: 4px 14px 14px;
+}
+html.large-controls .dt-field .input { min-height: 48px; }
+
+/* ── Sortable headers ────────────────────────────────────────────────────── */
+.content table.dataTable thead th { position: relative; }
+.content table.dataTable thead .dt-column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+.content table.dataTable thead th.table-number .dt-column-header,
+.content table.dataTable thead th.num .dt-column-header { justify-content: flex-end; }
+.content table.dataTable thead th.dt-orderable-asc,
+.content table.dataTable thead th.dt-orderable-desc { cursor: pointer; user-select: none; }
+.content table.dataTable thead th.dt-orderable-asc:hover,
+.content table.dataTable thead th.dt-orderable-desc:hover { color: var(--primary); }
+.content table.dataTable thead th:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+
+.content table.dataTable thead .dt-column-order {
+    position: relative;
+    flex: 0 0 12px;
+    width: 12px;
+    height: 16px;
+    opacity: .35;
+}
+.content table.dataTable thead .dt-column-order::before,
+.content table.dataTable thead .dt-column-order::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transform: translateX(-50%);
+}
+.content table.dataTable thead .dt-column-order::before { top: 1px; border-bottom: 5px solid currentColor; }
+.content table.dataTable thead .dt-column-order::after { bottom: 1px; border-top: 5px solid currentColor; }
+.content table.dataTable thead th:not(.dt-orderable-asc):not(.dt-orderable-desc) .dt-column-order { display: none; }
+.content table.dataTable thead th.dt-ordering-asc .dt-column-order,
+.content table.dataTable thead th.dt-ordering-desc .dt-column-order { opacity: 1; color: var(--primary); }
+.content table.dataTable thead th.dt-ordering-asc .dt-column-order::after { display: none; }
+.content table.dataTable thead th.dt-ordering-desc .dt-column-order::before { display: none; }
+.content table.dataTable thead th.dt-ordering-asc,
+.content table.dataTable thead th.dt-ordering-desc { color: var(--primary); }
+
+.content table.dataTable td.dt-empty { text-align: center; color: var(--muted); }
+
+/* ── Footer pager (reuses .app-pagination; buttons instead of links) ─────── */
+.dt-footer .app-pagination button.pg-control { font-family: var(--heading-font); cursor: pointer; }
+.app-pagination button.pg-control:hover:not(:disabled) {
+    color: var(--primary);
+    background: var(--primary-light);
+    border-color: var(--primary);
+}
+.app-pagination button.pg-control:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+.app-pagination button.pg-control:disabled { cursor: not-allowed; }
+.pg-filtered { color: var(--muted); font-weight: 400; }
+
+/* Rows that were capped by the server (very long logs). */
+.dt-cap-note {
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--line);
+    background: var(--warning-bg);
+    color: var(--warning-text);
+    font-size: 12.5px;
+    line-height: 1.5;
+}
+
+/* ── Phones / small tablets: headers are hidden in card mode, so sort via the dropdown ── */
+@media (max-width: 900px) {
+    .dt-sort { display: flex; }
+    .dt-mobile-filters { display: block; }
+}
+@media (max-width: 600px) {
+    .dt-toolbar { padding: 12px; gap: 12px; }
+    .dt-controls { gap: 10px; }
+    .dt-clear { flex: 1 1 100%; }
+    .dt-search { flex: 1 1 100%; max-width: none; }
+    .dt-length { flex: 1 1 100%; }
+    .dt-length .input { width: 100%; }
+}
+
+@media print {
+    .dt-toolbar, .dt-footer, .dt-cap-note { display: none !important; }
+}

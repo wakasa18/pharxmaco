@@ -1,0 +1,10 @@
+[
+  "All 34 chapter entries and 68 contents links resolve within six parts.",
+  "HTML uses 11-point body text and normal-weight Calibri Light chapter headings.",
+  "All text is black and tables use an unshaded grid without alternating fills.",
+  "Cover, contents and all manual tables fit 390px without page overflow.",
+  "Cover, contents and all manual tables fit 820px without page overflow.",
+  "Cover, contents and all manual tables fit 1440px without page overflow.",
+  "A contents link navigates to the selected procedure.",
+  "Print styling hides browser navigation and right-aligns monetary columns."
+]

@@ -1,0 +1,2150 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-29",
+  "scope": "First-party notes; no raw SQL exports, runtime secrets or database connection.",
+  "sources": [
+    {
+      "source": "docs/reviews/2026-10-15-combined-benefit-promos.md",
+      "target": "reviews/2026-10-15-combined-benefit-promos.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "0398cf6ba6ea89865794a217ec985045f014bb3e7d93e018d11ef6f44f33b693",
+      "title": "Senior/PWD with automatic product promos — 15 October 2026",
+      "vault_sha256": "0398cf6ba6ea89865794a217ec985045f014bb3e7d93e018d11ef6f44f33b693"
+    },
+    {
+      "source": "docs/reviews/2026-10-15-pos-inventory-audit.md",
+      "target": "reviews/2026-10-15-pos-inventory-audit.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "390bd6edbd8e7a7ab6ad93cfd6424efd624df1ffb2b02a0f072410fdda96f500",
+      "title": "POS and inventory logic audit — 15 October 2026",
+      "vault_sha256": "390bd6edbd8e7a7ab6ad93cfd6424efd624df1ffb2b02a0f072410fdda96f500"
+    },
+    {
+      "source": "docs/reviews/2026-10-16-automatic-category-promos.md",
+      "target": "reviews/2026-10-16-automatic-category-promos.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "ef8aa4b3445f0acca82faec80773a18dc10448d7caaacb0cc961a12d72a966ad",
+      "title": "Automatic product and category promotions — 16 October 2026",
+      "vault_sha256": "ef8aa4b3445f0acca82faec80773a18dc10448d7caaacb0cc961a12d72a966ad"
+    },
+    {
+      "source": "docs/reviews/2026-10-16-checkout-fixes.md",
+      "target": "reviews/2026-10-16-checkout-fixes.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "bb09a3fcb785cf940a0337e770a77b4bcc0cc4d59a15d212ea4df04c4801ac87",
+      "title": "Checkout, cashier reporting and stock repairs — 16 October 2026",
+      "vault_sha256": "bb09a3fcb785cf940a0337e770a77b4bcc0cc4d59a15d212ea4df04c4801ac87"
+    },
+    {
+      "source": "docs/reviews/2026-10-16-latest-update-audit.md",
+      "target": "reviews/2026-10-16-latest-update-audit.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "ae33e02e7e57402819bcab7c79a03a28c7ed62774972e08715a1bb354ee39030",
+      "title": "Latest update bug review — 16 October 2026",
+      "vault_sha256": "ae33e02e7e57402819bcab7c79a03a28c7ed62774972e08715a1bb354ee39030"
+    },
+    {
+      "source": "docs/reviews/2026-10-16-pdf-export-format-review.md",
+      "target": "reviews/2026-10-16-pdf-export-format-review.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "25ea80f0baf61a62e7cb226384756ed0c7e3de01b984d2faf16e58255b9ae55d",
+      "title": "PDF export format review - 16 October 2026",
+      "vault_sha256": "25ea80f0baf61a62e7cb226384756ed0c7e3de01b984d2faf16e58255b9ae55d"
+    },
+    {
+      "source": "docs/reviews/2026-10-16-pdf-export-update.md",
+      "target": "reviews/2026-10-16-pdf-export-update.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "72da21be800b33f1114f05a58b8edc27103a00cfc196bbe18f3a372c2b727f19",
+      "title": "PDF export update - 16 October 2026",
+      "vault_sha256": "72da21be800b33f1114f05a58b8edc27103a00cfc196bbe18f3a372c2b727f19"
+    },
+    {
+      "source": "docs/reviews/2026-10-16-shift-print-format.md",
+      "target": "reviews/2026-10-16-shift-print-format.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "486875d21e401bf208bb6a0e833d5aef21e10ab34337724112180f57bbc9c026",
+      "title": "Printed shift report review - 16 October 2026",
+      "vault_sha256": "486875d21e401bf208bb6a0e833d5aef21e10ab34337724112180f57bbc9c026"
+    },
+    {
+      "source": "docs/reviews/2026-10-16-shift-print-update.md",
+      "target": "reviews/2026-10-16-shift-print-update.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "1626f4ac8034a478df59f4123ca56b8ca7202bb6f6b1cedf197625ce068743b1",
+      "title": "Shift report printing update - 16 October 2026",
+      "vault_sha256": "1626f4ac8034a478df59f4123ca56b8ca7202bb6f6b1cedf197625ce068743b1"
+    },
+    {
+      "source": "docs/reviews/2026-10-17-cashier-table-filters.md",
+      "target": "reviews/2026-10-17-cashier-table-filters.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "7ec923358a3b65d5da571b9452a4dfa3f526df1c16367391d0fab97b774ac3b2",
+      "title": "Cashier table filtering and readable labels",
+      "vault_sha256": "7ec923358a3b65d5da571b9452a4dfa3f526df1c16367391d0fab97b774ac3b2"
+    },
+    {
+      "source": "docs/reviews/2026-10-18-user-manual-design-update.md",
+      "target": "reviews/2026-10-18-user-manual-design-update.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "62c174f01bc3f93d6d89f123e2cbe140e1d16044729749bf2820573568463cfa",
+      "title": "User manual design update",
+      "vault_sha256": "62c174f01bc3f93d6d89f123e2cbe140e1d16044729749bf2820573568463cfa"
+    },
+    {
+      "source": "docs/reviews/2026-10-18-user-manual-format-review.md",
+      "target": "reviews/2026-10-18-user-manual-format-review.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "c1673382dc13eb718f70ef0ee368cb8ed06ad86a342cb9762e68283183225025",
+      "title": "User manual format and editorial review",
+      "vault_sha256": "c1673382dc13eb718f70ef0ee368cb8ed06ad86a342cb9762e68283183225025"
+    },
+    {
+      "source": "docs/reviews/2026-10-18-user-manual-monochrome-update.md",
+      "target": "reviews/2026-10-18-user-manual-monochrome-update.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "5429493cb5fe80642c8a42177d4e787c1a4baa58eb6ddbecf7165ef5517e5f60",
+      "title": "User manual monochrome update",
+      "vault_sha256": "5429493cb5fe80642c8a42177d4e787c1a4baa58eb6ddbecf7165ef5517e5f60"
+    },
+    {
+      "source": "docs/reviews/2026-10-19-month-forecast-demo.md",
+      "target": "reviews/2026-10-19-month-forecast-demo.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "45c58e88dfaed0c52d7a6bce9aa17675665efe93a11083cd5b1d09a6ff430bb0",
+      "title": "Month of recent forecast demo data",
+      "vault_sha256": "45c58e88dfaed0c52d7a6bce9aa17675665efe93a11083cd5b1d09a6ff430bb0"
+    },
+    {
+      "source": "docs/reviews/2026-10-20-admin-login-submit-review.md",
+      "target": "reviews/2026-10-20-admin-login-submit-review.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "929985ee41dd19c1e211834a9e44acc2c4fe4118f3b294015104cf294b9639c4",
+      "title": "Administrator login protection and save reviews",
+      "vault_sha256": "929985ee41dd19c1e211834a9e44acc2c4fe4118f3b294015104cf294b9639c4"
+    },
+    {
+      "source": "docs/reviews/2026-10-20-admin-pos-branch.md",
+      "target": "reviews/2026-10-20-admin-pos-branch.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "c0a56e8a125e980c1d308b56e294b49cff24b6db206dc984dbd29a8fc5c30145",
+      "title": "Administrator POS branch selection",
+      "vault_sha256": "c0a56e8a125e980c1d308b56e294b49cff24b6db206dc984dbd29a8fc5c30145"
+    },
+    {
+      "source": "docs/reviews/2026-10-20-cashier-single-login.md",
+      "target": "reviews/2026-10-20-cashier-single-login.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "842e7080e52cbaac5de0789947896035e6660b9f49bec36263120529d1364cfd",
+      "title": "One active login per cashier account",
+      "vault_sha256": "842e7080e52cbaac5de0789947896035e6660b9f49bec36263120529d1364cfd"
+    },
+    {
+      "source": "docs/reviews/2026-10-20-management-form-validation.md",
+      "target": "reviews/2026-10-20-management-form-validation.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "232ae1e74c7fb640d859f8cfda07506c480ab436fdce36c1c96307c31d098ff1",
+      "title": "Management form character validation and required SKU",
+      "vault_sha256": "232ae1e74c7fb640d859f8cfda07506c480ab436fdce36c1c96307c31d098ff1"
+    },
+    {
+      "source": "docs/reviews/2026-10-20-pos-ajax-actions.md",
+      "target": "reviews/2026-10-20-pos-ajax-actions.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "136731e6af3e545571ff8f1590c6e00dbe6f3ab33d32b20caf9dcc18a936db37",
+      "title": "POS cart actions without page reloads",
+      "vault_sha256": "136731e6af3e545571ff8f1590c6e00dbe6f3ab33d32b20caf9dcc18a936db37"
+    },
+    {
+      "source": "docs/reviews/2026-10-20-product-create-overview.md",
+      "target": "reviews/2026-10-20-product-create-overview.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "ab3be32ef26d7731d455cf3bb1549b989f4e3030c9ed087092ea3404a471b092",
+      "title": "Product entry overview before saving",
+      "vault_sha256": "ab3be32ef26d7731d455cf3bb1549b989f4e3030c9ed087092ea3404a471b092"
+    },
+    {
+      "source": "docs/reviews/2026-10-20-product-unit-selection.md",
+      "target": "reviews/2026-10-20-product-unit-selection.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "a333bdb7f83abd96b115ca54ea4ca278c8859f42a9e40fc0811e52a6c0fc9d49",
+      "title": "Product unit dropdown",
+      "vault_sha256": "a333bdb7f83abd96b115ca54ea4ca278c8859f42a9e40fc0811e52a6c0fc9d49"
+    },
+    {
+      "source": "docs/reviews/2026-10-20-report-reconciliation.md",
+      "target": "reviews/2026-10-20-report-reconciliation.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "608745765ce6b36631fd5981a78c14e792872e83a625dc8237e5ab5222fdee12",
+      "title": "Report overview reconciliation and VAT exemption",
+      "vault_sha256": "608745765ce6b36631fd5981a78c14e792872e83a625dc8237e5ab5222fdee12"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-admin-multiple-logins.md",
+      "target": "reviews/2026-10-21-admin-multiple-logins.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "b4a3d2ca0ba856585916f4ddca88d71457468644b48ffbccf1343cae37fad0e7",
+      "title": "Administrator single-login restriction removed",
+      "vault_sha256": "b4a3d2ca0ba856585916f4ddca88d71457468644b48ffbccf1343cae37fad0e7"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-cashier-foreign-keys.md",
+      "target": "reviews/2026-10-21-cashier-foreign-keys.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "e8b570dd28cf24eeddb8ef6b439c6301ce408e893e8d7d52f4be2197058a03ba",
+      "title": "Enforced cashier foreign keys",
+      "vault_sha256": "e8b570dd28cf24eeddb8ef6b439c6301ce408e893e8d7d52f4be2197058a03ba"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-cashier-import-recovery.md",
+      "target": "reviews/2026-10-21-cashier-import-recovery.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "43c65293e76aa2c9cf9538a6d3f98b18fe66617c23abd58844e0a0dfa2a40de1",
+      "title": "Cashier FK import blank page and completion recovery",
+      "vault_sha256": "43c65293e76aa2c9cf9538a6d3f98b18fe66617c23abd58844e0a0dfa2a40de1"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-cashier-login-history.md",
+      "target": "reviews/2026-10-21-cashier-login-history.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "0a08b86794c28215a1135215353fd864bb800b0791ac380b62ffbad10ab1c2db",
+      "title": "Cashier own login history",
+      "vault_sha256": "0a08b86794c28215a1135215353fd864bb800b0791ac380b62ffbad10ab1c2db"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-export8-database-upgrade.md",
+      "target": "reviews/2026-10-21-export8-database-upgrade.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "c863a4108a77f9aa04a8a00c229c92d7595bc4c90ede78ecb44d3ffde75fda47",
+      "title": "Latest existing-database upgrade for phpMyAdmin export 8",
+      "vault_sha256": "c863a4108a77f9aa04a8a00c229c92d7595bc4c90ede78ecb44d3ffde75fda47"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-password-visibility.md",
+      "target": "reviews/2026-10-21-password-visibility.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "711ee49b42484fbbab287736968e51557c0fb02df095c2089014900ba241f7cb",
+      "title": "Change Password visibility controls",
+      "vault_sha256": "711ee49b42484fbbab287736968e51557c0fb02df095c2089014900ba241f7cb"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-sales-history-filters.md",
+      "target": "reviews/2026-10-21-sales-history-filters.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "9312c7cbb5cf8f46aa7d745ac6de6f9fdec1d08852c00c42342d9f00b8fad25b",
+      "title": "Sales History date-filter update",
+      "vault_sha256": "9312c7cbb5cf8f46aa7d745ac6de6f9fdec1d08852c00c42342d9f00b8fad25b"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-server-clock.md",
+      "target": "reviews/2026-10-21-server-clock.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "a00f62f7f3d217c0e6fefccdb3442b69b3aad5b1810c097bb5df7eefc70d6704",
+      "title": "Server-synchronized workspace clock",
+      "vault_sha256": "a00f62f7f3d217c0e6fefccdb3442b69b3aad5b1810c097bb5df7eefc70d6704"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-stock-adjustment-ui.md",
+      "target": "reviews/2026-10-21-stock-adjustment-ui.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "c7ec3cb6cfa7a7c941c96b15fc504718fedb58436cd6ee0e070f20d9686f44aa",
+      "title": "Product stock adjustment form polish",
+      "vault_sha256": "c7ec3cb6cfa7a7c941c96b15fc504718fedb58436cd6ee0e070f20d9686f44aa"
+    },
+    {
+      "source": "docs/reviews/2026-10-21-user-presence.md",
+      "target": "reviews/2026-10-21-user-presence.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "7a2184bc4fe1edeb5abe7c9ccd81decf61e26c22ca99582a8ee0c29a2312c139",
+      "title": "Online users and Last seen",
+      "vault_sha256": "7a2184bc4fe1edeb5abe7c9ccd81decf61e26c22ca99582a8ee0c29a2312c139"
+    },
+    {
+      "source": "docs/reviews/2026-10-23-cashier-return-pages.md",
+      "target": "reviews/2026-10-23-cashier-return-pages.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "93e58bf56e0805d92670e997243c016114281d62afa8ce01ef47973cdc6b9ec5",
+      "title": "Cashier visibility for Quarantine and Damaged Items",
+      "vault_sha256": "93e58bf56e0805d92670e997243c016114281d62afa8ce01ef47973cdc6b9ec5"
+    },
+    {
+      "source": "docs/reviews/2026-10-23-damaged-items-page.md",
+      "target": "reviews/2026-10-23-damaged-items-page.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "f9bbe4f1f0e1569d17722ae0064a65413e95cf519f976d6da9c15f824c58d4e4",
+      "title": "Damaged Items page",
+      "vault_sha256": "f9bbe4f1f0e1569d17722ae0064a65413e95cf519f976d6da9c15f824c58d4e4"
+    },
+    {
+      "source": "docs/reviews/2026-10-23-expiry-date-cutoff.md",
+      "target": "reviews/2026-10-23-expiry-date-cutoff.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "8489b77429c547fc1b3c8d91db7764ee2b1ee75ebffa06de0a9788f12fe10016",
+      "title": "Expiry date cutoff update",
+      "vault_sha256": "8489b77429c547fc1b3c8d91db7764ee2b1ee75ebffa06de0a9788f12fe10016"
+    },
+    {
+      "source": "docs/reviews/2026-10-23-export-functionality-audit.md",
+      "target": "reviews/2026-10-23-export-functionality-audit.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "75640622f6d3a5de2410667ca6225352dc91c0055e20af568ac6a776b4bc30a4",
+      "title": "Export functionality audit",
+      "vault_sha256": "75640622f6d3a5de2410667ca6225352dc91c0055e20af568ac6a776b4bc30a4"
+    },
+    {
+      "source": "docs/reviews/2026-10-23-quarantine-page.md",
+      "target": "reviews/2026-10-23-quarantine-page.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "21f83eb68bb2289755ccba0fd039f5194f1562d1f31823a292d164f4d25fc7d4",
+      "title": "Quarantine inspection page",
+      "vault_sha256": "21f83eb68bb2289755ccba0fd039f5194f1562d1f31823a292d164f4d25fc7d4"
+    },
+    {
+      "source": "docs/reviews/2026-10-23-stock-log-pdf-memory-fix.md",
+      "target": "reviews/2026-10-23-stock-log-pdf-memory-fix.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "ecf672e8fc6bcfa20628aad825eabbc13149e6ef33d56929b45f08172963ba25",
+      "title": "Stock log PDF memory fix",
+      "vault_sha256": "ecf672e8fc6bcfa20628aad825eabbc13149e6ef33d56929b45f08172963ba25"
+    },
+    {
+      "source": "docs/reviews/2026-10-23-transaction-overviews.md",
+      "target": "reviews/2026-10-23-transaction-overviews.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "7cb51fbaabe6f959a16bce7e0d09b8894e8e09877868ea574aabd4928fbb9e6f",
+      "title": "Refund, exchange and sale correction overviews",
+      "vault_sha256": "7cb51fbaabe6f959a16bce7e0d09b8894e8e09877868ea574aabd4928fbb9e6f"
+    },
+    {
+      "source": "docs/reviews/2026-10-27-whole-system-audit.md",
+      "target": "reviews/2026-10-27-whole-system-audit.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "0db4299b12fc086f5fa2463733c1f4334418226cfdf240716d0d439e8ae72b0c",
+      "title": "Whole system logic and security audit",
+      "vault_sha256": "0db4299b12fc086f5fa2463733c1f4334418226cfdf240716d0d439e8ae72b0c"
+    },
+    {
+      "source": "docs/reviews/2026-10-28-expiry-calendar-bounds.md",
+      "target": "reviews/2026-10-28-expiry-calendar-bounds.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "46dc9bafe423f7cc6b12b10e809c5a0492e87d3d964987ed57f2580d75b9ad1f",
+      "title": "Expiry calendar limits before selecting a date",
+      "vault_sha256": "46dc9bafe423f7cc6b12b10e809c5a0492e87d3d964987ed57f2580d75b9ad1f"
+    },
+    {
+      "source": "docs/reviews/2026-10-28-expiry-limit-only.md",
+      "target": "reviews/2026-10-28-expiry-limit-only.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "b30f003c07aaf2038aabd22ff7866e5c37dc4a10568e4b7938239153d674ba9a",
+      "title": "Expiry date limit without administrator override",
+      "vault_sha256": "b30f003c07aaf2038aabd22ff7866e5c37dc4a10568e4b7938239153d674ba9a"
+    },
+    {
+      "source": "docs/reviews/2026-10-28-expiry-year-range.md",
+      "target": "reviews/2026-10-28-expiry-year-range.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "9a2dc6bbd087f4d418b442f86c53f1653bd5c3b8a3472c0a94f159f36cc5f435",
+      "title": "Expiry year range and administrator review",
+      "vault_sha256": "9a2dc6bbd087f4d418b442f86c53f1653bd5c3b8a3472c0a94f159f36cc5f435"
+    },
+    {
+      "source": "docs/reviews/2026-10-28-selected-audit-repairs.md",
+      "target": "reviews/2026-10-28-selected-audit-repairs.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "96a5c6d95ab26740a468450ab4c19afa62913a98a684cdb3fed8a14bda58d739",
+      "title": "Selected POS inventory and report audit repairs",
+      "vault_sha256": "96a5c6d95ab26740a468450ab4c19afa62913a98a684cdb3fed8a14bda58d739"
+    },
+    {
+      "source": "docs/reviews/2026-10-29-floating-spacer-fix.md",
+      "target": "reviews/2026-10-29-floating-spacer-fix.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "c991826f0a1b0e73351e431e71ff73c8362554641f6130d9256dc0bf313068ef",
+      "title": "Floating spacer after page refresh",
+      "vault_sha256": "c991826f0a1b0e73351e431e71ff73c8362554641f6130d9256dc0bf313068ef"
+    },
+    {
+      "source": "docs/reviews/2026-10-29-pos-catalog-payments-reorder-removal.md",
+      "target": "reviews/2026-10-29-pos-catalog-payments-reorder-removal.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "8013261b24e97f4abc306e2c15b8c6feb99f8d8ffb37bed099ccb33d7439d784",
+      "title": "POS catalog visibility, payment references and reorder removal",
+      "vault_sha256": "8013261b24e97f4abc306e2c15b8c6feb99f8d8ffb37bed099ccb33d7439d784"
+    },
+    {
+      "source": "docs/reviews/2026-10-29-pos-shift-banner-alignment.md",
+      "target": "reviews/2026-10-29-pos-shift-banner-alignment.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "c79179d08101fa7c03772e3796c0716337af830219a45867cadad956828fdeab",
+      "title": "POS shift banner alignment",
+      "vault_sha256": "c79179d08101fa7c03772e3796c0716337af830219a45867cadad956828fdeab"
+    },
+    {
+      "source": "docs/reviews/2026-10-29-product-background-filters.md",
+      "target": "reviews/2026-10-29-product-background-filters.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "a8b928a420e21472628a84324225381075410977c0684762822702e199688b25",
+      "title": "Product table background filtering",
+      "vault_sha256": "a8b928a420e21472628a84324225381075410977c0684762822702e199688b25"
+    },
+    {
+      "source": "docs/reviews/2026-10-29-product-datatable-column-filters.md",
+      "target": "reviews/2026-10-29-product-datatable-column-filters.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "3ede6d162de6230ade703646233b922de9221b2faedf3ae5f3da84b3bfead618",
+      "title": "Product DataTables column filters",
+      "vault_sha256": "3ede6d162de6230ade703646233b922de9221b2faedf3ae5f3da84b3bfead618"
+    },
+    {
+      "source": "docs/reviews/2026-10-29-product-stock-manufacturer-filters.md",
+      "target": "reviews/2026-10-29-product-stock-manufacturer-filters.md",
+      "kind": "review",
+      "existing": true,
+      "source_sha256": "4cb9a9d15a47e0f09618b6d996d1ee7d20530e1a73052da6458308886c4ec0a9",
+      "title": "Product stock and manufacturer filters",
+      "vault_sha256": "4cb9a9d15a47e0f09618b6d996d1ee7d20530e1a73052da6458308886c4ec0a9"
+    },
+    {
+      "source": "README.md",
+      "target": "archive/project/Framework-README.md",
+      "kind": "root-history",
+      "existing": false,
+      "source_sha256": "e57c9a4eb0e0bcd45153cdfc4b8fe7b2d51e63777922de1de1ae982faa388a61",
+      "title": "CodeIgniter 4 Framework",
+      "vault_sha256": "cf0a7212b175c3184fd8ca68781bf94ce9aa8f764dd90ecf709b3c5a94ff1c2e"
+    },
+    {
+      "source": "HOSTINGER-DEPLOYMENT.md",
+      "target": "archive/project/HOSTINGER-DEPLOYMENT.md",
+      "kind": "root-history",
+      "existing": false,
+      "source_sha256": "66963bb72ce09175ed4be47eb16b4192ad62a669cc6f94f741830eaf35232c83",
+      "title": "Hostinger deployment review — 2026-09-21",
+      "vault_sha256": "10c4b82e85963c919e6ddd9a972bbcad77797b2e4637521b170d8521464cffaf"
+    },
+    {
+      "source": "tests/README.md",
+      "target": "archive/project/Testing-README.md",
+      "kind": "root-history",
+      "existing": false,
+      "source_sha256": "54e93371ca9fc7949835533e9e92f840d2f07f4e241172d8a3ce1cd976a35849",
+      "title": "Running Application Tests",
+      "vault_sha256": "317005f25a2a4a4830ae407b6e58dac0bc5eb9e3ad6b900366e9a49239687701"
+    },
+    {
+      "source": "database/exports/pharxmaco-latest-invoice-data-2026-10-14.md",
+      "target": "data-guides/exports/pharxmaco-latest-invoice-data-2026-10-14.md",
+      "kind": "data-guide",
+      "existing": false,
+      "source_sha256": "b3fb8874bdef20a9ca5f5e49e95e7a7fdaeb36687383a024d61750fe9c5b28bd",
+      "title": "Updated product data for invoice receipts",
+      "vault_sha256": "84a98d9823c90961b1efff0127d4b3b1dbdd331608c3c606cf304706bc57579c"
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "reviews/2026-09-27-research-alignment-review.md",
+      "kind": "review",
+      "existing": false,
+      "source_sha256": "48abcc8709a30460fd41d0b29f0ba4006cd255e03dd73b908f4ed24c91fa8257",
+      "title": "Research paper and implementation review",
+      "vault_sha256": "c4e0833ac3fb3f45400ce8b7e844a11bc1fa97f778730264956e547f9ef9e60a"
+    },
+    {
+      "source": "database/reviews/2026-10-03-hostinger-files-comparison.md",
+      "target": "reviews/2026-10-03-hostinger-files-comparison.md",
+      "kind": "review",
+      "existing": false,
+      "source_sha256": "e68604a9f4833070988ccfd0ca09fe15c46354db4267c97c57b182ef8833092d",
+      "title": "Hostinger app and assets comparison",
+      "vault_sha256": "a21ef71b72efa5d4b1467b92dde1f9c1bff020ed97b3297215c359b391b46ee3"
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "reviews/2026-10-04-panelist-system-review.md",
+      "kind": "review",
+      "existing": false,
+      "source_sha256": "f360721794a7549da0fa02de85db875e22ddad8f6c5bdd2307077bb815fbd66a",
+      "title": "Panelist review: business logic and system readiness",
+      "vault_sha256": "9c713d1502cd2f9e7de11f8b6ad53ed4dbeeba9ee2af238a4976f289bfdb48a3"
+    },
+    {
+      "source": "database/reviews/2026-10-04-system-bug-audit.md",
+      "target": "reviews/2026-10-04-system-bug-audit.md",
+      "kind": "review",
+      "existing": false,
+      "source_sha256": "a0e05ec9438a9871bc53635aa0d19421b7003684168299093dafcaebec8c610b",
+      "title": "System bug audit — October 4, 2026",
+      "vault_sha256": "4e60c8781e428b91db886604e2765edf49667165fc385b31a0f7358aa86a4898"
+    },
+    {
+      "source": "database/samples/2026-10-19-month-forecast-demo.md",
+      "target": "data-guides/samples/2026-10-19-month-forecast-demo.md",
+      "kind": "data-guide",
+      "existing": false,
+      "source_sha256": "40c90e96302fc3eb9e65da80fca475f1ab883cafe76ebcbcb8fa71d4a4ced679",
+      "title": "One month of recent forecast demo history",
+      "vault_sha256": "ec8f40c0953399dfd8ce14e4843d80eaca015f6c12c6a0fccf386cb1789c25ae"
+    },
+    {
+      "source": "database/samples/holt-14-day-2026-10-12.md",
+      "target": "data-guides/samples/holt-14-day-2026-10-12.md",
+      "kind": "data-guide",
+      "existing": false,
+      "source_sha256": "5ac646d8e918b39d97d5d9215dde235dc8e52bb315e134ce274f08eeb458acee",
+      "title": "Two-week sales and stock demonstration",
+      "vault_sha256": "9131060b010c60eaf4768b85e5e1e4996c0b3543a08c0d3ee93ce08089a12b57"
+    },
+    {
+      "source": "database/samples/README.md",
+      "target": "data-guides/samples/README.md",
+      "kind": "data-guide",
+      "existing": false,
+      "source_sha256": "e366d88465e5097606e16cfec163c4aaf44398b428fb500ad753c434f41ffb76",
+      "title": "Recent forecast demonstration sales",
+      "vault_sha256": "9d1d4b213f98a7a18a2827868b749e7bde0ec21d15cc8dabce9f5704f1c22f21"
+    },
+    {
+      "source": "database/upgrades/2026-09-20-discount-deployment.md",
+      "target": "upgrades/2026-09-20-discount-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "c0e3ba703e1ab04d8b3d45c03970824d69e8c1cf8a2927ee4b690a5412a695af",
+      "title": "Discount fixes: files-only Hostinger upload",
+      "vault_sha256": "e914c641602e6c6a490de63b8d061b919177f1ce8933f79cf9f26faad9cd223c"
+    },
+    {
+      "source": "database/upgrades/2026-09-21-export-formats-deployment.md",
+      "target": "upgrades/2026-09-21-export-formats-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "8e62b8bdb59007df0549051fa61fbdcd0ca28a81dba8367e2d0a1cd32505b8ed",
+      "title": "PDF and CSV format update",
+      "vault_sha256": "acc26182c8b6401cf49b02cd489394abc3343dee806a494474530b72610494d8"
+    },
+    {
+      "source": "database/upgrades/2026-09-22-modals-deployment.md",
+      "target": "upgrades/2026-09-22-modals-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "55a0f93130eee038932beb3ec9c09ee1b692dd263956232627c390118065cdf8",
+      "title": "Modal interface update",
+      "vault_sha256": "a67ad139326547537de1e89e332b6ee3ce1be69455b37013f900304170bb6a91"
+    },
+    {
+      "source": "database/upgrades/2026-09-22-navigation-deployment.md",
+      "target": "upgrades/2026-09-22-navigation-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "cf7d8827bf4bfb02a331760321e0b799ff97f750c3796731512dfaa4f02e373c",
+      "title": "Sidebar and topbar update",
+      "vault_sha256": "1f799bbcb69c1e9d4c458bded0afccb563809759776e79ba8a39265940305f95"
+    },
+    {
+      "source": "database/upgrades/2026-09-23-favicon-deployment.md",
+      "target": "upgrades/2026-09-23-favicon-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "963641b01951a83ec00a7124d46b5a56fcc77f933dacc4318dd874e42d526377",
+      "title": "Browser tab icon fix",
+      "vault_sha256": "9b7da3d5ccbc9e52302d1521d5288ce630e4dd4f6454f973eb0f67c9886a782a"
+    },
+    {
+      "source": "database/upgrades/2026-09-23-pdf-font-repair.md",
+      "target": "upgrades/2026-09-23-pdf-font-repair.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "39205e5660ed4b401594d318e9963a7c31e728bf77215aa9c62c5c62f6523756",
+      "title": "Hostinger PDF font repair",
+      "vault_sha256": "f46610a1a14991f843893b7b394626886845a453eae36f1042c7c217c63b515b"
+    },
+    {
+      "source": "database/upgrades/2026-09-23-pos-deployment.md",
+      "target": "upgrades/2026-09-23-pos-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "f968fc9da8dfa81c02170f9cbe377c2afe338e9c1f9bd30a5cfb48c69e4e58ff",
+      "title": "Point-of-sale interface update",
+      "vault_sha256": "5e140a1640b16df919371ddeb165f3761f1483227ab08e9ecd4bc90036c363d2"
+    },
+    {
+      "source": "database/upgrades/2026-09-23-reports-chart-fix.md",
+      "target": "upgrades/2026-09-23-reports-chart-fix.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "20aadcd8f1c3f969349009644b0b3e3805249a511d635a040a3194829f7ed436",
+      "title": "Reports empty-chart overlap fix",
+      "vault_sha256": "96d48eaee7f7455afea2d905e01030a41a1e37e622f70acd97ef8a69a7ff0097"
+    },
+    {
+      "source": "database/upgrades/2026-09-23-reports-ui-deployment.md",
+      "target": "upgrades/2026-09-23-reports-ui-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "0dce72b015a4f84feaa229934e62b43f91f7d1d71002d49b5faa3efd1e9d66d8",
+      "title": "Reports page interface update",
+      "vault_sha256": "0da9191afd19c9a8ff6d5b8d066b8a9fb7d441aafb5e346f75758e2bf71dbd4d"
+    },
+    {
+      "source": "database/upgrades/2026-09-24-cash-table-scroll.md",
+      "target": "upgrades/2026-09-24-cash-table-scroll.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "e6563669dc536696989fb23bce2ff438fbcc1a5ae5ce25d216734dfddea06524",
+      "title": "Receipts and refund payouts scrollbar",
+      "vault_sha256": "43d5113d02fe6fea1050b4775ec64c4fecd20d1576bcaea3b24bef259d6f9dee"
+    },
+    {
+      "source": "database/upgrades/2026-09-24-dashboard-deployment.md",
+      "target": "upgrades/2026-09-24-dashboard-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "5a7b32aaa9395fdd05dc8886e29fa3c32744d5eaadf7bca90b7260dfa29c7908",
+      "title": "Dashboard interface update",
+      "vault_sha256": "0242b9aa9d2851194c2380b3da211fd5c41084d13197cf84b017c550eb1b3b5b"
+    },
+    {
+      "source": "database/upgrades/2026-09-24-forecast-position-deployment.md",
+      "target": "upgrades/2026-09-24-forecast-position-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "2bee3848d9d6d8c6b6cc81eb16c1d612f59f379d266cb2a09296e8962d18c6a5",
+      "title": "Keep the forecast view position after updating",
+      "vault_sha256": "e584935f2cd56eb98ab4606ebfcd8e92ca99e06bdabd1abea99e59b94672905c"
+    },
+    {
+      "source": "database/upgrades/2026-09-24-interface-settings-deployment.md",
+      "target": "upgrades/2026-09-24-interface-settings-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "6de6b0343f69bdba870f0a69e229df33ed0e404681606c2adb2931f22fcda2aa",
+      "title": "Interface settings update",
+      "vault_sha256": "b714b2bdec20c829708d226ddd85f7864b3a1bc0b6f860892799af4440390310"
+    },
+    {
+      "source": "database/upgrades/2026-09-24-login-animations-deployment.md",
+      "target": "upgrades/2026-09-24-login-animations-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "253d2305861de3396daeeffdcdc634f9dfdaa690ca8f829410c61a0b8ee3f73c",
+      "title": "Login animations",
+      "vault_sha256": "57afa408ac6ac6b4537b3e2033acdcb5a869004488e018a2a6048b24ea6683de"
+    },
+    {
+      "source": "database/upgrades/2026-09-24-login-bugfix-deployment.md",
+      "target": "upgrades/2026-09-24-login-bugfix-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "7dbb7bc1a4e4a8df6c7b706b04896b925fc2cefd9ffb12bd6c1bc4b3f6aaec27",
+      "title": "Login bug fixes",
+      "vault_sha256": "bd500c3726e3fc78675eaa69c91b2fef5e0779f777a66452dc1a48c4402e8b6b"
+    },
+    {
+      "source": "database/upgrades/2026-09-24-login-deployment.md",
+      "target": "upgrades/2026-09-24-login-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "e5c4da83f0a34a7fecf001b7769ffb10826a605b3acee6bd3ce64853a201be35",
+      "title": "Creative login page",
+      "vault_sha256": "a38a168cdecb7e4e6ff978bad803669e1951ec7e50a4382100c0948c41a43a70"
+    },
+    {
+      "source": "database/upgrades/2026-09-24-manual-forecast-deployment.md",
+      "target": "upgrades/2026-09-24-manual-forecast-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "58a027ed6ab81b789c11a9bf0cd6d27007f01d7bdcd05309adcc40e5ab4695cd",
+      "title": "Manual forecast filters and saved records",
+      "vault_sha256": "1fdc35df0bf172040aecdd0ed15a68069074e21b69b8132fc032b8eb15a093dc"
+    },
+    {
+      "source": "database/upgrades/2026-09-24-pagination-deployment.md",
+      "target": "upgrades/2026-09-24-pagination-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "ff003a8c4b824f42142902419a7a719161231c1a0152d80956e67a82ec9842e1",
+      "title": "Shared pagination update",
+      "vault_sha256": "7ac657e52080f0d2dce89b1fdf52355efa9fa246dfcc691b856a90a64a5c2d6e"
+    },
+    {
+      "source": "database/upgrades/2026-09-27-forecast-24-months.md",
+      "target": "upgrades/2026-09-27-forecast-24-months.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "60c56cb77dfa8094d07b1b0ab3192b2b047fc254b92c41f929dde53958fd3f90",
+      "title": "Forecast history: 24 months",
+      "vault_sha256": "eaed5937cd1967a11f55d35304a0d0f06987b40ab16e41f0a045f10d7b4f008e"
+    },
+    {
+      "source": "database/upgrades/2026-09-27-remove-past-sales-import.md",
+      "target": "upgrades/2026-09-27-remove-past-sales-import.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "92933a10327e9242b0da6673e9f711b60364944125a0e75870984ed1315f9f4c",
+      "title": "Remove Import Past Sales",
+      "vault_sha256": "079dd6e54ece9796d6bb29496ce45ad0e190f4d44942187d35f7e599406d8921"
+    },
+    {
+      "source": "database/upgrades/2026-09-27-research-fixes-deployment.md",
+      "target": "upgrades/2026-09-27-research-fixes-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "e38ab8051ec7c49968766fc08a684c241164e432e770195f527495e2fa9bfd16",
+      "title": "Research alignment fixes: saved forecasts, branch lookup, login audit",
+      "vault_sha256": "61f2251f57b3fe40319ceb875ded93c81840581abb8d91ff62c00941a6b99317"
+    },
+    {
+      "source": "database/upgrades/2026-09-27-restock-modal-deployment.md",
+      "target": "upgrades/2026-09-27-restock-modal-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "3862bfe8bf2cd045809bee68be3b4c69070e35b2e8c878ca497b3ff43eaae508",
+      "title": "Restock Suggestions modal",
+      "vault_sha256": "47c0beae3a4e5cdc2972c8568f5af1a31369ee1175de0f97fd462d0991ca6732"
+    },
+    {
+      "source": "database/upgrades/2026-09-27-save-forecast-deployment.md",
+      "target": "upgrades/2026-09-27-save-forecast-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "6d8f365ca4acb4a204fa17fecab8cb9ad6f71b8dc9ef951dd62bb54e3d8ec43f",
+      "title": "Save forecasts from Update Forecast",
+      "vault_sha256": "98b4069ab3ee74627e1ff7064ba518a616e54bf0e1c01fb09b17b81d78af1dfc"
+    },
+    {
+      "source": "database/upgrades/2026-09-28-branch-shortcuts-deployment.md",
+      "target": "upgrades/2026-09-28-branch-shortcuts-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "e89ca869edaef95ce670718912b9ee885530645aadeb063ceb3d6a030b628e86",
+      "title": "Branch inventory and sales shortcuts",
+      "vault_sha256": "6454186a0a40a684452f8501f4e945bc7e5630e00e88867cb9e5fff61cccd337"
+    },
+    {
+      "source": "database/upgrades/2026-09-28-table-buttons-deployment.md",
+      "target": "upgrades/2026-09-28-table-buttons-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "6cc7c1074192fb9497f65348109f083c7516bf962d4041c100519b8b7dcb1a1e",
+      "title": "Table action buttons",
+      "vault_sha256": "969284ad759cbc3a647bdf9c58619c424623a08815bb11aba5907da938ae3655"
+    },
+    {
+      "source": "database/upgrades/2026-09-29-disclosure-controls-deployment.md",
+      "target": "upgrades/2026-09-29-disclosure-controls-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "2998d54d186fd7a7d0b50ee3f0d641190191161d97a4bf3be2142326a5be2f42",
+      "title": "Clear dashboard disclosure control",
+      "vault_sha256": "f2b1c5425af2c2a3e62b439c5ec34fc8ef333dfa194c6cb92d2b8ac779d7c1c9"
+    },
+    {
+      "source": "database/upgrades/2026-09-29-login-icon-animation.md",
+      "target": "upgrades/2026-09-29-login-icon-animation.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "8f6adfb16bc1e9260c19834e53fc525539beeb0261c3fff18331ddf7d21094be",
+      "title": "Animated login sign-in icon",
+      "vault_sha256": "e02e137d5cab12614db8b6772c6fc51b88e84fec40a6c66cc13d0ae86f97f122"
+    },
+    {
+      "source": "database/upgrades/2026-09-29-login-label-deployment.md",
+      "target": "upgrades/2026-09-29-login-label-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "c123d16942194d428af3dc29ac4929e0ec4143312a0c915e1fa7db92b5cf4fde",
+      "title": "Login label update",
+      "vault_sha256": "c6ca6669bbc3a77297602c4c43d341e22ecce80b02b296116276a3881176bd88"
+    },
+    {
+      "source": "database/upgrades/2026-09-29-tables-deployment.md",
+      "target": "upgrades/2026-09-29-tables-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "fd4410f9a8679c349030219a3e821949e5ec9a5fb9375b74c0bbc879558ebe54",
+      "title": "Workspace table improvements",
+      "vault_sha256": "c4d237f2a9009aa0432b12689f2b5196af504ae37f24225893fe0b054a90ff3f"
+    },
+    {
+      "source": "database/upgrades/2026-09-30-login-redirect-deployment.md",
+      "target": "upgrades/2026-09-30-login-redirect-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "8e065b123f2ab03b5b4458df671b1eb92d4a7b39d6a872b350d02e188d0b943c",
+      "title": "Redirect signed-in users away from login",
+      "vault_sha256": "d2472a489002a1f8771326bab59ed27ee6e7b91fb1ebc96006f16e1e37491d20"
+    },
+    {
+      "source": "database/upgrades/2026-09-30-printable-pdf-deployment.md",
+      "target": "upgrades/2026-09-30-printable-pdf-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "14217631ed98329a21d21874ed0ef18f96b4580b66793ee7bfc1636019c59b15",
+      "title": "Printable PDF exports",
+      "vault_sha256": "093d1222917865117e0b4b33e21c439639239420524eed5b74b02dc0c57233ac"
+    },
+    {
+      "source": "database/upgrades/2026-09-30-readable-dates-deployment.md",
+      "target": "upgrades/2026-09-30-readable-dates-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "ada07b42ea219594ce55a47152a6a8d82be8286e1c4aba3ad503cbf7741bcf52",
+      "title": "Readable dates and times",
+      "vault_sha256": "1b8af54da20a5c44b797c6c89dfcc190d4741e1e26dbeb6554d081371b4dd21d"
+    },
+    {
+      "source": "database/upgrades/2026-09-30-readable-dates-files.txt",
+      "target": "upgrades/2026-09-30-readable-dates-files.txt.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "f6f03b96051c5adc447d6d3382d7b4fbb5ced9fc4b32b716d2eecb88e0cdd205",
+      "title": "2026-09-30-readable-dates-files.txt",
+      "vault_sha256": "2f200908d394f5ae87bab9f5f7b505f91ce54ba25934fe4359987b188733a69e"
+    },
+    {
+      "source": "database/upgrades/2026-10-01-cashier-stock-actions.md",
+      "target": "upgrades/2026-10-01-cashier-stock-actions.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "12749db663655087446e324ab60c70da494152c16e6e07dcadb984fbb26be076",
+      "title": "Cashier Add / Remove stock",
+      "vault_sha256": "c2427a4d724afbfb9ae9f37c49b7d64756da329f534f524e6082ed404ccd2a86"
+    },
+    {
+      "source": "database/upgrades/2026-10-01-exchange-discount-fix.md",
+      "target": "upgrades/2026-10-01-exchange-discount-fix.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "a97524bed292f01e4955b335d65101a416896b78283217933184fcb0a3c625f6",
+      "title": "Exchange discount eligibility fix",
+      "vault_sha256": "d973b1d60a2d9abff9e46f6be7fddba6ac1709f2d05e51a68dff23f612c51f33"
+    },
+    {
+      "source": "database/upgrades/2026-10-01-expiry-actions-deployment.md",
+      "target": "upgrades/2026-10-01-expiry-actions-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "240843579c5af0c3ec1ea3e953cecdef32041017612b50218406590056ca5774",
+      "title": "Expiry stock actions",
+      "vault_sha256": "01b08fa5a49add1b46bbb2612da379e99c2d8cb6dd8751dd69e2a074603a21ae"
+    },
+    {
+      "source": "database/upgrades/2026-10-01-product-exchange-deployment.md",
+      "target": "upgrades/2026-10-01-product-exchange-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "8f2bd90d63462fd6666c212c3feebb6d7da855dd0be639912a17413c59832dbb",
+      "title": "Product exchanges",
+      "vault_sha256": "f624ba0361ef333cd425fafbf798537f0f839c452c17195a2456fb227504b0b9"
+    },
+    {
+      "source": "database/upgrades/2026-10-01-thermal-receipts-deployment.md",
+      "target": "upgrades/2026-10-01-thermal-receipts-deployment.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "3f81518d12daf675cba6f5fcd7551a44c5a3bee94733327b12ef6e12bbbf5f52",
+      "title": "Thermal receipt styling",
+      "vault_sha256": "7e1bdebe232662532387a4e13ace2541bb6328b674f9041568f2528d2e713207"
+    },
+    {
+      "source": "database/upgrades/2026-10-03-all-latest-database-updates.md",
+      "target": "upgrades/2026-10-03-all-latest-database-updates.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "d1115ae22293385d6a21ccb60607528f31c434dd5c0705f590bc095b337f0be9",
+      "title": "Latest database updates for the supplied Hostinger export",
+      "vault_sha256": "35d88b155d77676e69bd1afc03d9851973062e09043ebc0523da1ae7fa7cc825"
+    },
+    {
+      "source": "database/upgrades/2026-10-03-branch-product-trash.md",
+      "target": "upgrades/2026-10-03-branch-product-trash.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "3f0d53e87de90e9dc4c4719c85621f3dda508c169759761d9f14667ce100d5e9",
+      "title": "Branch-specific product Trash",
+      "vault_sha256": "b8c7fcb6d4edba506c9b5bf5312d958f2c671ab9ae7c7a6974ba3e17a9f667e5"
+    },
+    {
+      "source": "database/upgrades/2026-10-03-cashier-catalog-ui.md",
+      "target": "upgrades/2026-10-03-cashier-catalog-ui.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "1cbf04fecaf81e412237206fffd4dca581ed53cadfe708338084e413a1d03015",
+      "title": "Cashier catalog layout correction",
+      "vault_sha256": "07e6b9751d8cc1dc3ae80656b7cfc7b281c0d32a04d35791b16d0b94377ed5d4"
+    },
+    {
+      "source": "database/upgrades/2026-10-03-cashier-product-catalog.md",
+      "target": "upgrades/2026-10-03-cashier-product-catalog.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "15b6d5e7e1fa4a8d5199de8ea3c22e6930136d16d0f16ad60a95d60f53827fdc",
+      "title": "Add existing products to a cashier's branch",
+      "vault_sha256": "a40920469d298e7d916a89ba47e36b33c1b7157a6f8e07a0fc2cca638f4d229c"
+    },
+    {
+      "source": "database/upgrades/2026-10-03-permanent-delete-flags.md",
+      "target": "upgrades/2026-10-03-permanent-delete-flags.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "ca392a745f90d0111551ff2bbefeb24f2dcc182324ea243590b274988d93aa36",
+      "title": "Permanent deletion with a 0/1 flag",
+      "vault_sha256": "fc99e220b67a81a18755fce0e39019d7517a7bf9032b5037fae507cdcffd028b"
+    },
+    {
+      "source": "database/upgrades/2026-10-03-retained-permanent-deletion.md",
+      "target": "upgrades/2026-10-03-retained-permanent-deletion.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "fe78fe306987613bea7c5450db89767321758392a117bf34058b96e8e22e17ae",
+      "title": "Delete permanently while retaining database records",
+      "vault_sha256": "78c7f88a4ffca3502fc0ed457d359346f3e6ab6a8819c3214f7804223dc210f9"
+    },
+    {
+      "source": "database/upgrades/2026-10-03-soft-delete-flags.md",
+      "target": "upgrades/2026-10-03-soft-delete-flags.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "2f78a25d15dc452bf1575c6c2c5902c562c72f46c16fd16f895baa4fcc5c30ca",
+      "title": "Retained records and explicit is_deleted flags",
+      "vault_sha256": "ba7240cad7029c0e48d55ec05b55443ae29310291f44f87d84d59ba5367741af"
+    },
+    {
+      "source": "database/upgrades/2026-10-04-discounted-sale-corrections.md",
+      "target": "upgrades/2026-10-04-discounted-sale-corrections.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "89b2b7ddd7cb20a79cc4b56bd4955fc1f55bc679183d0f6e9ff352558a9f3924",
+      "title": "Quantity corrections for discounted sales",
+      "vault_sha256": "5520e624c2df4a5b8a9dd9d76da6a11b6bdad6f83d438989a441d2bce7dbbfa8"
+    },
+    {
+      "source": "database/upgrades/2026-10-04-exchange-different-products.md",
+      "target": "upgrades/2026-10-04-exchange-different-products.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "17e8483ba1243db749c6a61d75683bdce83581ceb25f917b5902b8591701ff10",
+      "title": "Different products for exchanges",
+      "vault_sha256": "83669e1245a92c61f4d95f047b187420b727af93744c7e7dbc313e7c1f81f295"
+    },
+    {
+      "source": "database/upgrades/2026-10-04-stock-expiry-safeguards.md",
+      "target": "upgrades/2026-10-04-stock-expiry-safeguards.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "ea71fd223bad9053d77fbe3438e97f9627adb8cd8c628f704929b866df59f7a5",
+      "title": "Expiry handling safeguards",
+      "vault_sha256": "0607636b59394f591fa2928ec93199aa1f7e6758f1d377a9c1538c7ef0f4f5da"
+    },
+    {
+      "source": "database/upgrades/2026-10-04-system-audit-fixes.md",
+      "target": "upgrades/2026-10-04-system-audit-fixes.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "ea45fac75b9205a0b99895c5aa6951824c9191de5f4effaf2ad8c7f4d27c84a1",
+      "title": "System audit fixes — October 4, 2026",
+      "vault_sha256": "fde6cfc1f02772ea62223eab4e3daaf2e5a5170cb93ac36c4e619f5349e6e6fe"
+    },
+    {
+      "source": "database/upgrades/2026-10-14-latest-existing-database.md",
+      "target": "upgrades/2026-10-14-latest-existing-database.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "7f1ee2446c55884b350e4d4a39612f67ed4d3c036cfe3d3e0a841cd88d0ad96d",
+      "title": "Latest upgrade for the existing database",
+      "vault_sha256": "ac40a703b952fc3995513f960014d223bb9ec9ef5c5a18f86a9ac95adc3d5a8b"
+    },
+    {
+      "source": "database/upgrades/2026-10-14-product-medicine-types.md",
+      "target": "upgrades/2026-10-14-product-medicine-types.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "728e6e9acbdfde4dccf81dcca7ab264914015f80f692ed3aa53f62caf58dc26e",
+      "title": "Product medicine types",
+      "vault_sha256": "45e988663de84f430129c6a7f980f38e1dc8a07ec171bcbb3da785ab83e19c5a"
+    },
+    {
+      "source": "database/upgrades/2026-10-14-receipt-invoice-fields.md",
+      "target": "upgrades/2026-10-14-receipt-invoice-fields.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "073e40ffbbf3625f8f013228e1915ed045a5b778e0a3b53ecfcaebe447bb9b26",
+      "title": "Sales invoice receipt fields",
+      "vault_sha256": "9b72ef5754d23c7d0965cec39b33692afaa2f183985c3621dc0120dffcd3b874"
+    },
+    {
+      "source": "database/upgrades/2026-10-14-senior-pwd-discounts.md",
+      "target": "upgrades/2026-10-14-senior-pwd-discounts.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "4e2dbd6a07c8088419824260cbc5ffcfe17635f6c2d43d8c3cd75010af567f98",
+      "title": "Senior Citizen/PWD medicine discounts",
+      "vault_sha256": "7565a9fc4d6033264959c6cea5292dd402a55fcc1e317edb98dcd2e6fbb9fa5d"
+    },
+    {
+      "source": "database/upgrades/2026-10-15-branded-products.md",
+      "target": "upgrades/2026-10-15-branded-products.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "95a5c458da6bd956a7fafa73a202ef4a18c5b3a11cc77b6df89a0d6f93ac192a",
+      "title": "Additional branded products - October 15, 2026",
+      "vault_sha256": "02e65a30d4addfb8cff6f3549243667b9856496e646050a3367f6812b0bba0a1"
+    },
+    {
+      "source": "database/upgrades/2026-10-15-cashier-workspace.md",
+      "target": "upgrades/2026-10-15-cashier-workspace.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "81e5b465ba89dc94689f1c3c2a52e7483f1200d92bf61cba4e07306e161095e0",
+      "title": "Cashier workspace — October 15, 2026",
+      "vault_sha256": "eeae1d3a7908f2414902e61c1416e234b42a52c0754f1606c0c00c3921c89e07"
+    },
+    {
+      "source": "database/upgrades/2026-10-15-demo-users.md",
+      "target": "upgrades/2026-10-15-demo-users.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "e57fff3aed2fb79f61d3e45a5892101e82ede4c2f714f0ba788d9bd28c4adaa1",
+      "title": "Optional demo login accounts",
+      "vault_sha256": "21324b8e9b3d61f4152958be742bae8272b0dc98bd75e30854ed958a5caedc35"
+    },
+    {
+      "source": "database/upgrades/2026-10-15-latest-existing-database.md",
+      "target": "upgrades/2026-10-15-latest-existing-database.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "ae277b0daa28c50a17cae0e5388575c4385667509b958982450bb70415cf26ca",
+      "title": "Existing database upgrade for phpMyAdmin — October 15, 2026",
+      "vault_sha256": "1b8c90d8f99c425095e7c5e3f141b9f3d2e7cc379fa2252feb41611d7d1bf832"
+    },
+    {
+      "source": "database/upgrades/2026-10-15-product-catalog.md",
+      "target": "upgrades/2026-10-15-product-catalog.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "94e7b430a6ed63e52279717cd4a30c83be0806c25dcde70dbe44db60fb6edf06",
+      "title": "Product catalog update - October 15, 2026",
+      "vault_sha256": "b1c76307de6dbdc964450bd0861dba13144c58caaf8d5d9ba4fe2187bb12fb15"
+    },
+    {
+      "source": "database/upgrades/2026-10-16-clear-cashier-shifts.md",
+      "target": "upgrades/2026-10-16-clear-cashier-shifts.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "ac751e76577de1868dd84e77485b18b5b73ac0e17d741422ab98907b0335bf22",
+      "title": "Clear cashier shifts — October 16, 2026",
+      "vault_sha256": "771a23ac1bcf4bdde0c44e1167eff85640bd2ebf5a6762133f234cd48b129741"
+    },
+    {
+      "source": "database/upgrades/2026-10-16-reconcile-sale41-refunds.md",
+      "target": "upgrades/2026-10-16-reconcile-sale41-refunds.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "6e32582ff85d5a5048cdf75944534fdfbb12743f4d029a927f61940fc86be349",
+      "title": "Sale #41 test-refund correction",
+      "vault_sha256": "40369c3eb386d32cd7b17f88da66d82f982aa74baf60970b179c19364c8a1026"
+    },
+    {
+      "source": "database/upgrades/2026-10-20-admin-login-submit-review.md",
+      "target": "upgrades/2026-10-20-admin-login-submit-review.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "5787c508119c2e8144f468d60c30509201e009956b59db6dd165b7ae07498ca9",
+      "title": "Administrator single login and save reviews",
+      "vault_sha256": "3fffe0eadeb90cd0aab8863127670f29b65573fc7fc644101bfc0a1beb46402d"
+    },
+    {
+      "source": "database/upgrades/2026-10-20-cashier-single-login.md",
+      "target": "upgrades/2026-10-20-cashier-single-login.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "e79eb5b7d3685867af515b5f3dd4ced5023a20b100ae57f8d6a4d2b59d0da153",
+      "title": "Cashier single-login protection",
+      "vault_sha256": "abb5a25f54b27545521eda9fd5ea3952d6d24eac34aafcb01cab5d4bc91e95cc"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-admin-multiple-logins.md",
+      "target": "upgrades/2026-10-21-admin-multiple-logins.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "966f69e98c710b01ea921e95ce005c54ef9b5d44d83567ba522e7a3f9215c6d1",
+      "title": "Administrator multiple-login update",
+      "vault_sha256": "10ec1fd6e9d39bafcf39694d00cf13b86949282171c936d4200667f035fecc88"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-cashier-foreign-keys.md",
+      "target": "upgrades/2026-10-21-cashier-foreign-keys.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "49265f7ff9138db150e4e65c96b7f8e30ed4c728bcbbc602a805f5d5a25f8b3c",
+      "title": "Cashier foreign keys — 21 October 2026",
+      "vault_sha256": "24a75e8732a95061740ce9e66e2b1cf9ecfcd07da81d1831db1073361f87de2e"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-cashier-login-history.md",
+      "target": "upgrades/2026-10-21-cashier-login-history.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "77443d79a57090b3e7ad033a6747959666f0fc7838b4cbdcf19e8feb6013eb16",
+      "title": "Cashier login history",
+      "vault_sha256": "dd92efcb9cf01f30339eed2c133f9b8287968ac699fe36e8fae1965827d2d910"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-finish-cashier-foreign-keys.md",
+      "target": "upgrades/2026-10-21-finish-cashier-foreign-keys.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "2c74483a0b59125071d1da3b2f61064dfb03d7aba0e2fc31ddca04ddeeeef69e",
+      "title": "Complete an interrupted cashier FK import",
+      "vault_sha256": "1db14cb7eda57f5b453fdf2c4394321503bdbce53dc60ded19dc1e67f53d7362"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-latest-existing-database.md",
+      "target": "upgrades/2026-10-21-latest-existing-database.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "029e64c85d27dc25606c08370f7e4900287a6552aed9801b5b058d4395c6461c",
+      "title": "Existing phpMyAdmin database update — 21 October 2026",
+      "vault_sha256": "8dd35c3b2dac7065c97deac5ffed147c9a042b065ba821d465c7995699f292ea"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-password-visibility.md",
+      "target": "upgrades/2026-10-21-password-visibility.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "81efed00253c6788046fa41c0ec890e1e85f6151ffa5209abba60448a5053e25",
+      "title": "Change Password Show/Hide controls",
+      "vault_sha256": "d61cca90ca400a7c90b2ff12bfc2e6298d4e58582512cf6f1a26dc2ba97b9ccf"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-sales-history-filters.md",
+      "target": "upgrades/2026-10-21-sales-history-filters.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "c4b2bd9cefc08b55a39df33a8138ca3ab2fca355d8e45b9eec8236bba9b01703",
+      "title": "Sales History filter update",
+      "vault_sha256": "23d29be7b371221e80aede509cabfb2c4d0fab470b59dfbb8294e22e1ab0e62f"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-server-clock.md",
+      "target": "upgrades/2026-10-21-server-clock.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "c675849cf956893b9bdd844e4d82253e4a0a38e8baa38d86a7eb194a29bad7d4",
+      "title": "Server-synchronized workspace clock",
+      "vault_sha256": "96f9fa7c50d8ebaea29b2b5db923aaae6281c18f2f1eb3db72a947ddd673b985"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-stock-adjustment-ui.md",
+      "target": "upgrades/2026-10-21-stock-adjustment-ui.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "673439e2355fff023aade7499083581134c5586e768e88c1b20132d2af3d9616",
+      "title": "Product stock adjustment UI update",
+      "vault_sha256": "73a9d55968efcd391cb439333a7d0aee3038d1b096865f7c59e3e930794f77ea"
+    },
+    {
+      "source": "database/upgrades/2026-10-21-user-presence.md",
+      "target": "upgrades/2026-10-21-user-presence.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "cfe9d6294046d3798fa4cdad052deabf33bce9d97ead2e55f374b7e9fee1be42",
+      "title": "Online users and Last seen",
+      "vault_sha256": "aa34e181ed299f8198e66fc8a40b65a1912e6ffb5f3f284e4f1447749e7fc522"
+    },
+    {
+      "source": "database/upgrades/2026-10-23-quarantine.md",
+      "target": "upgrades/2026-10-23-quarantine.md",
+      "kind": "upgrade",
+      "existing": false,
+      "source_sha256": "d27982b1b7429842a155154d97521835864d4cc508b4c11b627bfd04aa29e704",
+      "title": "Quarantine page update",
+      "vault_sha256": "967f47108117539009f4e365bb1f24302dd364f477fa6869106d1ccf39505fea"
+    },
+    {
+      "source": "writable/cashier-day-review/implementation.md",
+      "target": "evidence/cashier-day-review/implementation.md",
+      "kind": "evidence",
+      "existing": false,
+      "source_sha256": "42e42d2f45ebf8096c5d8261de6ade0fc2a219f8e773752d79108639017fb3c2",
+      "title": "Cashier day and drawer workflow",
+      "vault_sha256": "4538059c3c613b2f5ce1657675fabeec9eee60154ab2cf2314c976208d01707a"
+    },
+    {
+      "source": "writable/management-form-review/README-hosting.md",
+      "target": "evidence/management-form-review/README-hosting.md",
+      "kind": "evidence",
+      "existing": false,
+      "source_sha256": "6c0a1352b4b384b9462556ff3ebf65210c2db554a51aa36f9e6dcab5eeb0a360",
+      "title": "Product unit selection and management form validation",
+      "vault_sha256": "694ce4b070bdc95d0ec0152f455ad6a857f09befeca010d0f2545b51a3ce2b69"
+    },
+    {
+      "source": "writable/pos-ajax-review/README-hosting.md",
+      "target": "evidence/pos-ajax-review/README-hosting.md",
+      "kind": "evidence",
+      "existing": false,
+      "source_sha256": "bcf25dedc1106e2f52e9d1fc49e4d1df45d27b34af67d89224239b72235ec856",
+      "title": "POS updates without full-page reloads",
+      "vault_sha256": "aafc382327fe7b6ce93aab223272edae36a7a994774917e79ac9e0bc0c1614f2"
+    },
+    {
+      "source": "writable/pos-catalog-reorder-payments-20261028/manual-original.md",
+      "target": "evidence/pos-catalog-reorder-payments-20261028/manual-original.md",
+      "kind": "evidence",
+      "existing": false,
+      "source_sha256": "f8b8fe5976dd439bc2fa666ab23edefc23d367d493d9f6a42038cd2c5b565d8b",
+      "title": "Pharxmaco User Manual",
+      "vault_sha256": "475702d548c558d4458125915018d508ba413e72aa0dc2002fe9e5c469fc37a6"
+    },
+    {
+      "source": "writable/pos-catalog-reorder-payments-20261028/research.md",
+      "target": "evidence/pos-catalog-reorder-payments-20261028/research.md",
+      "kind": "evidence",
+      "existing": false,
+      "source_sha256": "767dcbc465518847c9ecfaa7f9b3f080187745b4facf18efd651037d34b6170b",
+      "title": "Payment reference research — 28 October 2026",
+      "vault_sha256": "1f332c71072c8d0b20387564770495101052ea6f77b9724b9322b90dafb31d70"
+    },
+    {
+      "source": "writable/reports-reconciliation-review/README-hosting.md",
+      "target": "evidence/reports-reconciliation-review/README-hosting.md",
+      "kind": "evidence",
+      "existing": false,
+      "source_sha256": "f7f8635312651735fd031ae2546761cf1dd8ab1db49291af7b54dc4abfc9c1ce",
+      "title": "Reports overview reconciliation update",
+      "vault_sha256": "a768ee90be1f8fe87353f6bf9ff45964dab63999236c2b14ea3c6ce3168f1cf3"
+    },
+    {
+      "source": "writable/system-manual/review.md",
+      "target": "evidence/system-manual/review.md",
+      "kind": "evidence",
+      "existing": false,
+      "source_sha256": "7c97341f17b693ed6990f426d824b86ca1b1b36f437c440791d8a8c5207e85a5",
+      "title": "Manual review record",
+      "vault_sha256": "0a847c93e1adba0fff70374ac13bb1ad48259db38d30e4996c5a45af63cd57b1"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/database/upgrades/2026-10-14-latest-existing-database.md",
+      "target": "upgrades/2026-10-14-latest-existing-database.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "7f1ee2446c55884b350e4d4a39612f67ed4d3c036cfe3d3e0a841cd88d0ad96d",
+      "title": "Latest upgrade for the existing database",
+      "duplicate_of": "database/upgrades/2026-10-14-latest-existing-database.md",
+      "vault_sha256": "ac40a703b952fc3995513f960014d223bb9ec9ef5c5a18f86a9ac95adc3d5a8b"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/database/upgrades/2026-10-15-branded-products.md",
+      "target": "upgrades/2026-10-15-branded-products.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "95a5c458da6bd956a7fafa73a202ef4a18c5b3a11cc77b6df89a0d6f93ac192a",
+      "title": "Additional branded products - October 15, 2026",
+      "duplicate_of": "database/upgrades/2026-10-15-branded-products.md",
+      "vault_sha256": "02e65a30d4addfb8cff6f3549243667b9856496e646050a3367f6812b0bba0a1"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/database/upgrades/2026-10-15-cashier-workspace.md",
+      "target": "upgrades/2026-10-15-cashier-workspace.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "81e5b465ba89dc94689f1c3c2a52e7483f1200d92bf61cba4e07306e161095e0",
+      "title": "Cashier workspace — October 15, 2026",
+      "duplicate_of": "database/upgrades/2026-10-15-cashier-workspace.md",
+      "vault_sha256": "eeae1d3a7908f2414902e61c1416e234b42a52c0754f1606c0c00c3921c89e07"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/database/upgrades/2026-10-15-demo-users.md",
+      "target": "archive/packages/cashier-workspace-2026-10-15/database/upgrades/2026-10-15-demo-users.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "3c75c03fa0af3f470279168ed65c962ea501acea72759af2dc287b1bf14e2f03",
+      "title": "Optional demo login accounts",
+      "vault_sha256": "96a6364177f34808fa9c4593e24e8a381c50f110269da8cc72430f2e12ba6bce"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/database/upgrades/2026-10-15-latest-existing-database.md",
+      "target": "upgrades/2026-10-15-latest-existing-database.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "ae277b0daa28c50a17cae0e5388575c4385667509b958982450bb70415cf26ca",
+      "title": "Existing database upgrade for phpMyAdmin — October 15, 2026",
+      "duplicate_of": "database/upgrades/2026-10-15-latest-existing-database.md",
+      "vault_sha256": "1b8c90d8f99c425095e7c5e3f141b9f3d2e7cc379fa2252feb41611d7d1bf832"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/database/upgrades/2026-10-15-product-catalog.md",
+      "target": "upgrades/2026-10-15-product-catalog.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "94e7b430a6ed63e52279717cd4a30c83be0806c25dcde70dbe44db60fb6edf06",
+      "title": "Product catalog update - October 15, 2026",
+      "duplicate_of": "database/upgrades/2026-10-15-product-catalog.md",
+      "vault_sha256": "b1c76307de6dbdc964450bd0861dba13144c58caaf8d5d9ba4fe2187bb12fb15"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/database/upgrades/2026-10-16-reconcile-sale41-refunds.md",
+      "target": "upgrades/2026-10-16-reconcile-sale41-refunds.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "6e32582ff85d5a5048cdf75944534fdfbb12743f4d029a927f61940fc86be349",
+      "title": "Sale #41 test-refund correction",
+      "duplicate_of": "database/upgrades/2026-10-16-reconcile-sale41-refunds.md",
+      "vault_sha256": "40369c3eb386d32cd7b17f88da66d82f982aa74baf60970b179c19364c8a1026"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/docs/reviews/2026-10-16-automatic-category-promos.md",
+      "target": "reviews/2026-10-16-automatic-category-promos.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "ef8aa4b3445f0acca82faec80773a18dc10448d7caaacb0cc961a12d72a966ad",
+      "title": "Automatic product and category promotions — 16 October 2026",
+      "duplicate_of": "docs/reviews/2026-10-16-automatic-category-promos.md",
+      "vault_sha256": "ef8aa4b3445f0acca82faec80773a18dc10448d7caaacb0cc961a12d72a966ad"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/docs/reviews/2026-10-16-checkout-fixes.md",
+      "target": "archive/packages/cashier-workspace-2026-10-15/docs/reviews/2026-10-16-checkout-fixes.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "3eafaeaf92f734f844d1f41748500012379f327bd1d5ae595a0a07ac257696ef",
+      "title": "Checkout, cashier reporting and stock repairs — 16 October 2026",
+      "vault_sha256": "510963b3476748be01b95d2e702783736b26d44dbd39f1c84655f6754ffa78b0"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/docs/reviews/2026-10-16-pdf-export-update.md",
+      "target": "reviews/2026-10-16-pdf-export-update.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "72da21be800b33f1114f05a58b8edc27103a00cfc196bbe18f3a372c2b727f19",
+      "title": "PDF export update - 16 October 2026",
+      "duplicate_of": "docs/reviews/2026-10-16-pdf-export-update.md",
+      "vault_sha256": "72da21be800b33f1114f05a58b8edc27103a00cfc196bbe18f3a372c2b727f19"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/docs/reviews/2026-10-16-shift-print-update.md",
+      "target": "reviews/2026-10-16-shift-print-update.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "1626f4ac8034a478df59f4123ca56b8ca7202bb6f6b1cedf197625ce068743b1",
+      "title": "Shift report printing update - 16 October 2026",
+      "duplicate_of": "docs/reviews/2026-10-16-shift-print-update.md",
+      "vault_sha256": "1626f4ac8034a478df59f4123ca56b8ca7202bb6f6b1cedf197625ce068743b1"
+    },
+    {
+      "source": "build/cashier-workspace-2026-10-15/INSTALL.md",
+      "target": "archive/packages/cashier-workspace-2026-10-15/INSTALL.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "f6a88004c601fff8444256190e97e2ab4458335f0e08417a297b6db38a52c179",
+      "title": "Cashier workspace — October 15, 2026",
+      "vault_sha256": "e10bb5f55a578a2e71e552c774becb481e4e75f56108f5fc5ab5ca521849c6c4"
+    },
+    {
+      "source": "build/database/upgrades/2026-09-23-pdf-font-repair.md",
+      "target": "upgrades/2026-09-23-pdf-font-repair.md",
+      "kind": "package-history",
+      "existing": false,
+      "source_sha256": "39205e5660ed4b401594d318e9963a7c31e728bf77215aa9c62c5c62f6523756",
+      "title": "Hostinger PDF font repair",
+      "duplicate_of": "database/upgrades/2026-09-23-pdf-font-repair.md",
+      "vault_sha256": "f46610a1a14991f843893b7b394626886845a453eae36f1042c7c217c63b515b"
+    }
+  ],
+  "assets": [
+    {
+      "source": "output/pdf/Pharxmaco_User_Manual_2026-10-18.pdf",
+      "target": "manual/Pharxmaco_User_Manual_2026-10-18.pdf",
+      "sha256": "e48aee35bef9333d628101b34babfe6dc6be32f3ca42151c00650e75527b4080"
+    }
+  ],
+  "repository_references": [
+    {
+      "source": "database/exports/pharxmaco-latest-invoice-data-2026-10-14.md",
+      "target": "database/upgrades/2026-10-14-product-invoice-data.sql",
+      "exists": true
+    },
+    {
+      "source": "database/exports/pharxmaco-latest-invoice-data-2026-10-14.md",
+      "target": "database/upgrades/2026-10-14-receipt-invoice-fields.sql",
+      "exists": true
+    },
+    {
+      "source": "database/exports/pharxmaco-latest-invoice-data-2026-10-14.md",
+      "target": "database/upgrades/2026-10-14-products-vatable.sql",
+      "exists": true
+    },
+    {
+      "source": "database/exports/pharxmaco-latest-invoice-data-2026-10-14.md",
+      "target": "database/exports/pharxmaco-latest-invoice-data-2026-10-14.sql",
+      "exists": true
+    },
+    {
+      "source": "database/exports/pharxmaco-latest-invoice-data-2026-10-14.md",
+      "target": "database/upgrades/2026-10-14-product-medicine-types.sql",
+      "exists": true
+    },
+    {
+      "source": "database/exports/pharxmaco-latest-invoice-data-2026-10-14.md",
+      "target": "database/upgrades/2026-10-14-senior-pwd-discounts.sql",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "writable/receipt-review/research-paper-extracted.txt",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Controllers/Cashier/SalesController.php",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Controllers/Admin/ReportsController.php#L1418",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Libraries/ReorderForecastService.php#L63",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Controllers/Admin/ReportsController.php#L439",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Libraries/ReorderForecastService.php#L284",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Config/Routes.php#L19",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Controllers/Products.php#L53",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Controllers/Cashier/SalesController.php#L67",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Models/BranchProductModel.php",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Commands/GenerateReorderForecast.php#L40",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "app/Controllers/Auth.php#L21",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-09-27-research-alignment-review.md",
+      "target": "writable/receipt-review/check-paper-holt.php",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-03-hostinger-files-comparison.md",
+      "target": "database/upgrades/2026-10-03-all-latest-database-updates.sql",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/CashMovementReport.php#L18",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/SaleCorrection.php#L180",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/SaleCorrection.php#L264",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Cashier/SalesController.php#L1559",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/ReturnCondition.php",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Models/BranchProductModel.php",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Products.php#L528",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Products.php#L543",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/ExpiryStockResolution.php",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Products.php#L560",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Products.php#L566",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Products.php#L405",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/Users.php#L227",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/SaleCorrectionPricing.php#L15",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/SaleCorrectionPricing.php#L45",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/Discounts.php#L140",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/ReorderForecastService.php#L119",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/ReorderForecastService.php#L215",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Dashboard.php#L126",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/Users.php#L211",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/Users.php#L245",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/Users.php#L371",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Config/Cache.php#L36",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Auth.php#L71",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Filters/LoginThrottleFilter.php",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/ReportsController.php#L1428",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/ReportsController.php#L1243",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/ReorderForecastService.php#L51",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/ReorderForecastService.php#L159",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Controllers/Admin/ReportsController.php#L1288",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Commands/GenerateReorderForecast.php#L45",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "app/Libraries/ReorderForecastService.php#L98",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "writable/receipt-review/panel-review-checks.php",
+      "exists": true
+    },
+    {
+      "source": "database/reviews/2026-10-04-panelist-system-review.md",
+      "target": "writable/receipt-review/panel-review-observations.json",
+      "exists": true
+    },
+    {
+      "source": "database/samples/2026-10-19-month-forecast-demo.md",
+      "target": "database/samples/2026-10-19-month-forecast-demo.sql",
+      "exists": true
+    },
+    {
+      "source": "database/samples/holt-14-day-2026-10-12.md",
+      "target": "database/exports/u315645644_pharxmacotest-with-14-day-demo-2026-10-12.sql",
+      "exists": true
+    },
+    {
+      "source": "database/samples/holt-14-day-2026-10-12.md",
+      "target": "database/exports/u315645644_pharxmacotest-full-database-with-14-day-demo-2026-10-12.sql",
+      "exists": true
+    },
+    {
+      "source": "database/samples/holt-14-day-2026-10-12.md",
+      "target": "database/exports/u315645644_pharxmacotest-with-14-day-demo-2026-10-12.sql",
+      "exists": true
+    },
+    {
+      "source": "database/samples/holt-14-day-2026-10-12.md",
+      "target": "database/samples/holt-14-day-verification-2026-10-12.json",
+      "exists": true
+    },
+    {
+      "source": "database/upgrades/2026-10-03-all-latest-database-updates.md",
+      "target": "database/upgrades/2026-10-03-all-latest-database-updates.sql",
+      "exists": true
+    },
+    {
+      "source": "database/upgrades/2026-10-03-all-latest-database-updates.md",
+      "target": "database/exports/u315645644_pharxmacotest-latest-2026-10-03.sql",
+      "exists": true
+    },
+    {
+      "source": "database/upgrades/2026-10-04-stock-expiry-safeguards.md",
+      "target": "database/upgrades/2026-10-04-stock-expiry-safeguards.sql",
+      "exists": true
+    },
+    {
+      "source": "database/upgrades/2026-10-14-product-medicine-types.md",
+      "target": "database/upgrades/2026-10-14-product-medicine-types.sql",
+      "exists": true
+    },
+    {
+      "source": "database/upgrades/2026-10-23-quarantine.md",
+      "target": "docs/development/Cashier-Return-Pages-Deployment.md",
+      "exists": true
+    }
+  ],
+  "recorded_artifacts": [
+    {
+      "source": "writable/benefit-promo-review/package-checks.json",
+      "sha256": "0a17bfd2c4eef7cbe3aabe12c8258c299dfc1d4014f798e5f767e0bd17d97b8e",
+      "summary": "Object keys: file, files, bytes, sha256, entries"
+    },
+    {
+      "source": "writable/cashier-day-review/browser-checks.json",
+      "sha256": "91c9734f0ef258028a9d40073e3ea3aa3e9744145910db9efed6293ebd8d543a",
+      "summary": "96 recorded entries"
+    },
+    {
+      "source": "writable/cashier-day-review/datatable-checks.json",
+      "sha256": "d86d9a10ab125411b2efa7598d446ff55a982127ac0d624002c35fbe5d86ac35",
+      "summary": "15 recorded entries"
+    },
+    {
+      "source": "writable/cashier-day-review/mysql-checks.json",
+      "sha256": "4da9b67055e34cdcb069b1e74cc11fb21eeda7ca9a1b0101808c45d4589fc300",
+      "summary": "Object keys: passed, live_sales_modified"
+    },
+    {
+      "source": "writable/cashier-day-review/package-checks.json",
+      "sha256": "4661b66e9b9c920713822630b91b48008480059f095bea59fd7f59bbd9345eac",
+      "summary": "Object keys: file, files, bytes, sha256, source_hashes_verified, invoice_configuration_excluded"
+    },
+    {
+      "source": "writable/cashier-day-review/shift-table-checks.json",
+      "sha256": "00210cc8dd7c2ca443164af331ccd9a23daa303d7c461b777cc357a8aa27f301",
+      "summary": "13 recorded entries"
+    },
+    {
+      "source": "writable/cashier-fk-review/local-upgrade-results.json",
+      "sha256": "7e9fa96672c942a0767f933e2b1145efffdcb45ae37b46aa6c29ac94bc7c7f5b",
+      "summary": "Object keys: database, backup, backup_bytes, backup_sha256, imports, existing_data_tables_preserved, prior_migrations_preserved, migration_000017_count, constraints, before"
+    },
+    {
+      "source": "writable/cashier-fk-review/mysql-results.json",
+      "sha256": "19d4bd005b68aa21c1a1d6b01b715c390ea21d59b177f508c3a082b9c03148a7",
+      "summary": "Object keys: checks, scratch_database_removed, application_records_changed"
+    },
+    {
+      "source": "writable/cashier-session-review/local-application-results.json",
+      "sha256": "7c8098676b1148f1b99620be88774f2353b3b0fe7fbc6a5fdc9fc0c7ed417ae4",
+      "summary": "Object keys: database, schema_applied, repeated_import_passed, protected_existing_tables, existing_application_records_preserved, migration, hosted_database_changed"
+    },
+    {
+      "source": "writable/cashier-session-review/mysql-results.json",
+      "sha256": "5b63886496ae5eceb1a78f00c831f0fbe2fff3e50a0884f542cca722c4c4436b",
+      "summary": "Object keys: checks, competing_processes, cashier_successful_claims, administrator_successful_claims, application_database_changed"
+    },
+    {
+      "source": "writable/damaged-items-review/browser-results.json",
+      "sha256": "b86ef7a186e87df93836413130f50f55807b71674da39b130052973bcef03d35",
+      "summary": "Object keys: checks, javascript_errors, application_records_changed"
+    },
+    {
+      "source": "writable/damaged-items-review/mysql-results.json",
+      "sha256": "276710ca260700956a45bb0f517a48de7c14f16fee0dc9bf2982c4c7991f1f16",
+      "summary": "Object keys: checks, damaged_records, damaged_units, quarantine_inspections_included, table_hashes_preserved, database_writes, hosting_changed"
+    },
+    {
+      "source": "writable/export-audit-20261023/docs-check.json",
+      "sha256": "6f4135e3b12f9ecea5b0c920b9bc3a7ae0390765c704a7fa3f93473f9b9b40fe",
+      "summary": "Not valid JSON; inspect original"
+    },
+    {
+      "source": "writable/export-audit-20261023/http-results.json",
+      "sha256": "898271d2e2666f7ee1fcc122a3db96618663eda986501e56ad258e441675de4e",
+      "summary": "Object keys: checks, downloads, failures"
+    },
+    {
+      "source": "writable/export-audit-20261023/pdf-results.json",
+      "sha256": "c3af6fc77f151c217c469b29c39ecac7af0589605bb9bb55e4a8ef2db8034fd3",
+      "summary": "Object keys: files, pages, results"
+    },
+    {
+      "source": "writable/export-audit-20261023/print-pdf-results.json",
+      "sha256": "e77b6024745836b1e8acd6a21150f4588dc3ecd592be01c4b941ae53e607d2b2",
+      "summary": "5 recorded entries"
+    },
+    {
+      "source": "writable/export-audit-20261023/print-results.json",
+      "sha256": "ccefda83685ade0363d5ede106794a1285d07665492ae2e3a211efe5d470e5e2",
+      "summary": "Object keys: results, errors"
+    },
+    {
+      "source": "writable/export8-fk-review/verification-results.json",
+      "sha256": "666bd8270916667656019ff5880f0d9e440da5f076035a8cf2b9ea6c09414482",
+      "summary": "Object keys: source, source_sha256, export_server, verification_server, statement_counts, checks, counts, before, after, orphan_counts"
+    },
+    {
+      "source": "writable/latest-update-audit/fixed-browser-results.json",
+      "sha256": "a7c2bc4632c6626513d6a3d35d262083e8f00e654a75ef9948863e63e073d7b9",
+      "summary": "Object keys: simulated_http_502, vat_rounding"
+    },
+    {
+      "source": "writable/latest-update-audit/fixed-probe-results.json",
+      "sha256": "59fbd39fb693969e91309fb97c47f4d42e716a4d3d31bda8074e2f0c99633680",
+      "summary": "Object keys: old_checkout_retry_clears_new_cart, equal_total_correction_missing_from_day, rounding_combination_misses_better_total"
+    },
+    {
+      "source": "writable/latest-update-audit/local-data-results.json",
+      "sha256": "a598893e82c08b9f5f8a184bff9b00c63b49ce90058b5c591eaba7b0d6ea02e3",
+      "summary": "Object keys: audited_on, read_only, database, available, counts, master_stock_mismatches, over_refunded_lines, missing_delivery_snapshots, refund_overage_details, noncash_missing_reference"
+    },
+    {
+      "source": "writable/latest-update-audit/probe-results.json",
+      "sha256": "012e92b0b9e4c5ac566853fdface016dcceeb5946faf77e3856da264b87aee8a",
+      "summary": "Object keys: old_checkout_retry_clears_new_cart, equal_total_correction_missing_from_day, rounding_combination_misses_better_total"
+    },
+    {
+      "source": "writable/latest-update-audit/sale41-refund-reconciliation-result.json",
+      "sha256": "0b928922c081e9a92751ccca0587af531a00eb716eb937f1a1d1b464f09c1756",
+      "summary": "Object keys: sale_id, before_refunds, after_refunds, refund_excess, corrected_refund_ids, unchanged, repeat_import_no_op, backup, database_backup_table, after"
+    },
+    {
+      "source": "writable/latest-update-audit/stock-reconciliation-result.json",
+      "sha256": "b3ebae8ba6392e218d1c655f3c6d4bd582da4b247247649712e5dbfc14c8bd38",
+      "summary": "Object keys: reconciled, remaining_mismatches, changes, backup"
+    },
+    {
+      "source": "writable/login-history-review/browser-results.json",
+      "sha256": "c4c1d513bb8c78b20eb617e01d76b9becdac1eab97705466a5229451b8e795c5",
+      "summary": "Object keys: checks, javascript_errors, application_records_changed"
+    },
+    {
+      "source": "writable/management-form-review/browser-checks.json",
+      "sha256": "4e6cbed05735a65ab59c379559b7e0f3fb79ef22bda0c2027f9510ac7a9e748d",
+      "summary": "Object keys: checks, posts, application_database_accessed"
+    },
+    {
+      "source": "writable/medicine-type-review/benefit-promo-checks.json",
+      "sha256": "80cbca08ad43446e9be7da689635d5e1c1d59964741c05f56df11213be5f6f61",
+      "summary": "42 recorded entries"
+    },
+    {
+      "source": "writable/medicine-type-review/checkout-feedback-checks.json",
+      "sha256": "97e57ca27ed7f91c5e3118970c093bf8fba87323fbcf121d8f340e2c6f6382d7",
+      "summary": "21 recorded entries"
+    },
+    {
+      "source": "writable/medicine-type-review/checks.json",
+      "sha256": "ef4d02161d302481658965e4ebb260110e10912d466ce431164152a5eb67624a",
+      "summary": "99 recorded entries"
+    },
+    {
+      "source": "writable/medicine-type-review/product-promo-checks.json",
+      "sha256": "c8ead578f3c8140e3481631101e004635b776a4f211a9ffcd5cfc4eb17c2e970",
+      "summary": "13 recorded entries"
+    },
+    {
+      "source": "writable/medicine-type-review/sale-details-checks.json",
+      "sha256": "9aa0026e5825dcc09cd73ebcae212d2e73a6113edc1bbfd20699647987d8cbf6",
+      "summary": "24 recorded entries"
+    },
+    {
+      "source": "writable/pdf-export-review/check-results.json",
+      "sha256": "e0efb8a5ac010caaf2e9fec7cc82bd18568fb472e73bfda1f656e14cb2485c9e",
+      "summary": "Object keys: pdf_samples, pages, all_A4_landscape, all_page_numbers, stock_log_ids_complete, expiry_skus_complete, confirmed_financial_presentation_gap, confirmed_missing_table_heading, method"
+    },
+    {
+      "source": "writable/pdf-export-update/check-results.json",
+      "sha256": "6337c66fb642a700af18e44baaa9cc0fd8f8004d6084a3439447d31ba232fbb8",
+      "summary": "Object keys: samples, pages, A4_landscape, all_running_identity_and_page_numbers, stock_records, expiry_records, complete_long_note_repetitions, continuation_headings_verified, empty_sales_one_page, summary_variants_one_page"
+    },
+    {
+      "source": "writable/pdf-export-update/package-checks.json",
+      "sha256": "9956b26470cd7655494f3b95e2f393167e58ad6eec4741df5a678c3d6a9dc83b",
+      "summary": "Object keys: file, files, bytes, sha256, source_hashes_verified"
+    },
+    {
+      "source": "writable/pos-ajax-review/browser-results.json",
+      "sha256": "e688d18853089661796fc60252565d4271811a3098d2e1ed083daca58e36c043",
+      "summary": "Object keys: checks, posts, javascript_errors, application_database_accessed"
+    },
+    {
+      "source": "writable/pos-ajax-review/browser-session-results.json",
+      "sha256": "154a6bf1d3cb85b57378f038502e7df7093d09cd295ada225228c0e0cee93794",
+      "summary": "Object keys: checks, posts, javascript_errors, application_database_accessed"
+    },
+    {
+      "source": "writable/pos-checkout-review/package-checks.json",
+      "sha256": "ce05c25bf3e85aae8b24f14bf1b005f90465859449bcb9ef9b5c7afaf589a48b",
+      "summary": "Object keys: file, files, bytes, sha256, entries"
+    },
+    {
+      "source": "writable/pos-inventory-audit/local-data-results.json",
+      "sha256": "68b8efeca83e8a9a63230239bdb610449b2f52e42d60a996edca17a02d6540fe",
+      "summary": "Object keys: database, read_only, audited_on, counts, negative_stock, master_stock_mismatches, master_stock_mismatch_details, duplicate_inventory_pairs, orphan_sale_items, duplicate_invoices"
+    },
+    {
+      "source": "writable/pos-inventory-audit/probe-results.json",
+      "sha256": "3fb01ccffb316866448322a1a46c8f0729b763ccc1db7276d9e41086e61449ef",
+      "summary": "Object keys: same_receive_request_twice, gcash_overpayment_no_reference, card_overpayment_no_reference"
+    },
+    {
+      "source": "writable/product-create-review/browser-checks.json",
+      "sha256": "f96eb6ff87d303bcae4165afe5a31bf4d06b361de8013802fe8e5551930e58e3",
+      "summary": "Object keys: checks, posted_count, application_database_accessed"
+    },
+    {
+      "source": "writable/promo-review/package-checks.json",
+      "sha256": "b277091707a9f069409a93eff5b3531c2449e3a33d288f6a0fcd0771b7b759ba",
+      "summary": "Object keys: file, files, bytes, sha256, entries"
+    },
+    {
+      "source": "writable/quarantine-review/browser-results.json",
+      "sha256": "03de2ba2b1ef351cead72ff47f1fd8afdb08e6c79d6e84cbade3ddc155838500",
+      "summary": "Object keys: checks, javascript_errors, application_records_changed"
+    },
+    {
+      "source": "writable/quarantine-review/local-upgrade-results.json",
+      "sha256": "1d5c8cdeea70635fee0d40a7cb2903b8be79b2a0b83df739618dc621bfaf3e2b",
+      "summary": "Object keys: database, backup, backup_bytes, backup_sha256, imports, existing_data_tables_preserved, prior_migrations_preserved, migration_000018_count, pending_returns, before"
+    },
+    {
+      "source": "writable/quarantine-review/mysql-results.json",
+      "sha256": "e0b5765d03d2576cc608cf08d9b8b59e3d90259eb2b06fac589b217b2bf8e32a",
+      "summary": "Object keys: checks, source_business_records_preserved, source_database_written, concurrent_inspectors"
+    },
+    {
+      "source": "writable/receipt-invoice-review/checks.json",
+      "sha256": "50e694ccdc1d9f1b7c723604a26754d8da426d7e9b226235b5beebe6341737d2",
+      "summary": "42 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/category-checks.json",
+      "sha256": "b1c904b5ce3ee089d43648ce96e9ad8e6c247f20e27c39f194f913ef10372924",
+      "summary": "32 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/checks.json",
+      "sha256": "f758fe523f030c6cf611cc97d323282877285ce53f560440c5885ccf5ddfb0d1",
+      "summary": "66 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/dashboard-checks.json",
+      "sha256": "4a9584f6d9ad209cc06962c85061eeeab00e9a49c8c75e533e9aa621e8dfcf3d",
+      "summary": "30 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/discount-checks.json",
+      "sha256": "a6823e804c8f096ae169953f5035873b75019a02f334918bf676589b58871afc",
+      "summary": "6 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/forecast-manual-checks.json",
+      "sha256": "9eefb3ea56bf544751a8bdf6cc83b9c359a9892f2be83c1d84eba56af2cbd8c3",
+      "summary": "4 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/interface-audit-results.json",
+      "sha256": "b75a622fd5ee8a4caf7802a8c4370b4378f5da4ae0037868b65872a81d1bc2c7",
+      "summary": "Object keys: typography, spacing, contrast, failedTopbarSave, afterReload, cancelledNavigation, mobileText, accountIsolation, sampleInput"
+    },
+    {
+      "source": "writable/receipt-review/login-checks.json",
+      "sha256": "6dc49cde5cfc9adab06e1a94136ed48fd4c68d07a971ecf5a433191bfd15ea25",
+      "summary": "30 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/modal-checks.json",
+      "sha256": "c29a6cecd5fef46143e78d5ba1f58a99cdebefe65786235800f7d220f736dd21",
+      "summary": "36 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/pagination-checks.json",
+      "sha256": "b9ea61f058b9d8892042865dc8d32e6637f369ccedae424d8b739770245364f2",
+      "summary": "48 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/pos-checks.json",
+      "sha256": "be196c507db78709aaad8c47521a1210f3327101788b94c6a008c4444d2efa8b",
+      "summary": "68 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/reports-ui-checks.json",
+      "sha256": "00911f0815a894f7c54708b164110897ee87b9740eac78bedd30ab8f76d5cc84",
+      "summary": "36 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/restock-checks.json",
+      "sha256": "6c0443147b5483178b16a06312291c0051703737466a6cc8da1684545c90a79c",
+      "summary": "24 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/settings-checks.json",
+      "sha256": "69ebca15b425673fb0305a34f86af996692fcc9e733107ae335035fd109e79dc",
+      "summary": "20 recorded entries"
+    },
+    {
+      "source": "writable/receipt-review/sidebar-checks.json",
+      "sha256": "5d81a6e79f75d48762efb0ce228d36d0f15d5972fd5823738849c8c16bd6feb8",
+      "summary": "20 recorded entries"
+    },
+    {
+      "source": "writable/reports-reconciliation-review/browser-checks.json",
+      "sha256": "f0e218f7389b08541f17a4597545cac987cecbb952000083dbfa58072f5cc630",
+      "summary": "18 recorded entries"
+    },
+    {
+      "source": "writable/return-access-review/browser-results.json",
+      "sha256": "8e66a5de984b21a76c47d6b5a2ec350e81cdcd590502fab408206812ac8862d3",
+      "summary": "Object keys: checks, javascript_errors, application_records_changed"
+    },
+    {
+      "source": "writable/return-access-review/mysql-results.json",
+      "sha256": "722d9d33ebc313b87cf4e7cd104de4be2cfa21f4816099112ec1516f236c532b",
+      "summary": "Object keys: checks, cashiers_checked, cross_branch_details_checked, table_hashes_preserved, database_writes, hosting_changed"
+    },
+    {
+      "source": "writable/sales-history-review/browser-results.json",
+      "sha256": "0c22b69f1caceebd72d1d7d4877e2e5ee09adf32bfcd888bfdf106c5d831219a",
+      "summary": "Object keys: checks, javascript_errors, application_database_accessed"
+    },
+    {
+      "source": "writable/server-clock-review/browser-results.json",
+      "sha256": "b4befd3b818febc68a38b2cd4b3e25c83164d99de55dab708b351417c106c64e",
+      "summary": "Object keys: checks, javascript_errors, clock_requests, real_local_clock_endpoint_used, authenticated_requests, application_records_changed"
+    },
+    {
+      "source": "writable/shift-print-review/browser-results.json",
+      "sha256": "6a6c746a53b00473e8e89eac8ec1ed3330454722d641320f105ebeece4cb8162",
+      "summary": "5 recorded entries"
+    },
+    {
+      "source": "writable/shift-print-review/package-checks.json",
+      "sha256": "8e75489ad6d6e3e7d3abc80a9ab229b6ba6900f3a871474bd6237e0487c0f4cd",
+      "summary": "Object keys: file, files, bytes, sha256, source_hashes_verified"
+    },
+    {
+      "source": "writable/shift-reset-review/checks.json",
+      "sha256": "87fa72605bcaaf612e2963aac774da9077bf2541dbb8112b9d9abfb7af9f90c2",
+      "summary": "Object keys: source_sha256, cleaned_sha256, shifts_removed, actions_removed, shift_reviews_removed, preserved_row_counts, verified, local_application_database_modified"
+    },
+    {
+      "source": "writable/stock-adjustment-review/browser-results.json",
+      "sha256": "df0b116e802124a03c1ea284451bce75d1f16f72e511389e0adaaded1a778bae",
+      "summary": "Object keys: checks, fixture_posts, javascript_errors, application_database_accessed"
+    },
+    {
+      "source": "writable/submit-review-review/browser-results.json",
+      "sha256": "2abdffa4b5179359845bc95759b1d3b19ae1b882c22185d9fe677eca5045f756",
+      "summary": "Object keys: checks, confirmed_fixture_posts, javascript_errors, application_database_accessed"
+    },
+    {
+      "source": "writable/transaction-overview-review/browser-results.json",
+      "sha256": "ee5d115f7ea649c4a107a030ae2d7e6a2cfa530920b5b427494b112ec6720e13",
+      "summary": "Object keys: checks, javascript_errors, fixture_posts, application_records_changed"
+    },
+    {
+      "source": "writable/user-name-update/result.json",
+      "sha256": "66106f161581523b6a078ad61a9cdf3febb5ca0e347b715c80981da0b6c31f79",
+      "summary": "Object keys: database, updated, changes, backup, all_other_user_fields_verified_unchanged"
+    },
+    {
+      "source": "writable/user-presence-review/browser-results.json",
+      "sha256": "b144634410050373aed6bb17686a78df81f55a53dd5d33f4103bdbe9cd6615e2",
+      "summary": "Object keys: checks, javascript_errors, application_records_changed"
+    },
+    {
+      "source": "writable/user-presence-review/local-upgrade-results.json",
+      "sha256": "4a52f0d6c9656faefb0586dd7532219cebf7bbdbee6c43bb74e170df581071c0",
+      "summary": "Object keys: database, imports, existing_tables_checked, existing_records_preserved, old_migrations_preserved, presence_migrations, presence_records, hosting_changed"
+    },
+    {
+      "source": "writable/user-presence-review/mysql-results.json",
+      "sha256": "dcb4491ca41d68e94f6be54b97a62efc6bfde4c23ea8f8c4e5bd5e2bd028e8ec",
+      "summary": "Object keys: checks, scratch_database_removed, application_records_changed"
+    }
+  ],
+  "source_code": [
+    {
+      "source": "app/Config/Routes.php",
+      "sha256": "843aca66c07fa97fbf91e4535af36caa758dcd5439aec0424e62aaf2bba7ac33"
+    },
+    {
+      "source": "app/Config/ReceiptInvoice.php",
+      "sha256": "3466293a33bd74518c1da1ece81d70a8c1ed434068fac4e017672d4ee73b960f"
+    },
+    {
+      "source": "app/Models/SaleItemModel.php",
+      "sha256": "d4b519b1910fc44ef359dac901086bbf71f5e371d6e492a6ee6dba86c582b7fe"
+    },
+    {
+      "source": "app/Libraries/ExpiryStockResolution.php",
+      "sha256": "946901c82d5ba8a447e8994132e9c4ff6544c5e3ba77a6c4eee4d7af8413ad09"
+    },
+    {
+      "source": "app/Libraries/AccountSession.php",
+      "sha256": "6d661f7dbcca162958aa55522348fba2383ad41d78410939bc7ae2111cc32cdc"
+    },
+    {
+      "source": "app/Controllers/Cashier/SalesController.php",
+      "sha256": "ad33cf9d9e5de8a329e29a1e606ed14e2280b4b08c4520e53ff52858fdb90354"
+    },
+    {
+      "source": "app/Libraries/CashierShift.php",
+      "sha256": "6e59a11732f0b9ae89ce15a46aa5dcc6aea9d3ee2ea3c8e7a1a9c22665403df1"
+    },
+    {
+      "source": "public/assets/js/datatables-init.js",
+      "sha256": "da5ea28a949fb45f73f456a1ccf69a7ee2cf8fcab9f2d1b90d22b6f843609b6b"
+    }
+  ],
+  "counts": {
+    "notes": 194,
+    "source_documents": 154,
+    "imported_unique": 94,
+    "retained_existing_reviews": 50,
+    "consolidated_duplicates": 10,
+    "redacted_demo_passwords": 3,
+    "routes": 129,
+    "migrations": 18,
+    "sql_patches": 30,
+    "verification_artifacts": 74
+  }
+}

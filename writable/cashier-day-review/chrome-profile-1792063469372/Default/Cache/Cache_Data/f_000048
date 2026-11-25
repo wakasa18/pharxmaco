@@ -1,0 +1,394 @@
+/* ==========================================================================
+   Pharxmaco v3 — workspace skin
+   --------------------------------------------------------------------------
+   Applies to every staff page EXCEPT the dashboard (body.is-workspace is set
+   in layouts/staff.php). The sidebar and topbar are never touched: all new
+   tokens live on .content, never on :root or .main.
+
+   Look:   cool graphite neutrals, hairline sheets (14px), 10px controls,
+           pill status badges, Archivo headings over Inter body text.
+   Motion: ONE orchestrated page-load sequence (header -> sheet -> table rows)
+           plus feedback that answers an action (press, focus, open, submit).
+   Safety: respects high-contrast, reduce-motion, density, text-size and
+           large-controls settings (see interface-settings).
+   ========================================================================== */
+
+/* ---------- Tokens ---------------------------------------------------- */
+.is-workspace {
+    --ws-ease: cubic-bezier(.16, 1, .3, 1);
+    --ws-ease-in-out: cubic-bezier(.65, 0, .35, 1);
+    --ws-bg: #eef0f3;
+}
+html.dark .is-workspace { --ws-bg: #0b0e13; }
+html:not(.high-contrast) .is-workspace .main { background: var(--ws-bg); }
+
+html:not(.high-contrast) .is-workspace .content {
+    --heading-font: 'Archivo', 'Inter', system-ui, sans-serif;
+    --bg: #eef0f3;
+    --surface: #ffffff;
+    --surface-2: #f6f7f9;
+    --surface-soft: var(--surface-2);
+    --text: #0f1419;
+    --text-2: #313a48;
+    --muted: #5d6879;
+    --line: #e1e4e9;
+    --line-2: #cbd0d8;
+    --border: var(--line);
+    --radius: 10px;
+    --radius-lg: 14px;
+    --shadow: 0 1px 2px rgba(15, 20, 25, .04);
+    --shadow-md: 0 14px 34px -14px rgba(15, 20, 25, .26);
+    --ws-sheet-shadow: 0 1px 2px rgba(15, 20, 25, .04), 0 12px 28px -22px rgba(15, 20, 25, .28);
+    --ws-pop-shadow: 0 2px 6px rgba(15, 20, 25, .06), 0 28px 64px -20px rgba(15, 20, 25, .42);
+    --ws-field-inset: inset 0 1px 1px rgba(15, 20, 25, .035);
+}
+html.dark:not(.high-contrast) .is-workspace .content {
+    --bg: #0b0e13;
+    --surface: #12171e;
+    --surface-2: #181e27;
+    --text: #eceff4;
+    --text-2: #c0c8d6;
+    --muted: #98a3b5;
+    --line: #232a35;
+    --line-2: #333d4c;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+    --shadow-md: 0 18px 40px -14px rgba(0, 0, 0, .7);
+    --ws-sheet-shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 14px 30px -20px rgba(0, 0, 0, .7);
+    --ws-pop-shadow: 0 2px 6px rgba(0, 0, 0, .4), 0 30px 70px -18px rgba(0, 0, 0, .85);
+    --ws-field-inset: inset 0 1px 1px rgba(0, 0, 0, .25);
+}
+
+/* ---------- Typography ------------------------------------------------ */
+/* Inter's cv05 gives a lowercase L with a tail: l / I / 1 stay distinct in drug names. */
+.is-workspace .content { font-feature-settings: "cv05" 1; }
+.is-workspace .content :is(.page-header, .rp-header, .pos-page-header, .settings-header) h1 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-stretch: 108%;
+    font-variation-settings: "wdth" 108;
+    font-size: clamp(26px, 2.5vw, 34px);
+    line-height: 1.1;
+    letter-spacing: -.028em;
+    text-wrap: balance;
+}
+.is-workspace .content .page-header p { max-width: 70ch; color: var(--muted); font-size: 14px; line-height: 1.55; margin-top: 6px; }
+.is-workspace .content :is(.card-head h2, .section-head h2, .editor-subheading) {
+    font-family: var(--heading-font);
+    font-weight: 650;
+    font-stretch: 104%;
+    font-variation-settings: "wdth" 104;
+    letter-spacing: -.012em;
+}
+.is-workspace .content .card-head h2 { font-size: 16px; }
+.is-workspace .content .stat-value, .is-workspace .content .kpi-value { font-family: var(--heading-font); font-stretch: 104%; font-variation-settings: "wdth" 104; letter-spacing: -.03em; }
+.is-workspace .content label, .is-workspace .content .label { font-weight: 600; font-size: 13px; color: var(--text-2); letter-spacing: 0; }
+
+/* ---------- Header: a ruled masthead ---------------------------------- */
+.is-workspace .content .page-header {
+    padding: 2px 0 18px;
+    border-bottom: 1px solid var(--line);
+}
+
+/* ---------- Sheets (cards) -------------------------------------------- */
+.is-workspace .content .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--ws-sheet-shadow);
+}
+.is-workspace .content .card-head,
+.is-workspace .content .editor-page .card-head {
+    padding: 18px 22px;
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid var(--line);
+}
+.is-workspace .content .card-head p { color: var(--muted); font-size: 13px; }
+.is-workspace .content .card-body { padding: 22px; }
+.is-workspace .content .table-wrap { border-radius: 0 0 calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px); }
+.is-workspace .content .catalogue-filters {
+    background: color-mix(in srgb, var(--surface-2) 72%, var(--surface));
+    border-bottom: 1px solid var(--line);
+}
+.is-workspace .content .stat-card, .is-workspace .content .compact-cards .card.mini {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--ws-sheet-shadow);
+}
+.is-workspace .content .stat-label { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.is-workspace .content .tag { border-radius: 8px; font-weight: 600; }
+.is-workspace .content .editor-page--wide > form > .editor-actions { border-radius: 14px; box-shadow: var(--ws-pop-shadow); }
+
+/* ---------- Tables ----------------------------------------------------- */
+.is-workspace .content table th,
+.is-workspace .content .table-wrap > table > thead > tr > th {
+    background: color-mix(in srgb, var(--surface-2) 80%, var(--surface));
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 650;
+    text-transform: none;
+    letter-spacing: .005em;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line-2);
+}
+.is-workspace .content table td,
+.is-workspace .content .table-wrap > table > tbody > tr > td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text-2);
+}
+.is-workspace .content .table-wrap > table > tbody > tr:nth-child(even) { background: transparent; }
+.is-workspace .content table tbody tr:last-child td { border-bottom: 0; }
+.is-workspace .content table td.record-title { color: var(--text); }
+.is-workspace .content table td:first-child > :is(strong, b):first-child { color: var(--text); font-weight: 650; }
+.is-workspace .content table tbody tr > td:first-child { box-shadow: inset 0 0 0 0 var(--primary); transition: box-shadow .2s var(--ws-ease); }
+@media (hover: hover) {
+    .is-workspace .content table tbody tr:hover,
+    .is-workspace .content .table-wrap > table > tbody > tr:hover { background: color-mix(in srgb, var(--primary) 4.5%, var(--surface)); }
+    .is-workspace .content table tbody tr:hover > td:first-child { box-shadow: inset 3px 0 0 0 var(--primary); }
+}
+html.dark .is-workspace .content table tbody tr:hover { background: color-mix(in srgb, var(--primary) 9%, var(--surface)); }
+
+/* ---------- Buttons ---------------------------------------------------- */
+.is-workspace .btn {
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    font-weight: 600;
+    letter-spacing: -.005em;
+    transition: transform .16s var(--ws-ease), background-color .16s ease, border-color .16s ease,
+                color .16s ease, box-shadow .22s ease;
+}
+.is-workspace .btn:hover { opacity: 1; }
+.is-workspace .btn:active { transform: translateY(0) scale(.975); transition-duration: .05s; }
+
+.is-workspace .btn-primary {
+    background: var(--primary);
+    color: var(--on-primary);
+    border-color: color-mix(in srgb, var(--primary) 78%, #000);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .2), 0 1px 2px rgb(15 20 25 / .16);
+}
+.is-workspace .btn-primary:hover {
+    background: color-mix(in srgb, var(--primary) 88%, #000);
+    transform: translateY(-1px);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .2), 0 10px 20px -10px var(--primary-shadow);
+}
+.is-workspace .btn-secondary, .is-workspace .btn.secondary {
+    background: var(--surface);
+    color: var(--text);
+    border-color: var(--line-2);
+    box-shadow: 0 1px 1px rgb(15 20 25 / .04);
+}
+.is-workspace .btn-secondary:hover, .is-workspace .btn.secondary:hover {
+    background: var(--surface-2);
+    color: var(--text);
+    border-color: color-mix(in srgb, var(--primary) 42%, var(--line-2));
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px -8px rgb(15 20 25 / .25);
+}
+.is-workspace .btn-danger, .is-workspace .btn.danger {
+    background: var(--danger); color: #fff;
+    border-color: color-mix(in srgb, var(--danger) 80%, #000);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .18), 0 1px 2px rgb(15 20 25 / .14);
+}
+.is-workspace .btn-danger:hover, .is-workspace .btn.danger:hover { background: color-mix(in srgb, var(--danger) 88%, #000); transform: translateY(-1px); box-shadow: inset 0 1px 0 rgb(255 255 255 / .18), 0 10px 20px -10px color-mix(in srgb, var(--danger) 70%, transparent); }
+html.dark .is-workspace .btn-danger, html.dark .is-workspace .btn.danger { color: #2b0809; }
+.is-workspace .btn-success { background: var(--success); color: #fff; border-color: color-mix(in srgb, var(--success) 78%, #000); box-shadow: inset 0 1px 0 rgb(255 255 255 / .18), 0 1px 2px rgb(15 20 25 / .14); }
+.is-workspace .btn-success:hover { background: color-mix(in srgb, var(--success) 88%, #000); transform: translateY(-1px); }
+html.dark .is-workspace .btn-success { color: #04200f; }
+.is-workspace .btn-warning { background: #d97706; color: #fff; border-color: #b45f04; box-shadow: inset 0 1px 0 rgb(255 255 255 / .18), 0 1px 2px rgb(15 20 25 / .14); }
+.is-workspace .btn-warning:hover { background: #c26a05; transform: translateY(-1px); }
+.is-workspace .btn[disabled], .is-workspace button[disabled] { box-shadow: none; transform: none !important; }
+
+/* Submit feedback: the label gives way to a spinner (assets/js/workspace-v3.js). */
+.is-workspace .btn.is-loading { position: relative; color: transparent !important; pointer-events: none; }
+.is-workspace .btn.is-loading > * { opacity: 0; }
+.is-workspace .btn.is-loading::after {
+    content: ""; position: absolute; inset: 0; margin: auto; width: 16px; height: 16px;
+    border-radius: 50%; border: 2px solid var(--text-2); border-right-color: transparent;
+    animation: ws-spin .7s linear infinite;
+}
+.is-workspace .btn-primary.is-loading::after, .is-workspace .btn-danger.is-loading::after, .is-workspace .btn-success.is-loading::after,
+.is-workspace .btn-warning.is-loading::after { border-color: #fff; border-right-color: transparent; }
+html.dark .is-workspace .btn-primary.is-loading::after { border-color: var(--on-primary); border-right-color: transparent; }
+
+/* ---------- Form controls --------------------------------------------- */
+/* :where() keeps specificity low so a page's own special-purpose inputs (POS search,
+   quantity steppers...) still win; the generic form controls get the new look. */
+:where(.is-workspace .content) :is(input[type="text"], input[type="number"], input[type="password"], input[type="email"],
+    input[type="date"], input[type="time"], input[type="datetime-local"], input[type="search"],
+    input[type="tel"], input[type="url"], select, textarea, .input) {
+    border-radius: var(--radius);
+    border: 1px solid var(--line-2);
+    background-color: var(--surface);
+    color: var(--text);
+    box-shadow: var(--ws-field-inset);
+    transition: border-color .16s ease, box-shadow .2s ease, background-color .16s ease;
+}
+:where(.is-workspace .content) :is(input, select, textarea, .input):hover:not(:disabled):not(:focus) {
+    border-color: color-mix(in srgb, var(--primary) 38%, var(--line-2));
+}
+:where(.is-workspace .content) :is(input, select, textarea, .input):focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 20%, transparent);
+    outline: none;
+}
+:where(.is-workspace .content) :is(input, select, textarea, .input)::placeholder { color: color-mix(in srgb, var(--muted) 78%, transparent); }
+.is-workspace .content .editor-page .input { border-radius: var(--radius); }
+.is-workspace .content .input.is-invalid, .is-workspace .content .field :is(input, select, textarea).is-invalid {
+    border-color: var(--danger);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--danger) 16%, transparent);
+}
+.is-workspace .content :is(input, select, textarea):disabled { background: var(--surface-2); color: var(--muted); opacity: 1; }
+.is-workspace .content input:is([type="checkbox"], [type="radio"]) { width: 17px; height: 17px; accent-color: var(--primary); cursor: pointer; }
+
+/* A real chevron instead of the browser's boxed arrow. */
+.is-workspace .content :is(.field, .catalogue-filter-form, .rp-filter-fields, .category-search-form, .discount-filters, .catalog-toolbar) select:not([multiple]):not([size]),
+.is-workspace .content select.input:not([multiple]):not([size]) {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 38px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23667085' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+html.dark .is-workspace .content :is(.field, .catalogue-filter-form, .rp-filter-fields, .category-search-form, .discount-filters, .catalog-toolbar) select:not([multiple]):not([size]),
+html.dark .is-workspace .content select.input:not([multiple]):not([size]) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2398a3b5' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+}
+.is-workspace .content .select-wrap select { background-image: none; }
+
+/* ---------- Badges (status pills with a leading dot) ------------------- */
+.is-workspace .content .badge {
+    gap: 6px;
+    padding: 3px 11px 3px 9px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+    box-shadow: none;
+}
+.is-workspace .content .badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex: none; }
+.is-workspace .content .badge.danger  { background: var(--danger-bg);  color: var(--danger-text); }
+.is-workspace .content .badge.warning { background: var(--warning-bg); color: var(--warning-text); }
+.is-workspace .content .badge-neutral { border-color: var(--line-2); }
+
+/* ---------- Alerts (icon + bar, so colour is never the only signal) ---- */
+.is-workspace .content .alert {
+    position: relative;
+    padding: 13px 16px 13px 46px;
+    border-radius: 12px;
+    border-width: 1px;
+    border-left-width: 4px;
+    box-shadow: none;
+    animation: ws-alert .42s var(--ws-ease) backwards;
+}
+.is-workspace .content .alert::before {
+    content: ""; position: absolute; left: 16px; top: 14px; width: 20px; height: 20px;
+    background: currentColor;
+    -webkit-mask: var(--ws-alert-icon) center / contain no-repeat;
+            mask: var(--ws-alert-icon) center / contain no-repeat;
+}
+.is-workspace .content .alert.success { --ws-alert-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='m8.5 12.5 2.5 2.5 4.5-5'/%3E%3C/svg%3E");
+    border-color: color-mix(in srgb, var(--success) 40%, transparent); border-left-color: var(--success); }
+.is-workspace .content .alert.error, .is-workspace .content .alert.danger { --ws-alert-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7.5v5.5M12 16.5h.01'/%3E%3C/svg%3E");
+    border-color: color-mix(in srgb, var(--danger) 40%, transparent); border-left-color: var(--danger); }
+.is-workspace .content .alert.warning { --ws-alert-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.9 2.4 17.5A2 2 0 0 0 4.1 20.5h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z'/%3E%3Cpath d='M12 9.5v4M12 17h.01'/%3E%3C/svg%3E");
+    border-color: color-mix(in srgb, #f59e0b 45%, transparent); border-left-color: #f59e0b; }
+
+/* ---------- Pagination -------------------------------------------------- */
+.is-workspace .content .pagination { gap: 6px; }
+.is-workspace .content .pagination li a, .is-workspace .pagination li a {
+    min-width: 36px; height: 36px; border-radius: var(--radius);
+    border-color: var(--line-2); font-weight: 600; background: var(--surface);
+    transition: background-color .16s ease, border-color .16s ease, color .16s ease, transform .16s var(--ws-ease);
+}
+.is-workspace .pagination li a[aria-label] { width: 36px; min-width: 36px; }
+.is-workspace .pagination li a:hover { background: var(--surface-2); border-color: color-mix(in srgb, var(--primary) 45%, var(--line-2)); color: var(--primary); transform: translateY(-1px); }
+.is-workspace .pagination li.active a { background: var(--primary); border-color: transparent; color: var(--on-primary); box-shadow: 0 6px 14px -8px var(--primary-shadow); }
+
+/* ---------- Empty states: a capsule, because the shelf is empty -------- */
+.is-workspace .content .empty-state::before {
+    content: ""; display: block; width: 40px; height: 40px; margin: 0 auto 12px;
+    background: color-mix(in srgb, var(--muted) 60%, transparent);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='rotate(-45 12 12)'%3E%3Crect x='2.5' y='7.5' width='19' height='9' rx='4.5'/%3E%3Cpath d='M12 7.5v9'/%3E%3Cpath d='M12 7.5h4.5a4.5 4.5 0 0 1 0 9H12z' fill='black' fill-opacity='.38' stroke='none'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='rotate(-45 12 12)'%3E%3Crect x='2.5' y='7.5' width='19' height='9' rx='4.5'/%3E%3Cpath d='M12 7.5v9'/%3E%3Cpath d='M12 7.5h4.5a4.5 4.5 0 0 1 0 9H12z' fill='black' fill-opacity='.38' stroke='none'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+}
+.is-workspace .content .empty-state { font-size: 14px; }
+
+/* ---------- Dialogs owned by pages (held sales, forecast) -------------- */
+.is-workspace #heldModalOverlay, .is-workspace #forecastModalOverlay { background: rgba(10, 14, 20, .58); }
+.is-workspace #heldModalOverlay .held-modal, .is-workspace #forecastModalOverlay .forecast-modal {
+    border-radius: 18px;
+    border: 1px solid var(--line);
+    box-shadow: var(--ws-pop-shadow);
+}
+.is-workspace #heldModalOverlay.show .held-modal, .is-workspace #forecastModalOverlay.show .forecast-modal { animation: ws-dialog .42s var(--ws-ease) backwards; }
+.is-workspace #heldModalOverlay.show, .is-workspace #forecastModalOverlay.show { animation: ws-fade .22s ease-out backwards; }
+.is-workspace #heldModalOverlay :is(.held-modal-head, .forecast-modal-head),
+.is-workspace #forecastModalOverlay .forecast-modal-head { padding: 20px 24px; }
+.is-workspace #heldModalOverlay .held-modal-close, .is-workspace #forecastModalOverlay .forecast-modal-close {
+    width: 40px; height: 40px; flex-basis: 40px; border-radius: 50%; background: transparent; border-color: transparent;
+    transition: background-color .16s ease, color .16s ease, transform .2s var(--ws-ease);
+}
+.is-workspace #heldModalOverlay .held-modal-close:hover, .is-workspace #forecastModalOverlay .forecast-modal-close:hover { transform: rotate(90deg); }
+.is-workspace #heldModalOverlay .held-sale-row { border-radius: 12px; transition: border-color .16s ease, transform .2s var(--ws-ease); }
+.is-workspace #heldModalOverlay .held-sale-row:hover { border-color: color-mix(in srgb, var(--primary) 45%, var(--line)); transform: translateY(-1px); }
+
+/* ---------- Motion: one page-load sequence ----------------------------- */
+/* header -> first sheet -> table rows. Replaces premium.css's per-element rises
+   on these pages. Fill-mode `backwards`: nothing keeps a transform afterwards. */
+.is-workspace .content :is(.page-header, .rp-header, .pos-page-header) { animation: ws-rise .44s var(--ws-ease) backwards; }
+.is-workspace .content .card:not(.card *, [class*="modal"] *, [id*="Modal"] *) { animation: ws-rise .5s var(--ws-ease) .07s backwards; }
+.is-workspace .content .card ~ .card:not(.card *, [class*="modal"] *, [id*="Modal"] *) { animation-delay: .13s; }
+.is-workspace .content :is(.cards-grid, .kpi-grid) > * { animation: ws-rise .46s var(--ws-ease) backwards; }
+.is-workspace .content :is(.cards-grid, .kpi-grid) > :nth-child(1) { animation-delay: .06s; }
+.is-workspace .content :is(.cards-grid, .kpi-grid) > :nth-child(2) { animation-delay: .1s; }
+.is-workspace .content :is(.cards-grid, .kpi-grid) > :nth-child(3) { animation-delay: .14s; }
+.is-workspace .content :is(.cards-grid, .kpi-grid) > :nth-child(4) { animation-delay: .18s; }
+.is-workspace .content :is(.cards-grid, .kpi-grid) > :nth-child(n+5) { animation-delay: .22s; }
+
+.is-workspace .content .card > .table-wrap > table > tbody > tr > td:not([colspan]) { animation: ws-cell .44s var(--ws-ease) backwards; }
+@keyframes ws-rise  { from { opacity: 0; transform: translateY(10px); } }
+@keyframes ws-cell  { from { opacity: 0; transform: translateY(6px); } }
+@keyframes ws-fade  { from { opacity: 0; } }
+@keyframes ws-dialog { from { opacity: 0; transform: translateY(18px) scale(.965); } }
+@keyframes ws-alert { from { opacity: 0; transform: translateY(-6px); } }
+@keyframes ws-spin  { to { transform: rotate(360deg); } }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(1) > td { animation-delay: 0.160s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(2) > td { animation-delay: 0.186s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(3) > td { animation-delay: 0.212s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(4) > td { animation-delay: 0.238s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(5) > td { animation-delay: 0.264s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(6) > td { animation-delay: 0.290s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(7) > td { animation-delay: 0.316s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(8) > td { animation-delay: 0.342s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(9) > td { animation-delay: 0.368s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(10) > td { animation-delay: 0.394s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(11) > td { animation-delay: 0.420s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(12) > td { animation-delay: 0.446s; }
+.is-workspace .content .card > .table-wrap > table > tbody > tr:nth-child(n+13) > td { animation-delay: .46s; }
+
+
+/* Navigation feedback: a thin bar the moment a link or form is used. */
+.ws-progress {
+    position: fixed; inset: 0 0 auto 0; height: 2px; z-index: 2000; pointer-events: none;
+    background: var(--primary); transform-origin: left; transform: scaleX(0); opacity: 0;
+}
+.ws-progress.run { opacity: 1; transform: scaleX(.86); transition: transform 7s cubic-bezier(.1, .7, .2, 1); }
+
+/* ---------- Touch, small screens, motion preferences ------------------- */
+@media (hover: none) {
+    .is-workspace .btn:hover, .is-workspace .pagination li a:hover, .is-workspace #heldModalOverlay .held-sale-row:hover { transform: none; }
+}
+@media (max-width: 700px) {
+    .is-workspace .content .page-header { padding-bottom: 14px; }
+    .is-workspace .content .mobile-record-ready tbody tr:hover > td:first-child { box-shadow: none; }
+    .is-workspace .content .card-head, .is-workspace .content .editor-page .card-head { padding: 16px 18px; }
+    .is-workspace .content .card-body { padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .ws-progress.run { transition: none; }
+    .is-workspace .btn.is-loading::after { animation-duration: 1.6s !important; }
+}
+html.reduce-motion .ws-progress.run { transition: none; }
+html.reduce-motion .is-workspace .btn.is-loading::after { animation-duration: 1.6s !important; }

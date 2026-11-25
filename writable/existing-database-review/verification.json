@@ -1,0 +1,49 @@
+{
+    "source_sha256": "6ab0d7836c2493c6814a3b8175c5f82fd8f15c10982d6647029cf6d0a779b0fe",
+    "upgrade": "C:\\UniServerZ\\www\\pharxmaco\\database\\upgrades\\2026-10-14-latest-existing-database.sql",
+    "added_columns": 14,
+    "added_migrations": [
+        "2026_10_04_000010",
+        "2026_10_14_000011",
+        "2026_10_14_000012",
+        "2026_10_14_000013",
+        "2026_10_15_000014"
+    ],
+    "row_counts": {
+        "activity_logs": 238,
+        "branch_products": 104,
+        "branches": 2,
+        "cashier_drawers": 2,
+        "cashier_event_reviews": 0,
+        "cashier_events": 0,
+        "cashier_held_sales": 0,
+        "cashier_shift_actions": 0,
+        "cashier_shift_reviews": 0,
+        "cashier_shifts": 0,
+        "categories": 11,
+        "discounts": 2,
+        "forecasting_data": 446,
+        "migrations": 17,
+        "products": 54,
+        "receipt_invoice_sequences": 0,
+        "refund_items": 16,
+        "report_exports": 27,
+        "sale_items": 1326,
+        "sales": 776,
+        "stock_logs": 1314,
+        "suppliers": 5,
+        "users": 4
+    },
+    "generic_names_filled": 39,
+    "strengths_filled": 27,
+    "checks": [
+        "Original dump imported into an isolated local MySQL database.",
+        "Every existing field and record was preserved.",
+        "Identifiable medicine details filled and all products VATable.",
+        "Historical invoice details remain unfilled; medicine type/benefit eligibility remain unconfirmed.",
+        "Repeated import produced identical results.",
+        "Staff-entered details, saved invoices and invoice sequence survive reimport.",
+        "Original source file preserved."
+    ],
+    "local_application_database_updated": false
+}

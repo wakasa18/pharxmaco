@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-28",
+  "selected_findings": [
+    "A02",
+    "A03",
+    "A04",
+    "A06",
+    "A08",
+    "A09",
+    "A10",
+    "A11",
+    "A13",
+    "A15"
+  ],
+  "full_suite": {
+    "tests": 382,
+    "assertions": 25112,
+    "passed": 379,
+    "failures": 2,
+    "errors": 1,
+    "unsuccessful": [
+      {
+        "test": "testProductEditRejectsForgedExpiryChangeBeforeSavingOtherFields",
+        "kind": "failure"
+      },
+      {
+        "test": "testExpiryCorrectionIsAdminOnlyAuditedAndDoesNotRewriteSales",
+        "kind": "error"
+      },
+      {
+        "test": "testExpiryCorrectionRejectsStaleOrInvalidRequestsAndRollsBackAuditFailure",
+        "kind": "failure"
+      }
+    ]
+  },
+  "focused": {
+    "tests": 51,
+    "assertions": 450,
+    "passed": 51,
+    "failures": 0,
+    "errors": 0,
+    "unsuccessful": []
+  },
+  "browser_checks": 20,
+  "synthetic_mysql_races": 2,
+  "changed_runtime_files": 13,
+  "packaged_runtime_files": 24,
+  "new_sql_required": false,
+  "application_data_changed": false,
+  "hosting_changed": false
+}

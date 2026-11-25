@@ -1,0 +1,161 @@
+{
+  "checks": [
+    {
+      "name": "stock-complete HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-complete MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-complete attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-complete file signature",
+      "passed": true
+    },
+    {
+      "name": "stock-filtered HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-filtered MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-filtered attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-filtered file signature",
+      "passed": true
+    },
+    {
+      "name": "stock-search HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-search MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-search attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-search file signature",
+      "passed": true
+    },
+    {
+      "name": "stock-empty HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-empty MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-empty attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-empty file signature",
+      "passed": true
+    },
+    {
+      "name": "stock-cashier HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-cashier MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-cashier attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-cashier file signature",
+      "passed": true
+    },
+    {
+      "name": "stock-other HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-other MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-other attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-other file signature",
+      "passed": true
+    },
+    {
+      "name": "Guest cannot export stock PDF",
+      "passed": true
+    }
+  ],
+  "downloads": [
+    {
+      "name": "stock-complete",
+      "url": "/stock-logs/export-pdf?search=&branch_id=&action_type=&date_from=&date_to=",
+      "status": 200,
+      "type": "pdf",
+      "filename": "stock_logs_all_branches_all_dates_to_all_dates_20261023_160008.pdf",
+      "bytes": 287846,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\stock-pdf-memory-fix\\stock-complete.pdf"
+    },
+    {
+      "name": "stock-filtered",
+      "url": "/stock-logs/export-pdf?branch_id=4&date_from=2026-10-20&date_to=2026-10-23&action_type=adjustment",
+      "status": 200,
+      "type": "pdf",
+      "filename": "stock_logs_export_qa_north_2026-10-20_to_2026-10-23_20261023_160008.pdf",
+      "bytes": 36071,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\stock-pdf-memory-fix\\stock-filtered.pdf"
+    },
+    {
+      "name": "stock-search",
+      "url": "/stock-logs/export-pdf?branch_id=4&date_from=2026-10-20&date_to=2026-10-23&search=EXPORT-QA-LOG-55",
+      "status": 200,
+      "type": "pdf",
+      "filename": "stock_logs_export_qa_north_2026-10-20_to_2026-10-23_20261023_160009.pdf",
+      "bytes": 26402,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\stock-pdf-memory-fix\\stock-search.pdf"
+    },
+    {
+      "name": "stock-empty",
+      "url": "/stock-logs/export-pdf?branch_id=4&date_from=2026-10-20&date_to=2026-10-23&search=does-not-exist-qaxz",
+      "status": 200,
+      "type": "pdf",
+      "filename": "stock_logs_export_qa_north_2026-10-20_to_2026-10-23_20261023_160009.pdf",
+      "bytes": 22226,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\stock-pdf-memory-fix\\stock-empty.pdf"
+    },
+    {
+      "name": "stock-cashier",
+      "url": "/stock-logs/export-pdf?branch_id=5",
+      "status": 200,
+      "type": "pdf",
+      "filename": "stock_logs_export_qa_north_all_dates_to_all_dates_20261023_160010.pdf",
+      "bytes": 36619,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\stock-pdf-memory-fix\\stock-cashier.pdf"
+    },
+    {
+      "name": "stock-other",
+      "url": "/stock-logs/export-pdf?branch_id=4",
+      "status": 200,
+      "type": "pdf",
+      "filename": "stock_logs_export_qa_south_all_dates_to_all_dates_20261023_160010.pdf",
+      "bytes": 25181,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\stock-pdf-memory-fix\\stock-other.pdf"
+    }
+  ],
+  "failures": []
+}

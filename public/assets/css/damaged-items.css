@@ -1,0 +1,8 @@
+.damaged-page .q-count { white-space: normal; text-align: right; line-height: 1.6; }
+.damaged-page .damage-stock-note { margin-top: 20px; }
+.damaged-page .q-buttons .btn { white-space: normal; overflow-wrap: anywhere; }
+.damaged-page .page-header .btn { flex: none; }
+@media (max-width: 540px) {
+    .damaged-page .q-count { text-align: left; }
+    .damaged-page .q-body > .q-buttons { flex-direction: column; }
+}

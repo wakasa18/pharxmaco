@@ -1,0 +1,8 @@
+{
+    "id": 2,
+    "final_total": 10,
+    "amount_paid": 100,
+    "change_amount": 90,
+    "payment_method": "gcash",
+    "reference_no": null
+}

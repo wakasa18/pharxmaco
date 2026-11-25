@@ -1,0 +1,47 @@
+[
+  {
+    "file": "app/Controllers/Admin/ReportsController.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Controllers/Admin/ReportsController.php"
+  },
+  {
+    "file": "app/Views/admin/reports/index.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/admin/reports/index.php"
+  },
+  {
+    "file": "app/Views/admin/reports/reports_pdf.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/admin/reports/reports_pdf.php"
+  },
+  {
+    "file": "app/Libraries/TopbarNotificationService.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Libraries/TopbarNotificationService.php"
+  },
+  {
+    "file": "app/Views/layouts/low_stock_modal.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/layouts/low_stock_modal.php"
+  },
+  {
+    "file": "app/Views/layouts/staff.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Views/layouts/staff.php"
+  },
+  {
+    "file": "app/Commands/GenerateReorderForecast.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in app/Commands/GenerateReorderForecast.php"
+  },
+  {
+    "file": "tests/unit/RemovedReorderCases.php",
+    "exit_code": 0,
+    "output": "No syntax errors detected in tests/unit/RemovedReorderCases.php"
+  },
+  {
+    "file": "public/assets/js/reports.js",
+    "exit_code": 0,
+    "output": ""
+  }
+]

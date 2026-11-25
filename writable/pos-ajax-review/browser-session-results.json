@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "action": "ended cashier login blocks POS and preserves draft/recovery state",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "ended cashier login blocks POS and preserves draft/recovery state",
+      "document_preserved": true
+    }
+  ],
+  "posts": 0,
+  "javascript_errors": [],
+  "application_database_accessed": false
+}

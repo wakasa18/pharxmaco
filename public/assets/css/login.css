@@ -1,0 +1,1049 @@
+/* ==========================================================================
+   Pharxmaco — sign-in page
+   Brand blue is sampled from the logo. The one memorable element is the
+   blister pack on the left; everything else supports it.
+   Sections: 1 tokens · 2 base · 3 layout · 4 brand panel · 5 form
+             6 states · 7 motion · 8 responsive · 9 accessibility settings
+   ========================================================================== */
+
+/* 1 — Tokens -------------------------------------------------------------- */
+:root {
+    color-scheme: light;
+    font-size: 16px;
+
+    --bg: #f2f6fc;
+    --surface: #ffffff;
+    --surface-glass: rgba(255, 255, 255, .78);
+    --ink: #0d2038;
+    --muted: #586a82;
+    --line: #d7dfeb;
+    --field: #f6f8fc;
+    --placeholder: #5f7189;
+    --tab: #eaf0f8;
+    --accent: #0b62c6;
+    --accent-a: #0f6be0;
+    --accent-b: #0a4fa3;
+    --accent-hover: #0a52a5;
+    --accent-ink: #ffffff;
+    --focus: #0b62c6;
+    --danger: #d1303f;
+    --panel: #0a4a9e;
+    --panel-top: #0d5cc0;
+    --panel-bottom: #052f6b;
+    --panel-ink: #ffffff;
+    --panel-muted: rgba(255, 255, 255, .84);
+    --card-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .95),
+        inset 0 0 24px rgba(255, 255, 255, .6),
+        0 40px 70px -38px rgba(10, 52, 112, .38),
+        0 14px 30px -18px rgba(10, 52, 112, .18);
+
+    --amber: #f0a53a;
+    --mint: #2fb58a;
+
+    --font-ui: 'Figtree', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-display: 'Bricolage Grotesque', 'Figtree', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --ease: cubic-bezier(.16, 1, .3, 1);
+    --spring: cubic-bezier(.34, 1.56, .64, 1);
+}
+
+:root.dark {
+    color-scheme: dark;
+    --bg: #070d18;
+    --surface: #0f1a2c;
+    --surface-glass: rgba(15, 26, 44, .76);
+    --ink: #eaf0fb;
+    --muted: #9eb0cc;
+    --line: #22354f;
+    --field: #0a1220;
+    --placeholder: #6b81a0;
+    --tab: #142238;
+    --accent: #6ea8ff;
+    --accent-a: #9cc6ff;
+    --accent-b: #5b97f0;
+    --accent-hover: #8dbbff;
+    --accent-ink: #051632;
+    --focus: #8dbbff;
+    --danger: #ff7b88;
+    --panel: #072b60;
+    --panel-top: #0a387a;
+    --panel-bottom: #031737;
+    --card-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .1),
+        inset 0 0 28px rgba(110, 168, 255, .06),
+        0 0 0 1px rgba(110, 168, 255, .15),
+        0 0 35px -5px rgba(110, 168, 255, .18),
+        0 40px 70px -34px rgba(0, 0, 0, .8),
+        0 14px 30px -18px rgba(0, 0, 0, .6);
+}
+
+@property --border-angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+/* 2 — Base ---------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+button, input { font: inherit; }
+button { cursor: pointer; touch-action: manipulation; }
+button:disabled { cursor: wait; }
+button, summary, a, input { -webkit-tap-highlight-color: transparent; }
+svg { flex-shrink: 0; }
+[hidden] { display: none !important; }
+::selection { background: color-mix(in srgb, var(--accent) 28%, transparent); }
+
+button:focus-visible,
+summary:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+}
+
+.login-skip {
+    position: fixed;
+    left: 16px;
+    top: -100px;
+    z-index: 20;
+    padding: 12px 16px;
+    background: var(--surface);
+    color: var(--ink);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .2);
+}
+.login-skip:focus { top: 12px; }
+
+/* 3 — Layout: edge-to-edge split ------------------------------------------ */
+.login-shell {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+    grid-template-areas: "brand form";
+}
+
+.login-brand-panel { grid-area: brand; }
+.login-form-panel { grid-area: form; }
+
+/* Theme toggle: sun and moon share one cell and turn into each other. */
+.login-theme-toggle {
+    position: absolute;
+    top: 22px;
+    right: 26px;
+    z-index: 5;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: 0 6px 16px -10px rgba(10, 52, 112, .35);
+    transition: border-color .18s, background-color .18s, box-shadow .25s, transform .25s var(--ease);
+}
+.login-theme-toggle:hover { border-color: var(--accent); box-shadow: 0 10px 22px -10px color-mix(in srgb, var(--accent) 55%, transparent); }
+.login-theme-toggle:active { transform: scale(.92); }
+.login-theme-toggle svg {
+    grid-area: 1 / 1;
+    transition: transform .6s var(--ease), opacity .3s;
+}
+.theme-sun { opacity: 0; transform: rotate(-90deg) scale(.4); }
+.dark .theme-sun { opacity: 1; transform: none; }
+.dark .theme-moon { opacity: 0; transform: rotate(90deg) scale(.4); }
+
+/* 4 — Brand panel --------------------------------------------------------- */
+.login-brand-panel {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(28px, 4.5vh, 48px) clamp(32px, 4.4vw, 64px) 0;
+    background: linear-gradient(162deg, var(--panel-top) 0%, var(--panel) 46%, var(--panel-bottom) 100%);
+    color: var(--panel-ink);
+}
+
+/* Slow aurora behind everything. `translate` is the pointer parallax; `transform` is the drift. */
+.login-brand-panel::before {
+    content: '';
+    position: absolute;
+    inset: -25%;
+    z-index: -2;
+    background:
+        radial-gradient(40% 36% at 22% 24%, rgba(100, 180, 255, .65), transparent 72%),
+        radial-gradient(34% 34% at 84% 14%, rgba(47, 198, 150, .45), transparent 70%),
+        radial-gradient(44% 40% at 70% 82%, rgba(120, 182, 255, .48), transparent 72%),
+        radial-gradient(32% 30% at 10% 78%, rgba(240, 168, 62, .24), transparent 70%),
+        radial-gradient(30% 28% at 50% 50%, rgba(70, 130, 250, .32), transparent 68%),
+        radial-gradient(36% 32% at 88% 58%, rgba(28, 185, 162, .32), transparent 70%),
+        radial-gradient(28% 26% at 32% 88%, rgba(135, 105, 255, .20), transparent 65%);
+    translate: calc(var(--mx, 0) * -18px) calc(var(--my, 0) * -14px);
+    animation: aurora 20s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+/* Faint medical crosses, fading out from the top-left corner. */
+.login-brand-panel::after {
+    content: '';
+    position: absolute;
+    inset: -44px;
+    z-index: -1;
+    opacity: .9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cpath d='M22 17.5v9M17.5 22h9' stroke='white' stroke-opacity='.17' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(85% 70% at 0% 0%, #000 0%, transparent 78%);
+    mask-image: radial-gradient(85% 70% at 0% 0%, #000 0%, transparent 78%);
+    animation: cross-drift 70s linear infinite;
+}
+
+.login-brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.login-brand img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .22), 0 10px 22px -8px rgba(2, 18, 52, .6);
+}
+.login-brand strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 1.15;
+}
+.login-brand div > span {
+    display: block;
+    margin-top: 2px;
+    font-size: .8125rem;
+    color: var(--panel-muted);
+}
+
+.brand-copy {
+    margin-top: clamp(32px, 8vh, 88px);
+    max-width: 34rem;
+    translate: calc(var(--mx2, 0) * 16px) calc(var(--my2, 0) * 11px);
+    will-change: transform;
+}
+
+.brand-title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.25rem, 1rem + 3.2vw, 4.1rem);
+    font-weight: 700;
+    letter-spacing: -.035em;
+    line-height: 1.04;
+    text-shadow: 0 2px 30px rgba(2, 18, 52, .25);
+}
+/* Each line is clipped so it can slide up from beneath its own baseline. */
+.brand-title .line { display: block; overflow: hidden; padding-bottom: .09em; margin-bottom: -.09em; }
+.brand-title .line > span { display: block; }
+/* The closing line catches the light. */
+.brand-title .line:last-child > span {
+    width: fit-content;
+    padding-right: .04em;
+    background: linear-gradient(100deg, #ffffff 0%, #c6e1ff 58%, #9fe9cc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: none;
+}
+
+.brand-copy p {
+    max-width: 29rem;
+    margin: clamp(14px, 2.4vh, 24px) 0 0;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--panel-muted);
+}
+
+/* The blister pack bleeds off the bottom-right edge of the panel. */
+.brand-art { position: relative; flex: 1 1 0; min-height: 220px; }
+
+/* Stage: floats gently and follows the pointer. Chips live in here too, at a deeper parallax. */
+.pack-float {
+    position: absolute;
+    inset: 0;
+    translate: calc(var(--mx, 0) * 16px) calc(var(--my, 0) * 11px);
+    animation: pack-float 9s ease-in-out 1.4s infinite;
+    will-change: transform;
+}
+
+.pack {
+    --tilt: -7deg;
+    position: absolute;
+    top: clamp(10px, 3vh, 36px);
+    left: 3%;
+    width: 112%;
+    max-width: 880px;
+    transform-origin: 20% 40%;
+    transform: rotate(var(--tilt));
+    filter: drop-shadow(0 34px 38px rgba(2, 18, 52, .42)) drop-shadow(0 6px 10px rgba(2, 18, 52, .3));
+}
+.pack svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+/* Pack parts */
+.cell-shadow { fill: #2c4a78; fill-opacity: .28; }
+.cap-shadow { fill: #17325c; fill-opacity: .28; }
+.cap-blue { fill: #0b62c6; }
+.cap-mint { fill: var(--mint); }
+.cap-amber { fill: var(--amber); }
+.pill { transform-box: fill-box; transform-origin: center; animation: pill-breathe 5.2s ease-in-out calc(1.4s + var(--i, 0) * 220ms) infinite alternate; }
+.pill-body { transform-box: fill-box; transform-origin: center; transition: transform .22s var(--ease); }
+
+/* Light glides across the foil now and then. */
+.foil-sheen { animation: foil-sheen 7s cubic-bezier(.45, 0, .25, 1) 2s infinite; }
+
+@media (hover: hover) and (pointer: fine) {
+    .cell { cursor: pointer; }
+    .cell:not(.is-popped):hover .pill-body { transform: translateY(-3px) scale(1.04); }
+}
+
+/* Frosted status chips that overlap the pack for depth. */
+.brand-chip {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 10px 16px 10px 10px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(7, 36, 86, .78), rgba(7, 36, 86, .58));
+    -webkit-backdrop-filter: blur(16px) saturate(1.6);
+    backdrop-filter: blur(16px) saturate(1.6);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .22) inset, 0 22px 40px -14px rgba(2, 18, 52, .7);
+    color: #fff;
+    white-space: nowrap;
+    translate: calc(var(--mx, 0) * 22px) calc(var(--my, 0) * 15px);
+}
+.chip-stock   { top: 7%;  right: 5%; animation: chip-in .9s var(--ease) 1.15s backwards, chip-bob 6.5s ease-in-out 2.1s infinite alternate; }
+.chip-receipt { bottom: 17%; left: 3%; animation: chip-in .9s var(--ease) 1.35s backwards, chip-bob 7.5s ease-in-out 2.4s infinite alternate-reverse; }
+
+.chip-icon {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    color: #fff;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .4) inset;
+}
+.chip-mint  { background: linear-gradient(145deg, #45d3a5, #1e9a73); }
+.chip-amber { background: linear-gradient(145deg, #f8be5f, #e08f1d); }
+.chip-text { display: grid; line-height: 1.25; }
+.chip-text strong { font-size: .8125rem; font-weight: 700; letter-spacing: .005em; }
+.chip-text span { font-size: .6875rem; color: rgba(255, 255, 255, .8); }
+
+/* 5 — Form panel ---------------------------------------------------------- */
+.login-form-panel {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px clamp(24px, 4vw, 56px) 0;
+    background: var(--bg);
+}
+
+/* Soft colour wash + dotted texture, so the card has something to float over. */
+.login-form-panel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background:
+        radial-gradient(52% 44% at 96% 2%, color-mix(in srgb, var(--accent) 15%, transparent), transparent 72%),
+        radial-gradient(46% 42% at 0% 100%, color-mix(in srgb, var(--mint) 14%, transparent), transparent 72%);
+}
+.login-form-panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(circle, color-mix(in srgb, var(--muted) 34%, transparent) 1px, transparent 1.4px);
+    background-size: 24px 24px;
+    -webkit-mask-image: radial-gradient(70% 60% at 100% 0%, #000, transparent 70%);
+    mask-image: radial-gradient(70% 60% at 100% 0%, #000, transparent 70%);
+    opacity: .6;
+}
+
+.login-form-content {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    margin: auto 0;
+    padding: 42px 38px 30px;
+    border: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+    border-radius: 28px;
+    background: var(--surface-glass);
+    -webkit-backdrop-filter: blur(22px) saturate(1.5);
+    backdrop-filter: blur(22px) saturate(1.5);
+    box-shadow: var(--card-shadow);
+}
+/* A little capsule-coloured tab hanging off the top edge of the card. */
+.login-form-content::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 38px;
+    width: 64px;
+    height: 5px;
+    border-radius: 0 0 6px 6px;
+    background: linear-gradient(90deg, var(--accent) 0 40%, var(--mint) 40% 72%, var(--amber) 72% 100%);
+    transform-origin: left center;
+    z-index: 2;
+}
+/* Slowly rotating gradient border ring. */
+.login-form-content::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: conic-gradient(from var(--border-angle), var(--accent), var(--mint), var(--amber), var(--accent));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: .35;
+    animation: border-spin 8s linear infinite;
+}
+
+.login-form-content h1 {
+    margin: 0 0 10px;
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 1.6rem + 1.4vw, 2.7rem);
+    font-weight: 700;
+    letter-spacing: -.03em;
+    line-height: 1.1;
+}
+.login-intro { margin: 0 0 30px; font-size: 1rem; line-height: 1.6; color: var(--muted); text-wrap: balance; }
+.theme-notice { margin: 0 0 16px; font-size: .8125rem; color: var(--muted); }
+
+.login-field { margin-bottom: 20px; }
+.login-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: .875rem;
+    font-weight: 600;
+    color: var(--ink);
+    transition: color .2s;
+}
+.login-field:focus-within label { color: var(--accent); }
+
+/* Input with an icon tab. The tab fills with brand colour while the field is active. */
+.login-input-wrap {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--field);
+    transition: border-color .18s, box-shadow .25s, background-color .2s, transform .3s var(--ease);
+}
+.login-input-wrap:hover:not(:focus-within) { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+.login-input-wrap:focus-within {
+    border-color: var(--accent);
+    background: var(--surface);
+    transform: translateY(-1px);
+    box-shadow:
+        0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent),
+        0 14px 24px -16px color-mix(in srgb, var(--accent) 60%, transparent);
+    animation: focus-glow-pulse 2s ease-in-out infinite;
+}
+
+.login-input-tab {
+    flex: none;
+    width: 52px;
+    display: grid;
+    place-items: center;
+    background: var(--tab);
+    border-right: 1px solid var(--line);
+    color: var(--muted);
+    transition: background-color .25s, color .25s, border-color .25s, box-shadow .3s;
+}
+.login-input-tab svg { transition: transform .45s var(--ease); }
+.login-input-wrap:focus-within .login-input-tab {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+    box-shadow: 6px 0 18px -4px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+.login-input-wrap:focus-within .login-input-tab svg { transform: scale(1.14) rotate(-8deg); }
+
+.login-field input {
+    flex: 1;
+    min-width: 0;
+    height: 54px;
+    padding: 0 16px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--ink);
+    font-size: 1rem;
+}
+.login-field input::placeholder { color: var(--placeholder); opacity: 1; transition: opacity .2s, transform .3s var(--ease); }
+.login-field input:focus::placeholder { opacity: .7; transform: translateX(4px); }
+.login-field input:-webkit-autofill {
+    -webkit-text-fill-color: var(--ink);
+    box-shadow: 0 0 0 100px var(--field) inset;
+    caret-color: var(--ink);
+}
+.login-input-wrap:focus-within input:-webkit-autofill { box-shadow: 0 0 0 100px var(--surface) inset; }
+
+.password-toggle {
+    flex: none;
+    min-width: 62px;
+    padding: 0 12px;
+    border: 0;
+    background: transparent;
+    color: var(--accent);
+    font-size: .8125rem;
+    font-weight: 700;
+    transition: background-color .18s;
+}
+.password-toggle:hover { background: var(--tab); }
+.password-toggle:focus-visible { outline-offset: -4px; }
+
+.caps-lock-notice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0 0;
+    font-size: .8125rem;
+    color: var(--muted);
+    animation: login-reveal .3s var(--ease);
+}
+.caps-lock-notice::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--amber);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--amber) 28%, transparent);
+}
+
+/* Typing indicator dots (login.js) */
+.login-typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 0;
+    margin: 0;
+    padding: 0 4px;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: opacity .25s var(--ease), height .25s var(--ease), margin .25s var(--ease);
+}
+.login-input-wrap.is-typing + .login-typing-indicator,
+.login-field:has(.login-input-wrap.is-typing) .login-typing-indicator {
+    height: 14px;
+    margin-top: 8px;
+    opacity: 1;
+}
+.login-typing-indicator span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: .35;
+    transform: scale(.8);
+}
+.login-input-wrap.is-typing + .login-typing-indicator span,
+.login-field:has(.login-input-wrap.is-typing) .login-typing-indicator span {
+    animation: typing-pulse 1.2s ease-in-out infinite;
+}
+.login-typing-indicator span:nth-child(1) { animation-delay: 0s; }
+.login-typing-indicator span:nth-child(2) { animation-delay: .2s; }
+.login-typing-indicator span:nth-child(3) { animation-delay: .4s; }
+
+/* Submit */
+.login-submit {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: 100%;
+    min-height: 58px;
+    margin-top: 28px;
+    padding: 0 9px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border: 0;
+    border-radius: 16px;
+    background: linear-gradient(120deg, var(--accent-a), var(--accent) 48%, var(--accent-b)) 0 0 / 170% 100%;
+    color: var(--accent-ink);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .005em;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), 0 16px 28px -16px var(--accent);
+    transition: background-position .6s var(--ease), box-shadow .25s, transform .2s var(--ease), translate .2s var(--ease);
+}
+.login-submit-label { position: relative; }
+/* Light sweep across the button. */
+.login-submit::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, .34) 50%, transparent 65%);
+    transform: translateX(-120%);
+    transition: transform .8s var(--ease);
+}
+.login-submit-chip {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, .2);
+    transition: transform .3s var(--ease), background-color .2s;
+}
+.dark .login-submit-chip { background: rgba(5, 22, 50, .16); }
+/* Subtle idle shimmer: a faint light sweep repeats when the button is resting. */
+.login-submit::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, .18) 50%, transparent 60%);
+    transform: translateX(-180%);
+    animation: idle-shimmer 4.5s ease-in-out 2.5s infinite;
+    pointer-events: none;
+}
+.login-submit:hover::after,
+.login-submit:disabled::after { animation: none; opacity: 0; }
+.login-submit:focus-visible { outline-offset: 4px; }
+.login-submit:disabled { opacity: .92; }
+
+/* Click ripple (created by login.js). */
+.login-ripple {
+    position: absolute;
+    z-index: -1;
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+    pointer-events: none;
+    animation: login-ripple .7s ease-out forwards;
+}
+
+/* Busy: the arrow turns into a spinner and a thin bar runs along the bottom. */
+.login-submit-progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.login-submit-progress::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 38%;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .85);
+    animation: login-progress 1.1s cubic-bezier(.5, 0, .3, 1) infinite;
+}
+#loginForm[aria-busy="true"] .login-submit-progress { opacity: 1; }
+#loginForm[aria-busy="true"] .login-submit-chip svg { opacity: 0; }
+#loginForm[aria-busy="true"] .login-submit-chip::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2.5px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: login-spin .75s linear infinite;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .login-submit:not(:disabled):hover {
+        background-position: 100% 0;
+        transform: translateY(-2px);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), 0 24px 34px -16px var(--accent);
+    }
+    .login-submit:not(:disabled):hover::before { transform: translateX(120%); }
+    .login-submit:not(:disabled):hover .login-submit-chip { transform: translateX(3px); }
+}
+.login-submit:not(:disabled):active { transform: scale(.985); }
+.login-submit:focus-visible .login-submit-chip { transform: translateX(3px); }
+
+/* Help + footnote */
+.login-help { margin-top: 20px; font-size: .875rem; color: var(--muted); }
+.login-help summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    min-height: 44px;
+    list-style: none;
+    cursor: pointer;
+    color: var(--ink);
+    font-weight: 500;
+    transition: color .18s;
+}
+.login-help summary:hover { color: var(--accent); }
+.login-help summary::-webkit-details-marker { display: none; }
+.login-help summary::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    margin-right: 2px;
+    border-right: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+    transform: rotate(-45deg);
+    transition: transform .25s var(--ease);
+}
+.login-help[open] summary::before { transform: rotate(45deg); }
+.login-help p {
+    margin: 2px 0 0;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--field);
+    line-height: 1.6;
+}
+.login-help[open] p { animation: login-reveal .3s var(--ease); }
+
+.form-footnote {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: .8125rem;
+    color: var(--muted);
+}
+.form-footnote svg { color: var(--mint); }
+
+.login-footer {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 4px 22px;
+    font-size: .75rem;
+    color: var(--muted);
+}
+
+/* 6 — States -------------------------------------------------------------- */
+.login-alert {
+    margin: 0 0 22px;
+    padding: 13px 15px;
+    border: 1px solid;
+    border-left-width: 4px;
+    border-radius: 12px;
+    font-size: .875rem;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+.login-alert-error { color: #9c1f2b; background: #fff2f3; border-color: #efc4c8; border-left-color: #d1303f; }
+.login-alert-success { color: #145c44; background: #eefaf4; border-color: #bfe4d3; border-left-color: #1f9d73; }
+.dark .login-alert-error { color: #ffc9ce; background: #3d2229; border-color: #7b434d; border-left-color: #ff7b88; }
+.dark .login-alert-success { color: #b8ebd6; background: #17372f; border-color: #3a6557; border-left-color: #4fd1a1; }
+
+/* Empty required field on submit (login.js adds these). */
+.login-input-wrap.is-invalid { border-color: var(--danger); }
+.login-input-wrap.is-invalid:focus-within {
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--danger) 20%, transparent);
+}
+.login-input-wrap.is-invalid .login-input-tab,
+.login-input-wrap.is-invalid:focus-within .login-input-tab {
+    background: var(--danger);
+    border-color: var(--danger);
+    color: #fff;
+}
+.login-input-wrap.is-shaking { animation: login-shake .45s ease-in-out; }
+
+/* 7 — Motion --------------------------------------------------------------
+   One orchestrated arrival: headline lines → pack → capsules drop in → chips
+   → form card, whose parts rise in order. After that the scene idles very
+   gently (aurora, float, sheen) and reacts to the pointer. Final states are
+   the base styles, so turning animation off never hides content. */
+@keyframes line-up { from { transform: translateY(108%) translateX(-6px); } }
+@keyframes pack-in {
+    from { opacity: 0; transform: translate(7%, 12%) rotate(-2deg); }
+    to   { opacity: 1; transform: rotate(var(--tilt)); }
+}
+@keyframes pill-in {
+    from { opacity: 0; transform: translateY(-34px) scale(.7); }
+    55%  { opacity: 1; }
+}
+@keyframes pill-pop {
+    0%   { opacity: 1; transform: none; }
+    22%  { opacity: 1; transform: translate(6px, -30px) rotate(18deg) scale(1.15); }
+    42%  { opacity: 0; transform: translate(10px, -54px) rotate(30deg) scale(1.1); }
+    68%  { opacity: 0; transform: translateY(-26px); }
+    100% { opacity: 1; transform: none; }
+}
+/* Gentle idle breathing for capsules after they load. */
+@keyframes pill-breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+}
+@keyframes form-in { from { opacity: 0; } }
+/* Spring overshoot on card entrance: slight bounce past final position. */
+@keyframes card-in {
+    from { opacity: 0; transform: translateY(26px) scale(.975); -webkit-backdrop-filter: blur(0); backdrop-filter: blur(0); }
+    70%  { transform: translateY(-3px) scale(1.005); }
+}
+@keyframes rise {
+    from { opacity: 0; transform: translateY(18px); }
+    70%  { transform: translateY(-2px); }
+}
+@keyframes tab-in { from { transform: scaleX(0); } }
+@keyframes brand-in { from { opacity: 0; transform: translateY(-12px); } }
+@keyframes chip-in { from { opacity: 0; transform: translateY(26px) scale(.9); } }
+@keyframes chip-bob { from { transform: translateY(0); } to { transform: translateY(-9px); } }
+@keyframes pack-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes aurora {
+    from { transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
+    to   { transform: translate3d(4%, 3%, 0) rotate(9deg) scale(1.1); }
+}
+@keyframes cross-drift { to { transform: translate(44px, 44px); } }
+@keyframes foil-sheen { 0% { transform: translateX(-380px); } 48%, 100% { transform: translateX(620px); } }
+@keyframes login-alert-in { from { opacity: 0; transform: translateY(-6px); } }
+@keyframes login-shake { 20%, 60% { transform: translateX(-5px); } 40%, 80% { transform: translateX(5px); } }
+@keyframes login-reveal { from { opacity: 0; transform: translateY(-4px); } }
+@keyframes login-spin { to { transform: rotate(360deg); } }
+@keyframes login-ripple { to { transform: scale(30); opacity: 0; } }
+@keyframes login-progress { from { transform: translateX(-100%); } to { transform: translateX(270%); } }
+@keyframes login-submitting { to { opacity: .88; transform: scale(.985) translateY(2px); } }
+/* Input focus glow: rhythmic pulse of the outer ring. */
+@keyframes focus-glow-pulse {
+    0%, 100% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent), 0 14px 24px -16px color-mix(in srgb, var(--accent) 60%, transparent); }
+    50%      { box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 28%, transparent), 0 18px 30px -16px color-mix(in srgb, var(--accent) 70%, transparent); }
+}
+/* Rotating gradient border. */
+@keyframes border-spin { to { --border-angle: 360deg; } }
+/* Submit idle shimmer. */
+@keyframes idle-shimmer { 0% { transform: translateX(-180%); } 50%, 100% { transform: translateX(180%); } }
+/* Typing indicator pulse. */
+@keyframes typing-pulse {
+    0%, 80%, 100% { opacity: .25; transform: scale(.8); }
+    40% { opacity: .9; transform: scale(1.1); }
+}
+
+.login-brand { animation: brand-in .8s var(--ease) backwards; }
+.brand-title .line > span { animation: line-up .85s var(--spring) backwards; }
+.brand-title .line:nth-child(2) > span { animation-delay: .08s; }
+.brand-title .line:nth-child(3) > span { animation-delay: .16s; }
+.brand-copy p { animation: form-in .7s ease .45s backwards; }
+
+.pack { animation: pack-in 1s var(--ease) .12s backwards; }
+.pill-body { animation: pill-in .55s cubic-bezier(.34, 1.5, .64, 1) backwards; animation-delay: calc(.5s + var(--i, 0) * 70ms); }
+.cell.is-popped .pill-body { animation: pill-pop 1.7s cubic-bezier(.3, .7, .3, 1); animation-delay: 0s; }
+
+.login-form-content { animation: card-in .85s var(--spring) .15s backwards; }
+.login-form-content.is-submitting { animation: login-submitting .45s var(--ease) forwards; }
+.login-form-content::before { animation: tab-in .7s var(--ease) .75s backwards; }
+.login-form-content h1,
+.login-intro,
+.login-field,
+.login-submit,
+.login-help,
+.form-footnote { animation: rise .75s var(--spring) calc(.3s + var(--d, 0) * 70ms) backwards; }
+.login-footer { animation: form-in .7s ease .9s backwards; }
+
+.login-alert { animation: login-alert-in .35s var(--ease) backwards; }
+.login-alert-error { animation: login-alert-in .35s var(--ease) backwards, login-shake .45s ease-in-out .35s; }
+
+/* Theme reveal (login.js): freeze per-element transitions while the circular reveal runs. */
+html.theme-vt::view-transition-old(root),
+html.theme-vt::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+html.theme-vt::view-transition-old(root) { z-index: 1; }
+html.theme-vt::view-transition-new(root) { z-index: 2; }
+html.theme-vt *, html.theme-vt *::before, html.theme-vt *::after { transition: none !important; }
+
+/* 8 — Responsive ---------------------------------------------------------- */
+@media (min-width: 1700px) {
+    .brand-copy { max-width: 38rem; }
+    .login-form-content, .login-footer { max-width: 468px; }
+}
+
+/* Short desktop windows and landscape tablets */
+@media (min-width: 901px) and (max-height: 760px) {
+    .brand-copy { margin-top: 28px; }
+    .brand-copy p { display: none; }
+    .brand-art { min-height: 180px; }
+    .brand-chip { display: none; }
+    .login-form-panel { padding-top: 72px; }
+    .login-form-content { padding: 30px 34px 20px; }
+    .login-form-content h1 { font-size: 2.1rem; }
+    .login-intro { margin-bottom: 20px; }
+    .login-field { margin-bottom: 14px; }
+    .login-submit { margin-top: 20px; }
+    .login-help { margin-top: 8px; }
+    .form-footnote { margin-top: 10px; padding-top: 14px; }
+    .login-footer { padding: 10px 4px 14px; }
+}
+
+/* Very short desktop windows (about 600px tall): keep the whole card and footer on screen */
+@media (min-width: 901px) and (max-height: 640px) {
+    .login-form-panel { padding-top: 60px; }
+    .login-theme-toggle { top: 12px; }
+    .login-form-content { padding: 22px 30px 12px; }
+    .login-form-content h1 { margin-bottom: 6px; font-size: 1.75rem; }
+    .login-intro { margin-bottom: 14px; font-size: .9375rem; }
+    .login-field { margin-bottom: 10px; }
+    .login-field label { margin-bottom: 5px; }
+    .login-field input { height: 46px; }
+    .login-input-tab { width: 46px; }
+    .login-submit { min-height: 52px; margin-top: 14px; }
+    .login-help { margin-top: 4px; }
+    .login-help summary { min-height: 40px; }
+    .form-footnote { margin-top: 4px; padding-top: 10px; }
+    .login-footer { padding: 8px 4px 10px; }
+}
+
+/* Medium widths: chips would crowd the pack, and the card needs less padding */
+@media (min-width: 901px) and (max-width: 1180px) {
+    .chip-receipt { display: none; }
+    .login-form-panel { padding: 80px 20px 0; }
+    .login-form-content { padding: 32px 26px 22px; }
+    .login-form-content::before { left: 26px; }
+    .login-form-content h1 { font-size: 2rem; }
+    .login-intro { margin-bottom: 24px; }
+    .login-field { margin-bottom: 16px; }
+    .login-submit { margin-top: 22px; }
+}
+
+@media (max-width: 900px) {
+    .login-shell {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "brand" "form";
+        grid-template-rows: auto 1fr;
+    }
+    .login-brand-panel { padding: 22px 24px 46px; }
+    .brand-copy, .brand-art { display: none; }
+
+    /* Form sheet slides up over the brand band; the card chrome drops away. */
+    .login-form-panel {
+        z-index: 1;
+        margin-top: -24px;
+        padding: 36px 24px 0;
+        border-radius: 26px 26px 0 0;
+        box-shadow: 0 -18px 40px -24px rgba(2, 18, 52, .45);
+    }
+    .login-form-content {
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 0 0 24px;
+        border: 0;
+        border-radius: 0;
+        background: none;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        box-shadow: none;
+        animation: none;
+    }
+    .login-form-content::before { display: none; }
+    .login-form-content::after { display: none; }
+    .login-footer { max-width: 440px; margin-top: auto; padding-inline: 0; }
+
+    .login-theme-toggle {
+        top: 18px;
+        right: 18px;
+        background: rgba(255, 255, 255, .14);
+        border-color: rgba(255, 255, 255, .38);
+        color: #fff;
+        box-shadow: none;
+    }
+    .login-theme-toggle:hover { border-color: #fff; background: rgba(255, 255, 255, .22); }
+}
+
+/* Phones held sideways: a slimmer brand band so the form is not pushed below the fold */
+@media (max-width: 900px) and (max-height: 520px) {
+    .login-brand-panel { padding: 10px 24px 34px; }
+    .login-brand img { width: 36px; height: 36px; }
+    .login-brand strong { font-size: 1.1rem; }
+    .login-brand div > span { margin-top: 0; }
+    .login-theme-toggle { top: 8px; width: 40px; height: 40px; }
+    .login-form-panel { padding-top: 22px; }
+    .login-form-content h1 { margin-bottom: 4px; font-size: 1.6rem; }
+    .login-intro { margin-bottom: 12px; }
+    .login-field { margin-bottom: 10px; }
+    .login-field input { height: 46px; }
+    .login-submit { min-height: 52px; margin-top: 14px; }
+}
+
+@media (max-width: 400px) {
+    .login-brand-panel { padding: 18px 18px 42px; }
+    .login-brand img { width: 42px; height: 42px; }
+    .login-brand strong { font-size: 1.25rem; }
+    .login-form-panel { padding: 30px 18px 0; }
+    .login-input-tab { width: 46px; }
+    .login-footer { flex-wrap: wrap; gap: 4px 16px; }
+}
+
+/* 9 — Accessibility settings (shared with the app's interface settings) ---- */
+:root[data-text-size="large"] { font-size: 18px; }
+:root[data-text-size="extra-large"] { font-size: 20px; }
+
+.high-contrast { --muted: #2f4358; --placeholder: #2f4358; --line: #6b8099; }
+.high-contrast.dark { --muted: #d4e0f0; --placeholder: #d4e0f0; --line: #8da2bd; }
+.high-contrast .login-input-wrap { border-width: 2px; }
+.high-contrast .brand-chip { background: rgb(5, 22, 50); border-color: #fff; }
+.high-contrast .brand-title .line:last-child > span { background: none; -webkit-text-fill-color: #fff; color: #fff; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}
+.reduce-motion *, .reduce-motion *::before, .reduce-motion *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+}
+/* Parallax is motion too. */
+@media (prefers-reduced-motion: reduce) {
+    .login-brand-panel::before, .pack-float, .brand-chip, .brand-copy, .login-submit { translate: none !important; }
+    .login-typing-indicator span { animation: none !important; opacity: .7; }
+}
+.reduce-motion .login-brand-panel::before,
+.reduce-motion .pack-float,
+.reduce-motion .brand-chip,
+.reduce-motion .brand-copy,
+.reduce-motion .login-submit { translate: none !important; }
+.reduce-motion .login-typing-indicator span { animation: none !important; opacity: .7; }
+/* The busy spinner and progress bar are feedback, not decoration, so they keep moving. */
+@media (prefers-reduced-motion: reduce) {
+    #loginForm[aria-busy="true"] .login-submit-chip::after { animation: login-spin 1.4s linear infinite !important; }
+    #loginForm[aria-busy="true"] .login-submit-progress::before { animation: login-progress 2s linear infinite !important; }
+}
+.reduce-motion #loginForm[aria-busy="true"] .login-submit-chip::after { animation: login-spin 1.4s linear infinite !important; }
+.reduce-motion #loginForm[aria-busy="true"] .login-submit-progress::before { animation: login-progress 2s linear infinite !important; }

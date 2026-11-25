@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\UniServerZ\www\pharxmaco\phpunit.xml.dist" tests="7" assertions="35" errors="0" failures="0" skipped="0" time="0.449970">
+    <testsuite name="App" tests="7" assertions="35" errors="0" failures="0" skipped="0" time="0.449970">
+      <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="7" assertions="35" errors="0" failures="0" skipped="0" time="0.449970">
+        <testcase name="testProductListFiltersUseBranchQuantityAndInclusiveReorderBoundary" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="57" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.177228"/>
+        <testcase name="testProductListManufacturerFilterMatchesExactTrimmedNamesAndEscapesPunctuation" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="67" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.041076"/>
+        <testcase name="testProductListFiltersCombineAndKeepManufacturerChoicesIndependentOfResults" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="80" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.026614"/>
+        <testcase name="testProductListManufacturerChoicesAndRowsStayInCashiersAssignedBranch" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="92" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.038931"/>
+        <testcase name="testProductListFiltersHandleMalformedInputsWithoutExpandingAnExactManufacturerMatch" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="104" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.075263"/>
+        <testcase name="testProductListClearFiltersRetainsBranchContextOnly" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="118" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.039330"/>
+        <testcase name="testProductListAdminManufacturerFilterCanSpanBranches" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="129" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.051528"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

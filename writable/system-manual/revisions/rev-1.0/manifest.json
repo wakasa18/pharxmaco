@@ -1,0 +1,271 @@
+{
+    "pdf": "C:\\UniServerZ\\www\\pharxmaco\/output\/pdf\/Pharxmaco_User_Manual_2026-10-17.pdf",
+    "html": "C:\\UniServerZ\\www\\pharxmaco\/docs\/manual\/Pharxmaco_User_Manual.html",
+    "source": "C:\\UniServerZ\\www\\pharxmaco\/docs\/manual\/Pharxmaco_User_Manual.md",
+    "expected_pages": 37,
+    "actual_pages": 37,
+    "page_map": [
+        {
+            "id": "cover",
+            "title": "Pharxmaco User Manual",
+            "expected_page": 1,
+            "actual_page": 1,
+            "words": 40
+        },
+        {
+            "id": "document-control",
+            "title": "About this manual",
+            "expected_page": 2,
+            "actual_page": 2,
+            "words": 314
+        },
+        {
+            "id": "contents",
+            "title": "Contents",
+            "expected_page": 3,
+            "actual_page": 3,
+            "words": 26
+        },
+        {
+            "id": "overview",
+            "title": "1 System overview and responsibilities",
+            "expected_page": 4,
+            "actual_page": 4,
+            "words": 287
+        },
+        {
+            "id": "navigation",
+            "title": "2 Navigation tables and preferences",
+            "expected_page": 5,
+            "actual_page": 5,
+            "words": 317
+        },
+        {
+            "id": "access",
+            "title": "3 Sign in and manage access",
+            "expected_page": 6,
+            "actual_page": 6,
+            "words": 294
+        },
+        {
+            "id": "start-shift",
+            "title": "4 Start a cashier shift",
+            "expected_page": 7,
+            "actual_page": 7,
+            "words": 298
+        },
+        {
+            "id": "pos-cart",
+            "title": "5 Build and review a POS cart",
+            "expected_page": 8,
+            "actual_page": 8,
+            "words": 334
+        },
+        {
+            "id": "checkout",
+            "title": "6 Take payment and complete a sale",
+            "expected_page": 9,
+            "actual_page": 9,
+            "words": 322
+        },
+        {
+            "id": "discounts",
+            "title": "7 Understand discounts and automatic promos",
+            "expected_page": 10,
+            "actual_page": 10,
+            "words": 317
+        },
+        {
+            "id": "senior-pwd",
+            "title": "8 Apply Senior Citizen or PWD benefits",
+            "expected_page": 11,
+            "actual_page": 11,
+            "words": 295
+        },
+        {
+            "id": "receipts",
+            "title": "9 View and print sales invoices",
+            "expected_page": 12,
+            "actual_page": 12,
+            "words": 298
+        },
+        {
+            "id": "held-sales",
+            "title": "10 Hold resume and discard a sale",
+            "expected_page": 13,
+            "actual_page": 13,
+            "words": 291
+        },
+        {
+            "id": "sale-details",
+            "title": "11 Find and review a recorded sale",
+            "expected_page": 14,
+            "actual_page": 14,
+            "words": 283
+        },
+        {
+            "id": "refunds",
+            "title": "12 Process a customer refund",
+            "expected_page": 15,
+            "actual_page": 15,
+            "words": 312
+        },
+        {
+            "id": "exchanges",
+            "title": "13 Exchange returned products",
+            "expected_page": 16,
+            "actual_page": 16,
+            "words": 309
+        },
+        {
+            "id": "corrections",
+            "title": "14 Correct an eligible sale",
+            "expected_page": 17,
+            "actual_page": 17,
+            "words": 331
+        },
+        {
+            "id": "my-day",
+            "title": "15 Read My Day correctly",
+            "expected_page": 18,
+            "actual_page": 18,
+            "words": 280
+        },
+        {
+            "id": "cash-movements",
+            "title": "16 Record and reconcile drawer cash",
+            "expected_page": 19,
+            "actual_page": 19,
+            "words": 241
+        },
+        {
+            "id": "close-shift",
+            "title": "17 Close a shift and hand over",
+            "expected_page": 20,
+            "actual_page": 20,
+            "words": 304
+        },
+        {
+            "id": "shift-review",
+            "title": "18 Review shifts and print reports",
+            "expected_page": 21,
+            "actual_page": 21,
+            "words": 289
+        },
+        {
+            "id": "product-create",
+            "title": "19 Create products and use the catalog",
+            "expected_page": 22,
+            "actual_page": 22,
+            "words": 301
+        },
+        {
+            "id": "product-edit",
+            "title": "20 Maintain product details and classifications",
+            "expected_page": 23,
+            "actual_page": 23,
+            "words": 300
+        },
+        {
+            "id": "stock-adjustments",
+            "title": "21 Add remove and count stock",
+            "expected_page": 24,
+            "actual_page": 24,
+            "words": 288
+        },
+        {
+            "id": "expiry-actions",
+            "title": "22 Resolve expired and replaced stock",
+            "expected_page": 25,
+            "actual_page": 25,
+            "words": 298
+        },
+        {
+            "id": "inventory-reports",
+            "title": "23 Review stock logs and expiry reports",
+            "expected_page": 26,
+            "actual_page": 26,
+            "words": 301
+        },
+        {
+            "id": "supporting-records",
+            "title": "24 Manage categories suppliers and Trash",
+            "expected_page": 27,
+            "actual_page": 27,
+            "words": 322
+        },
+        {
+            "id": "branches-users",
+            "title": "25 Maintain branches users and audit records",
+            "expected_page": 28,
+            "actual_page": 28,
+            "words": 308
+        },
+        {
+            "id": "discount-setup",
+            "title": "26 Create and maintain discount rules",
+            "expected_page": 29,
+            "actual_page": 29,
+            "words": 283
+        },
+        {
+            "id": "reports",
+            "title": "27 Review performance and forecasts",
+            "expected_page": 30,
+            "actual_page": 30,
+            "words": 321
+        },
+        {
+            "id": "exports",
+            "title": "28 Export reports and print documents",
+            "expected_page": 31,
+            "actual_page": 31,
+            "words": 309
+        },
+        {
+            "id": "invoice-setup",
+            "title": "29 Configure invoices and numbering",
+            "expected_page": 32,
+            "actual_page": 32,
+            "words": 269
+        },
+        {
+            "id": "recovery",
+            "title": "30 Create backups and restore data",
+            "expected_page": 33,
+            "actual_page": 33,
+            "words": 328
+        },
+        {
+            "id": "checklists",
+            "title": "31 Daily operating checklists",
+            "expected_page": 34,
+            "actual_page": 34,
+            "words": 293
+        },
+        {
+            "id": "troubleshooting-pos",
+            "title": "32 Troubleshoot sales and drawer issues",
+            "expected_page": 35,
+            "actual_page": 35,
+            "words": 325
+        },
+        {
+            "id": "troubleshooting-records",
+            "title": "33 Troubleshoot inventory reports and recovery",
+            "expected_page": 36,
+            "actual_page": 36,
+            "words": 334
+        },
+        {
+            "id": "glossary-support",
+            "title": "34 Terms and support handover",
+            "expected_page": 37,
+            "actual_page": 37,
+            "words": 288
+        }
+    ],
+    "pdf_sha256": "3e3956bc0b41419c17e03f68bf58eb434998363686dcefa35b90be6151cd3415",
+    "source_sha256": "8436662a9a3beb802094871808c4af8a66551db5fdd782416aa4da5199a6dcb0",
+    "application_records_modified": false
+}

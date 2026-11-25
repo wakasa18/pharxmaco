@@ -1,0 +1,69 @@
+{
+  "suite": {
+    "name": "BusinessLogicTest",
+    "file": "C:\\UniServerZ\\www\\pharxmaco\\tests\\unit\\BusinessLogicTest.php",
+    "tests": "280",
+    "assertions": "23505",
+    "errors": "2",
+    "failures": "9",
+    "skipped": "0",
+    "time": "5.220253"
+  },
+  "unsuccessful_cases": [
+    {
+      "test": "testRefundRejectsExpiredOriginalDeliveryAfterReplacementAndAllowsQuarantine",
+      "kind": "failure",
+      "message": ""
+    },
+    {
+      "test": "testReplacementWithTheSameExpiryStillHasDifferentDeliveryIdentity",
+      "kind": "failure",
+      "message": ""
+    },
+    {
+      "test": "testLegacyAndUnknownExpiryReturnsCannotBeRestocked",
+      "kind": "failure",
+      "message": ""
+    },
+    {
+      "test": "testExchangeRejectsOldDeliveryAndCapturesReplacementProvenance",
+      "kind": "failure",
+      "message": ""
+    },
+    {
+      "test": "testExchangeReviewRejectsReplacementExpiryChangedBeforeConfirmation",
+      "kind": "failure",
+      "message": ""
+    },
+    {
+      "test": "testQuantityCorrectionsCannotMixDeliveriesOrRestockExpiredItems",
+      "kind": "error",
+      "message": ""
+    },
+    {
+      "test": "testProductEditRejectsForgedExpiryChangeBeforeSavingOtherFields",
+      "kind": "failure",
+      "message": ""
+    },
+    {
+      "test": "testExpiryCorrectionIsAdminOnlyAuditedAndDoesNotRewriteSales",
+      "kind": "error",
+      "message": ""
+    },
+    {
+      "test": "testExpiryCorrectionRejectsStaleOrInvalidRequestsAndRollsBackAuditFailure",
+      "kind": "failure",
+      "message": ""
+    },
+    {
+      "test": "testManualReplenishmentInvalidatesOldReturnsButRemovalKeepsIdentity",
+      "kind": "failure",
+      "message": ""
+    },
+    {
+      "test": "testRefundRechecksDeliveryAtTheInventoryLock",
+      "kind": "failure",
+      "message": ""
+    }
+  ]
+}

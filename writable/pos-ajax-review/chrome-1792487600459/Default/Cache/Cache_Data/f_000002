@@ -1,0 +1,347 @@
+/* ==========================================================================
+   Pharxmaco v2 — motion & interaction layer
+   Loaded LAST in layouts/staff.php. The look itself (tokens, sidebar, topbar,
+   cards, tables, dashboard, login) now lives in the base stylesheets; this file
+   adds shadows tokens, hover/press feedback, entrance animations and the
+   page-to-page transition. It never changes layout or behaviour.
+
+   Performance rules followed throughout:
+   - animate transform / opacity only (compositor-friendly)
+   - no backdrop-filter, no animated blur, no infinite animations
+   - no `transition: all`; every transition lists its properties
+   - entrance animations use fill-mode `backwards`, so nothing keeps a
+     transform (and the stacking/containing-block side effects) afterwards
+   ========================================================================== */
+
+/* ---------- Tokens ---------------------------------------------------- */
+:root {
+    --pm-ease: cubic-bezier(.22, 1, .36, 1);          /* smooth deceleration */
+    --pm-ease-in-out: cubic-bezier(.65, 0, .35, 1);
+    --pm-fast: .14s;
+    --pm-base: .22s;
+    --pm-slow: .4s;
+
+    --pm-ink: 16, 32, 52;                              /* shadow colour (rgb) */
+    --pm-shadow-xs: 0 1px 2px rgba(var(--pm-ink), .05);
+    --pm-shadow-sm: 0 1px 2px rgba(var(--pm-ink), .04), 0 6px 16px -4px rgba(var(--pm-ink), .07);
+    --pm-shadow-md: 0 2px 4px rgba(var(--pm-ink), .04), 0 14px 32px -8px rgba(var(--pm-ink), .14);
+    --pm-shadow-lg: 0 4px 10px rgba(var(--pm-ink), .06), 0 32px 72px -14px rgba(var(--pm-ink), .32);
+    --pm-ring: color-mix(in srgb, var(--primary) 20%, transparent);
+    --pm-hairline: inset 0 1px 0 rgba(255, 255, 255, .6);
+
+}
+
+html.dark {
+    --pm-ink: 0, 0, 0;
+    --pm-shadow-xs: 0 1px 2px rgba(0, 0, 0, .3);
+    --pm-shadow-sm: 0 1px 2px rgba(0, 0, 0, .28), 0 8px 20px -6px rgba(0, 0, 0, .4);
+    --pm-shadow-md: 0 2px 4px rgba(0, 0, 0, .3), 0 16px 36px -8px rgba(0, 0, 0, .5);
+    --pm-shadow-lg: 0 4px 10px rgba(0, 0, 0, .35), 0 36px 80px -14px rgba(0, 0, 0, .7);
+    --pm-ring: color-mix(in srgb, var(--primary) 32%, transparent);
+    --pm-hairline: inset 0 1px 0 rgba(255, 255, 255, .05);
+}
+
+/* ---------- Base ------------------------------------------------------ */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scrollbar-gutter: stable;                 /* no layout jump when a modal locks scroll */
+    scrollbar-width: thin;
+    scrollbar-color: var(--line-2) transparent;
+}
+::selection { background: color-mix(in srgb, var(--primary) 24%, transparent); }
+
+/* One soft, static accent glow behind the page (painted once, never animated). */
+.main {
+    background:
+        radial-gradient(900px 340px at 82% -40px, color-mix(in srgb, var(--primary) 7%, transparent), transparent 70%) no-repeat,
+        var(--bg);
+}
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* ---------- Typography helpers --------------------------------------- */
+.page-header h1, .dash-header h1, .card-head h2, .section-head h2, .dash-section-heading h2 { text-wrap: balance; }
+.page-header p { text-wrap: pretty; }
+.stat-value, .kpi-value, table td, .pos-live-stat, .topbar #clockDisplay { font-variant-numeric: tabular-nums; }
+
+/* ---------- Interactive cards ---------------------------------------- */
+.dash-page .kpi, .dash-action, .stat-card {
+    transition: transform var(--pm-base) var(--pm-ease), border-color var(--pm-base) ease,
+                box-shadow var(--pm-base) ease, background-color var(--pm-base) ease;
+}
+.dash-page .kpi:hover, .dash-action:hover { transform: translateY(-3px); box-shadow: var(--pm-shadow-md); }
+
+/* ---------- Buttons --------------------------------------------------- */
+.btn {
+    transition: transform var(--pm-fast) var(--pm-ease),
+                background-color var(--pm-fast) ease,
+                border-color var(--pm-fast) ease,
+                color var(--pm-fast) ease,
+                box-shadow var(--pm-base) ease,
+                opacity var(--pm-fast) ease;
+}
+.btn:hover { opacity: 1; transform: translateY(-1px); }
+.btn:active { transform: translateY(0) scale(.98); transition-duration: .06s; }
+
+.btn-primary:hover {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 78%, #fff), var(--primary-dark));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .26),
+                0 1px 2px color-mix(in srgb, var(--primary) 50%, transparent),
+                0 12px 22px -6px var(--primary-shadow);
+}
+
+.btn-secondary, .btn.secondary {
+    box-shadow: var(--pm-shadow-xs);
+}
+.btn-secondary:hover, .btn.secondary:hover {
+    background: var(--surface);
+    border-color: color-mix(in srgb, var(--primary) 45%, var(--line-2));
+    color: var(--text);
+    box-shadow: var(--pm-shadow-sm);
+}
+
+.btn-danger, .btn.danger {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 8px 16px -8px rgba(229, 62, 62, .55);
+}
+.btn-success { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 8px 16px -8px rgba(22, 163, 74, .5); }
+.btn-warning { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 8px 16px -8px rgba(217, 119, 6, .5); }
+
+.btn[disabled], button[disabled] { box-shadow: none; }
+
+/* ---------- Forms ----------------------------------------------------- */
+input[type="text"], input[type="number"], input[type="password"], input[type="email"],
+input[type="date"], input[type="search"], input[type="tel"], select, textarea, .input {
+    border-width: 1px;
+    border-radius: var(--radius);
+    transition: border-color var(--pm-fast) ease, box-shadow var(--pm-base) ease, background-color var(--pm-fast) ease;
+}
+input:hover:not(:disabled):not(:focus), select:hover:not(:disabled):not(:focus),
+textarea:hover:not(:disabled):not(:focus), .input:hover:not(:disabled):not(:focus) {
+    border-color: color-mix(in srgb, var(--primary) 35%, var(--line-2));
+}
+input:focus, select:focus, textarea:focus, .input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px var(--pm-ring);
+}
+.input.is-invalid { box-shadow: 0 0 0 4px rgba(229, 62, 62, .12); }
+label, .label { letter-spacing: .005em; }
+
+/* ---------- Badges, alerts, tags ------------------------------------- */
+.badge { letter-spacing: .01em; box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor 14%, transparent); }
+.badge.danger, .badge.warning { box-shadow: none; }
+.tag { border-radius: 8px; }
+
+.alert {
+    border-width: 1px;
+    border-radius: 12px;
+    box-shadow: var(--pm-shadow-xs);
+    animation: pm-drop var(--pm-slow) var(--pm-ease) backwards;
+}
+
+/* The original light-green/red/amber borders are hard-coded; tone them in dark mode. */
+html.dark .alert.success { border-color: color-mix(in srgb, var(--success) 38%, transparent); }
+html.dark .alert.error, html.dark .alert.danger { border-color: color-mix(in srgb, var(--danger) 38%, transparent); }
+html.dark .alert.warning { border-color: color-mix(in srgb, #f59e0b 38%, transparent); }
+
+/* ---------- Tables ---------------------------------------------------- */
+table th {
+    font-size: 11.5px;
+    background: color-mix(in srgb, var(--surface-2) 92%, var(--primary) 3%);
+    border-bottom-width: 1px;
+}
+table tbody tr { transition: background-color var(--pm-fast) ease; }
+table tbody tr:hover { background: color-mix(in srgb, var(--primary) 5%, var(--surface)); }
+table tbody tr:hover td:first-child { box-shadow: inset 3px 0 0 var(--primary); }
+html.dark table tbody tr:hover { background: color-mix(in srgb, var(--primary) 9%, var(--surface)); }
+
+/* ---------- Pagination ------------------------------------------------ */
+.pagination li a {
+    transition: background-color var(--pm-fast) ease, color var(--pm-fast) ease,
+                border-color var(--pm-fast) ease, transform var(--pm-fast) var(--pm-ease);
+}
+.pagination li a:hover { transform: translateY(-1px); }
+.pagination li.active a {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 86%, #fff), var(--primary));
+    box-shadow: 0 6px 12px -6px var(--primary-shadow);
+}
+
+/* ---------- Sidebar (look lives in sidebar.css) ---------------------- */
+.sidebar {
+    will-change: transform;                                   /* one long-lived layer = smooth slide */
+    transition: transform .36s var(--pm-ease);
+}
+.sidebar .nav-item {
+    transition: background-color var(--pm-base) ease, color var(--pm-base) ease,
+                border-color var(--pm-base) ease, transform var(--pm-base) var(--pm-ease);
+}
+.sidebar .nav-icon { transition: transform var(--pm-base) var(--pm-ease), background-color var(--pm-base) ease, color var(--pm-base) ease; }
+.sidebar .nav-item:hover { transform: translateX(3px); }
+.sidebar .nav-item:hover .nav-icon { transform: scale(1.1); }
+.sidebar .nav-item:active { transform: translateX(1px) scale(.99); }
+.sidebar .nav-item.active:hover { transform: none; }
+.sidebar-search { transition: border-color var(--pm-fast) ease, box-shadow var(--pm-base) ease; }
+
+/* Backdrop: a plain dimmer (the old blur forced a re-blur of the whole page on every frame). */
+.overlay {
+    background: rgba(8, 16, 28, .5);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+.overlay.show { animation: pm-fade var(--pm-base) ease-out backwards; }
+
+/* ---------- Topbar ---------------------------------------------------- */
+.topbar {
+    transition: box-shadow var(--pm-base) ease, border-color var(--pm-base) ease;
+}
+.topbar.is-scrolled {
+    border-color: var(--line-2);
+    box-shadow: 0 22px 44px -22px rgba(var(--pm-ink), .38);
+}
+.topbar .topbar-toggle, .topbar .theme-toggle, .topbar .notification-btn, .topbar .topbar-user {
+    transition: background-color var(--pm-fast) ease, color var(--pm-fast) ease,
+                border-color var(--pm-fast) ease, transform var(--pm-fast) var(--pm-ease);
+}
+.topbar .topbar-toggle:active, .topbar .theme-toggle:active,
+.topbar .notification-btn:active, .topbar .topbar-user:active { transform: scale(.95); }
+.account-chevron { transition: transform var(--pm-base) var(--pm-ease); }
+.topbar-user[aria-expanded="true"] .account-chevron { transform: rotate(180deg); }
+.notification-badge { animation: pm-pop var(--pm-slow) var(--pm-ease) .35s backwards; }
+
+/* Dropdown panels grow out of their trigger. */
+.topbar .notification-menu,
+.account-panel {
+    box-shadow: var(--pm-shadow-lg);
+    transform-origin: top right;
+}
+.topbar .notification-menu.open,
+.account-panel:not([hidden]) { animation: pm-pop var(--pm-base) var(--pm-ease) backwards; }
+.notification-item { transition: background-color var(--pm-fast) ease; }
+
+/* ---------- Modals ---------------------------------------------------- */
+#lowStockModal, #forecastModalOverlay, #heldModalOverlay,
+.inventory-modal, .forecast-modal-overlay, .held-modal-overlay {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;                          /* biggest single source of lag */
+    background: rgba(8, 16, 28, .6);
+}
+.inventory-modal.open, .forecast-modal-overlay.show, .held-modal-overlay.show {
+    animation: pm-fade var(--pm-base) ease-out backwards;
+}
+.inventory-modal.open .inventory-modal-dialog,
+.forecast-modal-overlay.show .forecast-modal,
+.held-modal-overlay.show .held-modal {
+    animation: pm-modal .34s var(--pm-ease) backwards;
+    box-shadow: var(--pm-shadow-lg), 0 0 0 1px rgba(var(--pm-ink), .06);
+}
+
+/* ---------- Page entrance --------------------------------------------- */
+/* Leaf elements only (never wrappers/modals), so fixed-position children are unaffected. */
+.page-header, .dash-header, .rp-header, .pos-page-header,
+.dash-section-nav, .dash-section-heading,
+.content .card:not(.card *, [class*="modal"] *, [id*="Modal"] *),
+.kpi-grid > *, .cards-grid > *, .dash-actions > * {
+    animation: pm-rise var(--pm-slow) var(--pm-ease) backwards;
+}
+.content .card:not(.card *, [class*="modal"] *, [id*="Modal"] *) { animation-delay: .04s; }
+.content .card ~ .card:not(.card *, [class*="modal"] *, [id*="Modal"] *) { animation-delay: .1s; }
+
+.kpi-grid > :nth-child(1), .cards-grid > :nth-child(1), .dash-actions > :nth-child(1) { animation-delay: .04s; }
+.kpi-grid > :nth-child(2), .cards-grid > :nth-child(2), .dash-actions > :nth-child(2) { animation-delay: .08s; }
+.kpi-grid > :nth-child(3), .cards-grid > :nth-child(3), .dash-actions > :nth-child(3) { animation-delay: .12s; }
+.kpi-grid > :nth-child(4), .cards-grid > :nth-child(4), .dash-actions > :nth-child(4) { animation-delay: .16s; }
+.kpi-grid > :nth-child(5), .cards-grid > :nth-child(5), .dash-actions > :nth-child(5) { animation-delay: .2s; }
+.kpi-grid > :nth-child(n+6), .cards-grid > :nth-child(n+6), .dash-actions > :nth-child(n+6) { animation-delay: .24s; }
+
+/* ---------- Page-to-page transition (native, GPU composited) ---------- */
+/* Chrome/Edge/Safari: a quick cross-fade; the sidebar and topbar stay put.
+   Browsers without support simply navigate normally. */
+@media (prefers-reduced-motion: no-preference) {
+    @view-transition { navigation: auto; }
+}
+.sidebar { view-transition-name: pm-sidebar; }
+.topbar  { view-transition-name: pm-topbar; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .18s; }
+::view-transition-group(pm-sidebar), ::view-transition-group(pm-topbar) { animation: none; }
+::view-transition-old(pm-sidebar), ::view-transition-old(pm-topbar) { display: none; }
+::view-transition-new(pm-sidebar), ::view-transition-new(pm-topbar) { animation: none; }
+
+/* ---------- Keyframes (transform + opacity only) ---------------------- */
+@keyframes pm-fade  { from { opacity: 0; } }
+@keyframes pm-rise  { from { opacity: 0; transform: translateY(10px); } }
+@keyframes pm-drop  { from { opacity: 0; transform: translateY(-8px); } }
+@keyframes pm-pop   { from { opacity: 0; transform: translateY(-6px) scale(.96); } }
+@keyframes pm-modal { from { opacity: 0; transform: translateY(14px) scale(.975); } }
+
+/* ---------- Touch & small screens ------------------------------------- */
+@media (hover: none) {
+    /* No sticky hover-lift on touch screens. */
+    .btn:hover, .pagination li a:hover, .sidebar .nav-item:hover,
+    .sidebar .nav-item:hover .nav-icon { transform: none; }
+}
+@media (max-width: 900px) {
+    /* Lighter shadows = cheaper paints on phones and low-end tablets. */
+    :root {
+        --pm-shadow-sm: 0 1px 2px rgba(var(--pm-ink), .06);
+        --pm-shadow-md: 0 6px 16px -6px rgba(var(--pm-ink), .16);
+    }
+    .page-header, .dash-header, .rp-header, .pos-page-header,
+    .kpi-grid > *, .cards-grid > *, .dash-actions > * { animation-duration: .3s; }
+}
+
+/* ---------- Reduced motion (OS setting OR the in-app switch) ---------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: .001ms !important;
+        animation-delay: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+html.reduce-motion *, html.reduce-motion *::before, html.reduce-motion *::after {
+    animation-duration: .001ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+}
+html.reduce-motion::view-transition-group(*),
+html.reduce-motion::view-transition-old(*),
+html.reduce-motion::view-transition-new(*) { animation: none !important; }
+
+/* ---------- Theme switch ---------------------------------------------- */
+/* Circular reveal: the new theme grows out of the toggle (see premium.js). */
+html.theme-vt::view-transition-old(root),
+html.theme-vt::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+html.theme-vt::view-transition-old(root) { z-index: 1; }
+html.theme-vt::view-transition-new(root) { z-index: 2; }
+/* Let the sidebar and topbar join the reveal instead of swapping on their own. */
+html.theme-vt .sidebar, html.theme-vt .topbar { view-transition-name: none; }
+
+/* Fallback / other switches (settings page, device change, no View Transitions):
+   colours fade together for a moment. Colours only: shadows and outlines snap,
+   because animating them forces a repaint of every element on every frame. */
+html.theme-fade, html.theme-fade *, html.theme-fade *::before, html.theme-fade *::after {
+    transition: background-color .4s ease, border-color .4s ease, color .4s ease,
+                fill .4s ease, stroke .4s ease !important;
+    transition-delay: 0s !important;
+}
+
+/* During the reveal no element may animate its own colours. The new theme is captured
+   live, so per-element fades (.15s buttons, rows, cards...) would play inside the
+   snapshot and make the reveal look washed out and stuttery. Must stay AFTER the fade
+   rule above, which has equal specificity. */
+html.theme-vt *, html.theme-vt *::before, html.theme-vt *::after { transition: none !important; }
+
+/* Sun and moon turn into each other. */
+.theme-toggle .icon-sun, .theme-toggle .icon-moon { transition: opacity .35s ease, transform .6s var(--pm-ease); }
+.theme-toggle .icon-sun  { transform: rotate(0) scale(1); }
+.theme-toggle .icon-moon { transform: rotate(-90deg) scale(.4); }
+html.dark .theme-toggle .icon-sun  { transform: rotate(90deg) scale(.4); }
+html.dark .theme-toggle .icon-moon { transform: rotate(0) scale(1); }
+html.theme-vt .theme-toggle .icon-sun,
+html.theme-vt .theme-toggle .icon-moon { transition: opacity .35s ease, transform .6s var(--pm-ease) !important; }

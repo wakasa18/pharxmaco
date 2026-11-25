@@ -1,0 +1,11 @@
+{
+    "archive": "C:\\UniServerZ\\www\\pharxmaco\/build\/hostinger-cashier-foreign-keys-2026-10-21.zip",
+    "runtime_files": 3,
+    "sql_files": 3,
+    "bytes": 23449,
+    "sha256": "ecf3594dfd896cb55f8a773d6a9984b1bdc0b39e30ce0b3c20d185a0e9100f23",
+    "local_schema_applied": true,
+    "existing_records_preserved": true,
+    "hosting_deployed": false,
+    "shift_reset_packaged": false
+}

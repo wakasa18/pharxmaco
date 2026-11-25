@@ -1,0 +1,10 @@
+[
+  {"label":"20 percent off the actual 55 peso product","items":[{"product_id":44,"subtotal":55}],"promos":[{"id":3,"product_id":44,"discount_type":"percentage","discount_value":20,"max_discount_amount":100}],"id":3,"amount":11},
+  {"label":"Unrelated products do not receive the offer","items":[{"product_id":45,"subtotal":200}],"promos":[{"id":3,"product_id":44,"discount_type":"percentage","discount_value":20}],"id":null,"amount":0},
+  {"label":"Unrelated spend cannot qualify the target minimum","items":[{"product_id":44,"subtotal":55},{"product_id":45,"subtotal":200}],"promos":[{"id":3,"product_id":44,"discount_type":"percentage","discount_value":20,"minimum_purchase":100}],"id":null,"amount":0},
+  {"label":"Pick the largest actual saving without stacking","items":[{"product_id":44,"subtotal":110},{"product_id":45,"subtotal":100}],"promos":[{"id":3,"product_id":44,"discount_type":"percentage","discount_value":20},{"id":4,"product_id":45,"discount_type":"fixed","discount_value":30}],"id":4,"amount":30},
+  {"label":"Equal savings choose the lowest ID","items":[{"product_id":44,"subtotal":55}],"promos":[{"id":5,"product_id":44,"discount_type":"percentage","discount_value":20},{"id":3,"product_id":44,"discount_type":"percentage","discount_value":20}],"id":3,"amount":11},
+  {"label":"Fixed offer applies once to the eligible line","items":[{"product_id":44,"subtotal":165}],"promos":[{"id":3,"product_id":44,"discount_type":"fixed","discount_value":10}],"id":3,"amount":10},
+  {"label":"Percentage cap still applies","items":[{"product_id":44,"subtotal":550}],"promos":[{"id":3,"product_id":44,"discount_type":"percentage","discount_value":20,"max_discount_amount":100}],"id":3,"amount":100},
+  {"label":"Centavo rounding matches checkout","items":[{"product_id":44,"subtotal":1.01}],"promos":[{"id":3,"product_id":44,"discount_type":"percentage","discount_value":50}],"id":3,"amount":0.51}
+]

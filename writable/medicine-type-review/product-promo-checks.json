@@ -1,0 +1,15 @@
+[
+  "Matching product promo is automatic on first cart load",
+  "Actual database promo produces the same total as server calculation",
+  "Only the matching product has a discount note",
+  "Quantity 2 recalculates automatically and respects the cap",
+  "Quantity 10 recalculates automatically and respects the cap",
+  "Cashier can explicitly choose No Discount",
+  "Manual choice survives adding products/page reload within this cart",
+  "A new checkout does not inherit the previous customer override",
+  "Senior/PWD choice retains the promo while requiring beneficiary verification",
+  "Checkout submits the actual displayed promo ID and amount",
+  "Promo messages fit at 390px",
+  "Promo messages fit at 1440px",
+  "Removing the eligible product removes its automatic discount"
+]

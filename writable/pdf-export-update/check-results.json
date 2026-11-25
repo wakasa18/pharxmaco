@@ -1,0 +1,14 @@
+{
+  "samples": 14,
+  "pages": 39,
+  "A4_landscape": true,
+  "all_running_identity_and_page_numbers": true,
+  "stock_records": 35,
+  "expiry_records": 36,
+  "complete_long_note_repetitions": 35,
+  "continuation_headings_verified": true,
+  "empty_sales_one_page": true,
+  "summary_variants_one_page": true,
+  "financial_reconciliation_verified": true,
+  "scope": "Synthetic actual-view/Dompdf exports; visual review plus scoped CPDF text inspection; no application database writes"
+}

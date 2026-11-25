@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "DataTables initializes 35 real rendered records with 25 rows per page",
+    "latest login dates sort first",
+    "single visible server date range without duplicate date controls",
+    "quick search filters login result text",
+    "clear table filters restores all loaded history",
+    "pagination and rows-per-page work",
+    "cashier account menu includes My Login History",
+    "sidebar includes the personal history link",
+    "responsive layout and date inputs 320/false",
+    "responsive layout and date inputs 320/true",
+    "responsive layout and date inputs 390/false",
+    "responsive layout and date inputs 390/true",
+    "responsive layout and date inputs 768/false",
+    "responsive layout and date inputs 768/true",
+    "responsive layout and date inputs 1440/false",
+    "responsive layout and date inputs 1440/true",
+    "empty history retains filters and initializes a searchable empty DataTable"
+  ],
+  "javascript_errors": [],
+  "application_records_changed": false
+}

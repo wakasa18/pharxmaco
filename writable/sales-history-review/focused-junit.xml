@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="5" assertions="34" errors="0" failures="0" skipped="0" time="0.281596">
+    <testcase name="testSalesHistoryRangeFindsOlderSalesOutsideLatestLimit" file="C:\UniServerZ\www\pharxmaco\tests\unit\SalesHistoryCases.php" line="25" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.166006"/>
+    <testcase name="testSalesHistoryRangeIncludesWholeEndDayAndSupportsOpenBounds" file="C:\UniServerZ\www\pharxmaco\tests\unit\SalesHistoryCases.php" line="43" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.027949"/>
+    <testcase name="testSalesHistoryRejectsInvalidOrReversedRangesWithoutLoadingOtherSales" file="C:\UniServerZ\www\pharxmaco\tests\unit\SalesHistoryCases.php" line="54" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.046116"/>
+    <testcase name="testSalesHistoryDateRangeRetainsCashierBranchRestriction" file="C:\UniServerZ\www\pharxmaco\tests\unit\SalesHistoryCases.php" line="65" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.019652"/>
+    <testcase name="testSalesHistoryAlwaysProvidesSingleRangeAndKeepsLinkedFilters" file="C:\UniServerZ\www\pharxmaco\tests\unit\SalesHistoryCases.php" line="77" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.021873"/>
+  </testsuite>
+</testsuites>

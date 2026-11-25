@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\UniServerZ\www\pharxmaco\phpunit.xml.dist" tests="29" assertions="283" errors="0" failures="0" skipped="0" time="1.443451">
+    <testsuite name="App" tests="29" assertions="283" errors="0" failures="0" skipped="0" time="1.443451">
+      <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="10" assertions="168" errors="0" failures="0" skipped="0" time="0.306838">
+        <testcase name="testExchangeControllerReviewsDifferentProductThenCommitsAndRendersBothReceipts" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1600" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.098734"/>
+        <testcase name="testInvoiceCheckoutPersistsDiscountAndLockedMedicineDetailsOnRetry" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2636" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.010670"/>
+        <testcase name="testInvoiceExhaustedRangeExplainsFailureAndDisabledNumberingAllowsCheckout" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2658" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.012908"/>
+        <testcase name="testInvoiceExchangePersistsReplacementMedicineDetails" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2688" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.006698"/>
+        <testcase name="testRefundSlipsSeparateEventsInTheSameSecond" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="3220" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.011165"/>
+        <testcase name="testShiftPrintIncludesEveryMovementAndKeepsClosedFinancialSnapshot" file="C:\UniServerZ\www\pharxmaco\tests\unit\ShiftPrintCases.php" line="5" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.046576"/>
+        <testcase name="testShiftPrintShowsOpeningDifferenceAndPreservesLongEscapedNotes" file="C:\UniServerZ\www\pharxmaco\tests\unit\ShiftPrintCases.php" line="36" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.014689"/>
+        <testcase name="testPdfSalesReconcilesRecordedVatAndPartialRefundAcrossGroupings" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfExportCases.php" line="5" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="68" time="0.080123"/>
+        <testcase name="testSalesReconciliationExplainsScreenshotAndKeepsUnknownDifferencesSeparate" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfExportCases.php" line="47" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="17" time="0.011571"/>
+        <testcase name="testInventoryPdfsShowStableIdsUnitsTrueMovementAndRecordedReferences" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfExportCases.php" line="68" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="19" time="0.013703"/>
+      </testsuite>
+      <testsuite name="CsvExportTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\CsvExportTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.003168">
+        <testcase name="testNumericFormattingAndFormulaProtection" file="C:\UniServerZ\www\pharxmaco\tests\unit\CsvExportTest.php" line="8" class="CsvExportTest" classname="CsvExportTest" assertions="2" time="0.002397"/>
+        <testcase name="testQuotesCommasUnicodeAndMultilineTextRoundTrip" file="C:\UniServerZ\www\pharxmaco\tests\unit\CsvExportTest.php" line="20" class="CsvExportTest" classname="CsvExportTest" assertions="1" time="0.000771"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\PdfFactoryTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfFactoryTest.php" tests="2" assertions="29" errors="0" failures="0" skipped="0" time="0.523126">
+        <testcase name="testBundledReportFontsContainUnicodeMappings" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfFactoryTest.php" line="11" class="Tests\Unit\PdfFactoryTest" classname="Tests.Unit.PdfFactoryTest" assertions="16" time="0.208132"/>
+        <testcase name="testPdfUsesWritableRuntimeAndEmbedsUnicodeFonts" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfFactoryTest.php" line="29" class="Tests\Unit\PdfFactoryTest" classname="Tests.Unit.PdfFactoryTest" assertions="13" time="0.314993"/>
+      </testsuite>
+      <testsuite name="ReceiptInvoiceTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReceiptInvoiceTest.php" tests="4" assertions="44" errors="0" failures="0" skipped="0" time="0.014509">
+        <testcase name="testUnconfiguredAndLegacySalesKeepTheirReferencesWithoutInventedTax" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReceiptInvoiceTest.php" line="15" class="ReceiptInvoiceTest" classname="ReceiptInvoiceTest" assertions="20" time="0.001681"/>
+        <testcase name="testMixedVatBreakdownReconcilesAndMissingClassificationsRemainUnknown" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReceiptInvoiceTest.php" line="32" class="ReceiptInvoiceTest" classname="ReceiptInvoiceTest" assertions="4" time="0.002286"/>
+        <testcase name="testRegistrationDiscountAndMedicineSnapshotsRemainStableAndEscapeOutput" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReceiptInvoiceTest.php" line="50" class="ReceiptInvoiceTest" classname="ReceiptInvoiceTest" assertions="11" time="0.006931"/>
+        <testcase name="testMigrationAndSerialAllocationPreserveHistoryAndRollBackFailedSales" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReceiptInvoiceTest.php" line="81" class="ReceiptInvoiceTest" classname="ReceiptInvoiceTest" assertions="9" time="0.003612"/>
+      </testsuite>
+      <testsuite name="ReportExportTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" tests="6" assertions="19" errors="0" failures="0" skipped="0" time="0.056150">
+        <testcase name="testRepeatedRequestRecordsOnceButAnotherClickRecordsAgain" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="60" class="ReportExportTest" classname="ReportExportTest" assertions="5" time="0.003553"/>
+        <testcase name="testDifferentFormatFiltersAndUserAreNotSuppressed" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="74" class="ReportExportTest" classname="ReportExportTest" assertions="1" time="0.004219"/>
+        <testcase name="testLegacyLinksHaveOnlyAShortDuplicateGuard" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="86" class="ReportExportTest" classname="ReportExportTest" assertions="3" time="0.003724"/>
+        <testcase name="testSummaryAndFullPdfAreDistinctExportsButRetriesAreDeduplicated" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="100" class="ReportExportTest" classname="ReportExportTest" assertions="1" time="0.004016"/>
+        <testcase name="testHeadAndPrefetchDoNotBuildOrRecordExports" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="111" class="ReportExportTest" classname="ReportExportTest" assertions="7" time="0.003671"/>
+        <testcase name="testFailedInsertDoesNotConsumeRequest" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="121" class="ReportExportTest" classname="ReportExportTest" assertions="2" time="0.036968"/>
+      </testsuite>
+      <testsuite name="StatutoryDiscountTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\StatutoryDiscountTest.php" tests="1" assertions="7" errors="0" failures="0" skipped="0" time="0.001274">
+        <testcase name="testMixedInvoiceSeparatesRegularTaxableSalesFromBeneficiaryVatExemptSales" file="C:\UniServerZ\www\pharxmaco\tests\unit\StatutoryDiscountTest.php" line="34" class="StatutoryDiscountTest" classname="StatutoryDiscountTest" assertions="7" time="0.001274"/>
+      </testsuite>
+      <testsuite name="StockLogPdfTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\StockLogPdfTest.php" tests="4" assertions="13" errors="0" failures="0" skipped="0" time="0.538386">
+        <testcase name="testIteratorIsConsumedOnceAndProducesCompleteMultipagePdf" file="C:\UniServerZ\www\pharxmaco\tests\unit\StockLogPdfTest.php" line="21" class="StockLogPdfTest" classname="StockLogPdfTest" assertions="7" time="0.176151"/>
+        <testcase name="testEmptySelectionProducesOnePage" file="C:\UniServerZ\www\pharxmaco\tests\unit\StockLogPdfTest.php" line="38" class="StockLogPdfTest" classname="StockLogPdfTest" assertions="2" time="0.130748"/>
+        <testcase name="testAnIncompleteSelectionCannotBeReturnedAsACompleteReport" file="C:\UniServerZ\www\pharxmaco\tests\unit\StockLogPdfTest.php" line="45" class="StockLogPdfTest" classname="StockLogPdfTest" assertions="2" time="0.016464"/>
+        <testcase name="testLongUnbrokenFieldsAndNotesCanContinueAcrossPages" file="C:\UniServerZ\www\pharxmaco\tests\unit\StockLogPdfTest.php" line="52" class="StockLogPdfTest" classname="StockLogPdfTest" assertions="2" time="0.215024"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

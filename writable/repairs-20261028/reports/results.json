@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-28",
+  "findings_fixed": [
+    "A11",
+    "A13",
+    "A15"
+  ],
+  "changed_files": [
+    "app/Controllers/Admin/ReportsController.php",
+    "app/Views/admin/reports/index.php",
+    "app/Views/admin/reports/reports_pdf.php",
+    "tests/unit/ReportRepairCases.php"
+  ],
+  "new_tests": [
+    "testReportRepairReleasedQuarantineRecoversCostOnceInAllGroupings",
+    "testReportRepairMixedReturnsRecoverOnlyResellableAndReleasedCosts",
+    "testReportRepairUnreleasedAndDamagedRefundsKeepTheirCostLoss",
+    "testReportRepairLegacySchemaWithoutQuarantineStillReportsResellableCosts",
+    "testReportRepairCsvGeneratesAttachmentAndRecordsRecoveredTotalsOnce",
+    "testReportRepairCsvGenerationFailureDoesNotCreateHistoryOrConsumeReceipt",
+    "testReportRepairFullAndSummaryPdfGenerateDistinctAttachmentsAndHistory",
+    "testReportRepairActualRoutesReturnAttachmentsAndRejectGuests"
+  ],
+  "new_test_count": 8,
+  "new_assertions": 167,
+  "related_test_count": 20,
+  "related_assertions": 313,
+  "errors": 0,
+  "failures": 0,
+  "routed_requests": "Framework FeatureTestTrait with real routes/admin filter, in-memory SQLite and mock sessions; no external HTTP socket used",
+  "application_database_accessed": false,
+  "application_records_changed": false,
+  "hosted_deployment_changed": false,
+  "new_sql_required": false,
+  "quarantine_schema_fallback": "If quarantine_resolutions is absent, report queries retain existing resellable-only recovery. Released inspections require existing 000018.",
+  "report_basis": "Current effective return outcome restates original sale-date cohort, including historical sale periods; not an inspection-date journal.",
+  "history_semantics": "History written only after complete CSV/PDF byte generation; does not prove browser downloaded or saved attachment."
+}

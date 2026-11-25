@@ -1,0 +1,20 @@
+[
+  "app/Controllers/Admin/ReportsController.php",
+  "app/Controllers/Admin/SaleCorrection.php",
+  "app/Controllers/Cashier/ExchangeController.php",
+  "app/Controllers/Cashier/SalesController.php",
+  "app/Controllers/Dashboard.php",
+  "app/Controllers/Products.php",
+  "app/Libraries/CashierShift.php",
+  "app/Libraries/ProductExchange.php",
+  "app/Libraries/ReturnCondition.php",
+  "app/Libraries/TopbarNotificationService.php",
+  "app/Views/admin/reports/expiry_report.php",
+  "app/Views/admin/reports/expiry_report_pdf.php",
+  "app/Views/cashier/sales/index.php",
+  "app/Views/cashier/workspace/index.php",
+  "app/Views/products/index.php",
+  "app/Views/products/catalog.php",
+  "app/Views/products/create.php",
+  "app/Views/dashboard/index.php"
+]

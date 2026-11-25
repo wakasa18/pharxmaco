@@ -1,0 +1,13 @@
+{
+    "file": "C:\\UniServerZ\\www\\pharxmaco\/build\/hostinger-automatic-product-promos-2026-10-15.zip",
+    "files": 5,
+    "bytes": 42879,
+    "sha256": "2d67ec7d01c535db66767cd3ff5ee9c8e5646fccbe7726cde644954b8924ece5",
+    "entries": {
+        "app\/Controllers\/Cashier\/SalesController.php": "77cf4d93915f9091779bd2a9a7446725673335b7c5f1c7539b96c52540046635",
+        "app\/Views\/cashier\/sales\/index.php": "92a27fb3a4b8ea2ab435f8ea952b224e2601022e90037d9ca688f611587f6029",
+        "app\/Libraries\/ProductPromotion.php": "f07790ab94fb14df84ea3642016e5d8d553610c86e6460a637d94e3291e97d63",
+        "public\/assets\/js\/discount-math.js": "21d78fe111e9cf358fcade68111cd3e0c867a0ee2836df57f325429b538cbfde",
+        "INSTALL.md": "3d0b5fede4a4dbb77d69289b171781435b17959225f8a580ee9c127bee523dc8"
+    }
+}

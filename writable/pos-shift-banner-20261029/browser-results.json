@@ -1,0 +1,496 @@
+{
+  "passed": 101,
+  "checks": [
+    "original open banner reproduces icon/text offset",
+    "1440 light open: icon and text align without overlap",
+    "1440 light open: notice retains accessible status and state text",
+    "1440 light open: action remains readable and touch sized",
+    "1440 light open: layout follows breakpoint",
+    "1440 light open: banner fits page width",
+    "1440 light closed: icon and text align without overlap",
+    "1440 light closed: notice retains accessible status and state text",
+    "1440 light closed: action remains readable and touch sized",
+    "1440 light closed: layout follows breakpoint",
+    "1440 light closed: banner fits page width",
+    "1440 dark open: icon and text align without overlap",
+    "1440 dark open: notice retains accessible status and state text",
+    "1440 dark open: action remains readable and touch sized",
+    "1440 dark open: layout follows breakpoint",
+    "1440 dark open: banner fits page width",
+    "1440 dark closed: icon and text align without overlap",
+    "1440 dark closed: notice retains accessible status and state text",
+    "1440 dark closed: action remains readable and touch sized",
+    "1440 dark closed: layout follows breakpoint",
+    "1440 dark closed: banner fits page width",
+    "768 light open: icon and text align without overlap",
+    "768 light open: notice retains accessible status and state text",
+    "768 light open: action remains readable and touch sized",
+    "768 light open: layout follows breakpoint",
+    "768 light open: banner fits page width",
+    "768 light closed: icon and text align without overlap",
+    "768 light closed: notice retains accessible status and state text",
+    "768 light closed: action remains readable and touch sized",
+    "768 light closed: layout follows breakpoint",
+    "768 light closed: banner fits page width",
+    "768 dark open: icon and text align without overlap",
+    "768 dark open: notice retains accessible status and state text",
+    "768 dark open: action remains readable and touch sized",
+    "768 dark open: layout follows breakpoint",
+    "768 dark open: banner fits page width",
+    "768 dark closed: icon and text align without overlap",
+    "768 dark closed: notice retains accessible status and state text",
+    "768 dark closed: action remains readable and touch sized",
+    "768 dark closed: layout follows breakpoint",
+    "768 dark closed: banner fits page width",
+    "520 light open: icon and text align without overlap",
+    "520 light open: notice retains accessible status and state text",
+    "520 light open: action remains readable and touch sized",
+    "520 light open: layout follows breakpoint",
+    "520 light open: banner fits page width",
+    "520 light closed: icon and text align without overlap",
+    "520 light closed: notice retains accessible status and state text",
+    "520 light closed: action remains readable and touch sized",
+    "520 light closed: layout follows breakpoint",
+    "520 light closed: banner fits page width",
+    "520 dark open: icon and text align without overlap",
+    "520 dark open: notice retains accessible status and state text",
+    "520 dark open: action remains readable and touch sized",
+    "520 dark open: layout follows breakpoint",
+    "520 dark open: banner fits page width",
+    "520 dark closed: icon and text align without overlap",
+    "520 dark closed: notice retains accessible status and state text",
+    "520 dark closed: action remains readable and touch sized",
+    "520 dark closed: layout follows breakpoint",
+    "520 dark closed: banner fits page width",
+    "390 light open: icon and text align without overlap",
+    "390 light open: notice retains accessible status and state text",
+    "390 light open: action remains readable and touch sized",
+    "390 light open: layout follows breakpoint",
+    "390 light open: banner fits page width",
+    "390 light closed: icon and text align without overlap",
+    "390 light closed: notice retains accessible status and state text",
+    "390 light closed: action remains readable and touch sized",
+    "390 light closed: layout follows breakpoint",
+    "390 light closed: banner fits page width",
+    "390 dark open: icon and text align without overlap",
+    "390 dark open: notice retains accessible status and state text",
+    "390 dark open: action remains readable and touch sized",
+    "390 dark open: layout follows breakpoint",
+    "390 dark open: banner fits page width",
+    "390 dark closed: icon and text align without overlap",
+    "390 dark closed: notice retains accessible status and state text",
+    "390 dark closed: action remains readable and touch sized",
+    "390 dark closed: layout follows breakpoint",
+    "390 dark closed: banner fits page width",
+    "320 light open: icon and text align without overlap",
+    "320 light open: notice retains accessible status and state text",
+    "320 light open: action remains readable and touch sized",
+    "320 light open: layout follows breakpoint",
+    "320 light open: banner fits page width",
+    "320 light closed: icon and text align without overlap",
+    "320 light closed: notice retains accessible status and state text",
+    "320 light closed: action remains readable and touch sized",
+    "320 light closed: layout follows breakpoint",
+    "320 light closed: banner fits page width",
+    "320 dark open: icon and text align without overlap",
+    "320 dark open: notice retains accessible status and state text",
+    "320 dark open: action remains readable and touch sized",
+    "320 dark open: layout follows breakpoint",
+    "320 dark open: banner fits page width",
+    "320 dark closed: icon and text align without overlap",
+    "320 dark closed: notice retains accessible status and state text",
+    "320 dark closed: action remains readable and touch sized",
+    "320 dark closed: layout follows breakpoint",
+    "320 dark closed: banner fits page width"
+  ],
+  "before": {
+    "icon": {
+      "left": 44,
+      "top": 200.140625,
+      "right": 64,
+      "bottom": 220.140625
+    },
+    "message": {
+      "x": 74,
+      "y": 210.640625,
+      "width": 1110.765625,
+      "height": 21
+    },
+    "delta": 11
+  },
+  "measurements": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "state": "open",
+      "icon": {
+        "left": 44,
+        "top": 210.140625,
+        "right": 64,
+        "bottom": 230.140625
+      },
+      "message": {
+        "x": 76,
+        "y": 209.640625,
+        "width": 1108.765625,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "state": "closed",
+      "icon": {
+        "left": 44,
+        "top": 210.140625,
+        "right": 64,
+        "bottom": 230.140625
+      },
+      "message": {
+        "x": 76,
+        "y": 198.390625,
+        "width": 1201.703125,
+        "height": 43.5
+      },
+      "delta": 0
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "state": "open",
+      "icon": {
+        "left": 44,
+        "top": 210.140625,
+        "right": 64,
+        "bottom": 230.140625
+      },
+      "message": {
+        "x": 76,
+        "y": 209.640625,
+        "width": 1108.765625,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "state": "closed",
+      "icon": {
+        "left": 44,
+        "top": 210.140625,
+        "right": 64,
+        "bottom": 230.140625
+      },
+      "message": {
+        "x": 76,
+        "y": 198.390625,
+        "width": 1201.703125,
+        "height": 43.5
+      },
+      "delta": 0
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "state": "open",
+      "icon": {
+        "left": 44,
+        "top": 201.34375,
+        "right": 64,
+        "bottom": 221.34375
+      },
+      "message": {
+        "x": 76,
+        "y": 200.84375,
+        "width": 436.765625,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "state": "closed",
+      "icon": {
+        "left": 44,
+        "top": 201.34375,
+        "right": 64,
+        "bottom": 221.34375
+      },
+      "message": {
+        "x": 76,
+        "y": 189.59375,
+        "width": 529.703125,
+        "height": 43.5
+      },
+      "delta": 0
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "state": "open",
+      "icon": {
+        "left": 44,
+        "top": 201.34375,
+        "right": 64,
+        "bottom": 221.34375
+      },
+      "message": {
+        "x": 76,
+        "y": 200.84375,
+        "width": 436.765625,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "state": "closed",
+      "icon": {
+        "left": 44,
+        "top": 201.34375,
+        "right": 64,
+        "bottom": 221.34375
+      },
+      "message": {
+        "x": 76,
+        "y": 189.59375,
+        "width": 529.703125,
+        "height": 43.5
+      },
+      "delta": 0
+    },
+    {
+      "width": 520,
+      "theme": "light",
+      "state": "open",
+      "icon": {
+        "left": 34,
+        "top": 255.09375,
+        "right": 54,
+        "bottom": 275.09375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 413,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 520,
+      "theme": "light",
+      "state": "closed",
+      "icon": {
+        "left": 34,
+        "top": 266.34375,
+        "right": 54,
+        "bottom": 286.34375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 413,
+        "height": 43.5
+      },
+      "delta": 0
+    },
+    {
+      "width": 520,
+      "theme": "dark",
+      "state": "open",
+      "icon": {
+        "left": 34,
+        "top": 255.09375,
+        "right": 54,
+        "bottom": 275.09375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 413,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 520,
+      "theme": "dark",
+      "state": "closed",
+      "icon": {
+        "left": 34,
+        "top": 266.34375,
+        "right": 54,
+        "bottom": 286.34375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 413,
+        "height": 43.5
+      },
+      "delta": 0
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "state": "open",
+      "icon": {
+        "left": 34,
+        "top": 255.09375,
+        "right": 54,
+        "bottom": 275.09375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 283,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "state": "closed",
+      "icon": {
+        "left": 34,
+        "top": 266.34375,
+        "right": 54,
+        "bottom": 286.34375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 283,
+        "height": 43.5
+      },
+      "delta": 0
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "state": "open",
+      "icon": {
+        "left": 34,
+        "top": 255.09375,
+        "right": 54,
+        "bottom": 275.09375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 283,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "state": "closed",
+      "icon": {
+        "left": 34,
+        "top": 266.34375,
+        "right": 54,
+        "bottom": 286.34375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 283,
+        "height": 43.5
+      },
+      "delta": 0
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "state": "open",
+      "icon": {
+        "left": 34,
+        "top": 255.09375,
+        "right": 54,
+        "bottom": 275.09375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 213,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "state": "closed",
+      "icon": {
+        "left": 34,
+        "top": 266.34375,
+        "right": 54,
+        "bottom": 286.34375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 213,
+        "height": 43.5
+      },
+      "delta": 0
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "state": "open",
+      "icon": {
+        "left": 34,
+        "top": 255.09375,
+        "right": 54,
+        "bottom": 275.09375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 213,
+        "height": 21
+      },
+      "delta": 0
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "state": "closed",
+      "icon": {
+        "left": 34,
+        "top": 266.34375,
+        "right": 54,
+        "bottom": 286.34375
+      },
+      "message": {
+        "x": 66,
+        "y": 254.59375,
+        "width": 213,
+        "height": 43.5
+      },
+      "delta": 0
+    }
+  ],
+  "exceptions": [],
+  "posts": 0,
+  "widths": [
+    1440,
+    768,
+    520,
+    390,
+    320
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ]
+}

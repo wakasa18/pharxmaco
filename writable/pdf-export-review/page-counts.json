@@ -1,0 +1,46 @@
+[
+    {
+        "state":  "sales-daily",
+        "pages":  3
+    },
+    {
+        "state":  "sales-weekly",
+        "pages":  3
+    },
+    {
+        "state":  "sales-monthly",
+        "pages":  3
+    },
+    {
+        "state":  "sales-empty",
+        "pages":  3
+    },
+    {
+        "state":  "sales-long",
+        "pages":  8
+    },
+    {
+        "state":  "expiry-normal",
+        "pages":  1
+    },
+    {
+        "state":  "expiry-empty",
+        "pages":  1
+    },
+    {
+        "state":  "expiry-long",
+        "pages":  4
+    },
+    {
+        "state":  "stock-normal",
+        "pages":  1
+    },
+    {
+        "state":  "stock-empty",
+        "pages":  1
+    },
+    {
+        "state":  "stock-long",
+        "pages":  10
+    }
+]

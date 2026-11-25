@@ -1,0 +1,28 @@
+{
+    "file": "C:\\UniServerZ\\www\\pharxmaco\/build\/hostinger-checkout-fixes-2026-10-16.zip",
+    "files": 20,
+    "bytes": 89519,
+    "sha256": "ef76c44c18da7ae0c9b91fcb5de0834be448150ed86c2b0f78080ce2bf5b473f",
+    "entries": {
+        "app\/Controllers\/Cashier\/SalesController.php": "5e650fafac2caad45494be366847c56adadb3616b2c2cbbad7393e2c944c60ee",
+        "app\/Libraries\/BenefitProductPromotion.php": "4eda41499e20f61307c09f27316a61ec2452c143c3385350b4bed91236206837",
+        "app\/Libraries\/ProductPromotion.php": "ef93ab3313f1626205dd264cab4c35946724184122b1a3c5ba37cdeaf58807a7",
+        "app\/Libraries\/CashierShift.php": "c1862c6f7513288abea7221f6d3ba72a69cb81aee5f4aac7fcd628a8c1937032",
+        "app\/Libraries\/ReceiptInvoice.php": "8c70111ac29fd682c8a9441a141885a88596f72173699daa57a51d0ee6ea1fab",
+        "app\/Libraries\/SaleCorrectionPricing.php": "ef0826a89a5df1847ab2c8938200bf63822c73eca5aaad66f5ba51d796fd05ad",
+        "app\/Views\/cashier\/sales\/index.php": "73669d92d0069143eb7209c96ad31789876ffd790334dc65fc5dcc30f4eeb7af",
+        "app\/Views\/cashier\/sales\/receipt.php": "d4da5432c8404da8f995c687a74e552c0d6f7cdde17822904952000db400b8e7",
+        "app\/Views\/cashier\/sales\/details.php": "2b985f611684f49c214faa519d41d4c17348131312a6c7f694ef80aee53be7f3",
+        "public\/assets\/js\/discount-math.js": "1511324625f60e2e845ae2785a0ff8eb443a4bd378c59af2d6530afe3cae598c",
+        "database\/upgrades\/2026-10-16-reconcile-master-stock.sql": "33bfcccd6e90b0719c87d97c9df138e2ce29a661ad4b7e54bd69af41a3bed812",
+        "database\/upgrades\/2026-10-16-reconcile-sale41-refunds.sql": "78ff79a2f2e19398c95c65a99290e37a86fedd0f74e108da7e5be5e79e97d81a",
+        "database\/upgrades\/2026-10-16-reconcile-sale41-refunds.md": "6e32582ff85d5a5048cdf75944534fdfbb12743f4d029a927f61940fc86be349",
+        "app\/Controllers\/Cashier\/WorkspaceController.php": "fffa4915da09d860a7dd145a1d785c2d3d5e22a0cb341468540ab7fe47c9ec06",
+        "app\/Libraries\/CashierDayReport.php": "8809227c929d8a3098a0a2a96b8ba62e7739a5462c8a3dca0e803472f362e44b",
+        "app\/Views\/cashier\/workspace\/print.php": "15282148ec21dcfe241c903ff3a3aefc6f9a6c5f39417da2a14645b25cdbda4c",
+        "public\/assets\/css\/shift-print.css": "4723c93208862be00f83e4ad22b1f62dd40dee79638a02a52fa17f7d1fec7e6f",
+        "public\/assets\/js\/shift-print.js": "aa7ad0b2ab558a89c647f9f695bbd57a6307fb9bd5b9173574627aaf7563d322",
+        "docs\/reviews\/2026-10-16-shift-print-update.md": "1626f4ac8034a478df59f4123ca56b8ca7202bb6f6b1cedf197625ce068743b1",
+        "INSTALL.md": "3eafaeaf92f734f844d1f41748500012379f327bd1d5ae595a0a07ac257696ef"
+    }
+}

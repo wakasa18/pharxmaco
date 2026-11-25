@@ -1,0 +1,1199 @@
+{
+  "source_path": "C:/Users/warre/Downloads/u315645644_pharxmacotest (4).sql",
+  "source_sha256": "3a3e54b64fdf2bea5f4f506733da7ce50de4b3aa19fc2047f04974a5248209b5",
+  "upgrade": "database/upgrades/2026-10-15-product-catalog.sql",
+  "upgrade_sha256": "4ea6e0dd0239bd6c7a82425aae79da9c16ed94596c8aa25268cce0f3fe231b88",
+  "fields": [
+    "product_name",
+    "generic_name",
+    "strength",
+    "medicine_type",
+    "senior_pwd_eligible"
+  ],
+  "plan": [
+    {
+      "id": 2,
+      "sku": "",
+      "before": [
+        {
+          "product_name": "erceflora",
+          "generic_name": "Bacillus clausii",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Erceflora (variant unrecorded)",
+        "generic_name": "Bacillus clausii",
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 3,
+      "sku": "53463431233",
+      "before": [
+        {
+          "product_name": "ercefloraaaa",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Erceflora (variant unrecorded)",
+        "generic_name": "Bacillus clausii",
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 4,
+      "sku": "534634312333",
+      "before": [
+        {
+          "product_name": "ercefloraaaaaaaa",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Erceflora (variant unrecorded)",
+        "generic_name": "Bacillus clausii",
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 5,
+      "sku": "534634312333123",
+      "before": [
+        {
+          "product_name": "randommm",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Unidentified food item (verify label)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 0
+      },
+      "source_product": true
+    },
+    {
+      "id": 6,
+      "sku": "BIO500-001",
+      "before": [
+        {
+          "product_name": "Biogesic 500mg",
+          "generic_name": "Paracetamol",
+          "strength": "500 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Biogesic 500 mg tablet",
+        "generic_name": "Paracetamol",
+        "strength": "500 mg",
+        "medicine_type": "branded",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 7,
+      "sku": "NEO-FOR-002",
+      "before": [
+        {
+          "product_name": "Neozep Forte",
+          "generic_name": "Phenylephrine hydrochloride + Chlorphenamine maleate + Paracetamol",
+          "strength": "10 mg + 2 mg + 500 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Neozep Forte tablet",
+        "generic_name": "Phenylephrine hydrochloride + Chlorphenamine maleate + Paracetamol",
+        "strength": "10 mg + 2 mg + 500 mg",
+        "medicine_type": "branded",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 8,
+      "sku": "ALX-FR-003",
+      "before": [
+        {
+          "product_name": "Alaxan FR",
+          "generic_name": "Ibuprofen + Paracetamol",
+          "strength": "200 mg + 325 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Alaxan FR 200 mg / 325 mg capsule",
+        "generic_name": "Ibuprofen + Paracetamol",
+        "strength": "200 mg + 325 mg",
+        "medicine_type": "branded",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 9,
+      "sku": "TMP-SYP-004",
+      "before": [
+        {
+          "product_name": "Tempra Syrup",
+          "generic_name": "Paracetamol",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Tempra syrup",
+        "generic_name": "Paracetamol",
+        "strength": null,
+        "medicine_type": "branded",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 10,
+      "sku": "CET10-005",
+      "before": [
+        {
+          "product_name": "Cetirizine 10mg",
+          "generic_name": "Cetirizine",
+          "strength": "10 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Cetirizine 10 mg",
+        "generic_name": "Cetirizine",
+        "strength": "10 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 11,
+      "sku": "AMX500-006",
+      "before": [
+        {
+          "product_name": "Amoxicillin 500mg",
+          "generic_name": "Amoxicillin",
+          "strength": "500 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Amoxicillin 500 mg",
+        "generic_name": "Amoxicillin",
+        "strength": "500 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 12,
+      "sku": "VITC500-007",
+      "before": [
+        {
+          "product_name": "Vitamin C 500mg",
+          "generic_name": "Vitamin C",
+          "strength": "500 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Vitamin C 500 mg",
+        "generic_name": "Vitamin C",
+        "strength": "500 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 13,
+      "sku": "PAR500-008",
+      "before": [
+        {
+          "product_name": "Paracetamol 500mg",
+          "generic_name": "Paracetamol",
+          "strength": "500 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Paracetamol 500 mg",
+        "generic_name": "Paracetamol",
+        "strength": "500 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 14,
+      "sku": "LOP2-009",
+      "before": [
+        {
+          "product_name": "Loperamide 2mg",
+          "generic_name": "Loperamide",
+          "strength": "2 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Loperamide 2 mg",
+        "generic_name": "Loperamide",
+        "strength": "2 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 15,
+      "sku": "MEF500-010",
+      "before": [
+        {
+          "product_name": "Mefenamic Acid 500mg",
+          "generic_name": "Mefenamic acid",
+          "strength": "500 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Mefenamic acid 500 mg",
+        "generic_name": "Mefenamic acid",
+        "strength": "500 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 16,
+      "sku": "IBU200-011",
+      "before": [
+        {
+          "product_name": "Ibuprofen 200mg Tablet",
+          "generic_name": "Ibuprofen",
+          "strength": "200 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Ibuprofen 200 mg tablet",
+        "generic_name": "Ibuprofen",
+        "strength": "200 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 17,
+      "sku": "ASP80-012",
+      "before": [
+        {
+          "product_name": "Aspirin 80mg Tablet",
+          "generic_name": "Aspirin",
+          "strength": "80 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Aspirin 80 mg tablet",
+        "generic_name": "Aspirin",
+        "strength": "80 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 18,
+      "sku": "NAP275-013",
+      "before": [
+        {
+          "product_name": "Naproxen Sodium 275mg",
+          "generic_name": "Naproxen sodium",
+          "strength": "275 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Naproxen sodium 275 mg",
+        "generic_name": "Naproxen sodium",
+        "strength": "275 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 19,
+      "sku": "DIC50-014",
+      "before": [
+        {
+          "product_name": "Diclofenac Sodium 50mg",
+          "generic_name": "Diclofenac sodium",
+          "strength": "50 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Diclofenac sodium 50 mg",
+        "generic_name": "Diclofenac sodium",
+        "strength": "50 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 20,
+      "sku": "PARSYP-015",
+      "before": [
+        {
+          "product_name": "Paracetamol Syrup 250mg/5mL",
+          "generic_name": "Paracetamol",
+          "strength": "250 mg / 5 mL",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Paracetamol 250 mg / 5 mL syrup",
+        "generic_name": "Paracetamol",
+        "strength": "250 mg / 5 mL",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 21,
+      "sku": "DEXSYP-016",
+      "before": [
+        {
+          "product_name": "Dextromethorphan Cough Syrup",
+          "generic_name": "Dextromethorphan",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Dextromethorphan cough syrup",
+        "generic_name": "Dextromethorphan",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 22,
+      "sku": "AMB30-017",
+      "before": [
+        {
+          "product_name": "Ambroxol 30mg Tablet",
+          "generic_name": "Ambroxol",
+          "strength": "30 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Ambroxol 30 mg tablet",
+        "generic_name": "Ambroxol",
+        "strength": "30 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 23,
+      "sku": "CARB500-018",
+      "before": [
+        {
+          "product_name": "Carbocisteine 500mg Capsule",
+          "generic_name": "Carbocisteine",
+          "strength": "500 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Carbocisteine 500 mg capsule",
+        "generic_name": "Carbocisteine",
+        "strength": "500 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 24,
+      "sku": "PHENCPM-019",
+      "before": [
+        {
+          "product_name": "Phenylephrine + Chlorphenamine",
+          "generic_name": "Phenylephrine + Chlorphenamine",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Phenylephrine + chlorphenamine",
+        "generic_name": "Phenylephrine + Chlorphenamine",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 25,
+      "sku": "SALNEB-020",
+      "before": [
+        {
+          "product_name": "Salbutamol Nebule 2.5mg",
+          "generic_name": "Salbutamol",
+          "strength": "2.5 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Salbutamol 2.5 mg nebule",
+        "generic_name": "Salbutamol",
+        "strength": "2.5 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 26,
+      "sku": "OME20-021",
+      "before": [
+        {
+          "product_name": "Omeprazole 20mg Capsule",
+          "generic_name": "Omeprazole",
+          "strength": "20 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Omeprazole 20 mg capsule",
+        "generic_name": "Omeprazole",
+        "strength": "20 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 27,
+      "sku": "FAM20-022",
+      "before": [
+        {
+          "product_name": "Famotidine 20mg Tablet",
+          "generic_name": "Famotidine",
+          "strength": "20 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Famotidine 20 mg tablet",
+        "generic_name": "Famotidine",
+        "strength": "20 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 28,
+      "sku": "ORS-023",
+      "before": [
+        {
+          "product_name": "Oral Rehydration Salts",
+          "generic_name": "Oral rehydration salts",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Oral rehydration salts",
+        "generic_name": "Oral rehydration salts",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 29,
+      "sku": "ANT120-024",
+      "before": [
+        {
+          "product_name": "Antacid Suspension 120mL",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Antacid suspension (120 mL)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 30,
+      "sku": "BIS5-025",
+      "before": [
+        {
+          "product_name": "Bisacodyl 5mg Tablet",
+          "generic_name": "Bisacodyl",
+          "strength": "5 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Bisacodyl 5 mg tablet",
+        "generic_name": "Bisacodyl",
+        "strength": "5 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 31,
+      "sku": "LOR10-026",
+      "before": [
+        {
+          "product_name": "Loratadine 10mg Tablet",
+          "generic_name": "Loratadine",
+          "strength": "10 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Loratadine 10 mg tablet",
+        "generic_name": "Loratadine",
+        "strength": "10 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 32,
+      "sku": "FEX120-027",
+      "before": [
+        {
+          "product_name": "Fexofenadine 120mg Tablet",
+          "generic_name": "Fexofenadine",
+          "strength": "120 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Fexofenadine 120 mg tablet",
+        "generic_name": "Fexofenadine",
+        "strength": "120 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 33,
+      "sku": "DPH25-028",
+      "before": [
+        {
+          "product_name": "Diphenhydramine 25mg Capsule",
+          "generic_name": "Diphenhydramine",
+          "strength": "25 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Diphenhydramine 25 mg capsule",
+        "generic_name": "Diphenhydramine",
+        "strength": "25 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 34,
+      "sku": "MON10-029",
+      "before": [
+        {
+          "product_name": "Montelukast 10mg Tablet",
+          "generic_name": "Montelukast",
+          "strength": "10 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Montelukast 10 mg tablet",
+        "generic_name": "Montelukast",
+        "strength": "10 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 35,
+      "sku": "HYD1-030",
+      "before": [
+        {
+          "product_name": "Hydrocortisone Cream 1%",
+          "generic_name": "Hydrocortisone",
+          "strength": "1%",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Hydrocortisone 1% cream",
+        "generic_name": "Hydrocortisone",
+        "strength": "1%",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 36,
+      "sku": "MULTI-031",
+      "before": [
+        {
+          "product_name": "Adult Multivitamins Capsule",
+          "generic_name": "Multivitamins",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Multivitamins capsule (adult)",
+        "generic_name": "Multivitamins",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 37,
+      "sku": "VITB-032",
+      "before": [
+        {
+          "product_name": "Vitamin B Complex Tablet",
+          "generic_name": "Vitamin B complex",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Vitamin B complex tablet",
+        "generic_name": "Vitamin B complex",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 38,
+      "sku": "ZINC20-033",
+      "before": [
+        {
+          "product_name": "Zinc 20mg Tablet",
+          "generic_name": "Zinc",
+          "strength": "20 mg",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Zinc 20 mg tablet",
+        "generic_name": "Zinc",
+        "strength": "20 mg",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 39,
+      "sku": "CALD-034",
+      "before": [
+        {
+          "product_name": "Calcium + Vitamin D Tablet",
+          "generic_name": "Calcium + Vitamin D",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Calcium + vitamin D tablet",
+        "generic_name": "Calcium + Vitamin D",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 40,
+      "sku": "IRONFA-035",
+      "before": [
+        {
+          "product_name": "Iron + Folic Acid Tablet",
+          "generic_name": "Iron + Folic acid",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Iron + folic acid tablet",
+        "generic_name": "Iron + Folic acid",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 41,
+      "sku": "ALC500-036",
+      "before": [
+        {
+          "product_name": "Isopropyl Alcohol 70% 500mL",
+          "generic_name": "Isopropyl alcohol",
+          "strength": "70%",
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Isopropyl alcohol 70% (500 mL)",
+        "generic_name": "Isopropyl alcohol",
+        "strength": "70%",
+        "medicine_type": "generic",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 42,
+      "sku": "POV60-037",
+      "before": [
+        {
+          "product_name": "Povidone Iodine 60mL",
+          "generic_name": "Povidone iodine",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Povidone iodine (60 mL)",
+        "generic_name": "Povidone iodine",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 43,
+      "sku": "GAUZE10-038",
+      "before": [
+        {
+          "product_name": "Sterile Gauze Pads 10s",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Sterile gauze pads (10 pieces)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 44,
+      "sku": "BAND20-039",
+      "before": [
+        {
+          "product_name": "Adhesive Bandage 20s",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": "branded",
+          "senior_pwd_eligible": 1
+        },
+        {
+          "product_name": "Adhesive Bandage 20s",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": "generic",
+          "senior_pwd_eligible": 1
+        }
+      ],
+      "after": {
+        "product_name": "Adhesive bandages (20 pieces)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 45,
+      "sku": "THERMO-040",
+      "before": [
+        {
+          "product_name": "Digital Thermometer",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Digital thermometer",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 46,
+      "sku": "SAN100-041",
+      "before": [
+        {
+          "product_name": "Hand Sanitizer 100mL",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Hand sanitizer (100 mL)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 0
+      },
+      "source_product": true
+    },
+    {
+      "id": 47,
+      "sku": "MASK50-042",
+      "before": [
+        {
+          "product_name": "Disposable Face Mask 50s",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Disposable face masks (50 pieces)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 0
+      },
+      "source_product": true
+    },
+    {
+      "id": 48,
+      "sku": "COT100-043",
+      "before": [
+        {
+          "product_name": "Cotton Balls 100s",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Cotton balls (100 pieces)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 0
+      },
+      "source_product": true
+    },
+    {
+      "id": 49,
+      "sku": "BP100-044",
+      "before": [
+        {
+          "product_name": "Baby Powder 100g",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Baby powder (100 g)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 0
+      },
+      "source_product": true
+    },
+    {
+      "id": 50,
+      "sku": "FW150-045",
+      "before": [
+        {
+          "product_name": "Feminine Wash 150mL",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Feminine wash (150 mL)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 0
+      },
+      "source_product": true
+    },
+    {
+      "id": 51,
+      "sku": "PEDVIT-046",
+      "before": [
+        {
+          "product_name": "Pediatric Multivitamin Syrup",
+          "generic_name": "Multivitamins",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Multivitamins syrup (pediatric)",
+        "generic_name": "Multivitamins",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 52,
+      "sku": "RASH50-047",
+      "before": [
+        {
+          "product_name": "Diaper Rash Cream 50g",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Diaper rash cream (50 g)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": null
+      },
+      "source_product": true
+    },
+    {
+      "id": 53,
+      "sku": "WIPES80-048",
+      "before": [
+        {
+          "product_name": "Baby Wipes 80s",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Baby wipes (80 pieces)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 0
+      },
+      "source_product": true
+    },
+    {
+      "id": 54,
+      "sku": "SAL15-049",
+      "before": [
+        {
+          "product_name": "Saline Nasal Drops 15mL",
+          "generic_name": "Saline",
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Saline nasal drops (15 mL)",
+        "generic_name": "Saline",
+        "strength": null,
+        "medicine_type": "generic",
+        "senior_pwd_eligible": 1
+      },
+      "source_product": true
+    },
+    {
+      "id": 55,
+      "sku": "MOS100-050",
+      "before": [
+        {
+          "product_name": "Mosquito Repellent Lotion 100mL",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Mosquito repellent lotion (100 mL)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 0
+      },
+      "source_product": true
+    },
+    {
+      "id": 56,
+      "sku": null,
+      "before": [
+        {
+          "product_name": "TESTINGGG",
+          "generic_name": null,
+          "strength": null,
+          "medicine_type": null,
+          "senior_pwd_eligible": null
+        }
+      ],
+      "after": {
+        "product_name": "Unidentified test item (verify label)",
+        "generic_name": null,
+        "strength": null,
+        "medicine_type": "non_medicine",
+        "senior_pwd_eligible": 0
+      },
+      "source_product": false
+    }
+  ],
+  "hosting": {
+    "products": 54,
+    "types": {
+      "non_medicine": 15,
+      "branded": 4,
+      "generic": 35
+    },
+    "eligible": 32,
+    "unconfirmed": 14,
+    "not_eligible": 8
+  },
+  "local": {
+    "products": 55,
+    "types": {
+      "non_medicine": 16,
+      "branded": 4,
+      "generic": 35
+    },
+    "eligible": 32,
+    "unconfirmed": 14,
+    "not_eligible": 9
+  }
+}

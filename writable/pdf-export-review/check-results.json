@@ -1,0 +1,11 @@
+{
+  "pdf_samples": 11,
+  "pages": 38,
+  "all_A4_landscape": true,
+  "all_page_numbers": true,
+  "stock_log_ids_complete": 35,
+  "expiry_skus_complete": 36,
+  "confirmed_financial_presentation_gap": 24,
+  "confirmed_missing_table_heading": "sales-long page 6",
+  "method": "Dompdf views/footers; visual review plus narrowly scoped CPDF content inspection. Synthetic fixtures; not a general PDF validator."
+}

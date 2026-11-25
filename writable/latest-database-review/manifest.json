@@ -1,0 +1,62 @@
+{
+  "source_path": "C:\\Users\\warre\\Downloads\\u315645644_pharxmacotest (4).sql",
+  "source_sha256": "3a3e54b64fdf2bea5f4f506733da7ce50de4b3aa19fc2047f04974a5248209b5",
+  "upgrade": "C:\\UniServerZ\\www\\pharxmaco\\database\\upgrades\\2026-10-15-latest-existing-database.sql",
+  "upgrades": [
+    "database/upgrades/2026-10-15-cashier-workspace.sql",
+    "database/upgrades/2026-10-15-demo-users.sql",
+    "database/upgrades/2026-10-15-product-catalog.sql",
+    "database/upgrades/2026-10-15-branded-products.sql"
+  ],
+  "expected_existing_tables": [
+    "activity_logs",
+    "branches",
+    "branch_products",
+    "categories",
+    "discounts",
+    "forecasting_data",
+    "migrations",
+    "products",
+    "receipt_invoice_sequences",
+    "refund_items",
+    "report_exports",
+    "sales",
+    "sale_items",
+    "stock_logs",
+    "suppliers",
+    "users"
+  ],
+  "expected_new_tables": [
+    "cashier_drawers",
+    "cashier_shifts",
+    "cashier_events",
+    "cashier_held_sales",
+    "cashier_shift_reviews",
+    "cashier_event_reviews",
+    "cashier_shift_actions"
+  ],
+  "original_row_counts": {
+    "activity_logs": 242,
+    "branches": 2,
+    "branch_products": 104,
+    "categories": 11,
+    "discounts": 2,
+    "forecasting_data": 446,
+    "migrations": 16,
+    "products": 54,
+    "receipt_invoice_sequences": 0,
+    "refund_items": 16,
+    "report_exports": 27,
+    "sales": 779,
+    "sale_items": 1329,
+    "stock_logs": 1317,
+    "suppliers": 5,
+    "users": 4
+  },
+  "demo_usernames": [
+    "demo_admin",
+    "demo_cashier1",
+    "demo_cashier2"
+  ],
+  "source_demo_users": 0
+}

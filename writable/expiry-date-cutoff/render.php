@@ -1,0 +1,3 @@
+﻿<?php
+require dirname(__DIR__,2).'/system/Test/bootstrap.php';
+try{$data=json_decode(file_get_contents(__DIR__.'/pdf-data.json'),true,512,JSON_THROW_ON_ERROR);$html=view('admin/reports/expiry_report_pdf',$data,['saveData'=>false]);$pdf=\App\Libraries\PdfFactory::create();$pdf->setPaper('A4','landscape');$pdf->loadHtml($html,'UTF-8');$pdf->render();\App\Libraries\ReportPdf::stamp($pdf,$data);$dir=ROOTPATH.'tmp/pdfs/expiry-date-cutoff';if(!is_dir($dir))mkdir($dir,0777,true);file_put_contents($dir.'/expiry-boundaries.pdf',$pdf->output());echo 'Rendered '.$pdf->getCanvas()->get_page_count().' boundary-report pages.';}catch(Throwable $e){fwrite(STDERR,$e->getMessage());exit(1);}

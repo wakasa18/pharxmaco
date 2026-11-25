@@ -1,0 +1,12 @@
+const fs = require('fs');
+const path = require('path');
+const root = process.cwd();
+let sql = fs.readFileSync('C:/UniServerZ/www/pharxmacoo/database/upgrades/2026-10-14-receipt-invoice-fields.sql', 'utf8');
+sql = sql.replace('demo sales invoice fields', 'sales invoice fields');
+sql = sql.replace("VARCHAR(20) NOT NULL DEFAULT ''taxable''", 'VARCHAR(20) NULL DEFAULT NULL');
+const sequence = "CREATE TABLE IF NOT EXISTS `receipt_invoice_sequences` (\n    `series_key` VARCHAR(64) NOT NULL,\n    `next_number` BIGINT UNSIGNED NOT NULL,\n    PRIMARY KEY (`series_key`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;\n\n";
+sql = sql.replace('SET @phx_invoice_batch =', sequence + 'SET @phx_invoice_batch =');
+sql = sql.replace(')) = 7;', ")) = 7\nAND EXISTS (SELECT 1 FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'receipt_invoice_sequences');");
+sql = sql.replace('SELECT version, class, `group`, namespace FROM migrations', "SHOW COLUMNS FROM receipt_invoice_sequences;\nSELECT version, class, `group`, namespace FROM migrations");
+fs.writeFileSync(path.join(root, 'database/upgrades/2026-10-14-receipt-invoice-fields.sql'), sql);
+console.log('Prepared repeatable SQL upgrade: seven columns and one serial counter table.');

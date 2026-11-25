@@ -1,0 +1,12 @@
+{
+    "sold_quantity": 5,
+    "sale_net": 50,
+    "request_keys": [
+        1,
+        "01"
+    ],
+    "returned_quantity": 10,
+    "recorded_payout": 100,
+    "stock_before": 10,
+    "stock_after": 20
+}

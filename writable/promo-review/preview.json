@@ -1,0 +1,25 @@
+{
+    "target_id": 44,
+    "product_name": "Adhesive bandages (20 pieces)",
+    "price": 55,
+    "unrelated_id": 16,
+    "unrelated_price": 68,
+    "quotes": {
+        "1": {
+            "id": 3,
+            "amount": 11,
+            "final_total": 112
+        },
+        "2": {
+            "id": 3,
+            "amount": 22,
+            "final_total": 156
+        },
+        "10": {
+            "id": 3,
+            "amount": 100,
+            "final_total": 518
+        }
+    },
+    "read_only": true
+}

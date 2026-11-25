@@ -1,0 +1,585 @@
+/*
+ * Pharxmaco data tables.
+ *
+ * Upgrades every <table class="js-datatable"> with instant search, click-to-sort
+ * headers, a rows-per-page picker and pagination (DataTables 2, vendored locally).
+ *
+ * The server still renders the rows, so every existing filter form keeps working;
+ * DataTables then searches / sorts / pages the rows that were rendered.
+ *
+ * Optional attributes on the <table>:
+ *   data-dt-mode="simple"   sorting only (no search box, no paging) for short lists
+ *   data-dt-length="25"     default rows per page (default 10)
+ *   data-dt-order="3:desc"  initial sort, "columnIndex:asc|desc" (default: server order)
+ *   data-dt-live            rows can be replaced without resetting search/sort/page
+ *   data-dt-empty="..."     empty-state message; also initializes an empty table
+ * Optional class on a <th>: "no-sort" keeps that column from being sorted/searched.
+ * Optional attribute on a <th>: data-dt-filter="off" disables its automatic dropdown.
+ *
+ * Filters (all instant, in the browser): quick search, a date range for the first date column,
+ * and a second header row with a dropdown on columns that have a few repeated values such as
+ * branch or status (a "Column filters" panel on small screens).
+ *
+ * Must load AFTER workspace.js (it labels the cells used by the mobile card layout).
+ */
+(function () {
+    'use strict';
+
+    var jq = window.jQuery;
+    if (!jq || !jq.fn || !jq.fn.DataTable) { return; }
+
+    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+        'August', 'September', 'October', 'November', 'December'];
+    var BLANK_RE = /^[\s—–-]*$/;
+    var NUM_RE = /^[\s₱$€£+\-−–(]*\d[\d,]*(?:\.\d+)?\s*%?\)?\s*$/;
+    var DATE_RE = new RegExp('^(?:(' + MONTHS.join('|') + ') (\\d{1,2}), (\\d{4})|(\\d{4})-(\\d{2})-(\\d{2}))');
+    var LOWEST = -1e15;
+
+    function toNumber(text) {
+        var negative = /^[\s₱$€£]*[\-−–(]/.test(text);
+        var value = parseFloat(text.replace(/[^\d.]/g, ''));
+        if (isNaN(value)) { return LOWEST; }
+        return negative ? -value : value;
+    }
+
+    function toTimestamp(text) {
+        var m = text.match(DATE_RE);
+        var ts;
+        if (!m) { return null; }
+        if (m[1]) {
+            ts = new Date(+m[3], MONTHS.indexOf(m[1]), +m[2]).getTime();
+        } else {
+            ts = new Date(+m[4], +m[5] - 1, +m[6]).getTime();
+        }
+        // Optional time of day right after the date ("... at 8:30 AM" or " 08:30:00").
+        var t = text.slice(m[0].length).match(/(\d{1,2}):(\d{2})(?::\d{2})?\s*([AaPp][Mm])?/);
+        if (t) {
+            var hours = +t[1] % 24;
+            if (t[3]) {
+                hours = (+t[1] % 12) + (/p/i.test(t[3]) ? 12 : 0);
+            }
+            ts += (hours * 60 + +t[2]) * 60000;
+        }
+        return ts;
+    }
+
+    /* Keep stacked details separate in single-line labels; exclude form controls. */
+    function plainText(cell) {
+        function read(node) {
+            if (node.nodeType === 3) { return node.nodeValue.replace(/\s+/g, ' '); }
+            if (node.nodeType !== 1 || /^(SELECT|OPTION|TEXTAREA|INPUT|BUTTON|SCRIPT|STYLE)$/.test(node.tagName)) { return ''; }
+            var text = Array.prototype.map.call(node.childNodes, read).join('');
+            return /^(BR|SMALL|DIV|P|LI|DT|DD)$/.test(node.tagName) ? '\n' + text + '\n' : text;
+        }
+        return read(cell).split(/\n+/).map(function (part) {
+            return part.replace(/\s+/g, ' ').trim();
+        }).filter(Boolean).join(' — ');
+    }
+
+    /* Give DataTables explicit sort values so "₱1,200.00" > "₱95.00" and dates sort by time. */
+    function annotateColumn(cells) {
+        var texts = cells.map(plainText);
+        var filled = texts.filter(function (t) { return !BLANK_RE.test(t); });
+        if (!filled.length) { return null; }
+        var kind = null;
+        if (filled.every(function (t) { return NUM_RE.test(t); })) {
+            kind = 'num';
+        } else if (filled.every(function (t) { return toTimestamp(t) !== null; })) {
+            kind = 'date';
+        }
+        if (!kind) { return null; }
+        cells.forEach(function (cell, i) {
+            var t = texts[i];
+            var blank = BLANK_RE.test(t);
+            var value = kind === 'num' ? (blank ? LOWEST : toNumber(t)) : (blank ? LOWEST : toTimestamp(t));
+            cell.setAttribute('data-order', String(value));
+        });
+        return kind;
+    }
+
+    function el(tag, className, html) {
+        var node = document.createElement(tag);
+        if (className) { node.className = className; }
+        if (html !== undefined) { node.innerHTML = html; }
+        return node;
+    }
+
+    var ICONS = {
+        first: '<path d="M6 5v14m12-14-7 7 7 7"/>',
+        prev: '<path d="m15 5-7 7 7 7"/>',
+        next: '<path d="m9 5 7 7-7 7"/>',
+        last: '<path d="M18 5v14M6 5l7 7-7 7"/>'
+    };
+
+    function icon(name) {
+        return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[name] + '</svg>';
+    }
+
+    function fmt(n) { return Number(n).toLocaleString('en-US'); }
+
+    var uid = 0;
+    var liveTables = new WeakMap();
+    function setup(table) {
+        if (jq.fn.dataTable.isDataTable(table)) { return; }
+        var tbody = table.tBodies[0];
+        if (!tbody || !table.tHead || table.tHead.rows.length !== 1) { return; }
+
+        var headers = Array.prototype.slice.call(table.tHead.rows[0].cells);
+        if (headers.some(function (th) { return th.colSpan > 1; })) { return; }
+
+        var allRows = Array.prototype.slice.call(tbody.rows);
+        var emptyRows = allRows.filter(function (r) { return r.querySelector('td[colspan]'); });
+        var dataRows = allRows.filter(function (r) { return emptyRows.indexOf(r) < 0; });
+
+        // Nothing to search/sort: keep the page's own empty-state message.
+        var live = table.hasAttribute('data-dt-live');
+        if (!dataRows.length && !live && !table.hasAttribute('data-dt-empty')) { return; }
+        // Irregular rows (spans) cannot be handled safely; leave the table untouched.
+        if (dataRows.some(function (r) { return r.cells.length !== headers.length; })) { return; }
+
+        var emptyText = table.getAttribute('data-dt-empty') || (emptyRows.length ? emptyRows[0].textContent.trim() : '');
+        emptyRows.forEach(function (r) { r.parentNode.removeChild(r); });
+
+        var simple = table.getAttribute('data-dt-mode') === 'simple';
+        var columnDefs = [];
+        var sortable = [];
+
+        headers.forEach(function (th, i) {
+            var label = th.textContent.replace(/\s+/g, ' ').trim();
+            var isAction = /^actions?$/i.test(label) || label === '' || th.classList.contains('no-sort');
+            var cells = dataRows.map(function (r) { return r.cells[i]; });
+
+            if (isAction) {
+                columnDefs.push({ targets: i, orderable: false, searchable: false });
+                return;
+            }
+            var kind = annotateColumn(cells);
+            var hasControls = false;
+            cells.forEach(function (cell) {
+                var cellHasControls = !!cell.querySelector('select, option, textarea, input, button');
+                if (cellHasControls) {
+                    hasControls = true;
+                }
+                if (!live || cellHasControls) { cell.setAttribute('data-search', plainText(cell)); }
+            });
+            sortable.push({
+                index: i,
+                label: label,
+                kind: kind,
+                hasControls: hasControls,
+                filterable: th.getAttribute('data-dt-filter') !== 'off',
+                texts: cells.map(plainText)
+            });
+        });
+
+        var length = parseInt(table.getAttribute('data-dt-length'), 10) || 10;
+        var menu = [10, 25, 50, 100];
+        if (menu.indexOf(length) < 0) { menu.push(length); menu.sort(function (a, b) { return a - b; }); }
+
+        var order = [];
+        var orderAttr = (table.getAttribute('data-dt-order') || '').split(':');
+        if (orderAttr[0] !== '' && !isNaN(parseInt(orderAttr[0], 10))) {
+            order = [[parseInt(orderAttr[0], 10), orderAttr[1] === 'desc' ? 'desc' : 'asc']];
+        }
+
+        if (live) {
+            columnDefs.push({ targets: '_all', render: function (data, type, row, meta) {
+                var cell = dataRows[meta.row] && dataRows[meta.row].cells[meta.col];
+                if ((type === 'sort' || type === 'type') && cell && cell.hasAttribute('data-order')) {
+                    return Number(cell.getAttribute('data-order'));
+                }
+                return data;
+            } });
+        }
+        var api = jq(table).DataTable({
+            autoWidth: false,
+            paging: !simple,
+            searching: !simple,
+            info: false,
+            ordering: true,
+            orderMulti: false,
+            order: order,
+            pageLength: length,
+            lengthMenu: menu,
+            columnDefs: columnDefs,
+            layout: { topStart: null, topEnd: null, bottomStart: null, bottomEnd: null },
+            language: {
+                emptyTable: emptyText || 'No records found.',
+                zeroRecords: 'No matching records found.'
+            }
+        });
+        if (live) {
+            liveTables.set(table, function (rows) {
+                dataRows = Array.prototype.slice.call(rows);
+                headers.forEach(function (header, index) {
+                    annotateColumn(dataRows.map(function (row) { return row.cells[index]; }));
+                });
+                api.clear(); api.rows.add(dataRows); api.draw(false);
+                var info = api.page.info();
+                if (info.page >= Math.max(1, info.pages)) { api.page(Math.max(0, info.pages - 1)).draw('page'); }
+            });
+        }
+
+        // Keep the <table> a direct child of its scroll wrapper so the app's table CSS still applies.
+        var container = api.table().container();
+        if (container && container.parentNode) {
+            container.parentNode.insertBefore(table, container);
+            container.parentNode.removeChild(container);
+        }
+
+        if (simple) { return; }
+
+        var host = table.closest('.table-wrap') || table;
+        var id = 'dt' + (++uid);
+
+        /* ── Toolbar: search, rows per page, mobile sort ─────────────────── */
+        var toolbar = el('div', 'dt-toolbar');
+
+        /* Opened from a link that carried a filter (e.g. a dashboard card)? Say so, offer "show all". */
+        var linkParams = new URLSearchParams(window.location.search);
+        linkParams.delete('page');
+        if (Array.from(linkParams.keys()).length) {
+            var note = el('div', 'dt-link-note');
+            note.setAttribute('role', 'status');
+            note.appendChild(el('span', '', 'This list was opened with a filter from a link.'));
+            var showAll = el('a', 'btn btn-secondary btn-sm', 'Show all');
+            showAll.href = window.location.pathname;
+            note.appendChild(showAll);
+            toolbar.appendChild(note);
+        }
+
+        var controls = el('div', 'dt-controls');
+        toolbar.appendChild(controls);
+
+        var searchLabel = el('label', 'dt-field dt-search');
+        searchLabel.setAttribute('for', id + '-search');
+        searchLabel.innerHTML = '<span>Quick search</span>';
+        var search = el('input', 'input');
+        search.type = 'search';
+        search.id = id + '-search';
+        search.placeholder = 'Type to filter rows…';
+        search.autocomplete = 'off';
+        searchLabel.appendChild(search);
+        controls.appendChild(searchLabel);
+
+        var lengthLabel = el('label', 'dt-field dt-length');
+        lengthLabel.setAttribute('for', id + '-length');
+        lengthLabel.innerHTML = '<span>Rows per page</span>';
+        var lengthSelect = el('select', 'input');
+        lengthSelect.id = id + '-length';
+        menu.forEach(function (n) {
+            var opt = el('option');
+            opt.value = String(n);
+            opt.textContent = String(n);
+            if (n === length) { opt.selected = true; }
+            lengthSelect.appendChild(opt);
+        });
+        lengthLabel.appendChild(lengthSelect);
+        controls.appendChild(lengthLabel);
+
+        var sortSelect = null;
+        if (sortable.length) {
+            var sortLabel = el('label', 'dt-field dt-sort');
+            sortLabel.setAttribute('for', id + '-sort');
+            sortLabel.innerHTML = '<span>Sort by</span>';
+            sortSelect = el('select', 'input');
+            sortSelect.id = id + '-sort';
+            sortSelect.appendChild(new Option('Default order', ''));
+            sortable.forEach(function (c) {
+                sortSelect.appendChild(new Option(c.label + ' (A→Z, low→high)', c.index + ':asc'));
+                sortSelect.appendChild(new Option(c.label + ' (Z→A, high→low)', c.index + ':desc'));
+            });
+            sortLabel.appendChild(sortSelect);
+            controls.appendChild(sortLabel);
+        }
+
+        /* ── Column filters: a dropdown / text box under each heading (instant, in the browser) ── */
+        var specs = {};
+        var state = {};
+        var registry = {};
+        var norm = {};
+        var specCount = 0;
+
+        if (!live && dataRows.length >= 5) {
+            sortable.forEach(function (c) {
+                if (!c.filterable || c.kind === 'num' || c.kind === 'date' || c.hasControls) { return; }
+                var seen = Object.create(null);
+                var distinct = 0;
+                c.texts.forEach(function (t) {
+                    if (!BLANK_RE.test(t) && !seen[t]) { seen[t] = true; distinct++; }
+                });
+                // Dropdowns only for columns with a few repeated values; free-text search is Quick search.
+                if (distinct < 2 || distinct > 12 || distinct >= dataRows.length) { return; }
+                specs[c.index] = { type: 'select', label: c.label, index: c.index,
+                    options: Object.keys(seen).sort(function (a, b) { return a.localeCompare(b, undefined, { numeric: true }); }) };
+                norm[c.index] = c.texts.map(function (t) { return t.toLowerCase(); });
+                registry[c.index] = [];
+                specCount++;
+            });
+        }
+
+        /* Date range on the first date column (replaces the old "Date from / to" form fields). */
+        var dateRange = null;
+        if (!live && dataRows.length >= 5) {
+            var dateCol = null;
+            sortable.some(function (c) { if (c.kind === 'date') { dateCol = c; return true; } return false; });
+            if (dateCol) {
+                dateRange = {
+                    index: dateCol.index,
+                    stamps: dateCol.texts.map(function (t) { return BLANK_RE.test(t) ? null : toTimestamp(t); }),
+                    from: null,
+                    to: null
+                };
+            }
+        }
+
+        var clearBtn = el('button', 'btn btn-secondary dt-clear', 'Clear quick filters');
+        clearBtn.type = 'button';
+        clearBtn.hidden = true;
+
+        function anyActive() {
+            if (search.value) { return true; }
+            if (dateRange && (dateRange.from !== null || dateRange.to !== null)) { return true; }
+            return Object.keys(state).some(function (k) { return state[k].value !== ''; });
+        }
+        function refreshClear() { clearBtn.hidden = !anyActive(); }
+
+        if (specCount || dateRange) {
+            jq.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+                if (settings.nTable !== table) { return true; }
+                if (dateRange && (dateRange.from !== null || dateRange.to !== null)) {
+                    var stamp = dateRange.stamps[dataIndex];
+                    if (stamp === null || stamp === undefined) { return false; }
+                    if (dateRange.from !== null && stamp < dateRange.from) { return false; }
+                    if (dateRange.to !== null && stamp >= dateRange.to) { return false; }
+                }
+                for (var col in state) {
+                    var f = state[col];
+                    if (!f.value) { continue; }
+                    var text = norm[col][dataIndex];
+                    if (text === undefined) { continue; }
+                    if (f.type === 'select' ? text !== f.value : text.indexOf(f.value) < 0) { return false; }
+                }
+                return true;
+            });
+        }
+
+        var colTimer = null;
+        function makeColumnControl(spec) {
+            var ctl = el('select', 'input dt-col-filter');
+            ctl.appendChild(new Option('All', ''));
+            spec.options.forEach(function (o) { ctl.appendChild(new Option(o, o)); });
+            ctl.setAttribute('aria-label', 'Filter by ' + spec.label);
+            ctl.addEventListener('change', function () {
+                registry[spec.index].forEach(function (other) { if (other !== ctl) { other.value = ctl.value; } });
+                state[spec.index] = { type: spec.type, value: ctl.value.trim().toLowerCase() };
+                refreshClear();
+                window.clearTimeout(colTimer);
+                colTimer = window.setTimeout(function () { api.draw(); }, 0);
+            });
+            registry[spec.index].push(ctl);
+            return ctl;
+        }
+
+        if (specCount) {
+            // Desktop: second header row.
+            var filterRow = table.tHead.insertRow();
+            filterRow.className = 'dt-filter-row';
+            headers.forEach(function (th, i) {
+                var cell = document.createElement('th');
+                if (specs[i]) { cell.appendChild(makeColumnControl(specs[i])); }
+                filterRow.appendChild(cell);
+            });
+
+            // Phones / small tablets: the header is hidden in card mode, so offer the same filters in a panel.
+            var panel = el('details', 'dt-mobile-filters');
+            panel.appendChild(el('summary', '', 'Column filters'));
+            var grid = el('div', 'dt-mobile-filter-grid');
+            Object.keys(specs).forEach(function (k) {
+                var field = el('label', 'dt-field');
+                field.appendChild(el('span', '', specs[k].label));
+                field.appendChild(makeColumnControl(specs[k]));
+                grid.appendChild(field);
+            });
+            panel.appendChild(grid);
+            controls.appendChild(panel);
+        }
+
+        var dateInputs = [];
+        if (dateRange) {
+            var dateLabel = sortable.filter(function (c) { return c.index === dateRange.index; })[0].label;
+            [['from', 'from'], ['to', 'to']].forEach(function (pair) {
+                var field = el('label', 'dt-field dt-date');
+                field.appendChild(el('span', '', dateLabel + ' ' + pair[0]));
+                var input = el('input', 'input');
+                input.type = 'date';
+                input.addEventListener('change', function () {
+                    var v = input.value ? input.value.split('-') : null;
+                    var day = v ? new Date(+v[0], +v[1] - 1, +v[2]).getTime() : null;
+                    // "to" is inclusive: compare against the start of the next day.
+                    dateRange[pair[1]] = day === null ? null : (pair[1] === 'to' ? day + 86400000 : day);
+                    refreshClear();
+                    api.draw();
+                });
+                field.appendChild(input);
+                dateInputs.push(input);
+                controls.appendChild(field);
+            });
+        }
+        controls.appendChild(clearBtn);
+
+        clearBtn.addEventListener('click', function () {
+            search.value = '';
+            api.search('');
+            Object.keys(registry).forEach(function (k) {
+                registry[k].forEach(function (ctl) { ctl.value = ''; });
+            });
+            state = {};
+            if (dateRange) {
+                dateRange.from = null;
+                dateRange.to = null;
+                dateInputs.forEach(function (i) { i.value = ''; });
+            }
+            refreshClear();
+            api.draw();
+            search.focus();
+        });
+
+        host.parentNode.insertBefore(toolbar, host);
+
+        /* ── Footer: summary + pager (same markup/classes as the old server pager) ── */
+        var footer = el('div', 'paginationWrap dt-footer');
+        var nav = el('nav', 'app-pagination');
+        nav.setAttribute('aria-label', 'Table pagination');
+        footer.appendChild(nav);
+        host.parentNode.insertBefore(footer, host.nextSibling);
+
+        function control(go, label, content, extra, disabled) {
+            var b = el('button', 'pg-control ' + (extra || ''), content);
+            b.type = 'button';
+            b.setAttribute('data-dt-go', go);
+            b.setAttribute('aria-label', label);
+            b.title = label;
+            if (disabled) {
+                b.disabled = true;
+                b.classList.add('pg-disabled');
+            }
+            return b;
+        }
+
+        function render() {
+            var info = api.page.info();
+            var focused = document.activeElement && nav.contains(document.activeElement)
+                ? document.activeElement.getAttribute('data-dt-go') : null;
+            var total = info.recordsDisplay;
+            var pages = Math.max(1, info.pages);
+            var current = info.page + 1;
+
+            nav.innerHTML = '';
+            var summary = el('div', 'pg-summary');
+            var results = el('span', 'pg-results');
+            results.setAttribute('aria-live', 'polite');
+            if (total > 0) {
+                results.innerHTML = 'Showing <strong>' + fmt(info.start + 1) + '–' + fmt(info.end) +
+                    '</strong> of <strong>' + fmt(total) + '</strong>' +
+                    (total !== info.recordsTotal ? ' <span class="pg-filtered">(filtered from ' + fmt(info.recordsTotal) + ')</span>' : '');
+            } else {
+                results.textContent = 'No results';
+            }
+            summary.appendChild(results);
+            if (total > 0) {
+                summary.appendChild(el('span', 'pg-position', 'Page ' + fmt(current) + ' of ' + fmt(pages)));
+            }
+            nav.appendChild(summary);
+
+            if (pages > 1) {
+                var controls = el('div', 'pg-controls');
+                var atStart = current === 1;
+                var atEnd = current === pages;
+                controls.appendChild(control('first', 'First page', icon('first'), 'pg-first', atStart));
+                controls.appendChild(control('prev', 'Previous page', icon('prev') + '<span>Previous</span>', 'pg-previous', atStart));
+
+                var list = el('ul', 'pg-pages');
+                list.setAttribute('aria-label', 'Page numbers');
+                for (var p = Math.max(1, current - 2); p <= Math.min(pages, current + 2); p++) {
+                    var li = el('li');
+                    var b = control(String(p), 'Page ' + p + (p === current ? ', current page' : ''), fmt(p),
+                        p === current ? 'pg-current' : '', false);
+                    if (p === current) { b.setAttribute('aria-current', 'page'); }
+                    li.appendChild(b);
+                    list.appendChild(li);
+                }
+                controls.appendChild(list);
+
+                controls.appendChild(control('next', 'Next page', '<span>Next</span>' + icon('next'), 'pg-next', atEnd));
+                controls.appendChild(control('last', 'Last page', icon('last'), 'pg-last', atEnd));
+                nav.appendChild(controls);
+            }
+
+            if (focused) {
+                var again = nav.querySelector('[data-dt-go="' + focused + '"]:not(:disabled)') ||
+                    nav.querySelector('.pg-current');
+                if (again) { again.focus(); }
+            }
+        }
+
+        nav.addEventListener('click', function (event) {
+            var btn = event.target.closest('button[data-dt-go]');
+            if (!btn || btn.disabled) { return; }
+            var go = btn.getAttribute('data-dt-go');
+            var target = go === 'prev' ? 'previous' : (/^\d+$/.test(go) ? parseInt(go, 10) - 1 : go);
+            api.page(target).draw('page');
+            if (toolbar.getBoundingClientRect().top < 0) {
+                toolbar.scrollIntoView({ block: 'start' });
+            }
+        });
+
+        var timer = null;
+        search.addEventListener('input', function () {
+            window.clearTimeout(timer);
+            refreshClear();
+            timer = window.setTimeout(function () { api.search(search.value).draw(); }, 120);
+        });
+        lengthSelect.addEventListener('change', function () {
+            api.page.len(parseInt(lengthSelect.value, 10)).draw();
+        });
+        if (sortSelect) {
+            sortSelect.addEventListener('change', function () {
+                if (!sortSelect.value) { api.order([]).draw(); return; }
+                var parts = sortSelect.value.split(':');
+                api.order([parseInt(parts[0], 10), parts[1]]).draw();
+            });
+            jq(table).on('order.dt', function () {
+                var o = api.order();
+                var wanted = o.length ? o[0][0] + ':' + o[0][1] : '';
+                if (sortSelect.value !== wanted) { sortSelect.value = wanted; }
+            });
+        }
+
+        jq(table).on('draw.dt', render);
+        render();
+    }
+
+    window.PharxmacoTables = {
+        replaceRows: function (table, rows) {
+            var replace = liveTables.get(table);
+            if (replace) { replace(rows); return; }
+            table.tBodies[0].replaceChildren.apply(table.tBodies[0], rows);
+            setup(table);
+        }
+    };
+
+    function boot() {
+        document.querySelectorAll('table.js-datatable').forEach(function (table) {
+            try { setup(table); } catch (error) {
+                if (window.console) { console.error('DataTables setup failed for a table', error); }
+            }
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', boot);
+    } else {
+        boot();
+    }
+}());

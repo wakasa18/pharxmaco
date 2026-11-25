@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="PosBrandedProbeTest" file="C:\UniServerZ\www\pharxmaco\writable\pos-branded-20261028\PosBrandedProbeTest.php" tests="4" assertions="35" errors="0" failures="0" skipped="0" time="0.307722">
+    <testcase name="testPosBrandedInitialCatalogIncludesSaleableBrandedAndGenericProducts" file="C:\UniServerZ\www\pharxmaco\tests\unit\PosBrandedCases.php" line="49" class="PosBrandedProbeTest" classname="PosBrandedProbeTest" assertions="5" time="0.129982"/>
+    <testcase name="testPosBrandedGenericIngredientSearchFindsBrandInInitialAndAjaxResults" file="C:\UniServerZ\www\pharxmaco\tests\unit\PosBrandedCases.php" line="60" class="PosBrandedProbeTest" classname="PosBrandedProbeTest" assertions="8" time="0.031309"/>
+    <testcase name="testPosBrandedSearchKeepsNameAndSkuMatchingWithoutLeakingUnavailableStock" file="C:\UniServerZ\www\pharxmaco\tests\unit\PosBrandedCases.php" line="71" class="PosBrandedProbeTest" classname="PosBrandedProbeTest" assertions="16" time="0.097858"/>
+    <testcase name="testPosBrandedTodayExpiryIsUnavailableAndAnotherBranchUsesItsOwnStock" file="C:\UniServerZ\www\pharxmaco\tests\unit\PosBrandedCases.php" line="82" class="PosBrandedProbeTest" classname="PosBrandedProbeTest" assertions="6" time="0.048573"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="4" assertions="26" errors="0" failures="0" skipped="0" time="0.138927">
+    <testcase name="testStaleStockCountIsRejectedAndDeliveryAddsToCurrentStock" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1678" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.100210"/>
+    <testcase name="testCashierAddsAndRemovesUnitsWithAccurateLogsAndNoDuplicateSubmit" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1697" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.010550"/>
+    <testcase name="testCashierStockRejectsTooManyUnitsStaleCountsAndOtherBranches" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1717" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.020426"/>
+    <testcase name="testCashierStockRequiresReasonAndTokenAndChecksLockedCount" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1733" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.007742"/>
+  </testsuite>
+</testsuites>

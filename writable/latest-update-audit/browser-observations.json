@@ -1,0 +1,17 @@
+{
+  "simulated_http_502": {
+    "pending": null,
+    "buttonDisabled": false,
+    "status": "The server could not process the sale",
+    "requests": [
+      {
+        "url": "http://localhost/pharxmaco/public/cashier/sales/checkout",
+        "method": "POST"
+      }
+    ]
+  },
+  "vat_rounding": {
+    "chosenPayable": 160.03,
+    "bothPromosPayable": 160.02
+  }
+}

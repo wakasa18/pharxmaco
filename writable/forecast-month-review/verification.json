@@ -1,0 +1,451 @@
+{
+    "source_sha256": "3436403d03724597a9e03539b16e83aafc92428114cb430888233f714169579e",
+    "import_sha256": "e9dd9455ca2ac4ca758c97e37a08fc7926c56115ab8e6b6729a7031cdd883da8",
+    "server_version": "8.2.0",
+    "phpmyadmin_parser": "PhpMyAdmin SqlParser BufferedQuery (local installation)",
+    "period": [
+        "2026-09-19",
+        "2026-10-18"
+    ],
+    "pairs": 19,
+    "added_sales": 297,
+    "added_items": 297,
+    "added_stock_movements": 594,
+    "added_units": 1245,
+    "added_revenue": 110905,
+    "promo_sales": 4,
+    "reorder_forecasts": {
+        "recommended": {
+            "from": "2026-09-19",
+            "to": "2026-10-18",
+            "positive_pairs": 19,
+            "urgencies": {
+                "critical": 19
+            },
+            "results": [
+                {
+                    "product_id": 22,
+                    "branch_id": 1,
+                    "product_name": "Ambroxol 30 mg tablet",
+                    "sku": "AMB30-017",
+                    "branch_name": "Main Branch",
+                    "stock": 4,
+                    "reorder_level": 9,
+                    "avg_daily_demand": 7.13,
+                    "monthly_quantity": 221,
+                    "price": 78,
+                    "days_left": 0,
+                    "suggested_qty": 210,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 30,
+                    "branch_id": 3,
+                    "product_name": "Bisacodyl 5 mg tablet",
+                    "sku": "BIS5-025",
+                    "branch_name": "Patag Branch",
+                    "stock": 0,
+                    "reorder_level": 8,
+                    "avg_daily_demand": 4.34,
+                    "monthly_quantity": 135,
+                    "price": 67,
+                    "days_left": 0,
+                    "suggested_qty": 131,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 21,
+                    "branch_id": 1,
+                    "product_name": "Dextromethorphan cough syrup",
+                    "sku": "DEXSYP-016",
+                    "branch_name": "Main Branch",
+                    "stock": 0,
+                    "reorder_level": 24,
+                    "avg_daily_demand": 5.34,
+                    "monthly_quantity": 166,
+                    "price": 110,
+                    "days_left": 0,
+                    "suggested_qty": 161,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 52,
+                    "branch_id": 3,
+                    "product_name": "Diaper rash cream (50 g)",
+                    "sku": "RASH50-047",
+                    "branch_name": "Patag Branch",
+                    "stock": 0,
+                    "reorder_level": 16,
+                    "avg_daily_demand": 5.98,
+                    "monthly_quantity": 185,
+                    "price": 100,
+                    "days_left": 0,
+                    "suggested_qty": 180,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 19,
+                    "branch_id": 3,
+                    "product_name": "Diclofenac sodium 50 mg",
+                    "sku": "DIC50-014",
+                    "branch_name": "Patag Branch",
+                    "stock": 0,
+                    "reorder_level": 19,
+                    "avg_daily_demand": 5.34,
+                    "monthly_quantity": 166,
+                    "price": 92,
+                    "days_left": 0,
+                    "suggested_qty": 161,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 32,
+                    "branch_id": 1,
+                    "product_name": "Fexofenadine 120 mg tablet",
+                    "sku": "FEX120-027",
+                    "branch_name": "Main Branch",
+                    "stock": 0,
+                    "reorder_level": 10,
+                    "avg_daily_demand": 4.34,
+                    "monthly_quantity": 135,
+                    "price": 138,
+                    "days_left": 0,
+                    "suggested_qty": 131,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 32,
+                    "branch_id": 3,
+                    "product_name": "Fexofenadine 120 mg tablet",
+                    "sku": "FEX120-027",
+                    "branch_name": "Patag Branch",
+                    "stock": 4,
+                    "reorder_level": 20,
+                    "avg_daily_demand": 6.34,
+                    "monthly_quantity": 197,
+                    "price": 140,
+                    "days_left": 0,
+                    "suggested_qty": 187,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 41,
+                    "branch_id": 3,
+                    "product_name": "Isopropyl alcohol 70% (500 mL)",
+                    "sku": "ALC500-036",
+                    "branch_name": "Patag Branch",
+                    "stock": 0,
+                    "reorder_level": 20,
+                    "avg_daily_demand": 6.34,
+                    "monthly_quantity": 197,
+                    "price": 80,
+                    "days_left": 0,
+                    "suggested_qty": 191,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 31,
+                    "branch_id": 3,
+                    "product_name": "Loratadine 10 mg tablet",
+                    "sku": "LOR10-026",
+                    "branch_name": "Patag Branch",
+                    "stock": 5,
+                    "reorder_level": 20,
+                    "avg_daily_demand": 5.34,
+                    "monthly_quantity": 166,
+                    "price": 77,
+                    "days_left": 0,
+                    "suggested_qty": 156,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 55,
+                    "branch_id": 1,
+                    "product_name": "Mosquito repellent lotion (100 mL)",
+                    "sku": "MOS100-050",
+                    "branch_name": "Main Branch",
+                    "stock": 3,
+                    "reorder_level": 22,
+                    "avg_daily_demand": 6.34,
+                    "monthly_quantity": 197,
+                    "price": 105,
+                    "days_left": 0,
+                    "suggested_qty": 188,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 42,
+                    "branch_id": 3,
+                    "product_name": "Povidone iodine (60 mL)",
+                    "sku": "POV60-037",
+                    "branch_name": "Patag Branch",
+                    "stock": 4,
+                    "reorder_level": 11,
+                    "avg_daily_demand": 4.34,
+                    "monthly_quantity": 135,
+                    "price": 84,
+                    "days_left": 0,
+                    "suggested_qty": 127,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 54,
+                    "branch_id": 1,
+                    "product_name": "Saline nasal drops (15 mL)",
+                    "sku": "SAL15-049",
+                    "branch_name": "Main Branch",
+                    "stock": 0,
+                    "reorder_level": 15,
+                    "avg_daily_demand": 5.34,
+                    "monthly_quantity": 166,
+                    "price": 65,
+                    "days_left": 0,
+                    "suggested_qty": 161,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 43,
+                    "branch_id": 1,
+                    "product_name": "Sterile gauze pads (10 pieces)",
+                    "sku": "GAUZE10-038",
+                    "branch_name": "Main Branch",
+                    "stock": 0,
+                    "reorder_level": 11,
+                    "avg_daily_demand": 6.34,
+                    "monthly_quantity": 197,
+                    "price": 60,
+                    "days_left": 0,
+                    "suggested_qty": 191,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 33,
+                    "branch_id": 1,
+                    "product_name": "Diphenhydramine 25 mg capsule",
+                    "sku": "DPH25-028",
+                    "branch_name": "Main Branch",
+                    "stock": 9,
+                    "reorder_level": 15,
+                    "avg_daily_demand": 5.33,
+                    "monthly_quantity": 165,
+                    "price": 72,
+                    "days_left": 1,
+                    "suggested_qty": 151,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 20,
+                    "branch_id": 3,
+                    "product_name": "Paracetamol 250 mg / 5 mL syrup",
+                    "sku": "PARSYP-015",
+                    "branch_name": "Patag Branch",
+                    "stock": 9,
+                    "reorder_level": 23,
+                    "avg_daily_demand": 6.3,
+                    "monthly_quantity": 195,
+                    "price": 90,
+                    "days_left": 1,
+                    "suggested_qty": 180,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 43,
+                    "branch_id": 3,
+                    "product_name": "Sterile gauze pads (10 pieces)",
+                    "sku": "GAUZE10-038",
+                    "branch_name": "Patag Branch",
+                    "stock": 9,
+                    "reorder_level": 16,
+                    "avg_daily_demand": 5.35,
+                    "monthly_quantity": 166,
+                    "price": 62,
+                    "days_left": 1,
+                    "suggested_qty": 152,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 53,
+                    "branch_id": 3,
+                    "product_name": "Baby wipes (80 pieces)",
+                    "sku": "WIPES80-048",
+                    "branch_name": "Patag Branch",
+                    "stock": 15,
+                    "reorder_level": 19,
+                    "avg_daily_demand": 6.31,
+                    "monthly_quantity": 196,
+                    "price": 92,
+                    "days_left": 2,
+                    "suggested_qty": 175,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 21,
+                    "branch_id": 3,
+                    "product_name": "Dextromethorphan cough syrup",
+                    "sku": "DEXSYP-016",
+                    "branch_name": "Patag Branch",
+                    "stock": 11,
+                    "reorder_level": 13,
+                    "avg_daily_demand": 4.34,
+                    "monthly_quantity": 135,
+                    "price": 112,
+                    "days_left": 2,
+                    "suggested_qty": 120,
+                    "urgency": "critical"
+                },
+                {
+                    "product_id": 54,
+                    "branch_id": 3,
+                    "product_name": "Saline nasal drops (15 mL)",
+                    "sku": "SAL15-049",
+                    "branch_name": "Patag Branch",
+                    "stock": 13,
+                    "reorder_level": 15,
+                    "avg_daily_demand": 4.34,
+                    "monthly_quantity": 135,
+                    "price": 67,
+                    "days_left": 2,
+                    "suggested_qty": 118,
+                    "urgency": "critical"
+                }
+            ]
+        },
+        "reports_default": {
+            "from": "2026-09-20",
+            "to": "2026-10-19",
+            "positive_pairs": 19,
+            "urgencies": {
+                "critical": 11,
+                "warning": 5,
+                "watch": 3
+            }
+        },
+        "topbar_90_days": {
+            "from": "2026-07-22",
+            "to": "2026-10-19",
+            "positive_pairs": 19,
+            "urgencies": {
+                "critical": 11,
+                "warning": 5,
+                "watch": 3
+            }
+        },
+        "current_month": {
+            "from": "2026-10-01",
+            "to": "2026-10-19",
+            "positive_pairs": 19,
+            "urgencies": {
+                "critical": 11,
+                "warning": 5,
+                "watch": 3
+            }
+        }
+    },
+    "next_sales_forecasts": {
+        "all": [
+            {
+                "forecast_date": "2026-10-19",
+                "forecast_value": 9242.12
+            },
+            {
+                "forecast_date": "2026-10-20",
+                "forecast_value": 9234.85
+            },
+            {
+                "forecast_date": "2026-10-21",
+                "forecast_value": 9227.57
+            },
+            {
+                "forecast_date": "2026-10-22",
+                "forecast_value": 9220.3
+            },
+            {
+                "forecast_date": "2026-10-23",
+                "forecast_value": 9213.02
+            },
+            {
+                "forecast_date": "2026-10-24",
+                "forecast_value": 9205.75
+            },
+            {
+                "forecast_date": "2026-10-25",
+                "forecast_value": 9198.48
+            }
+        ],
+        "1": [
+            {
+                "forecast_date": "2026-10-19",
+                "forecast_value": 3527.09
+            },
+            {
+                "forecast_date": "2026-10-20",
+                "forecast_value": 3511.55
+            },
+            {
+                "forecast_date": "2026-10-21",
+                "forecast_value": 3496.02
+            },
+            {
+                "forecast_date": "2026-10-22",
+                "forecast_value": 3480.48
+            },
+            {
+                "forecast_date": "2026-10-23",
+                "forecast_value": 3464.95
+            },
+            {
+                "forecast_date": "2026-10-24",
+                "forecast_value": 3449.41
+            },
+            {
+                "forecast_date": "2026-10-25",
+                "forecast_value": 3433.87
+            }
+        ],
+        "3": [
+            {
+                "forecast_date": "2026-10-19",
+                "forecast_value": 5715.03
+            },
+            {
+                "forecast_date": "2026-10-20",
+                "forecast_value": 5723.29
+            },
+            {
+                "forecast_date": "2026-10-21",
+                "forecast_value": 5731.56
+            },
+            {
+                "forecast_date": "2026-10-22",
+                "forecast_value": 5739.82
+            },
+            {
+                "forecast_date": "2026-10-23",
+                "forecast_value": 5748.08
+            },
+            {
+                "forecast_date": "2026-10-24",
+                "forecast_value": 5756.34
+            },
+            {
+                "forecast_date": "2026-10-25",
+                "forecast_value": 5764.6
+            }
+        ]
+    },
+    "checks": [
+        "Validated supplied export and imported all records only into an isolated local schema.",
+        "Changed source inventory is rejected before any sample data is committed.",
+        "Simulated item insert failure rolls back all demo rows even when client execution continues.",
+        "Every original record is byte-for-byte retained, including stock, prices, expiry, users, shifts and forecast snapshots.",
+        "Sale/item totals, profits, product/delivery/expiry snapshots and actual automatic-promotion calculations agree.",
+        "All original and added stock movements form continuous nonnegative ledgers ending at the unchanged branch balances.",
+        "All 19 pairs have positive demand observations on all 30 days in both UTC and UTC+8.",
+        "Actual reorder service returns positive suggestions for 19 pairs in recommended/default/90-day/current-month windows and correct branch scopes.",
+        "Actual Reports controller produces seven positive daily sales forecasts for all branches and each branch.",
+        "phpMyAdmin statement extraction and repeated import with diagnostic queries leave all records unchanged.",
+        "Partial or edited existing fixtures are rejected without overwriting or duplicating them."
+    ],
+    "application_database_modified": false,
+    "original_export_modified": false
+}

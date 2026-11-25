@@ -1,0 +1,44 @@
+{
+    "audit_date": "2026-10-28",
+    "source_application_database_accessed": false,
+    "source_application_database_written": false,
+    "source_records_copied": false,
+    "synthetic_records_only": true,
+    "services_started": false,
+    "schema_removed": true,
+    "status": "failed",
+    "scratch_schema": "phx_repair_20261028_2d0cb5c9",
+    "mysql_version": "8.2.0",
+    "transaction_isolation": "REPEATABLE-READ",
+    "refund": {
+        "passed": false,
+        "workers": {
+            "1": {
+                "exit": 0,
+                "result": {
+                    "worker": 1,
+                    "status": 302,
+                    "error": null,
+                    "success": null
+                },
+                "stderr_bytes": 0
+            },
+            "2": {
+                "exit": 0,
+                "result": {
+                    "worker": 2,
+                    "status": 302,
+                    "error": "The refundable quantity changed while this page was open. Review the remaining quantities and try again.",
+                    "success": null
+                },
+                "stderr_bytes": 0
+            }
+        },
+        "accepted": 0,
+        "refunded_quantity": 3,
+        "refunded_amount": 30,
+        "stock": 13,
+        "stock_logs": 1
+    },
+    "reason": "Synthetic refund concurrency check failed."
+}

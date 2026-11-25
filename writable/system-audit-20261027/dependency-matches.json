@@ -1,0 +1,125 @@
+{
+    "packages_checked": {
+        "dompdf/dompdf": "v3.1.5",
+        "dompdf/php-font-lib": "1.0.2",
+        "dompdf/php-svg-lib": "1.0.2",
+        "laminas/laminas-escaper": "2.18.0",
+        "masterminds/html5": "2.10.0",
+        "psr/log": "3.0.2",
+        "sabberworm/php-css-parser": "v9.3.0",
+        "thecodingmachine/safe": "v3.4.0",
+        "codeigniter4/framework": "4.7.0"
+    },
+    "matches": [
+        {
+            "package": "dompdf/dompdf",
+            "installed": "v3.1.5",
+            "advisory": "PKSA-cv56-2228-pzr6",
+            "title": "Dompdf: Embedded SVG images can leak existence of files and directories within the filesystem",
+            "affected": "<3.1.6",
+            "link": "https://github.com/advisories/GHSA-j8qw-6jw8-r297",
+            "severity": "medium",
+            "reported": "2026-07-22 22:52:44"
+        },
+        {
+            "package": "dompdf/dompdf",
+            "installed": "v3.1.5",
+            "advisory": "PKSA-6r8f-nxsb-67bq",
+            "title": "Dompdf: Denial of Service (DoS) via Resource Exhaustion using Oversized Image Bitmaps",
+            "affected": "<3.1.6",
+            "link": "https://github.com/advisories/GHSA-f5gf-2cj8-52g2",
+            "severity": "medium",
+            "reported": "2026-07-22 22:51:40"
+        },
+        {
+            "package": "dompdf/dompdf",
+            "installed": "v3.1.5",
+            "advisory": "PKSA-gh7h-hhy4-byg7",
+            "title": "Dompdf: Uncontrolled resource consumption based on declared BMP dimensions",
+            "affected": "<3.1.6",
+            "link": "https://github.com/advisories/GHSA-8hg6-c449-896m",
+            "severity": "medium",
+            "reported": "2026-07-22 22:50:34"
+        },
+        {
+            "package": "dompdf/dompdf",
+            "installed": "v3.1.5",
+            "advisory": "PKSA-mwt3-h9tv-kx78",
+            "title": "Dompdf: Local file read due to improper file path validation in SVG images encoded as data-URI",
+            "affected": "<3.1.6",
+            "link": "https://github.com/advisories/GHSA-cx96-42px-69fm",
+            "severity": "medium",
+            "reported": "2026-07-22 21:30:01"
+        },
+        {
+            "package": "dompdf/dompdf",
+            "installed": "v3.1.5",
+            "advisory": "PKSA-hp6n-n4kz-21wk",
+            "title": "Dompdf: File existence oracle via font-face stylesheet declaration",
+            "affected": "<3.1.6",
+            "link": "https://github.com/advisories/GHSA-7x2p-4jvh-6384",
+            "severity": "low",
+            "reported": "2026-07-22 21:07:07"
+        },
+        {
+            "package": "dompdf/dompdf",
+            "installed": "v3.1.5",
+            "advisory": "PKSA-mckv-s5hg-868k",
+            "title": "Dompdf: Chroot Validation Bypass",
+            "affected": "<3.1.6",
+            "link": "https://github.com/advisories/GHSA-wvh6-f5jh-8gw4",
+            "severity": "low",
+            "reported": "2026-07-22 21:06:48"
+        },
+        {
+            "package": "codeigniter4/framework",
+            "installed": "4.7.0",
+            "advisory": "PKSA-kcm9-w3rf-jxsk",
+            "title": "CodeIgniter: Uploaded file extension validation bypass in `is_image` and `mime_in` rules",
+            "affected": "<4.7.4",
+            "link": "https://github.com/advisories/GHSA-mmj4-63m4-r6h5",
+            "severity": "critical",
+            "reported": "2026-08-07 18:24:21"
+        },
+        {
+            "package": "codeigniter4/framework",
+            "installed": "4.7.0",
+            "advisory": "PKSA-ykyc-889h-7jxf",
+            "title": "CodeIgniter: Path traversal in UploadedFile::move() when using client-provided filenames",
+            "affected": "<4.7.4",
+            "link": "https://github.com/advisories/GHSA-hhmc-q9hp-r662",
+            "severity": "high",
+            "reported": "2026-08-07 18:23:46"
+        },
+        {
+            "package": "codeigniter4/framework",
+            "installed": "4.7.0",
+            "advisory": "PKSA-t8h5-ngj8-z43w",
+            "title": "CodeIgniter: SQL injection in Query Builder deleteBatch() when used with where() conditions",
+            "affected": ">=4.3.0,<4.7.4",
+            "link": "https://github.com/advisories/GHSA-c9w5-rwh3-7pm9",
+            "severity": "critical",
+            "reported": "2026-08-07 18:22:59"
+        },
+        {
+            "package": "codeigniter4/framework",
+            "installed": "4.7.0",
+            "advisory": "PKSA-kcc6-gffv-vchj",
+            "title": "CodeIgniter: Spoofable forwarded HTTPS headers in IncomingRequest::isSecure()",
+            "affected": "<4.7.4",
+            "link": "https://github.com/advisories/GHSA-7wmf-pw8j-mc78",
+            "severity": "medium",
+            "reported": "2026-08-07 18:21:54"
+        },
+        {
+            "package": "codeigniter4/framework",
+            "installed": "4.7.0",
+            "advisory": "PKSA-217t-qqjr-nkt3",
+            "title": "CodeIgniter4 has a validation bypass when uploading file extensions via `ext_in` rule",
+            "affected": "<4.7.2",
+            "link": "https://github.com/advisories/GHSA-2gr4-ppc7-7mhx",
+            "severity": "critical",
+            "reported": "2026-06-11 17:16:09"
+        }
+    ]
+}

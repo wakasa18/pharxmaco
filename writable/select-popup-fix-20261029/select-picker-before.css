@@ -1,0 +1,123 @@
+/* Themed option list for <select> (see select-picker.js).
+ * The native <select> stays as the visible field; only the browser's popup list is replaced,
+ * so existing styling, validation, form posts and change handlers are untouched. */
+
+/* The field while its list is open. !important beats the page's hover/focus border rules. */
+select.sp-open {
+    border-color: var(--primary, #3452f4) !important;
+    box-shadow: 0 0 0 4px var(--primary-light, #ebeeff) !important;
+}
+
+.sp {
+    position: fixed;
+    z-index: 1200;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    min-width: 160px;
+    padding: 6px;
+    border: 1px solid var(--line-2, var(--line, #e7e9f1));
+    border-radius: 14px;
+    background: var(--surface, #fff);
+    color: var(--text, #0c1226);
+    box-shadow: var(--shadow-md, 0 14px 36px -12px rgba(12, 18, 38, .24)), 0 0 0 1px rgba(12, 18, 38, .02);
+    font: 500 14px/1.25 var(--font, 'Inter', system-ui, sans-serif);
+    user-select: none;
+    -webkit-user-select: none;
+    transform-origin: var(--sp-origin, top left);
+    animation: sp-in .13s cubic-bezier(.2, .8, .2, 1);
+}
+.sp *, .sp *::before, .sp *::after { box-sizing: border-box; }
+html.reduce-motion .sp { animation: none; }
+@media (prefers-reduced-motion: reduce) { .sp { animation: none; } }
+@keyframes sp-in {
+    from { opacity: 0; transform: translateY(var(--sp-shift, -4px)) scale(.98); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* Filter box (only for long lists) */
+.sp-search {
+    position: relative;
+    flex: none;
+    margin: 2px 2px 6px;
+}
+.sp-search svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+    color: var(--muted, #667089);
+    pointer-events: none;
+}
+.sp-search input {
+    width: 100%;
+    height: 34px;
+    margin: 0;
+    padding: 0 10px 0 32px;
+    border: 1px solid var(--line-2, var(--line, #e7e9f1));
+    border-radius: 9px;
+    background: var(--surface-2, #f8f9fc);
+    color: var(--text, #0c1226);
+    font: inherit;
+    font-size: 13px;
+    outline: none;
+    box-shadow: none;
+}
+.sp-search input::placeholder { color: var(--muted, #667089); opacity: 1; }
+.sp-search input:focus { border-color: var(--primary, #3452f4); box-shadow: 0 0 0 3px var(--primary-light, #ebeeff); background: var(--surface, #fff); }
+
+/* List */
+.sp-list {
+    flex: 1 1 auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    outline: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--line-2, #c9cfe0) transparent;
+}
+.sp-list::-webkit-scrollbar { width: 8px; }
+.sp-list::-webkit-scrollbar-thumb { background: var(--line-2, #c9cfe0); border-radius: 8px; border: 2px solid var(--surface, #fff); }
+.sp-list::-webkit-scrollbar-thumb:hover { background: var(--muted, #667089); }
+
+.sp-opt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 36px;
+    margin: 1px 0;
+    padding: 7px 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color .08s linear;
+}
+.sp-opt[hidden], .sp-group[hidden] { display: none; }
+.sp-text { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sp-check { flex: none; width: 16px; height: 16px; color: var(--primary, #3452f4); opacity: 0; }
+.sp-opt.is-selected { color: var(--primary, #3452f4); font-weight: 650; background: var(--primary-lighter, #f5f6ff); }
+.sp-opt.is-selected .sp-check { opacity: 1; }
+.sp-opt.is-active { background: var(--primary-light, #ebeeff); }
+.sp-opt.is-placeholder:not(.is-selected) { color: var(--muted, #667089); }
+.sp-opt.is-disabled { opacity: .4; cursor: not-allowed; }
+.sp-opt.is-disabled.is-active { background: none; }
+
+.sp-group {
+    padding: 10px 10px 4px;
+    color: var(--muted, #667089);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+.sp-group:first-child { padding-top: 4px; }
+.sp-empty { padding: 14px 10px; color: var(--muted, #667089); font-size: 13px; text-align: center; }
+.sp-empty[hidden] { display: none; }
+
+html.large-controls .sp { font-size: 15px; }
+html.large-controls .sp-opt { min-height: 42px; }

@@ -1,0 +1,35 @@
+{
+  "focused": {
+    "tests": 25,
+    "assertions": 320,
+    "pass": true
+  },
+  "browser": {
+    "checks": 289,
+    "widths": [
+      1440,
+      390
+    ],
+    "coarse_pointer_fallback": true,
+    "exceptions": 0,
+    "posts": 0
+  },
+  "syntax": {
+    "php": 33,
+    "js": 2,
+    "pass": true
+  },
+  "independent_review": "No actionable bounds issue found",
+  "package": {
+    "archive": "C:\\UniServerZ\\www\\pharxmaco/build/hostinger-expiry-calendar-2026-10-28.zip",
+    "runtime_files": 37,
+    "changed_runtime_files": 4,
+    "sql_files": 0,
+    "bytes": 172338,
+    "sha256": "64c9f9ca80206273f88a16d66335503515bf7529843b56c298cfecfdf0ec5876",
+    "hosting_changed": false
+  },
+  "application_database_changed": false,
+  "hosting_changed": false,
+  "sql_import_required": false
+}

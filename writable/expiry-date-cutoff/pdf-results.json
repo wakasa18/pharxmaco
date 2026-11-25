@@ -1,0 +1,15 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "page_bounds": true,
+      "page_number": true
+    },
+    {
+      "page": 2,
+      "page_bounds": true,
+      "page_number": true
+    }
+  ],
+  "boundary_statuses_verified_in_controller_view_tests": true
+}

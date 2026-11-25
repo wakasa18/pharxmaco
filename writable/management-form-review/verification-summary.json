@@ -1,0 +1,37 @@
+{
+    "previous_management_focused_run": {
+        "tests": 18,
+        "assertions": 391,
+        "passed": true
+    },
+    "product_unit_focused_run": {
+        "tests": 14,
+        "assertions": 408,
+        "passed": true
+    },
+    "browser_management_checks": 55,
+    "browser_product_overview_checks": 32,
+    "business_regression_note": "Previous management validation run; not rerun for the unit dropdown.",
+    "business_regression": {
+        "tests": 191,
+        "assertions": 22590,
+        "failures": 9,
+        "errors": 3
+    },
+    "unsuccessful": [
+        "testCheckoutRecordsLockedDeliveryAndExpiryWithoutChangingOlderItems",
+        "testRefundRejectsExpiredOriginalDeliveryAfterReplacementAndAllowsQuarantine",
+        "testReplacementWithTheSameExpiryStillHasDifferentDeliveryIdentity",
+        "testLegacyAndUnknownExpiryReturnsCannotBeRestocked",
+        "testExchangeRejectsOldDeliveryAndCapturesReplacementProvenance",
+        "testExchangeReviewRejectsReplacementExpiryChangedBeforeConfirmation",
+        "testQuantityCorrectionsCannotMixDeliveriesOrRestockExpiredItems",
+        "testProductEditRejectsForgedExpiryChangeBeforeSavingOtherFields",
+        "testExpiryCorrectionIsAdminOnlyAuditedAndDoesNotRewriteSales",
+        "testExpiryCorrectionRejectsStaleOrInvalidRequestsAndRollsBackAuditFailure",
+        "testManualReplenishmentInvalidatesOldReturnsButRemovalKeepsIdentity",
+        "testRefundRechecksDeliveryAtTheInventoryLock"
+    ],
+    "application_database_accessed": false,
+    "hosted_installation_changed": false
+}

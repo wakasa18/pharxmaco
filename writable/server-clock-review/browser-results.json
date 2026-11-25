@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "actual local HTTP server time overrides a device set to 2001",
+    "changing device wall time does not change displayed server time",
+    "date displays in Asia/Manila",
+    "clock requests omit credentials/activity and the actual server sets no cookie",
+    "failed sync continues from the last server sample",
+    "connection return synchronizes again"
+  ],
+  "javascript_errors": [],
+  "clock_requests": 3,
+  "real_local_clock_endpoint_used": true,
+  "authenticated_requests": false,
+  "application_records_changed": false
+}

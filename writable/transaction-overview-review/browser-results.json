@@ -1,0 +1,57 @@
+{
+  "checks": [
+    "refund submit opens accurate safe overview without posting; confirmation required and background isolated",
+    "responsive refundOverview/320/false",
+    "responsive refundOverview/320/true",
+    "responsive refundOverview/390/false",
+    "responsive refundOverview/390/true",
+    "responsive refundOverview/768/false",
+    "responsive refundOverview/768/true",
+    "responsive refundOverview/1440/false",
+    "responsive refundOverview/1440/true",
+    "Back to edit preserves refund entries and returns focus without posting",
+    "Escape closes the refund overview",
+    "keyboard focus stays inside the open confirmation dialog",
+    "changed refund payload refreshes overview and requires acknowledgement again",
+    "one confirmed refund POST retains current quantities, condition and original refund token",
+    "seven preview amounts match actual controller-recorded payouts, including half-cent and full-remainder cases",
+    "full refund overview uses exact remaining centavos rather than a rounded unit-price product",
+    "unchanged correction cannot be confirmed",
+    "correction overview shows before/after quantity, planned stock effect, notes and payout",
+    "responsive correctionOverview/320/false",
+    "responsive correctionOverview/320/true",
+    "responsive correctionOverview/390/false",
+    "responsive correctionOverview/390/true",
+    "responsive correctionOverview/768/false",
+    "responsive correctionOverview/768/true",
+    "responsive correctionOverview/1440/false",
+    "responsive correctionOverview/1440/true",
+    "changed correction notes cannot reuse an earlier confirmation",
+    "one correction POST retains revision, updated notes and exact confirmed settlement",
+    "discounted overview final, discount and settlement match the server pricing calculation",
+    "additional digital settlement retains reference validation and shows exact collection/reference",
+    "server exchange overview displays source/stock effects and requires acknowledgement",
+    "responsive exchangeOverview/320/false",
+    "responsive exchangeOverview/320/true",
+    "responsive exchangeOverview/390/false",
+    "responsive exchangeOverview/390/true",
+    "responsive exchangeOverview/768/false",
+    "responsive exchangeOverview/768/true",
+    "responsive exchangeOverview/1440/false",
+    "responsive exchangeOverview/1440/true",
+    "exchange posts one existing reviewed token without an extra review dialog"
+  ],
+  "javascript_errors": [],
+  "fixture_posts": [
+    {
+      "path": "/cashier/sales/refund-partial/1"
+    },
+    {
+      "path": "/admin/sale-correction/update/1"
+    },
+    {
+      "path": "/cashier/sales/exchange/1/complete"
+    }
+  ],
+  "application_records_changed": false
+}

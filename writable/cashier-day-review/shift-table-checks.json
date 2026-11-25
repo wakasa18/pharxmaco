@@ -1,0 +1,15 @@
+[
+  "All three Cashier Shifts tables initialize with search, length and pagination.",
+  "Repeated cash pairs have no concatenated desktop or mobile dropdown; Status filtering still works.",
+  "Stacked cashier and branch names have readable separators in both filter menus; filtering, synchronization and phrase search work.",
+  "Shift IDs sort numerically; combined dates and cash cells sort by their primary value, including negative cash.",
+  "Search, Review links, next page and rows-per-page work independently for each table.",
+  "Review actions are not sortable; note text, validation and CSRF survive sorting and paging.",
+  "Manager tables fit 320px in light and dark themes.",
+  "Manager tables fit 390px in light and dark themes.",
+  "Manager tables fit 768px in light and dark themes.",
+  "Manager tables fit 1440px in light and dark themes.",
+  "All empty manager tables keep controls and their own empty messages.",
+  "Open and closed shift details initialize all three operational tables.",
+  "Printable shift reports still contain complete static tables."
+]

@@ -1,0 +1,7 @@
+{
+    "old_expiry": "2000-01-01",
+    "new_expiry": "2099-01-01",
+    "stock": 10,
+    "stock_movements": 0,
+    "activity": "Updated product: Test Item (ID: 1)"
+}

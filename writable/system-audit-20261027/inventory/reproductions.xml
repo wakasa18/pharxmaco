@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="InventoryExtraAuditTest" file="C:\UniServerZ\www\pharxmaco\writable\system-audit-20261027\inventory\InventoryExtraAuditTest.php" tests="7" assertions="22" errors="0" failures="0" skipped="0" time="0.146288">
+    <testcase name="testAuditAliasedRefundItemIdsOverpayAndDoubleRestock" file="C:\UniServerZ\www\pharxmaco\writable\system-audit-20261027\inventory\InventoryExtraAuditTest.php" line="6" class="InventoryExtraAuditTest" classname="InventoryExtraAuditTest" assertions="4" time="0.074815"/>
+    <testcase name="testAuditLegacyReceiveReplayAddsTwice" file="C:\UniServerZ\www\pharxmaco\writable\system-audit-20261027\inventory\InventoryExtraAuditTest.php" line="15" class="InventoryExtraAuditTest" classname="InventoryExtraAuditTest" assertions="2" time="0.012947"/>
+    <testcase name="testAuditDigitalTenderAllowsOverpaymentAndNoReference" file="C:\UniServerZ\www\pharxmaco\writable\system-audit-20261027\inventory\InventoryExtraAuditTest.php" line="21" class="InventoryExtraAuditTest" classname="InventoryExtraAuditTest" assertions="4" time="0.012134"/>
+    <testcase name="testAuditExchangeDoesNotApplyMatchingProductPromotion" file="C:\UniServerZ\www\pharxmaco\writable\system-audit-20261027\inventory\InventoryExtraAuditTest.php" line="27" class="InventoryExtraAuditTest" classname="InventoryExtraAuditTest" assertions="3" time="0.010356"/>
+    <testcase name="testAuditQuantityReductionRestocksExpiredUnits" file="C:\UniServerZ\www\pharxmaco\writable\system-audit-20261027\inventory\InventoryExtraAuditTest.php" line="36" class="InventoryExtraAuditTest" classname="InventoryExtraAuditTest" assertions="2" time="0.014935"/>
+    <testcase name="testAuditReplacementWithSameExpiryAllowsOldQuarantineRelease" file="C:\UniServerZ\www\pharxmaco\writable\system-audit-20261027\inventory\InventoryExtraAuditTest.php" line="44" class="InventoryExtraAuditTest" classname="InventoryExtraAuditTest" assertions="4" time="0.012070"/>
+    <testcase name="testAuditOrdinaryProductEditCanChangeExpiryWithoutExpiryMovement" file="C:\UniServerZ\www\pharxmaco\writable\system-audit-20261027\inventory\InventoryExtraAuditTest.php" line="54" class="InventoryExtraAuditTest" classname="InventoryExtraAuditTest" assertions="3" time="0.009031"/>
+  </testsuite>
+</testsuites>

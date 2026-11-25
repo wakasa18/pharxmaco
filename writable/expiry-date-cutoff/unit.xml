@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\UniServerZ\www\pharxmaco\phpunit.xml.dist" tests="15" assertions="98" errors="0" failures="0" skipped="0" time="0.254813">
+    <testsuite name="App" tests="15" assertions="98" errors="0" failures="0" skipped="0" time="0.254813">
+      <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="15" assertions="98" errors="0" failures="0" skipped="0" time="0.254813">
+        <testcase name="testExpiryCutoffReportFiltersLabelsAndSummaryAgreeOnBoundaryDates" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="11" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="36" time="0.066747"/>
+        <testcase name="testExpiryCutoffProductAndExpiryScreensShowTodayAsExpired" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="32" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.051557"/>
+        <testcase name="testExpiryCutoffPosSearchExcludesTodayButAllowsTomorrowAndNoExpiry" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="51" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.014616"/>
+        <testcase name="testExpiryCutoffPosAjaxRejectsAddingAndUpdatingTodayStock" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="61" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.026144"/>
+        <testcase name="testExpiryCutoffCheckoutRejectsAnExistingCartWithoutFinancialWrites" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="77" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.006437"/>
+        <testcase name="testExpiryCutoffCheckoutRechecksTheLockedExpiryAfterCartValidation" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="88" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.007970"/>
+        <testcase name="testExpiryCutoffResellableReturnsRejectTodayWhileOtherConditionsRemainAvailable" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="98" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.006697"/>
+        <testcase name="testExpiryCutoffRefundBlocksResellableButAllowsQuarantinedPayout" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="106" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.008610"/>
+        <testcase name="testExpiryCutoffExchangeRejectsTodayReplacementAtReviewAndConfirmation" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="120" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.008527"/>
+        <testcase name="testExpiryCutoffHeldCartRemainsHeldWhenItsStockExpiresToday" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="135" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.007534"/>
+        <testcase name="testExpiryCutoffQuantityCorrectionCannotIncreaseTodayStockSales" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="146" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.017117"/>
+        <testcase name="testExpiryCutoffQuarantineCannotReleaseTodayStockButCanMarkItExpired" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="155" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.008923"/>
+        <testcase name="testExpiryCutoffNewInventoryRejectsTodayExpiry" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="169" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="2" time="0.009578"/>
+        <testcase name="testExpiryCutoffNotificationsCountTodayAsExpiredAndTomorrowAsNear" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="178" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.005690"/>
+        <testcase name="testExpiryCutoffPdfListsTodayWithExpiredAndTomorrowWithNear" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="189" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.008668"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,195 @@
+{
+    "schema": "phx_exports_review_14448",
+    "north": 4,
+    "south": 5,
+    "admin": 11,
+    "cashier": 12,
+    "foreignCashier": 13,
+    "sale": 487,
+    "foreignSale": 488,
+    "oldSale": 489,
+    "refund": 27,
+    "shift": 12,
+    "products": {
+        "expired": 93,
+        "near": 94,
+        "good": 95,
+        "missing": 96
+    },
+    "inventory": {
+        "expired": 226,
+        "near": 227,
+        "good": 228,
+        "missing": 229
+    },
+    "logs": [
+        1061,
+        1062,
+        1063,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1071,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1094,
+        1095,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100,
+        1101,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107,
+        1108,
+        1109,
+        1110,
+        1111,
+        1112,
+        1113,
+        1114,
+        1115
+    ],
+    "foreignLog": 1116,
+    "day": "2026-10-20",
+    "today": "2026-10-23",
+    "source_snapshot": {
+        "activity_logs": {
+            "rows": 411,
+            "sha256": "b5ceb0fccbc1f8eb3b1f01453051e1054596c33c72f5eaacec973dcf2ee1ea07"
+        },
+        "branch_products": {
+            "rows": 117,
+            "sha256": "89cf12493267c6cc9a25a5b53eb144041ccc0784ac010842dad40bfb4a90627b"
+        },
+        "branches": {
+            "rows": 2,
+            "sha256": "618b87e5544d2dfb62bb37adfec218bf1f852cb5e14d1ce7faec77db0d24882c"
+        },
+        "cashier_drawers": {
+            "rows": 2,
+            "sha256": "6f43c38490ef23968e635ea3b1e772a61c897a68f1cf10bed5f6773dc0e151cb"
+        },
+        "cashier_event_reviews": {
+            "rows": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "cashier_events": {
+            "rows": 8,
+            "sha256": "9e3ee1b7cf178fff46dba2bca6aca2646450654833071964f847152c113d6ff4"
+        },
+        "cashier_held_sales": {
+            "rows": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "cashier_login_sessions": {
+            "rows": 1,
+            "sha256": "02316deece1033b0d265baff07068687f4cb174dd4bae4f06782960ea689f666"
+        },
+        "cashier_shift_actions": {
+            "rows": 22,
+            "sha256": "c14da69e870172f147c32c16a23ece0fea03a55950bf56c196555bdac930be05"
+        },
+        "cashier_shift_reviews": {
+            "rows": 2,
+            "sha256": "c96cdb0f9c901d64f45dca827912915911aa1e097c39e789a6782bb2bd19acdc"
+        },
+        "cashier_shifts": {
+            "rows": 11,
+            "sha256": "80f845be2d87c1bf38b9ed0eb826b50f8cfaee82da6aabb2420c4b86c4c026ed"
+        },
+        "categories": {
+            "rows": 12,
+            "sha256": "2525531226b24fdf5c314fefd4d2d2a51adaec2603f7dca92d3bdd89471bbb54"
+        },
+        "discounts": {
+            "rows": 4,
+            "sha256": "64136d26c72b04c1d0b66fd1d7963bc1e7ed1ee7b2d52b154add80776450d069"
+        },
+        "forecasting_data": {
+            "rows": 333,
+            "sha256": "1780a936dbbedd2f54342f7a93f8e6a9c46ffd631394d22face86c1acf4b37a8"
+        },
+        "migrations": {
+            "rows": 19,
+            "sha256": "226745be0571a99126ef04ce35d73c452f734496592fb667e4c091429c44969b"
+        },
+        "phx_backup_20261016_sale41_refunds": {
+            "rows": 6,
+            "sha256": "b787ac4f2b8300defa4920337a57985a743f8d9cacb311357f39774bcda9473e"
+        },
+        "products": {
+            "rows": 67,
+            "sha256": "9774ac7565ad8ed95b44a3ea4c4f68151cef9d02c2304e7feb6812578ce2638f"
+        },
+        "quarantine_resolutions": {
+            "rows": 1,
+            "sha256": "da897d3d495b770998c0354b4e0e2127d82c00734e72884e6de53ae86ee42720"
+        },
+        "receipt_invoice_sequences": {
+            "rows": 1,
+            "sha256": "c161938cb34dfed2d4c4fee974a183f21775c56dab435e3761f3a9fd0139c1e5"
+        },
+        "refund_items": {
+            "rows": 24,
+            "sha256": "c6fb58305d3d8e9b6da90046dca001e63baef6a7f6eb669de35bd28351e275c7"
+        },
+        "report_exports": {
+            "rows": 27,
+            "sha256": "2e37f1df8e0811be7190c774302341a06183c6b870ec324e4a35ca6f646acd80"
+        },
+        "sale_items": {
+            "rows": 977,
+            "sha256": "2e2e16c0c4c9a51476773fda3c9d20f3c765ecc9b34a1864e88e23495a762465"
+        },
+        "sales": {
+            "rows": 479,
+            "sha256": "397c3ef95d970bc0b9da085570007c7317d82c8717c39ee7753e04939bc7deef"
+        },
+        "stock_logs": {
+            "rows": 1031,
+            "sha256": "ccbc06d7c0222559f17b199f1d3f45c2edcd261043beeff3ff6964a5a77f76f3"
+        },
+        "suppliers": {
+            "rows": 5,
+            "sha256": "6068b1b8ecd7027e03beafa5968b3b1496fe44a89a1b86f3f5e53da38b10a4f3"
+        },
+        "user_presence_sessions": {
+            "rows": 11,
+            "sha256": "3c366d679ca764d3e7892bde13dc2bb85c527dd0e7fe2c21f28f282a59cba06c"
+        },
+        "users": {
+            "rows": 7,
+            "sha256": "432fe81f0eb92246ea85648a32efb74def89ecc7a84cff7b222da580712a5fcf"
+        }
+    }
+}

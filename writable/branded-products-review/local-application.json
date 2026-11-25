@@ -1,0 +1,31 @@
+{
+    "products_added": 12,
+    "branch_rows_added": 12,
+    "demo_stock_logs_added": 12,
+    "demo_units_added": 600,
+    "branch_id": "1",
+    "sample_expiry": "2027-10-15",
+    "new_product_formulations_prices_and_stock_verified": true,
+    "senior_and_pwd_quotes_verified": true,
+    "database": "pharxmaco_drugstore",
+    "seed_sha256": "a202ec119edf54293999fdbd96dc527ddad02c2385fbdd047d073a2416055b73",
+    "total_products": 67,
+    "total_branded": 16,
+    "existing_records_preserved": true,
+    "repeat_import_unchanged": true,
+    "backup": "C:\\UniServerZ\\www\\pharxmaco\\writable\\branded-products-review\/local-before-20261015-120613-8abf1d.json",
+    "added_products": [
+        "Bioflu 10 mg \/ 2 mg \/ 500 mg tablet",
+        "Solmux 500 mg capsule",
+        "Diatabs 2 mg capsule",
+        "Allerta 10 mg tablet",
+        "Alnix 10 mg tablet",
+        "Medicol Advance 200 mg softgel capsule",
+        "Medicol Advance 400 mg softgel capsule",
+        "Dolfenal 500 mg tablet",
+        "Skelan 550 mg tablet",
+        "Kremil-S Advance 10 mg \/ 800 mg \/ 165 mg chewable tablet",
+        "Tuseran Forte 15 mg \/ 25 mg \/ 325 mg capsule",
+        "Decolgen Forte 25 mg \/ 2 mg \/ 500 mg tablet"
+    ]
+}

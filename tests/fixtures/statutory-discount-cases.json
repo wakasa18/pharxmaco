@@ -1,0 +1,8 @@
+[
+  {"status":"vat","lines":[{"subtotal":112,"taxTreatment":"taxable"}],"discount":20,"vatExemption":12},
+  {"status":"non_vat","lines":[{"subtotal":112,"taxTreatment":"taxable"}],"discount":22.4,"vatExemption":0},
+  {"status":"vat","lines":[{"subtotal":112,"taxTreatment":"vat_exempt"}],"discount":22.4,"vatExemption":0},
+  {"status":"vat","lines":[{"subtotal":112,"taxTreatment":"taxable"},{"subtotal":50,"taxTreatment":"vat_exempt"}],"discount":30,"vatExemption":12},
+  {"status":"vat","lines":[{"subtotal":1.01,"taxTreatment":"taxable"},{"subtotal":1.01,"taxTreatment":"taxable"}],"discount":0.36,"vatExemption":0.22},
+  {"status":"vat","lines":[{"subtotal":100,"taxTreatment":"taxable"}],"discount":17.86,"vatExemption":10.71}
+]

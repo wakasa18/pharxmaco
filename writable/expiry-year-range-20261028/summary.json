@@ -1,0 +1,47 @@
+{
+  "limits": {
+    "today": "2026-10-28",
+    "minimum": "2026-10-29",
+    "maximum": "2036-12-31",
+    "yearsAhead": 10
+  },
+  "focused": {
+    "tests": 19,
+    "assertions": 129,
+    "pass": true
+  },
+  "full": {
+    "tests": 401,
+    "assertions": 25241,
+    "passed": 398,
+    "failures": 2,
+    "errors": 1,
+    "remaining": "Existing A05 expiry-correction workflow"
+  },
+  "browser": {
+    "checks": 63,
+    "widths": [
+      1440,
+      390
+    ],
+    "exceptions": 0,
+    "posts": 0
+  },
+  "syntax": {
+    "php": 36,
+    "js": 1,
+    "pass": true
+  },
+  "package": {
+    "archive": "C:\\UniServerZ\\www\\pharxmaco/build/hostinger-expiry-year-range-2026-10-28.zip",
+    "runtime_files": 34,
+    "changed_runtime_files": 11,
+    "sql_files": 0,
+    "bytes": 149143,
+    "sha256": "2034c3b36ea06963d521ad129e4b55f6639f7944213c5604f4712f3dba661c4d",
+    "hosting_changed": false
+  },
+  "application_database_changed": false,
+  "hosting_changed": false,
+  "sql_import_required": false
+}

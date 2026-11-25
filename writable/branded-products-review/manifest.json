@@ -1,0 +1,214 @@
+{
+  "upgrade": "database/upgrades/2026-10-15-branded-products.sql",
+  "upgrade_sha256": "a202ec119edf54293999fdbd96dc527ddad02c2385fbdd047d073a2416055b73",
+  "quantity": 50,
+  "expiry_years_after_import": 1,
+  "items": [
+    {
+      "name": "Bioflu 10 mg / 2 mg / 500 mg tablet",
+      "brand": "Bioflu",
+      "generic": "Phenylephrine hydrochloride + Chlorphenamine maleate + Paracetamol",
+      "strength": "10 mg + 2 mg + 500 mg",
+      "unit": "tablet",
+      "category": "Cough and Cold",
+      "sku": "DEMO-BRD-BIOFLU",
+      "source": "https://www.fda.gov.ph/wp-content/uploads/2022/03/FDA-Advisory-No.2022-0413.pdf",
+      "price": 10,
+      "cost_price": 7,
+      "aliases": [
+        "bioflu 10 mg / 2 mg / 500 mg tablet",
+        "bioflu",
+        "bioflu tablet"
+      ]
+    },
+    {
+      "name": "Solmux 500 mg capsule",
+      "brand": "Solmux",
+      "generic": "Carbocisteine",
+      "strength": "500 mg",
+      "unit": "capsule",
+      "category": "Cough and Cold",
+      "sku": "DEMO-BRD-SOLMUX500",
+      "source": "https://assets.unilab.com.ph/uploads/Common/Products/Solmux/Solmux-Capsule-PIL.pdf",
+      "price": 12,
+      "cost_price": 8.4,
+      "aliases": [
+        "solmux 500 mg capsule",
+        "solmux",
+        "solmux capsule"
+      ]
+    },
+    {
+      "name": "Diatabs 2 mg capsule",
+      "brand": "Diatabs",
+      "generic": "Loperamide hydrochloride",
+      "strength": "2 mg",
+      "unit": "capsule",
+      "category": "Digestive Health",
+      "sku": "DEMO-BRD-DIATABS2",
+      "source": "https://assets.unilab.com.ph/uploads/Common/Products/Diatabs/diatabs.pdf",
+      "price": 8,
+      "cost_price": 5.6,
+      "aliases": [
+        "diatabs 2 mg capsule",
+        "diatabs",
+        "diatabs capsule"
+      ]
+    },
+    {
+      "name": "Allerta 10 mg tablet",
+      "brand": "Allerta",
+      "generic": "Loratadine",
+      "strength": "10 mg",
+      "unit": "tablet",
+      "category": "Allergy and Respiratory",
+      "sku": "DEMO-BRD-ALLERTA10",
+      "source": "https://www.unilab.com.ph/allerta/allerta-product-feature",
+      "price": 12,
+      "cost_price": 8.4,
+      "aliases": [
+        "allerta 10 mg tablet",
+        "allerta",
+        "allerta tablet"
+      ]
+    },
+    {
+      "name": "Alnix 10 mg tablet",
+      "brand": "Alnix",
+      "generic": "Cetirizine dihydrochloride",
+      "strength": "10 mg",
+      "unit": "tablet",
+      "category": "Allergy and Respiratory",
+      "sku": "DEMO-BRD-ALNIX10",
+      "source": "https://www.unilab.com.ph/products/alnix-tablet",
+      "price": 10,
+      "cost_price": 7,
+      "aliases": [
+        "alnix 10 mg tablet",
+        "alnix",
+        "alnix tablet"
+      ]
+    },
+    {
+      "name": "Medicol Advance 200 mg softgel capsule",
+      "brand": "Medicol Advance 200",
+      "generic": "Ibuprofen",
+      "strength": "200 mg",
+      "unit": "capsule",
+      "category": "Pain Relief",
+      "sku": "DEMO-BRD-MEDICOL200",
+      "source": "https://www.unilab.com.ph/products/medicol-advance-200",
+      "price": 8,
+      "cost_price": 5.6,
+      "aliases": [
+        "medicol advance 200 mg softgel capsule",
+        "medicol advance 200",
+        "medicol advance 200 capsule"
+      ]
+    },
+    {
+      "name": "Medicol Advance 400 mg softgel capsule",
+      "brand": "Medicol Advance 400",
+      "generic": "Ibuprofen",
+      "strength": "400 mg",
+      "unit": "capsule",
+      "category": "Pain Relief",
+      "sku": "DEMO-BRD-MEDICOL400",
+      "source": "https://www.unilab.com.ph/articles/severe-pain-101-how-this-can-affect-health-and-productivity",
+      "price": 12,
+      "cost_price": 8.4,
+      "aliases": [
+        "medicol advance 400 mg softgel capsule",
+        "medicol advance 400",
+        "medicol advance 400 capsule"
+      ]
+    },
+    {
+      "name": "Dolfenal 500 mg tablet",
+      "brand": "Dolfenal 500",
+      "generic": "Mefenamic acid",
+      "strength": "500 mg",
+      "unit": "tablet",
+      "category": "Pain Relief",
+      "sku": "DEMO-BRD-DOLFENAL500",
+      "prescription": true,
+      "source": "https://www.unilab.com.ph/products/dolfenal-500mg",
+      "price": 25,
+      "cost_price": 17.5,
+      "aliases": [
+        "dolfenal 500 mg tablet",
+        "dolfenal 500",
+        "dolfenal 500 tablet"
+      ]
+    },
+    {
+      "name": "Skelan 550 mg tablet",
+      "brand": "Skelan 550",
+      "generic": "Naproxen sodium",
+      "strength": "550 mg",
+      "unit": "tablet",
+      "category": "Pain Relief",
+      "sku": "DEMO-BRD-SKELAN550",
+      "prescription": true,
+      "source": "https://www.unilab.com.ph/products/skelan-550mg",
+      "price": 20,
+      "cost_price": 14,
+      "aliases": [
+        "skelan 550 mg tablet",
+        "skelan 550",
+        "skelan 550 tablet"
+      ]
+    },
+    {
+      "name": "Kremil-S Advance 10 mg / 800 mg / 165 mg chewable tablet",
+      "brand": "Kremil-S Advance",
+      "generic": "Famotidine + Calcium carbonate + Magnesium hydroxide",
+      "strength": "10 mg + 800 mg + 165 mg",
+      "unit": "tablet",
+      "category": "Digestive Health",
+      "sku": "DEMO-BRD-KREMILS-ADV",
+      "source": "https://assets.unilab.com.ph/uploads/Common/Kremil-S%20Advance/Kremil-S%20Advance.pdf",
+      "price": 15,
+      "cost_price": 10.5,
+      "aliases": [
+        "kremil-s advance 10 mg / 800 mg / 165 mg chewable tablet",
+        "kremil-s advance",
+        "kremil-s advance tablet"
+      ]
+    },
+    {
+      "name": "Tuseran Forte 15 mg / 25 mg / 325 mg capsule",
+      "brand": "Tuseran Forte",
+      "generic": "Dextromethorphan hydrobromide + Phenylpropanolamine hydrochloride + Paracetamol",
+      "strength": "15 mg + 25 mg + 325 mg",
+      "unit": "capsule",
+      "category": "Cough and Cold",
+      "sku": "DEMO-BRD-TUSERAN",
+      "source": "https://www.unilab.com.ph/products/tuseran-forte",
+      "price": 12,
+      "cost_price": 8.4,
+      "aliases": [
+        "tuseran forte 15 mg / 25 mg / 325 mg capsule",
+        "tuseran forte",
+        "tuseran forte capsule"
+      ]
+    },
+    {
+      "name": "Decolgen Forte 25 mg / 2 mg / 500 mg tablet",
+      "brand": "Decolgen Forte",
+      "generic": "Phenylpropanolamine hydrochloride + Chlorphenamine maleate + Paracetamol",
+      "strength": "25 mg + 2 mg + 500 mg",
+      "unit": "tablet",
+      "category": "Cough and Cold",
+      "sku": "DEMO-BRD-DECOLGEN",
+      "source": "https://www.unilab.com.ph/decolgen-forte/articles/articles/what-causes-nasal-congestion-and-how-do-you-treat-its",
+      "price": 9,
+      "cost_price": 6.3,
+      "aliases": [
+        "decolgen forte 25 mg / 2 mg / 500 mg tablet",
+        "decolgen forte",
+        "decolgen forte tablet"
+      ]
+    }
+  ]
+}

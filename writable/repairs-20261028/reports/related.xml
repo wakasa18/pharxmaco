@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\UniServerZ\www\pharxmaco\phpunit.xml.dist" tests="20" assertions="313" errors="0" failures="0" skipped="0" time="1.556776">
+    <testsuite name="App" tests="20" assertions="313" errors="0" failures="0" skipped="0" time="1.556776">
+      <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="12" assertions="291" errors="0" failures="0" skipped="0" time="1.527266">
+        <testcase name="testStatutoryProductReportDeductsVatReliefAndActualRefunds" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="2593" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.109042"/>
+        <testcase name="testPdfSalesReconcilesRecordedVatAndPartialRefundAcrossGroupings" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfExportCases.php" line="5" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="68" time="0.118278"/>
+        <testcase name="testSalesReconciliationExplainsScreenshotAndKeepsUnknownDifferencesSeparate" file="C:\UniServerZ\www\pharxmaco\tests\unit\PdfExportCases.php" line="47" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="17" time="0.020957"/>
+        <testcase name="testExpiryCutoffReportFiltersLabelsAndSummaryAgreeOnBoundaryDates" file="C:\UniServerZ\www\pharxmaco\tests\unit\ExpiryCutoffCases.php" line="18" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="36" time="0.020284"/>
+        <testcase name="testReportRepairReleasedQuarantineRecoversCostOnceInAllGroupings" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="34" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="38" time="0.053734"/>
+        <testcase name="testReportRepairMixedReturnsRecoverOnlyResellableAndReleasedCosts" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="63" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.014728"/>
+        <testcase name="testReportRepairUnreleasedAndDamagedRefundsKeepTheirCostLoss" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="81" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.012029"/>
+        <testcase name="testReportRepairLegacySchemaWithoutQuarantineStillReportsResellableCosts" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="94" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.011370"/>
+        <testcase name="testReportRepairCsvGeneratesAttachmentAndRecordsRecoveredTotalsOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="105" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="81" time="0.020159"/>
+        <testcase name="testReportRepairCsvGenerationFailureDoesNotCreateHistoryOrConsumeReceipt" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="130" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.030984"/>
+        <testcase name="testReportRepairFullAndSummaryPdfGenerateDistinctAttachmentsAndHistory" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="148" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.584478"/>
+        <testcase name="testReportRepairActualRoutesReturnAttachmentsAndRejectGuests" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="167" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.531222"/>
+      </testsuite>
+      <testsuite name="CsvExportTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\CsvExportTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.003955">
+        <testcase name="testNumericFormattingAndFormulaProtection" file="C:\UniServerZ\www\pharxmaco\tests\unit\CsvExportTest.php" line="8" class="CsvExportTest" classname="CsvExportTest" assertions="2" time="0.002404"/>
+        <testcase name="testQuotesCommasUnicodeAndMultilineTextRoundTrip" file="C:\UniServerZ\www\pharxmaco\tests\unit\CsvExportTest.php" line="20" class="CsvExportTest" classname="CsvExportTest" assertions="1" time="0.001551"/>
+      </testsuite>
+      <testsuite name="ReportExportTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" tests="6" assertions="19" errors="0" failures="0" skipped="0" time="0.025555">
+        <testcase name="testRepeatedRequestRecordsOnceButAnotherClickRecordsAgain" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="60" class="ReportExportTest" classname="ReportExportTest" assertions="5" time="0.004283"/>
+        <testcase name="testDifferentFormatFiltersAndUserAreNotSuppressed" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="74" class="ReportExportTest" classname="ReportExportTest" assertions="1" time="0.004123"/>
+        <testcase name="testLegacyLinksHaveOnlyAShortDuplicateGuard" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="86" class="ReportExportTest" classname="ReportExportTest" assertions="3" time="0.003141"/>
+        <testcase name="testSummaryAndFullPdfAreDistinctExportsButRetriesAreDeduplicated" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="100" class="ReportExportTest" classname="ReportExportTest" assertions="1" time="0.003736"/>
+        <testcase name="testHeadAndPrefetchDoNotBuildOrRecordExports" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="111" class="ReportExportTest" classname="ReportExportTest" assertions="7" time="0.002694"/>
+        <testcase name="testFailedInsertDoesNotConsumeRequest" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportExportTest.php" line="121" class="ReportExportTest" classname="ReportExportTest" assertions="2" time="0.007578"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

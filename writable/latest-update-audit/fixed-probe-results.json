@@ -1,0 +1,127 @@
+{
+    "old_checkout_retry_clears_new_cart": {
+        "old_sale_id": 2,
+        "new_cart_before": {
+            "2": {
+                "product_id": 2,
+                "quantity": 1,
+                "price": 20,
+                "subtotal": 20
+            }
+        },
+        "new_cart_after": {
+            "2": {
+                "product_id": 2,
+                "quantity": 1,
+                "price": 20,
+                "subtotal": 20
+            }
+        },
+        "sale_count": 2,
+        "redirect": "http:\/\/localhost\/pharxmaco\/public\/cashier\/sales\/completed\/2"
+    },
+    "equal_total_correction_missing_from_day": {
+        "corrected_quantities": {
+            "1": 4,
+            "2": 2
+        },
+        "reported_products": [
+            {
+                "id": 1,
+                "name": "Test Item",
+                "sold": 5,
+                "returned": 0,
+                "replacements": 0,
+                "quantity_adjustments": -1,
+                "amount": 40
+            },
+            {
+                "id": 2,
+                "name": "Second item",
+                "sold": 1,
+                "returned": 0,
+                "replacements": 0,
+                "quantity_adjustments": 1,
+                "amount": 20
+            }
+        ],
+        "cashier_event_count": 2,
+        "final_total": 60
+    },
+    "rounding_combination_misses_better_total": {
+        "non_vat": {
+            "chosen_discount": 40.02,
+            "vat_relief": 0,
+            "both_promos_discount": 40.02,
+            "chosen_payable": 160.02,
+            "both_promos_payable": 160.02,
+            "applied_promos": [
+                {
+                    "discount": {
+                        "id": 11,
+                        "product_id": 1,
+                        "discount_name": "Centavo offer 1",
+                        "applies_to": "product",
+                        "status": "active",
+                        "discount_type": "fixed",
+                        "discount_value": 20.01
+                    },
+                    "product_id": 1,
+                    "amount": 20.01,
+                    "eligible_subtotal": 100.02
+                },
+                {
+                    "discount": {
+                        "id": 12,
+                        "product_id": 2,
+                        "discount_name": "Centavo offer 2",
+                        "applies_to": "product",
+                        "status": "active",
+                        "discount_type": "fixed",
+                        "discount_value": 20.01
+                    },
+                    "product_id": 2,
+                    "amount": 20.01,
+                    "eligible_subtotal": 100.02
+                }
+            ]
+        },
+        "vat": {
+            "chosen_discount": 64.02,
+            "vat_relief": 0,
+            "both_promos_discount": 64.02,
+            "chosen_payable": 160.02,
+            "both_promos_payable": 160.02,
+            "applied_promos": [
+                {
+                    "discount": {
+                        "id": 11,
+                        "product_id": 1,
+                        "discount_name": "Centavo offer 1",
+                        "applies_to": "product",
+                        "status": "active",
+                        "discount_type": "fixed",
+                        "discount_value": 32.01
+                    },
+                    "product_id": 1,
+                    "amount": 32.01,
+                    "eligible_subtotal": 112.02
+                },
+                {
+                    "discount": {
+                        "id": 12,
+                        "product_id": 2,
+                        "discount_name": "Centavo offer 2",
+                        "applies_to": "product",
+                        "status": "active",
+                        "discount_type": "fixed",
+                        "discount_value": 32.01
+                    },
+                    "product_id": 2,
+                    "amount": 32.01,
+                    "eligible_subtotal": 112.02
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="15" assertions="189" errors="0" failures="0" skipped="0" time="0.271136">
+    <testcase name="testCheckoutRecordsLockedDeliveryAndExpiryWithoutChangingOlderItems" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="870" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.060441"/>
+    <testcase name="testExchangeCommitsLinkedRecordsAndRepeatedSubmitDoesNotDuplicate" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1306" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="16" time="0.010837"/>
+    <testcase name="testExchangeCheaperReplacementPaysOnlyDifferenceAndQuarantineNeverRestocks" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" line="1423" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.010027"/>
+    <testcase name="testCashierCheckoutRequiresShiftRecordsNetCashAndRetriesOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="202" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.016189"/>
+    <testcase name="testAjaxCheckoutShowsValidationWithoutConsumingFlashOrLosingRetryTokens" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="221" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="13" time="0.014559"/>
+    <testcase name="testAjaxCheckoutSuccessReturnsCompletedSaleAndRecordsDrawerOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="272" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.010900"/>
+    <testcase name="testCashierExchangeCountsOnlyActualDifferenceAndRetryAfterClose" file="C:\UniServerZ\www\pharxmaco\tests\unit\CashierWorkspaceCases.php" line="324" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.010283"/>
+    <testcase name="testQuarantineReleaseUpdatesCorrectStockAndKeepsOriginalFinancialRecords" file="C:\UniServerZ\www\pharxmaco\tests\unit\QuarantineCases.php" line="24" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="16" time="0.009674"/>
+    <testcase name="testQuarantineDamagedAndExpiredNeverDeductStockAgain" file="C:\UniServerZ\www\pharxmaco\tests\unit\QuarantineCases.php" line="51" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="11" time="0.007891"/>
+    <testcase name="testQuarantineReleaseRechecksDeliveryExpiryActivityAndQuantityOnServer" file="C:\UniServerZ\www\pharxmaco\tests\unit\QuarantineCases.php" line="67" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="58" time="0.019477"/>
+    <testcase name="testQuarantineStaleFormAndInvalidInputCannotMoveStock" file="C:\UniServerZ\www\pharxmaco\tests\unit\QuarantineCases.php" line="104" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.006121"/>
+    <testcase name="testQuarantineAuditFailureRollsBackStockAndOutcome" file="C:\UniServerZ\www\pharxmaco\tests\unit\QuarantineCases.php" line="120" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.009885"/>
+    <testcase name="testQuarantineOnlyActiveAdministratorsMayReadOrResolve" file="C:\UniServerZ\www\pharxmaco\tests\unit\QuarantineCases.php" line="132" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.006197"/>
+    <testcase name="testQuarantineControllerRequiresReviewAndRetainsSavedOutcomeOnRetry" file="C:\UniServerZ\www\pharxmaco\tests\unit\QuarantineCases.php" line="145" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.026475"/>
+    <testcase name="testQuarantineMigrationRepeatAndPageFixtures" file="C:\UniServerZ\www\pharxmaco\tests\unit\QuarantineCases.php" line="166" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.052180"/>
+  </testsuite>
+</testsuites>

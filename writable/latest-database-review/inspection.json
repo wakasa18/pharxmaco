@@ -1,0 +1,810 @@
+{
+  "source_path": "C:\\Users\\warre\\Downloads\\u315645644_pharxmacotest (4).sql",
+  "sha256": "3a3e54b64fdf2bea5f4f506733da7ce50de4b3aa19fc2047f04974a5248209b5",
+  "tables": {
+    "activity_logs": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "user_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "activity",
+        "definition": "text DEFAULT NULL"
+      },
+      {
+        "name": "log_time",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      }
+    ],
+    "branches": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "branch_name",
+        "definition": "varchar(100) NOT NULL"
+      },
+      {
+        "name": "branch_code",
+        "definition": "varchar(20) NOT NULL"
+      },
+      {
+        "name": "address",
+        "definition": "text DEFAULT NULL"
+      },
+      {
+        "name": "contact_number",
+        "definition": "varchar(30) DEFAULT NULL"
+      },
+      {
+        "name": "status",
+        "definition": "enum('active','inactive') NOT NULL DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "updated_at",
+        "definition": "datetime DEFAULT NULL"
+      }
+    ],
+    "branch_products": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "branch_id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "product_id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "stock",
+        "definition": "int(11) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "reorder_level",
+        "definition": "int(11) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "expiration_date",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "price",
+        "definition": "decimal(10,2) NOT NULL DEFAULT 0.00"
+      },
+      {
+        "name": "cost_price",
+        "definition": "decimal(10,2) NOT NULL DEFAULT 0.00"
+      },
+      {
+        "name": "status",
+        "definition": "enum('active','inactive') NOT NULL DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "updated_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "deleted_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "is_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "permanently_deleted_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "is_permanently_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "stock_delivery_id",
+        "definition": "varchar(32) DEFAULT NULL"
+      }
+    ],
+    "categories": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "category_name",
+        "definition": "varchar(100) NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      },
+      {
+        "name": "updated_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()"
+      },
+      {
+        "name": "deleted_at",
+        "definition": "timestamp NULL DEFAULT NULL"
+      },
+      {
+        "name": "is_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "permanently_deleted_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "is_permanently_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      }
+    ],
+    "discounts": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "discount_name",
+        "definition": "varchar(100) DEFAULT NULL"
+      },
+      {
+        "name": "discount_type",
+        "definition": "enum('percentage','fixed') DEFAULT NULL"
+      },
+      {
+        "name": "discount_value",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "description",
+        "definition": "text DEFAULT NULL"
+      },
+      {
+        "name": "applies_to",
+        "definition": "enum('all','category','product') DEFAULT 'all'"
+      },
+      {
+        "name": "category_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "product_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "start_date",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "end_date",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "minimum_purchase",
+        "definition": "decimal(10,2) DEFAULT 0.00"
+      },
+      {
+        "name": "max_discount_amount",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "status",
+        "definition": "enum('active','inactive') DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      },
+      {
+        "name": "updated_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()"
+      },
+      {
+        "name": "deleted_at",
+        "definition": "timestamp NULL DEFAULT NULL"
+      },
+      {
+        "name": "is_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "permanently_deleted_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "is_permanently_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      }
+    ],
+    "forecasting_data": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "product_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "forecast_month",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "predicted_quantity",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "predicted_revenue",
+        "definition": "decimal(12,2) DEFAULT NULL"
+      },
+      {
+        "name": "method_used",
+        "definition": "varchar(100) DEFAULT NULL"
+      },
+      {
+        "name": "generated_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      }
+    ],
+    "migrations": [
+      {
+        "name": "id",
+        "definition": "bigint(20) UNSIGNED NOT NULL"
+      },
+      {
+        "name": "version",
+        "definition": "varchar(255) NOT NULL"
+      },
+      {
+        "name": "class",
+        "definition": "varchar(255) NOT NULL"
+      },
+      {
+        "name": "group",
+        "definition": "varchar(255) NOT NULL"
+      },
+      {
+        "name": "namespace",
+        "definition": "varchar(255) NOT NULL"
+      },
+      {
+        "name": "time",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "batch",
+        "definition": "int(10) UNSIGNED NOT NULL"
+      }
+    ],
+    "products": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "product_name",
+        "definition": "varchar(150) NOT NULL"
+      },
+      {
+        "name": "category_id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "sku",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "unit",
+        "definition": "varchar(30) DEFAULT NULL"
+      },
+      {
+        "name": "cost_price",
+        "definition": "decimal(10,2) DEFAULT 0.00"
+      },
+      {
+        "name": "price",
+        "definition": "decimal(10,2) DEFAULT 0.00"
+      },
+      {
+        "name": "stock",
+        "definition": "int(11) DEFAULT 0"
+      },
+      {
+        "name": "reorder_level",
+        "definition": "int(11) DEFAULT 0"
+      },
+      {
+        "name": "status",
+        "definition": "enum('active','inactive') DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      },
+      {
+        "name": "updated_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()"
+      },
+      {
+        "name": "deleted_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "manufacturer",
+        "definition": "varchar(150) DEFAULT NULL"
+      },
+      {
+        "name": "supplier_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "is_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "permanently_deleted_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "is_permanently_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "generic_name",
+        "definition": "varchar(150) DEFAULT NULL"
+      },
+      {
+        "name": "strength",
+        "definition": "varchar(80) DEFAULT NULL"
+      },
+      {
+        "name": "tax_treatment",
+        "definition": "varchar(20) DEFAULT NULL"
+      },
+      {
+        "name": "medicine_type",
+        "definition": "varchar(20) DEFAULT NULL"
+      },
+      {
+        "name": "senior_pwd_eligible",
+        "definition": "tinyint(1) DEFAULT NULL"
+      }
+    ],
+    "receipt_invoice_sequences": [
+      {
+        "name": "series_key",
+        "definition": "varchar(64) NOT NULL"
+      },
+      {
+        "name": "next_number",
+        "definition": "bigint(20) UNSIGNED NOT NULL"
+      }
+    ],
+    "refund_items": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "sale_id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "sale_item_id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "product_id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "product_name_snapshot",
+        "definition": "varchar(200) NOT NULL"
+      },
+      {
+        "name": "quantity_refunded",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "price_at_sale",
+        "definition": "decimal(10,2) NOT NULL"
+      },
+      {
+        "name": "refund_subtotal",
+        "definition": "decimal(10,2) NOT NULL"
+      },
+      {
+        "name": "refunded_by",
+        "definition": "int(11) NOT NULL COMMENT 'users.id of staff who processed refund'"
+      },
+      {
+        "name": "reason",
+        "definition": "varchar(500) DEFAULT NULL"
+      },
+      {
+        "name": "created_at",
+        "definition": "datetime NOT NULL"
+      },
+      {
+        "name": "return_condition",
+        "definition": "varchar(20) DEFAULT 'resellable'"
+      },
+      {
+        "name": "refund_method",
+        "definition": "varchar(10) DEFAULT NULL"
+      },
+      {
+        "name": "refund_event_id",
+        "definition": "varchar(32) DEFAULT NULL"
+      }
+    ],
+    "report_exports": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "user_id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "branch_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "export_type",
+        "definition": "varchar(10) NOT NULL"
+      },
+      {
+        "name": "date_from",
+        "definition": "date NOT NULL"
+      },
+      {
+        "name": "date_to",
+        "definition": "date NOT NULL"
+      },
+      {
+        "name": "gross_sales",
+        "definition": "decimal(12,2) NOT NULL DEFAULT 0.00"
+      },
+      {
+        "name": "net_sales",
+        "definition": "decimal(12,2) NOT NULL DEFAULT 0.00"
+      },
+      {
+        "name": "total_discount",
+        "definition": "decimal(12,2) NOT NULL DEFAULT 0.00"
+      },
+      {
+        "name": "cogs",
+        "definition": "decimal(12,2) NOT NULL DEFAULT 0.00"
+      },
+      {
+        "name": "gross_profit",
+        "definition": "decimal(12,2) NOT NULL DEFAULT 0.00"
+      },
+      {
+        "name": "total_transactions",
+        "definition": "int(11) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "created_at",
+        "definition": "datetime NOT NULL DEFAULT current_timestamp()"
+      }
+    ],
+    "sales": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "invoice_no",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "checkout_token_hash",
+        "definition": "char(64) DEFAULT NULL COMMENT 'SHA-256 hash used for safe checkout recovery'"
+      },
+      {
+        "name": "user_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "branch_id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "discount_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "total_amount",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "discount_amount",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "final_total",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "payment_method",
+        "definition": "enum('cash','gcash','card') DEFAULT NULL"
+      },
+      {
+        "name": "reference_no",
+        "definition": "varchar(100) DEFAULT NULL"
+      },
+      {
+        "name": "amount_paid",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "change_amount",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "status",
+        "definition": "enum('completed','void','refunded','partially_refunded') NOT NULL DEFAULT 'completed'"
+      },
+      {
+        "name": "notes",
+        "definition": "text DEFAULT NULL"
+      },
+      {
+        "name": "sale_date",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      },
+      {
+        "name": "created_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      },
+      {
+        "name": "updated_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()"
+      },
+      {
+        "name": "receipt_metadata",
+        "definition": "text DEFAULT NULL"
+      }
+    ],
+    "sale_items": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "sale_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "product_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "product_name_snapshot",
+        "definition": "varchar(150) DEFAULT NULL"
+      },
+      {
+        "name": "cost_price_at_sale",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "quantity",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "price",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "subtotal",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "discount_applied",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "profit",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "created_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      },
+      {
+        "name": "stock_delivery_id",
+        "definition": "varchar(32) DEFAULT NULL"
+      },
+      {
+        "name": "expiration_date_at_sale",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "generic_name_snapshot",
+        "definition": "varchar(150) DEFAULT NULL"
+      },
+      {
+        "name": "strength_snapshot",
+        "definition": "varchar(80) DEFAULT NULL"
+      },
+      {
+        "name": "tax_treatment_snapshot",
+        "definition": "varchar(20) DEFAULT NULL"
+      },
+      {
+        "name": "vat_exemption_amount",
+        "definition": "decimal(10,2) NOT NULL DEFAULT 0.00"
+      },
+      {
+        "name": "statutory_discount_kind",
+        "definition": "varchar(20) DEFAULT NULL"
+      }
+    ],
+    "stock_logs": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "product_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "branch_id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "user_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "action_type",
+        "definition": "enum('stock_in','stock_out','adjustment','expired','returned') DEFAULT NULL"
+      },
+      {
+        "name": "quantity",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "previous_stock",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "new_stock",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "remarks",
+        "definition": "text DEFAULT NULL"
+      },
+      {
+        "name": "created_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      },
+      {
+        "name": "supplier_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "manufacturer",
+        "definition": "varchar(150) DEFAULT NULL"
+      }
+    ],
+    "suppliers": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "supplier_name",
+        "definition": "varchar(150) NOT NULL"
+      },
+      {
+        "name": "contact_person",
+        "definition": "varchar(100) DEFAULT NULL"
+      },
+      {
+        "name": "contact_number",
+        "definition": "varchar(30) DEFAULT NULL"
+      },
+      {
+        "name": "email",
+        "definition": "varchar(150) DEFAULT NULL"
+      },
+      {
+        "name": "address",
+        "definition": "text DEFAULT NULL"
+      },
+      {
+        "name": "status",
+        "definition": "enum('active','inactive') DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      },
+      {
+        "name": "updated_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()"
+      },
+      {
+        "name": "deleted_at",
+        "definition": "timestamp NULL DEFAULT NULL"
+      },
+      {
+        "name": "is_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      },
+      {
+        "name": "permanently_deleted_at",
+        "definition": "datetime DEFAULT NULL"
+      },
+      {
+        "name": "is_permanently_deleted",
+        "definition": "tinyint(1) NOT NULL DEFAULT 0"
+      }
+    ],
+    "users": [
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "full_name",
+        "definition": "varchar(100) NOT NULL"
+      },
+      {
+        "name": "username",
+        "definition": "varchar(50) NOT NULL"
+      },
+      {
+        "name": "password",
+        "definition": "varchar(255) NOT NULL"
+      },
+      {
+        "name": "role",
+        "definition": "enum('admin','cashier') NOT NULL"
+      },
+      {
+        "name": "branch_id",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "status",
+        "definition": "enum('active','inactive') NOT NULL DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp()"
+      },
+      {
+        "name": "updated_at",
+        "definition": "timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()"
+      },
+      {
+        "name": "session_version",
+        "definition": "varchar(32) DEFAULT NULL"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+    "audited_on": "2026-10-16",
+    "read_only": true,
+    "database": "pharxmaco_drugstore",
+    "available": true,
+    "counts": {
+        "products": "67",
+        "sales": "477",
+        "sale_items": "975"
+    },
+    "master_stock_mismatches": {
+        "count": "9"
+    },
+    "over_refunded_lines": {
+        "count": "3"
+    },
+    "missing_delivery_snapshots": {
+        "count": "975"
+    },
+    "refund_overage_details": [
+        {
+            "sale_item_id": "57",
+            "sale_id": "41",
+            "net_item_amount": "180.00",
+            "refunded_amount": "225.00"
+        },
+        {
+            "sale_item_id": "58",
+            "sale_id": "41",
+            "net_item_amount": "160.00",
+            "refunded_amount": "200.00"
+        },
+        {
+            "sale_item_id": "59",
+            "sale_id": "41",
+            "net_item_amount": "160.00",
+            "refunded_amount": "200.00"
+        }
+    ],
+    "noncash_missing_reference": {
+        "count": "59"
+    },
+    "noncash_with_change": {
+        "count": "10"
+    },
+    "cashier_schema": {
+        "cashier_drawers": true,
+        "cashier_shifts": true,
+        "cashier_events": true,
+        "cashier_held_sales": true,
+        "cashier_shift_reviews": true,
+        "cashier_event_reviews": true,
+        "cashier_shift_actions": true
+    }
+}

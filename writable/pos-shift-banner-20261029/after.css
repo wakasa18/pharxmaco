@@ -1,0 +1,8 @@
+.is-workspace .content .pos-shift-notice { display:grid;grid-template-columns:20px minmax(0,1fr) auto;align-items:center;gap:10px 12px;padding:12px 16px;margin-bottom:14px; }
+.is-workspace .content .pos-shift-notice::before { position:static;grid-column:1;grid-row:1;align-self:center; }
+.pos-shift-message { grid-column:2;grid-row:1;min-width:0;line-height:1.5; }
+.pos-shift-message strong,.pos-shift-message span { display:block; }
+.pos-shift-message span { margin-top:3px;font-size:13px; }
+.pos-shift-notice .pos-shift-action { grid-column:3;grid-row:1;min-height:44px;max-width:100%;white-space:normal;text-align:center; }
+@media(max-width:520px){.is-workspace .content .pos-shift-notice{grid-template-columns:20px minmax(0,1fr)}.pos-shift-notice .pos-shift-action{grid-column:1/-1;grid-row:2;width:100%;}}
+

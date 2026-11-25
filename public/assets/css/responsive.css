@@ -1,0 +1,88 @@
+/* Pharxmaco responsive layer: tablet (≈601–900px) and phone (≤600px) refinements.
+   Loaded last so it can tune the shared workspace styles without editing every page. */
+
+/* ── Never let one wide child create sideways page scroll ───────────────── */
+.layout, .main { max-width: 100%; }
+.main { overflow-x: clip; }
+.content img, .content svg, .content video, .content canvas { max-width: 100%; }
+.content :is(pre, code) { overflow-wrap: anywhere; }
+
+/* ── Record tables: stacked cards up to 900px (portrait tablets included) ── */
+@media (max-width: 900px) {
+    .content .table-wrap > table.mobile-record-ready,
+    .content table.mobile-record-ready { min-width: 0 !important; width: 100%; }
+    .content .table-wrap { overflow-x: visible; }
+    .content .table-scroll-hint:has(+ .table-wrap > .mobile-record-ready) { display: none; }
+    .content .mobile-record-ready td.record-actions .table-action-group { max-width: none; }
+}
+@media (max-width: 600px) {
+    .content .mobile-record-ready tbody tr { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ── Filter / search forms that use inline flex rows ─────────────────────── */
+@media (max-width: 900px) {
+    .content form[method="get"].row { align-items: end; }
+    .content form[method="get"].row > .field { min-width: 0 !important; }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .content form[method="get"].row > .field { flex: 1 1 calc(50% - 10px) !important; }
+    .content form[method="get"].row > .field:first-of-type { flex: 1 1 100% !important; }
+    .content form[method="get"].row > .row:last-child { flex: 1 1 100% !important; }
+}
+@media (max-width: 600px) {
+    .content form[method="get"].row > .field:has(> input[type="date"]) { flex: 1 1 calc(50% - 6px) !important; }
+    .content form[method="get"].row > .row:last-child,
+    .content form[method="get"] > .row:last-child {
+        display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px !important; width: 100%;
+    }
+    .content form[method="get"].row > .row:last-child > .btn,
+    .content form[method="get"] > .row:last-child > .btn { justify-content: center; text-align: center; }
+    .content form[method="get"] > .row:last-child > .btn:first-child:nth-last-child(n+3) { grid-column: 1 / -1; }
+}
+
+/* ── Page headers: title block + actions wrap instead of squeezing ───────── */
+@media (max-width: 900px) {
+    .content .page-header { flex-wrap: wrap; gap: 12px; }
+    .content .page-header > div:first-child { min-width: 0; flex: 1 1 260px; }
+    .content .page-header h1 { overflow-wrap: anywhere; }
+}
+@media (max-width: 600px) {
+    .content .page-header > .btn,
+    .content .page-header > a.btn { width: 100%; justify-content: center; min-height: 46px; }
+    .content .page-header .row, .content .page-header .actions { width: 100%; }
+    .content .page-header .row > .btn, .content .page-header .actions > .btn { flex: 1 1 auto; justify-content: center; }
+}
+
+/* ── Cards, forms and KPI grids ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .content .card-head { flex-wrap: wrap; gap: 10px; }
+    .content .card-head > .btn, .content .card-head > .row { max-width: 100%; }
+    .content .row { flex-wrap: wrap; }
+    .content .field :is(input, select, textarea) { max-width: 100%; }
+}
+@media (max-width: 600px) {
+    .content .card-head > .btn { width: 100%; justify-content: center; }
+}
+
+/* ── Phones: keep modals and sheets inside the *visible* viewport ────────── */
+@supports (height: 100dvh) {
+    @media (max-width: 700px) {
+        .inventory-modal-dialog { max-height: 100dvh; min-height: 100dvh; }
+    }
+}
+@media (max-width: 600px) {
+    .content { padding-left: max(14px, env(safe-area-inset-left)); padding-right: max(14px, env(safe-area-inset-right)); }
+    .global-connection-banner { top: max(8px, env(safe-area-inset-top)); }
+}
+
+/* ── Landscape phones / short tablets: don't let the topbar eat the screen ─ */
+@media (max-height: 480px) and (orientation: landscape) {
+    :root { --topbar-h: 56px; }
+    .topbar { position: static; }
+}
+
+/* ── Touch devices ───────────────────────────────────────────────────────── */
+@media (pointer: coarse) {
+    .content :is(select, input:not([type="checkbox"], [type="radio"], [type="hidden"], [type="file"]), textarea) { min-height: 44px; }
+    .content label:has(> input[type="checkbox"], > input[type="radio"]) { min-height: 32px; }
+}

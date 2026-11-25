@@ -1,0 +1,362 @@
+[
+  {
+    "state": "screenshot",
+    "width": 390,
+    "dark": false,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱237,637.09",
+    "headline": "₱237,637.09",
+    "columns": 2
+  },
+  {
+    "state": "screenshot",
+    "width": 390,
+    "dark": true,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱237,637.09",
+    "headline": "₱237,637.09",
+    "columns": 2
+  },
+  {
+    "state": "screenshot",
+    "width": 768,
+    "dark": false,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱237,637.09",
+    "headline": "₱237,637.09",
+    "columns": 2
+  },
+  {
+    "state": "screenshot",
+    "width": 768,
+    "dark": true,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱237,637.09",
+    "headline": "₱237,637.09",
+    "columns": 2
+  },
+  {
+    "state": "screenshot",
+    "width": 1440,
+    "dark": false,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱237,637.09",
+    "headline": "₱237,637.09",
+    "columns": 3
+  },
+  {
+    "state": "screenshot",
+    "width": 1440,
+    "dark": true,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱237,637.09",
+    "headline": "₱237,637.09",
+    "columns": 3
+  },
+  {
+    "state": "legacy",
+    "width": 390,
+    "dark": false,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": true,
+    "net": "Net sales: ₱237,633.09",
+    "headline": "₱237,633.09",
+    "columns": 2
+  },
+  {
+    "state": "legacy",
+    "width": 390,
+    "dark": true,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": true,
+    "net": "Net sales: ₱237,633.09",
+    "headline": "₱237,633.09",
+    "columns": 2
+  },
+  {
+    "state": "legacy",
+    "width": 768,
+    "dark": false,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": true,
+    "net": "Net sales: ₱237,633.09",
+    "headline": "₱237,633.09",
+    "columns": 2
+  },
+  {
+    "state": "legacy",
+    "width": 768,
+    "dark": true,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": true,
+    "net": "Net sales: ₱237,633.09",
+    "headline": "₱237,633.09",
+    "columns": 2
+  },
+  {
+    "state": "legacy",
+    "width": 1440,
+    "dark": false,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": true,
+    "net": "Net sales: ₱237,633.09",
+    "headline": "₱237,633.09",
+    "columns": 3
+  },
+  {
+    "state": "legacy",
+    "width": 1440,
+    "dark": true,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱238,862.00",
+      "Discounts": "₱779.02",
+      "VAT exemption": "₱5.89",
+      "Refunds against sales": "₱440.00",
+      "Transactions": "633",
+      "Average sale": "₱375.41"
+    },
+    "clipped": false,
+    "other": true,
+    "net": "Net sales: ₱237,633.09",
+    "headline": "₱237,633.09",
+    "columns": 3
+  },
+  {
+    "state": "empty",
+    "width": 390,
+    "dark": false,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱0.00",
+      "Discounts": "₱0.00",
+      "VAT exemption": "₱0.00",
+      "Refunds against sales": "₱0.00",
+      "Transactions": "0",
+      "Average sale": "₱0.00"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱0.00",
+    "headline": "₱0.00",
+    "columns": 2
+  },
+  {
+    "state": "empty",
+    "width": 390,
+    "dark": true,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱0.00",
+      "Discounts": "₱0.00",
+      "VAT exemption": "₱0.00",
+      "Refunds against sales": "₱0.00",
+      "Transactions": "0",
+      "Average sale": "₱0.00"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱0.00",
+    "headline": "₱0.00",
+    "columns": 2
+  },
+  {
+    "state": "empty",
+    "width": 768,
+    "dark": false,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱0.00",
+      "Discounts": "₱0.00",
+      "VAT exemption": "₱0.00",
+      "Refunds against sales": "₱0.00",
+      "Transactions": "0",
+      "Average sale": "₱0.00"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱0.00",
+    "headline": "₱0.00",
+    "columns": 2
+  },
+  {
+    "state": "empty",
+    "width": 768,
+    "dark": true,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱0.00",
+      "Discounts": "₱0.00",
+      "VAT exemption": "₱0.00",
+      "Refunds against sales": "₱0.00",
+      "Transactions": "0",
+      "Average sale": "₱0.00"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱0.00",
+    "headline": "₱0.00",
+    "columns": 2
+  },
+  {
+    "state": "empty",
+    "width": 1440,
+    "dark": false,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱0.00",
+      "Discounts": "₱0.00",
+      "VAT exemption": "₱0.00",
+      "Refunds against sales": "₱0.00",
+      "Transactions": "0",
+      "Average sale": "₱0.00"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱0.00",
+    "headline": "₱0.00",
+    "columns": 3
+  },
+  {
+    "state": "empty",
+    "width": 1440,
+    "dark": true,
+    "overflow": false,
+    "cells": 6,
+    "metrics": {
+      "Original sales": "₱0.00",
+      "Discounts": "₱0.00",
+      "VAT exemption": "₱0.00",
+      "Refunds against sales": "₱0.00",
+      "Transactions": "0",
+      "Average sale": "₱0.00"
+    },
+    "clipped": false,
+    "other": false,
+    "net": "Net sales: ₱0.00",
+    "headline": "₱0.00",
+    "columns": 3
+  }
+]

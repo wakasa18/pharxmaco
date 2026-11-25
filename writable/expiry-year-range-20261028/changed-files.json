@@ -1,0 +1,13 @@
+[
+  "app/Config/InventoryExpiry.php",
+  "app/Libraries/ExpiryDatePolicy.php",
+  "app/Controllers/Products.php",
+  "app/Libraries/ExpiryStockResolution.php",
+  "app/Views/products/create.php",
+  "app/Views/products/edit.php",
+  "app/Views/products/catalog.php",
+  "app/Views/admin/reports/expiry_action.php",
+  "app/Views/partials/expiry_date_field.php",
+  "public/assets/css/expiry-date-field.css",
+  "public/assets/js/expiry-date-field.js"
+]

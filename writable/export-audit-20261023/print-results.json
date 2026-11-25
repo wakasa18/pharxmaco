@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "name": "receipt",
+      "mode": "receipt",
+      "button_invoked": true,
+      "title": "SALES INVOICE — EXPORT-QA-INVOICE",
+      "characters": 882
+    },
+    {
+      "name": "reprint",
+      "mode": "receipt",
+      "button_invoked": true,
+      "title": "SALES INVOICE · REPRINT — EXPORT-QA-INVOICE",
+      "characters": 909
+    },
+    {
+      "name": "refund-slip",
+      "mode": "receipt",
+      "button_invoked": true,
+      "title": "Refund slip — EXPORT-QA-INVOICE",
+      "characters": 604
+    },
+    {
+      "name": "shift",
+      "mode": "summary",
+      "button_invoked": true,
+      "title": "SHIFT-000012 - Closing report",
+      "characters": 1567
+    },
+    {
+      "name": "shift",
+      "mode": "full",
+      "button_invoked": true,
+      "title": "SHIFT-000012 - Closing report",
+      "characters": 1567
+    }
+  ],
+  "errors": []
+}

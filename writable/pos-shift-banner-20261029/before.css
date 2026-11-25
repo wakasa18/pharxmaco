@@ -1,0 +1,7 @@
+.content .pos-shift-notice { display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;margin-bottom:14px; }
+.pos-shift-message { min-width:0;line-height:1.5; }
+.pos-shift-message strong,.pos-shift-message span { display:block; }
+.pos-shift-message span { margin-top:3px;font-size:13px; }
+.pos-shift-notice .pos-shift-action { min-height:44px;max-width:100%;white-space:normal;text-align:center; }
+@media(max-width:520px){.content .pos-shift-notice{grid-template-columns:minmax(0,1fr)}.pos-shift-notice .pos-shift-action{width:100%;}}
+

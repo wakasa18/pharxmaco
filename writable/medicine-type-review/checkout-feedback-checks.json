@@ -1,0 +1,23 @@
+[
+  "Validation does not reload the POS",
+  "Exact server validation message is visible",
+  "Payment, notes and cart are retained",
+  "Checkout and CSRF tokens refresh before retry",
+  "A rejected sale is safe to retry",
+  "Retry uses fresh tokens and double-click submits once",
+  "Successful checkout opens the receipt destination",
+  "Shift closed after page load redirects to Start Shift",
+  "HTTP 502 recovers an already committed sale and opens its receipt",
+  "Unavailable or incomplete status keeps recovery state and blocks resubmission: {\"status\":500,\"result\":{\"ok\":false}}",
+  "Unavailable or incomplete status keeps recovery state and blocks resubmission: {\"status\":200,\"body\":\"invalid JSON\"}",
+  "Unavailable or incomplete status keeps recovery state and blocks resubmission: {\"status\":200,\"result\":{}}",
+  "Unavailable or incomplete status keeps recovery state and blocks resubmission: {\"status\":200,\"result\":{\"ok\":true,\"found\":true}}",
+  "Missing recovery schema cannot release an uncertain payment for retry",
+  "Authoritative repeated not-found results release the same checkout for retry after HTTP 502",
+  "Authoritative repeated not-found results release the same checkout for retry after HTTP 500",
+  "Authoritative repeated not-found results release the same checkout for retry after HTTP 200",
+  "Check Sale Status recovers after a temporary status service failure",
+  "Known closed shift shows a Start Shift action",
+  "Closed-shift action fits a mobile viewport",
+  "Starting a shift preserves edited quantities and reports a failed cart sync"
+]

@@ -1,0 +1,31 @@
+{
+    "source_sha256": "3b0cdaea685a6daa0a3fe184dbe33875efef276abae3fb639ae0def2e473878d",
+    "validation": [
+        "Original backup and product patch imported successfully in an isolated MySQL database.",
+        "Only empty generic names/strengths and the requested VATable product classifications changed; all other values preserved.",
+        "Applying the product patch twice produces the same data.",
+        "Full updated export matches the verified patch exactly.",
+        "All local products marked VATable; historical tables, stock, prices, timestamps and counters preserved."
+    ],
+    "local_applied": true,
+    "row_counts": {
+        "activity_logs": 268,
+        "branch_products": 105,
+        "branches": 2,
+        "categories": 11,
+        "discounts": 2,
+        "forecasting_data": 279,
+        "migrations": 11,
+        "products": 55,
+        "receipt_invoice_sequences": 1,
+        "refund_items": 21,
+        "report_exports": 23,
+        "sale_items": 969,
+        "sales": 472,
+        "stock_logs": 1009,
+        "suppliers": 5,
+        "users": 4
+    },
+    "local_changed_products": 54,
+    "local_vatable_products": 55
+}

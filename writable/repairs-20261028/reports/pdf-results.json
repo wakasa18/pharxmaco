@@ -1,0 +1,24 @@
+[
+  {
+    "file": "full.pdf",
+    "pages": 3,
+    "readable": true,
+    "has_recovered_cost": true,
+    "has_recovered_profit": true,
+    "has_cost_basis": true,
+    "has_full_details": true,
+    "page_bounds_ok": true,
+    "visual_pages_reviewed": 3
+  },
+  {
+    "file": "summary.pdf",
+    "pages": 1,
+    "readable": true,
+    "has_recovered_cost": true,
+    "has_recovered_profit": true,
+    "has_cost_basis": true,
+    "has_full_details": false,
+    "page_bounds_ok": true,
+    "visual_pages_reviewed": 1
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "simulated_http_502": {
+    "pending": "{\"token\":\"c509df762d52f98cf7c8c4426757d88c\",\"createdAt\":1792118488709}",
+    "buttonDisabled": true,
+    "status": "Could not confirm the sale",
+    "requests": [
+      {
+        "url": "http://localhost/pharxmaco/public/cashier/sales/checkout",
+        "method": "POST"
+      },
+      {
+        "url": "http://localhost/pharxmaco/public/cashier/sales/checkout-status?token=c509df762d52f98cf7c8c4426757d88c",
+        "method": "GET"
+      }
+    ]
+  },
+  "vat_rounding": {
+    "chosenPayable": 160.02,
+    "bothPromosPayable": 160.02
+  }
+}

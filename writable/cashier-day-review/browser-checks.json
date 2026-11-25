@@ -1,0 +1,458 @@
+[
+  {
+    "view": "start-shift",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "start-shift",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "start-shift",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "start-shift",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "start-shift",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "start-shift",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "start-shift",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "start-shift",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "start-shift-busy",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "start-shift-busy",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "start-shift-busy",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "start-shift-busy",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "start-shift-busy",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "start-shift-busy",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "start-shift-busy",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "start-shift-busy",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "my-day",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "my-day",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "my-day",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "my-day",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "my-day",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "my-day",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "my-day",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "my-day",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "my-day-start",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "my-day-start",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "my-day-start",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "my-day-start",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "my-day-start",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "my-day-start",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "my-day-start",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "my-day-start",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "shift-open",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "shift-open",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "shift-open",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "shift-open",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "shift-open",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "shift-open",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "shift-open",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "shift-open",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "shift-closed",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "shift-closed",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "shift-closed",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "shift-closed",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "shift-closed",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "shift-closed",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "shift-closed",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "shift-closed",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "manager",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "manager",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "manager",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "manager",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "manager",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "manager",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "manager",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "manager",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "shift-print-closed",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "shift-print-closed",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "shift-print-closed",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "shift-print-closed",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "pos-shift-open",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "pos-shift-open",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "pos-shift-open",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "pos-shift-open",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "pos-shift-open",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "pos-shift-open",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "pos-shift-open",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "pos-shift-open",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "view": "pos-shift-required",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "view": "pos-shift-required",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "view": "pos-shift-required",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "view": "pos-shift-required",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "view": "pos-shift-required",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "view": "pos-shift-required",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "view": "pos-shift-required",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "view": "pos-shift-required",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "datatables": "All four My Day tables initialize with search, length and paging controls"
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "datatables": "Header sorting, negative/large money and refreshed dates sort by their actual values"
+  },
+  {
+    "datatables": "Live refresh preserves each table search, sorting and current page without duplicate toolbars"
+  },
+  {
+    "datatables": "Rows-per-page survives refresh and a shrinking result moves back to an available page"
+  },
+  {
+    "datatables": "Empty/refilled results retain controls and show the correct empty message"
+  },
+  {
+    "datatables": "An initially empty day initializes and receives its first live rows"
+  },
+  {
+    "datatables": "Printable shift report stays a complete ordinary table"
+  },
+  {
+    "opening": "Unavailable drawer cannot be opened and explains the handover wait"
+  },
+  {
+    "opening": "Handover difference requires a reason"
+  },
+  {
+    "closing": "Count differences and cash removal previews; cannot leave more than counted"
+  },
+  {
+    "live": "Totals refresh safely; drawer controls stop when another window closes the shift"
+  },
+  {
+    "print": "Final closing report hides controls for printing"
+  }
+]

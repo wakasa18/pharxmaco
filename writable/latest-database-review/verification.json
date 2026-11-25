@@ -1,0 +1,99 @@
+{
+    "source_sha256": "3a3e54b64fdf2bea5f4f506733da7ce50de4b3aa19fc2047f04974a5248209b5",
+    "upgrade": "C:\\UniServerZ\\www\\pharxmaco\\database\\upgrades\\2026-10-15-latest-existing-database.sql",
+    "upgrade_sha256": "89d0e43150bbfbdf0f40be334a98b1dd9884abe1dcdda03521d10b97f33792f5",
+    "original_counts": {
+        "activity_logs": 242,
+        "branch_products": 104,
+        "branches": 2,
+        "categories": 11,
+        "discounts": 2,
+        "forecasting_data": 446,
+        "migrations": 16,
+        "products": 54,
+        "receipt_invoice_sequences": 0,
+        "refund_items": 16,
+        "report_exports": 27,
+        "sale_items": 1329,
+        "sales": 779,
+        "stock_logs": 1317,
+        "suppliers": 5,
+        "users": 4
+    },
+    "upgraded_counts": {
+        "activity_logs": 242,
+        "branch_products": 116,
+        "branches": 2,
+        "cashier_drawers": 2,
+        "cashier_event_reviews": 0,
+        "cashier_events": 0,
+        "cashier_held_sales": 0,
+        "cashier_shift_actions": 0,
+        "cashier_shift_reviews": 0,
+        "cashier_shifts": 0,
+        "categories": 11,
+        "discounts": 2,
+        "forecasting_data": 446,
+        "migrations": 17,
+        "products": 66,
+        "receipt_invoice_sequences": 0,
+        "refund_items": 16,
+        "report_exports": 27,
+        "sale_items": 1329,
+        "sales": 779,
+        "stock_logs": 1329,
+        "suppliers": 5,
+        "users": 7
+    },
+    "added_migration": "2026_10_15_000014",
+    "created_demo_accounts": [
+        "demo_admin",
+        "demo_cashier1",
+        "demo_cashier2"
+    ],
+    "checks": [
+        "Only the five reviewed product fields changed; every other original product field and every existing sales/invoice field was preserved.",
+        "All 54 source products classified; source prices, stock, timestamps, SKUs and tax classifications preserved.",
+        "Exactly seven cashier tables added; one shared drawer per existing branch.",
+        "Twelve requested demo medicine entries, inventories and clearly labeled stock-in logs added; no sales, shifts or beneficiary history fabricated.",
+        "Three missing demo accounts added without changing any original account.",
+        "Second import left all records unchanged.",
+        "Later closing reports, handovers, reviews, held carts, edited accounts, product classifications and invoice numbering survived reimport.",
+        "Source export unchanged; only an isolated local verification database was used."
+    ],
+    "product_catalog": {
+        "products": 54,
+        "types": {
+            "non_medicine": 15,
+            "branded": 4,
+            "generic": 35
+        },
+        "eligible": 32,
+        "unconfirmed": 14,
+        "not_eligible": 8
+    },
+    "product_upgrade_sha256": "4ea6e0dd0239bd6c7a82425aae79da9c16ed94596c8aa25268cce0f3fe231b88",
+    "case_sensitive_product_guards_verified": true,
+    "benefit_checks": [
+        "Both Senior Citizen and PWD discounts accept the newly classified branded and generic medicines.",
+        "Two selected PHP112 VAT-inclusive lines produce PHP40 discount and PHP24 VAT relief; an unselected line is untouched.",
+        "An ineligible personal care item is rejected for either statutory discount."
+    ],
+    "application_database_modified": false,
+    "branded_seed": {
+        "products_added": 12,
+        "branch_rows_added": 12,
+        "demo_stock_logs_added": 12,
+        "demo_units_added": 600,
+        "branch_id": "1",
+        "sample_expiry": "2027-10-15",
+        "new_product_formulations_prices_and_stock_verified": true,
+        "senior_and_pwd_quotes_verified": true
+    },
+    "branded_seed_sha256": "a202ec119edf54293999fdbd96dc527ddad02c2385fbdd047d073a2416055b73",
+    "branded_scenarios_verified": [
+        "no_active_branch",
+        "deleted_category",
+        "existing_sku_and_name"
+    ]
+}

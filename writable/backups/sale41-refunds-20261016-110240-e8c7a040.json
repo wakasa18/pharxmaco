@@ -1,0 +1,1348 @@
+{
+    "created_at": "2026-10-16T11:02:40+08:00",
+    "database": "pharxmaco_drugstore",
+    "owner_confirmation": "Test records; correct total refunds to PHP 500.00",
+    "before": {
+        "sale": {
+            "id": "41",
+            "invoice_no": "INV-20260617103518-97E5EE",
+            "checkout_token_hash": null,
+            "user_id": "1",
+            "branch_id": "1",
+            "discount_id": "1",
+            "total_amount": "625.00",
+            "discount_amount": "125.00",
+            "final_total": "500.00",
+            "payment_method": "cash",
+            "reference_no": null,
+            "amount_paid": "1000.00",
+            "change_amount": "500.00",
+            "status": "refunded",
+            "notes": "",
+            "sale_date": "2026-06-17 10:35:18",
+            "created_at": "2026-06-17 18:35:18",
+            "updated_at": "2026-06-26 10:47:59",
+            "discount_snapshot": null,
+            "receipt_metadata": null
+        },
+        "items": [
+            {
+                "id": "57",
+                "sale_id": "41",
+                "product_id": "7",
+                "product_name_snapshot": "Neozep Forte",
+                "cost_price_at_sale": "55.00",
+                "quantity": "3",
+                "price": "75.00",
+                "subtotal": "225.00",
+                "discount_applied": "45.00",
+                "profit": "15.00",
+                "created_at": "2026-06-17 18:35:18",
+                "generic_name_snapshot": null,
+                "strength_snapshot": null,
+                "tax_treatment_snapshot": null,
+                "vat_exemption_amount": "0.00",
+                "statutory_discount_kind": null,
+                "stock_delivery_id": null,
+                "expiration_date_at_sale": null
+            },
+            {
+                "id": "58",
+                "sale_id": "41",
+                "product_id": "10",
+                "product_name_snapshot": "Cetirizine 10mg",
+                "cost_price_at_sale": "35.00",
+                "quantity": "4",
+                "price": "50.00",
+                "subtotal": "200.00",
+                "discount_applied": "40.00",
+                "profit": "20.00",
+                "created_at": "2026-06-17 18:35:18",
+                "generic_name_snapshot": null,
+                "strength_snapshot": null,
+                "tax_treatment_snapshot": null,
+                "vat_exemption_amount": "0.00",
+                "statutory_discount_kind": null,
+                "stock_delivery_id": null,
+                "expiration_date_at_sale": null
+            },
+            {
+                "id": "59",
+                "sale_id": "41",
+                "product_id": "12",
+                "product_name_snapshot": "Vitamin C 500mg",
+                "cost_price_at_sale": "150.00",
+                "quantity": "1",
+                "price": "200.00",
+                "subtotal": "200.00",
+                "discount_applied": "40.00",
+                "profit": "10.00",
+                "created_at": "2026-06-17 18:35:18",
+                "generic_name_snapshot": null,
+                "strength_snapshot": null,
+                "tax_treatment_snapshot": null,
+                "vat_exemption_amount": "0.00",
+                "statutory_discount_kind": null,
+                "stock_delivery_id": null,
+                "expiration_date_at_sale": null
+            }
+        ],
+        "refunds": [
+            {
+                "id": "3",
+                "sale_id": "41",
+                "sale_item_id": "58",
+                "product_id": "10",
+                "product_name_snapshot": "Cetirizine 10mg",
+                "quantity_refunded": "2",
+                "price_at_sale": "50.00",
+                "refund_subtotal": "100.00",
+                "refunded_by": "1",
+                "reason": "eaweawdaw",
+                "created_at": "2026-06-17 10:35:40",
+                "return_condition": "resellable",
+                "refund_method": null,
+                "refund_event_id": null
+            },
+            {
+                "id": "4",
+                "sale_id": "41",
+                "sale_item_id": "57",
+                "product_id": "7",
+                "product_name_snapshot": "Neozep Forte",
+                "quantity_refunded": "1",
+                "price_at_sale": "75.00",
+                "refund_subtotal": "75.00",
+                "refunded_by": "1",
+                "reason": "reqwrqwrqwrqw",
+                "created_at": "2026-06-17 10:42:51",
+                "return_condition": "resellable",
+                "refund_method": null,
+                "refund_event_id": null
+            },
+            {
+                "id": "5",
+                "sale_id": "41",
+                "sale_item_id": "57",
+                "product_id": "7",
+                "product_name_snapshot": "Neozep Forte",
+                "quantity_refunded": "1",
+                "price_at_sale": "75.00",
+                "refund_subtotal": "75.00",
+                "refunded_by": "1",
+                "reason": "test",
+                "created_at": "2026-06-17 10:48:39",
+                "return_condition": "resellable",
+                "refund_method": null,
+                "refund_event_id": null
+            },
+            {
+                "id": "6",
+                "sale_id": "41",
+                "sale_item_id": "57",
+                "product_id": "7",
+                "product_name_snapshot": "Neozep Forte",
+                "quantity_refunded": "1",
+                "price_at_sale": "75.00",
+                "refund_subtotal": "75.00",
+                "refunded_by": "1",
+                "reason": "rawrawdaw",
+                "created_at": "2026-06-26 10:47:59",
+                "return_condition": "resellable",
+                "refund_method": null,
+                "refund_event_id": null
+            },
+            {
+                "id": "7",
+                "sale_id": "41",
+                "sale_item_id": "58",
+                "product_id": "10",
+                "product_name_snapshot": "Cetirizine 10mg",
+                "quantity_refunded": "2",
+                "price_at_sale": "50.00",
+                "refund_subtotal": "100.00",
+                "refunded_by": "1",
+                "reason": "rawrawdaw",
+                "created_at": "2026-06-26 10:47:59",
+                "return_condition": "resellable",
+                "refund_method": null,
+                "refund_event_id": null
+            },
+            {
+                "id": "8",
+                "sale_id": "41",
+                "sale_item_id": "59",
+                "product_id": "12",
+                "product_name_snapshot": "Vitamin C 500mg",
+                "quantity_refunded": "1",
+                "price_at_sale": "200.00",
+                "refund_subtotal": "200.00",
+                "refunded_by": "1",
+                "reason": "rawrawdaw",
+                "created_at": "2026-06-26 10:47:59",
+                "return_condition": "resellable",
+                "refund_method": null,
+                "refund_event_id": null
+            }
+        ],
+        "events": [],
+        "product_stock": [
+            {
+                "id": "2",
+                "stock": "99",
+                "updated_at": "2026-04-12 10:18:38"
+            },
+            {
+                "id": "3",
+                "stock": "21",
+                "updated_at": "2026-10-01 21:19:12"
+            },
+            {
+                "id": "4",
+                "stock": "99",
+                "updated_at": "2026-04-12 17:51:00"
+            },
+            {
+                "id": "5",
+                "stock": "92",
+                "updated_at": "2026-03-26 01:13:17"
+            },
+            {
+                "id": "6",
+                "stock": "143",
+                "updated_at": "2026-10-09 10:08:53"
+            },
+            {
+                "id": "7",
+                "stock": "113",
+                "updated_at": "2026-04-12 18:35:26"
+            },
+            {
+                "id": "8",
+                "stock": "79",
+                "updated_at": "2026-08-13 08:18:56"
+            },
+            {
+                "id": "9",
+                "stock": "43",
+                "updated_at": "2026-10-04 09:59:29"
+            },
+            {
+                "id": "10",
+                "stock": "130",
+                "updated_at": "2026-04-12 18:35:26"
+            },
+            {
+                "id": "11",
+                "stock": "90",
+                "updated_at": "2026-04-12 18:35:26"
+            },
+            {
+                "id": "12",
+                "stock": "67",
+                "updated_at": "2026-04-12 18:35:26"
+            },
+            {
+                "id": "13",
+                "stock": "49",
+                "updated_at": "2026-10-01 21:33:16"
+            },
+            {
+                "id": "14",
+                "stock": "82",
+                "updated_at": "2026-04-12 18:35:26"
+            },
+            {
+                "id": "15",
+                "stock": "84",
+                "updated_at": "2026-04-12 18:35:26"
+            },
+            {
+                "id": "16",
+                "stock": "141",
+                "updated_at": "2026-08-02 17:56:02"
+            },
+            {
+                "id": "17",
+                "stock": "80",
+                "updated_at": "2026-08-13 17:33:16"
+            },
+            {
+                "id": "18",
+                "stock": "116",
+                "updated_at": "2026-08-07 17:57:46"
+            },
+            {
+                "id": "19",
+                "stock": "45",
+                "updated_at": "2026-08-11 19:12:25"
+            },
+            {
+                "id": "20",
+                "stock": "43",
+                "updated_at": "2026-08-12 08:19:33"
+            },
+            {
+                "id": "21",
+                "stock": "11",
+                "updated_at": "2026-08-01 09:01:17"
+            },
+            {
+                "id": "22",
+                "stock": "88",
+                "updated_at": "2026-07-24 18:48:44"
+            },
+            {
+                "id": "23",
+                "stock": "63",
+                "updated_at": "2026-08-13 19:17:05"
+            },
+            {
+                "id": "24",
+                "stock": "125",
+                "updated_at": "2026-10-15 11:13:31"
+            },
+            {
+                "id": "25",
+                "stock": "156",
+                "updated_at": "2026-08-11 11:43:05"
+            },
+            {
+                "id": "26",
+                "stock": "139",
+                "updated_at": "2026-08-10 16:22:39"
+            },
+            {
+                "id": "27",
+                "stock": "121",
+                "updated_at": "2026-08-13 08:05:04"
+            },
+            {
+                "id": "28",
+                "stock": "108",
+                "updated_at": "2026-08-01 09:01:17"
+            },
+            {
+                "id": "29",
+                "stock": "86",
+                "updated_at": "2026-08-06 20:45:15"
+            },
+            {
+                "id": "30",
+                "stock": "61",
+                "updated_at": "2026-08-01 15:44:38"
+            },
+            {
+                "id": "31",
+                "stock": "56",
+                "updated_at": "2026-08-06 20:45:15"
+            },
+            {
+                "id": "32",
+                "stock": "4",
+                "updated_at": "2026-07-24 18:48:44"
+            },
+            {
+                "id": "33",
+                "stock": "93",
+                "updated_at": "2026-08-10 16:22:39"
+            },
+            {
+                "id": "34",
+                "stock": "63",
+                "updated_at": "2026-08-06 20:45:15"
+            },
+            {
+                "id": "35",
+                "stock": "107",
+                "updated_at": "2026-07-14 08:02:41"
+            },
+            {
+                "id": "36",
+                "stock": "147",
+                "updated_at": "2026-10-01 08:45:32"
+            },
+            {
+                "id": "37",
+                "stock": "134",
+                "updated_at": "2026-08-06 18:27:04"
+            },
+            {
+                "id": "38",
+                "stock": "169",
+                "updated_at": "2026-10-15 09:38:57"
+            },
+            {
+                "id": "39",
+                "stock": "135",
+                "updated_at": "2026-08-07 14:09:38"
+            },
+            {
+                "id": "40",
+                "stock": "193",
+                "updated_at": "2026-08-11 18:08:39"
+            },
+            {
+                "id": "41",
+                "stock": "67",
+                "updated_at": "2026-08-10 16:22:39"
+            },
+            {
+                "id": "42",
+                "stock": "77",
+                "updated_at": "2026-10-15 11:09:36"
+            },
+            {
+                "id": "43",
+                "stock": "9",
+                "updated_at": "2026-08-08 15:08:05"
+            },
+            {
+                "id": "44",
+                "stock": "74",
+                "updated_at": "2026-10-14 22:43:30"
+            },
+            {
+                "id": "45",
+                "stock": "62",
+                "updated_at": "2026-08-08 15:08:05"
+            },
+            {
+                "id": "46",
+                "stock": "116",
+                "updated_at": "2026-08-06 19:11:44"
+            },
+            {
+                "id": "47",
+                "stock": "119",
+                "updated_at": "2026-10-14 22:43:30"
+            },
+            {
+                "id": "48",
+                "stock": "155",
+                "updated_at": "2026-10-14 21:16:25"
+            },
+            {
+                "id": "49",
+                "stock": "127",
+                "updated_at": "2026-10-01 08:44:55"
+            },
+            {
+                "id": "50",
+                "stock": "100",
+                "updated_at": "2026-10-04 21:32:17"
+            },
+            {
+                "id": "51",
+                "stock": "133",
+                "updated_at": "2026-07-31 08:56:11"
+            },
+            {
+                "id": "52",
+                "stock": "57",
+                "updated_at": "2026-08-06 14:56:21"
+            },
+            {
+                "id": "53",
+                "stock": "105",
+                "updated_at": "2026-09-23 20:18:04"
+            },
+            {
+                "id": "54",
+                "stock": "13",
+                "updated_at": "2026-08-13 19:17:05"
+            },
+            {
+                "id": "55",
+                "stock": "83",
+                "updated_at": "2026-08-06 18:27:04"
+            },
+            {
+                "id": "56",
+                "stock": "30",
+                "updated_at": "2026-10-03 10:27:45"
+            },
+            {
+                "id": "81",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "82",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "83",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "84",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "85",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "86",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "87",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "88",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "89",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "90",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "91",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "92",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            }
+        ],
+        "branch_stock": [
+            {
+                "id": "4",
+                "product_id": "2",
+                "branch_id": "1",
+                "stock": "99",
+                "updated_at": "2026-04-12 10:18:57"
+            },
+            {
+                "id": "5",
+                "product_id": "3",
+                "branch_id": "1",
+                "stock": "21",
+                "updated_at": "2026-10-01 21:22:30"
+            },
+            {
+                "id": "6",
+                "product_id": "4",
+                "branch_id": "1",
+                "stock": "99",
+                "updated_at": "2026-06-17 02:31:05"
+            },
+            {
+                "id": "7",
+                "product_id": "5",
+                "branch_id": "1",
+                "stock": "92",
+                "updated_at": "2026-06-10 09:22:19"
+            },
+            {
+                "id": "113",
+                "product_id": "6",
+                "branch_id": "1",
+                "stock": "98",
+                "updated_at": "2026-06-11 00:42:25"
+            },
+            {
+                "id": "114",
+                "product_id": "7",
+                "branch_id": "1",
+                "stock": "78",
+                "updated_at": "2026-06-26 10:47:59"
+            },
+            {
+                "id": "115",
+                "product_id": "8",
+                "branch_id": "1",
+                "stock": "35",
+                "updated_at": "2026-06-17 02:05:09"
+            },
+            {
+                "id": "116",
+                "product_id": "9",
+                "branch_id": "1",
+                "stock": "28",
+                "updated_at": "2026-10-04 09:59:29"
+            },
+            {
+                "id": "117",
+                "product_id": "10",
+                "branch_id": "1",
+                "stock": "90",
+                "updated_at": "2026-06-26 10:47:59"
+            },
+            {
+                "id": "118",
+                "product_id": "11",
+                "branch_id": "1",
+                "stock": "70",
+                "updated_at": "2026-06-17 10:32:58"
+            },
+            {
+                "id": "119",
+                "product_id": "12",
+                "branch_id": "1",
+                "stock": "49",
+                "updated_at": "2026-06-26 10:47:59"
+            },
+            {
+                "id": "120",
+                "product_id": "13",
+                "branch_id": "1",
+                "stock": "9",
+                "updated_at": "2026-08-13 08:06:08"
+            },
+            {
+                "id": "121",
+                "product_id": "14",
+                "branch_id": "1",
+                "stock": "65",
+                "updated_at": "2026-04-12 18:48:31"
+            },
+            {
+                "id": "122",
+                "product_id": "15",
+                "branch_id": "1",
+                "stock": "54",
+                "updated_at": "2026-04-19 12:04:59"
+            },
+            {
+                "id": "123",
+                "product_id": "6",
+                "branch_id": "3",
+                "stock": "45",
+                "updated_at": "2026-10-09 10:08:53"
+            },
+            {
+                "id": "124",
+                "product_id": "7",
+                "branch_id": "3",
+                "stock": "35",
+                "updated_at": "2026-04-12 18:48:31"
+            },
+            {
+                "id": "125",
+                "product_id": "8",
+                "branch_id": "3",
+                "stock": "44",
+                "updated_at": "2026-04-19 15:52:30"
+            },
+            {
+                "id": "126",
+                "product_id": "9",
+                "branch_id": "3",
+                "stock": "15",
+                "updated_at": "2026-04-12 18:48:31"
+            },
+            {
+                "id": "127",
+                "product_id": "10",
+                "branch_id": "3",
+                "stock": "40",
+                "updated_at": "2026-04-12 18:48:31"
+            },
+            {
+                "id": "128",
+                "product_id": "11",
+                "branch_id": "3",
+                "stock": "20",
+                "updated_at": "2026-04-12 18:48:31"
+            },
+            {
+                "id": "129",
+                "product_id": "12",
+                "branch_id": "3",
+                "stock": "18",
+                "updated_at": "2026-04-12 18:48:31"
+            },
+            {
+                "id": "130",
+                "product_id": "13",
+                "branch_id": "3",
+                "stock": "40",
+                "updated_at": "2026-10-01 21:33:16"
+            },
+            {
+                "id": "131",
+                "product_id": "14",
+                "branch_id": "3",
+                "stock": "17",
+                "updated_at": "2026-04-19 09:26:22"
+            },
+            {
+                "id": "132",
+                "product_id": "15",
+                "branch_id": "3",
+                "stock": "30",
+                "updated_at": "2026-04-12 18:48:31"
+            },
+            {
+                "id": "133",
+                "product_id": "16",
+                "branch_id": "1",
+                "stock": "70",
+                "updated_at": "2026-08-02 17:56:02"
+            },
+            {
+                "id": "134",
+                "product_id": "17",
+                "branch_id": "1",
+                "stock": "48",
+                "updated_at": "2026-08-13 17:33:16"
+            },
+            {
+                "id": "135",
+                "product_id": "18",
+                "branch_id": "1",
+                "stock": "74",
+                "updated_at": "2026-08-07 17:57:46"
+            },
+            {
+                "id": "136",
+                "product_id": "19",
+                "branch_id": "1",
+                "stock": "45",
+                "updated_at": "2026-08-11 19:12:25"
+            },
+            {
+                "id": "137",
+                "product_id": "20",
+                "branch_id": "1",
+                "stock": "34",
+                "updated_at": "2026-08-12 08:19:33"
+            },
+            {
+                "id": "138",
+                "product_id": "21",
+                "branch_id": "1",
+                "stock": "0",
+                "updated_at": "2026-08-01 09:01:17"
+            },
+            {
+                "id": "139",
+                "product_id": "22",
+                "branch_id": "1",
+                "stock": "5",
+                "updated_at": "2026-07-24 18:48:44"
+            },
+            {
+                "id": "140",
+                "product_id": "23",
+                "branch_id": "1",
+                "stock": "7",
+                "updated_at": "2026-08-13 19:17:05"
+            },
+            {
+                "id": "141",
+                "product_id": "24",
+                "branch_id": "1",
+                "stock": "42",
+                "updated_at": "2026-10-15 11:13:31"
+            },
+            {
+                "id": "142",
+                "product_id": "25",
+                "branch_id": "1",
+                "stock": "90",
+                "updated_at": "2026-08-11 11:43:05"
+            },
+            {
+                "id": "143",
+                "product_id": "26",
+                "branch_id": "1",
+                "stock": "80",
+                "updated_at": "2026-08-10 16:22:39"
+            },
+            {
+                "id": "144",
+                "product_id": "27",
+                "branch_id": "1",
+                "stock": "54",
+                "updated_at": "2026-08-13 08:05:04"
+            },
+            {
+                "id": "145",
+                "product_id": "28",
+                "branch_id": "1",
+                "stock": "44",
+                "updated_at": "2026-08-01 09:01:17"
+            },
+            {
+                "id": "146",
+                "product_id": "29",
+                "branch_id": "1",
+                "stock": "45",
+                "updated_at": "2026-07-19 09:18:59"
+            },
+            {
+                "id": "147",
+                "product_id": "30",
+                "branch_id": "1",
+                "stock": "61",
+                "updated_at": "2026-08-01 15:44:38"
+            },
+            {
+                "id": "148",
+                "product_id": "31",
+                "branch_id": "1",
+                "stock": "51",
+                "updated_at": "2026-08-03 08:17:48"
+            },
+            {
+                "id": "149",
+                "product_id": "32",
+                "branch_id": "1",
+                "stock": "0",
+                "updated_at": "2026-07-24 18:48:44"
+            },
+            {
+                "id": "150",
+                "product_id": "33",
+                "branch_id": "1",
+                "stock": "9",
+                "updated_at": "2026-08-10 16:22:39"
+            },
+            {
+                "id": "151",
+                "product_id": "34",
+                "branch_id": "1",
+                "stock": "6",
+                "updated_at": "2026-08-02 17:56:02"
+            },
+            {
+                "id": "152",
+                "product_id": "35",
+                "branch_id": "1",
+                "stock": "62",
+                "updated_at": "2026-07-14 08:02:41"
+            },
+            {
+                "id": "153",
+                "product_id": "36",
+                "branch_id": "1",
+                "stock": "73",
+                "updated_at": "2026-10-01 08:45:32"
+            },
+            {
+                "id": "154",
+                "product_id": "37",
+                "branch_id": "1",
+                "stock": "87",
+                "updated_at": "2026-07-30 13:31:06"
+            },
+            {
+                "id": "155",
+                "product_id": "38",
+                "branch_id": "1",
+                "stock": "79",
+                "updated_at": "2026-10-15 09:38:57"
+            },
+            {
+                "id": "156",
+                "product_id": "39",
+                "branch_id": "1",
+                "stock": "62",
+                "updated_at": "2026-07-10 11:14:28"
+            },
+            {
+                "id": "157",
+                "product_id": "40",
+                "branch_id": "1",
+                "stock": "92",
+                "updated_at": "2026-08-11 18:08:39"
+            },
+            {
+                "id": "158",
+                "product_id": "41",
+                "branch_id": "1",
+                "stock": "67",
+                "updated_at": "2026-08-10 16:22:39"
+            },
+            {
+                "id": "159",
+                "product_id": "42",
+                "branch_id": "1",
+                "stock": "73",
+                "updated_at": "2026-10-15 11:09:36"
+            },
+            {
+                "id": "160",
+                "product_id": "43",
+                "branch_id": "1",
+                "stock": "0",
+                "updated_at": "2026-08-08 15:08:05"
+            },
+            {
+                "id": "161",
+                "product_id": "44",
+                "branch_id": "1",
+                "stock": "28",
+                "updated_at": "2026-10-14 22:43:30"
+            },
+            {
+                "id": "162",
+                "product_id": "45",
+                "branch_id": "1",
+                "stock": "12",
+                "updated_at": "2026-08-08 15:08:05"
+            },
+            {
+                "id": "163",
+                "product_id": "46",
+                "branch_id": "1",
+                "stock": "53",
+                "updated_at": "2026-07-25 12:06:37"
+            },
+            {
+                "id": "164",
+                "product_id": "47",
+                "branch_id": "1",
+                "stock": "47",
+                "updated_at": "2026-10-14 22:43:30"
+            },
+            {
+                "id": "165",
+                "product_id": "48",
+                "branch_id": "1",
+                "stock": "73",
+                "updated_at": "2026-10-14 21:16:25"
+            },
+            {
+                "id": "166",
+                "product_id": "49",
+                "branch_id": "1",
+                "stock": "85",
+                "updated_at": "2026-10-01 08:44:55"
+            },
+            {
+                "id": "167",
+                "product_id": "50",
+                "branch_id": "1",
+                "stock": "62",
+                "updated_at": "2026-10-04 21:32:17"
+            },
+            {
+                "id": "168",
+                "product_id": "51",
+                "branch_id": "1",
+                "stock": "34",
+                "updated_at": "2026-07-31 08:56:11"
+            },
+            {
+                "id": "169",
+                "product_id": "52",
+                "branch_id": "1",
+                "stock": "57",
+                "updated_at": "2026-07-08 20:04:18"
+            },
+            {
+                "id": "170",
+                "product_id": "53",
+                "branch_id": "1",
+                "stock": "90",
+                "updated_at": "2026-09-23 20:18:04"
+            },
+            {
+                "id": "171",
+                "product_id": "54",
+                "branch_id": "1",
+                "stock": "0",
+                "updated_at": "2026-08-13 19:17:05"
+            },
+            {
+                "id": "172",
+                "product_id": "55",
+                "branch_id": "1",
+                "stock": "3",
+                "updated_at": "2026-07-22 15:10:59"
+            },
+            {
+                "id": "173",
+                "product_id": "16",
+                "branch_id": "3",
+                "stock": "71",
+                "updated_at": "2026-03-23 08:19:37"
+            },
+            {
+                "id": "174",
+                "product_id": "17",
+                "branch_id": "3",
+                "stock": "32",
+                "updated_at": "2026-08-07 14:09:38"
+            },
+            {
+                "id": "175",
+                "product_id": "18",
+                "branch_id": "3",
+                "stock": "42",
+                "updated_at": "2026-07-17 18:59:45"
+            },
+            {
+                "id": "176",
+                "product_id": "19",
+                "branch_id": "3",
+                "stock": "0",
+                "updated_at": "2026-08-06 18:27:04"
+            },
+            {
+                "id": "177",
+                "product_id": "20",
+                "branch_id": "3",
+                "stock": "9",
+                "updated_at": "2026-07-22 17:10:24"
+            },
+            {
+                "id": "178",
+                "product_id": "21",
+                "branch_id": "3",
+                "stock": "11",
+                "updated_at": "2026-04-26 10:26:08"
+            },
+            {
+                "id": "179",
+                "product_id": "22",
+                "branch_id": "3",
+                "stock": "83",
+                "updated_at": "2026-06-22 12:51:03"
+            },
+            {
+                "id": "180",
+                "product_id": "23",
+                "branch_id": "3",
+                "stock": "56",
+                "updated_at": "2026-05-10 19:21:06"
+            },
+            {
+                "id": "181",
+                "product_id": "24",
+                "branch_id": "3",
+                "stock": "83",
+                "updated_at": "2026-04-05 10:23:31"
+            },
+            {
+                "id": "182",
+                "product_id": "25",
+                "branch_id": "3",
+                "stock": "66",
+                "updated_at": "2026-08-08 16:01:23"
+            },
+            {
+                "id": "183",
+                "product_id": "26",
+                "branch_id": "3",
+                "stock": "59",
+                "updated_at": "2026-05-09 10:07:56"
+            },
+            {
+                "id": "184",
+                "product_id": "27",
+                "branch_id": "3",
+                "stock": "67",
+                "updated_at": "2026-08-06 19:11:44"
+            },
+            {
+                "id": "185",
+                "product_id": "28",
+                "branch_id": "3",
+                "stock": "64",
+                "updated_at": "2026-07-25 19:47:09"
+            },
+            {
+                "id": "186",
+                "product_id": "29",
+                "branch_id": "3",
+                "stock": "41",
+                "updated_at": "2026-08-06 20:45:15"
+            },
+            {
+                "id": "187",
+                "product_id": "30",
+                "branch_id": "3",
+                "stock": "0",
+                "updated_at": "2026-06-17 09:53:17"
+            },
+            {
+                "id": "188",
+                "product_id": "31",
+                "branch_id": "3",
+                "stock": "5",
+                "updated_at": "2026-08-06 20:45:15"
+            },
+            {
+                "id": "189",
+                "product_id": "32",
+                "branch_id": "3",
+                "stock": "4",
+                "updated_at": "2026-04-20 20:45:05"
+            },
+            {
+                "id": "190",
+                "product_id": "33",
+                "branch_id": "3",
+                "stock": "84",
+                "updated_at": "2026-07-17 18:59:45"
+            },
+            {
+                "id": "191",
+                "product_id": "34",
+                "branch_id": "3",
+                "stock": "57",
+                "updated_at": "2026-08-06 20:45:15"
+            },
+            {
+                "id": "192",
+                "product_id": "35",
+                "branch_id": "3",
+                "stock": "45",
+                "updated_at": "2026-04-20 20:45:05"
+            },
+            {
+                "id": "193",
+                "product_id": "36",
+                "branch_id": "3",
+                "stock": "74",
+                "updated_at": "2026-07-04 18:33:16"
+            },
+            {
+                "id": "194",
+                "product_id": "37",
+                "branch_id": "3",
+                "stock": "47",
+                "updated_at": "2026-08-06 18:27:04"
+            },
+            {
+                "id": "195",
+                "product_id": "38",
+                "branch_id": "3",
+                "stock": "90",
+                "updated_at": "2026-08-08 16:01:23"
+            },
+            {
+                "id": "196",
+                "product_id": "39",
+                "branch_id": "3",
+                "stock": "73",
+                "updated_at": "2026-08-07 14:09:38"
+            },
+            {
+                "id": "197",
+                "product_id": "40",
+                "branch_id": "3",
+                "stock": "101",
+                "updated_at": "2026-04-04 19:04:09"
+            },
+            {
+                "id": "198",
+                "product_id": "41",
+                "branch_id": "3",
+                "stock": "0",
+                "updated_at": "2026-07-25 19:47:09"
+            },
+            {
+                "id": "199",
+                "product_id": "42",
+                "branch_id": "3",
+                "stock": "4",
+                "updated_at": "2026-08-06 14:56:21"
+            },
+            {
+                "id": "200",
+                "product_id": "43",
+                "branch_id": "3",
+                "stock": "9",
+                "updated_at": "2026-06-14 16:35:13"
+            },
+            {
+                "id": "201",
+                "product_id": "44",
+                "branch_id": "3",
+                "stock": "46",
+                "updated_at": "2026-07-15 10:54:45"
+            },
+            {
+                "id": "202",
+                "product_id": "45",
+                "branch_id": "3",
+                "stock": "50",
+                "updated_at": "2026-04-24 11:41:39"
+            },
+            {
+                "id": "203",
+                "product_id": "46",
+                "branch_id": "3",
+                "stock": "63",
+                "updated_at": "2026-08-06 19:11:44"
+            },
+            {
+                "id": "204",
+                "product_id": "47",
+                "branch_id": "3",
+                "stock": "72",
+                "updated_at": "2026-08-10 14:53:11"
+            },
+            {
+                "id": "205",
+                "product_id": "48",
+                "branch_id": "3",
+                "stock": "82",
+                "updated_at": "2026-07-25 19:47:09"
+            },
+            {
+                "id": "206",
+                "product_id": "49",
+                "branch_id": "3",
+                "stock": "42",
+                "updated_at": "2026-07-17 19:00:29"
+            },
+            {
+                "id": "207",
+                "product_id": "50",
+                "branch_id": "3",
+                "stock": "38",
+                "updated_at": "2026-08-06 18:27:04"
+            },
+            {
+                "id": "208",
+                "product_id": "51",
+                "branch_id": "3",
+                "stock": "99",
+                "updated_at": "2026-04-26 10:26:08"
+            },
+            {
+                "id": "209",
+                "product_id": "52",
+                "branch_id": "3",
+                "stock": "0",
+                "updated_at": "2026-08-06 14:56:21"
+            },
+            {
+                "id": "210",
+                "product_id": "53",
+                "branch_id": "3",
+                "stock": "15",
+                "updated_at": "2026-05-03 20:23:00"
+            },
+            {
+                "id": "211",
+                "product_id": "54",
+                "branch_id": "3",
+                "stock": "13",
+                "updated_at": "2026-08-06 20:45:15"
+            },
+            {
+                "id": "212",
+                "product_id": "55",
+                "branch_id": "3",
+                "stock": "80",
+                "updated_at": "2026-08-06 18:27:04"
+            },
+            {
+                "id": "213",
+                "product_id": "56",
+                "branch_id": "3",
+                "stock": "30",
+                "updated_at": "2026-10-03 10:27:45"
+            },
+            {
+                "id": "214",
+                "product_id": "81",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "215",
+                "product_id": "82",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "216",
+                "product_id": "83",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "217",
+                "product_id": "84",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "218",
+                "product_id": "85",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "219",
+                "product_id": "86",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "220",
+                "product_id": "87",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "221",
+                "product_id": "88",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "222",
+                "product_id": "89",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "223",
+                "product_id": "90",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "224",
+                "product_id": "91",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            },
+            {
+                "id": "225",
+                "product_id": "92",
+                "branch_id": "1",
+                "stock": "50",
+                "updated_at": "2026-10-15 19:06:13"
+            }
+        ]
+    }
+}

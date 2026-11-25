@@ -1,0 +1,217 @@
+/* Themed calendar popup for <input type="date">.
+ * The native input stays in place (typing, min/max, validation, ISO value for the server);
+ * date-picker.js only replaces the browser's own popup. Everything here is scoped to
+ * html.has-date-picker, which the script sets only in browsers where the enhancement runs. */
+
+/* ---------- The field itself ------------------------------------------------ */
+html.has-date-picker input[type="date"] {
+    position: relative;
+    font-variant-numeric: tabular-nums;
+    padding-right: 6px;
+}
+html.has-date-picker input[type="date"]::-webkit-datetime-edit { padding: 0; }
+html.has-date-picker input[type="date"]::-webkit-datetime-edit-fields-wrapper { padding: 0; }
+
+/* Segment being typed in: brand colour instead of the browser's default blue block. */
+html.has-date-picker input[type="date"]::-webkit-datetime-edit-month-field:focus,
+html.has-date-picker input[type="date"]::-webkit-datetime-edit-day-field:focus,
+html.has-date-picker input[type="date"]::-webkit-datetime-edit-year-field:focus {
+    background: var(--primary-light, #ebeeff);
+    color: var(--primary, #3452f4);
+    border-radius: 5px;
+    outline: none;
+}
+html.has-date-picker input[type="date"]::-webkit-datetime-edit-text { color: var(--muted, #667089); padding: 0 1px; }
+
+/* Calendar icon: recoloured with the theme (works in dark mode) and given a hover chip. */
+html.has-date-picker input[type="date"]::-webkit-calendar-picker-indicator {
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    margin: 0 0 0 4px;
+    padding: 0;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 8px;
+    background: none;
+    background-color: var(--muted, #667089);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.5' y='5' width='17' height='15.5' rx='3'/%3E%3Cpath d='M3.5 10h17M8 3v4M16 3v4'/%3E%3C/svg%3E") center / 17px 17px no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.5' y='5' width='17' height='15.5' rx='3'/%3E%3Cpath d='M3.5 10h17M8 3v4M16 3v4'/%3E%3C/svg%3E") center / 17px 17px no-repeat;
+    transition: background-color .15s ease;
+}
+html.has-date-picker input[type="date"]:hover::-webkit-calendar-picker-indicator,
+html.has-date-picker input[type="date"]:focus::-webkit-calendar-picker-indicator,
+html.has-date-picker input[type="date"].dp-open::-webkit-calendar-picker-indicator {
+    background-color: var(--primary, #3452f4);
+}
+html.has-date-picker input[type="date"].dp-open {
+    border-color: var(--primary, #3452f4);
+    box-shadow: 0 0 0 4px var(--primary-light, #ebeeff);
+}
+html.has-date-picker input[type="date"]:disabled::-webkit-calendar-picker-indicator {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+/* ---------- The popup ------------------------------------------------------- */
+.dp {
+    --dp-cell: 36px;
+    position: fixed;
+    z-index: 1200;
+    box-sizing: border-box;
+    width: 292px;
+    max-width: calc(100vw - 16px);
+    padding: 12px;
+    border: 1px solid var(--line-2, var(--line, #e7e9f1));
+    border-radius: 16px;
+    background: var(--surface, #fff);
+    color: var(--text, #0c1226);
+    box-shadow: var(--shadow-md, 0 14px 36px -12px rgba(12, 18, 38, .24)), 0 0 0 1px rgba(12, 18, 38, .02);
+    font: 500 13px/1.2 var(--font, 'Inter', system-ui, sans-serif);
+    user-select: none;
+    -webkit-user-select: none;
+    transform-origin: var(--dp-origin, top left);
+    animation: dp-in .14s cubic-bezier(.2, .8, .2, 1);
+}
+.dp[hidden] { display: none; }
+html.reduce-motion .dp { animation: none; }
+@media (prefers-reduced-motion: reduce) { .dp { animation: none; } }
+@keyframes dp-in {
+    from { opacity: 0; transform: translateY(var(--dp-shift, -4px)) scale(.97); }
+    to   { opacity: 1; transform: none; }
+}
+.dp *, .dp *::before, .dp *::after { box-sizing: border-box; }
+.dp button {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.dp button:focus-visible {
+    outline: 2px solid var(--primary, #3452f4);
+    outline-offset: 1px;
+}
+
+/* Header */
+.dp-head { display: flex; align-items: center; gap: 4px; margin-bottom: 10px; }
+.dp-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 9px;
+    font-family: var(--heading-font, inherit);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -.005em;
+    justify-content: flex-start;
+    transition: background-color .12s ease;
+}
+.dp-title svg { width: 14px; height: 14px; color: var(--muted, #667089); transition: transform .15s ease; }
+.dp-title[aria-expanded="true"] svg { transform: rotate(180deg); }
+.dp-title:hover { background: var(--primary-lighter, #f5f6ff); }
+.dp-nav {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    color: var(--text-2, var(--muted, #667089));
+    transition: background-color .12s ease, color .12s ease;
+}
+.dp-nav svg { width: 16px; height: 16px; }
+.dp-nav:hover:not(:disabled) { background: var(--primary-light, #ebeeff); color: var(--primary, #3452f4); }
+.dp-nav:disabled { opacity: .3; cursor: not-allowed; }
+
+/* Body (fixed height so the popup does not jump between day / month / year views) */
+.dp-body { height: calc(var(--dp-cell) * 7 + 4px); }
+.dp-week, .dp-row { display: grid; grid-template-columns: repeat(7, 1fr); }
+.dp-wd {
+    display: grid;
+    place-items: center;
+    height: var(--dp-cell);
+    color: var(--muted, #667089);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+.dp-day {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: var(--dp-cell);
+    border-radius: 10px;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+    transition: background-color .1s ease, color .1s ease;
+}
+.dp-day.is-out { color: var(--muted, #667089); opacity: .55; }
+.dp-day:hover:not(:disabled):not(.is-selected) { background: var(--primary-light, #ebeeff); color: var(--primary, #3452f4); opacity: 1; }
+.dp-day.is-today:not(.is-selected) { color: var(--primary, #3452f4); font-weight: 700; box-shadow: inset 0 0 0 1.5px var(--primary, #3452f4); }
+.dp-day.is-selected {
+    background: var(--primary, #3452f4);
+    color: var(--on-primary, #fff);
+    font-weight: 700;
+    opacity: 1;
+    box-shadow: 0 6px 12px -6px var(--primary-shadow, rgba(52, 82, 244, .45));
+}
+.dp-day:disabled { opacity: .28; cursor: not-allowed; }
+
+/* Month / year pickers */
+.dp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: calc(var(--dp-cell) * 7 / 4);
+    gap: 4px;
+    height: 100%;
+}
+.dp-cell {
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color .1s ease, color .1s ease;
+}
+.dp-cell:hover:not(:disabled):not(.is-selected) { background: var(--primary-light, #ebeeff); color: var(--primary, #3452f4); }
+.dp-cell.is-today:not(.is-selected) { color: var(--primary, #3452f4); box-shadow: inset 0 0 0 1.5px var(--primary, #3452f4); }
+.dp-cell.is-selected { background: var(--primary, #3452f4); color: var(--on-primary, #fff); }
+.dp-cell:disabled { opacity: .28; cursor: not-allowed; }
+
+/* Footer */
+.dp-foot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--line, #e7e9f1);
+}
+.dp-link {
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 8px;
+    color: var(--primary, #3452f4);
+    font-weight: 600;
+    transition: background-color .12s ease;
+}
+.dp-link:hover:not(:disabled) { background: var(--primary-light, #ebeeff); }
+.dp-link:disabled { opacity: .35; cursor: not-allowed; }
+.dp-link.is-muted { color: var(--muted, #667089); }
+
+/* Roomier controls when the user turned on "large controls" in interface settings. */
+html.large-controls .dp { --dp-cell: 40px; width: 320px; font-size: 14px; }
+
+@media (max-width: 380px) {
+    .dp { --dp-cell: 34px; padding: 10px; }
+}

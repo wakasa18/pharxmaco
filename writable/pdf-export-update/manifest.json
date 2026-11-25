@@ -1,0 +1,100 @@
+[
+    {
+        "name": "sales-daily",
+        "pages": 3,
+        "bytes": 33045,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-weekly",
+        "pages": 3,
+        "bytes": 33131,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-monthly",
+        "pages": 3,
+        "bytes": 32796,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-empty",
+        "pages": 1,
+        "bytes": 24012,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-long",
+        "pages": 7,
+        "bytes": 44438,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "expiry-normal",
+        "pages": 2,
+        "bytes": 28359,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "expiry-empty",
+        "pages": 1,
+        "bytes": 21643,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "expiry-long",
+        "pages": 5,
+        "bytes": 39688,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "stock-normal",
+        "pages": 1,
+        "bytes": 26017,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "stock-empty",
+        "pages": 1,
+        "bytes": 22370,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "stock-long",
+        "pages": 7,
+        "bytes": 41384,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-summary",
+        "pages": 1,
+        "bytes": 24421,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-long-summary",
+        "pages": 1,
+        "bytes": 24945,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    },
+    {
+        "name": "sales-legacy-adjustment",
+        "pages": 3,
+        "bytes": 33407,
+        "width_pt": 841.89,
+        "height_pt": 595.28
+    }
+]

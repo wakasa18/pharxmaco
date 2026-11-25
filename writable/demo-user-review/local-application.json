@@ -1,0 +1,12 @@
+{
+    "database": "pharxmaco_drugstore",
+    "created": [
+        "demo_admin",
+        "demo_cashier1",
+        "demo_cashier2"
+    ],
+    "existing_users_preserved": 4,
+    "other_application_records_preserved": true,
+    "reimport_unchanged": true,
+    "sql_sha256": "a9f45565318ed4b24c8bdae06b1cbafae9f8c85a7c62b910ae3443d544ac8bb9"
+}

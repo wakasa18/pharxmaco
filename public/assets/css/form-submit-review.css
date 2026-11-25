@@ -1,0 +1,13 @@
+.submit-review-context { margin:0 0 12px; color:var(--text-2); font-size:13px; overflow-wrap:anywhere; }
+.submit-review-count { margin:0 0 16px; color:var(--text); font-size:14px; font-weight:700; }
+.submit-review-empty { margin:0; color:var(--muted); line-height:1.6; }
+.submit-review-change { padding:16px 0; border-top:1px solid var(--line); }
+.submit-review-change h3 { margin:0 0 10px; font-size:13px; line-height:1.5; color:var(--text); }
+.submit-review-change dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 24px; margin:0; }
+.submit-review-change dl > div { min-width:0; }
+.submit-review-change dt { margin-bottom:4px; font-size:12px; color:var(--muted); }
+.submit-review-change dd { margin:0; font-size:14px; color:var(--text); font-variant-numeric:tabular-nums; overflow-wrap:anywhere; white-space:pre-wrap; }
+.submit-review-change[data-review-new] dl { grid-template-columns:minmax(0,1fr); }
+.submit-review-note { margin-top:16px; padding-top:16px; border-top:1px solid var(--line); color:var(--text-2); font-size:13px; line-height:1.6; white-space:pre-wrap; overflow-wrap:anywhere; }
+.product-review-body [hidden] { display:none !important; }
+@media(max-width:600px) { .submit-review-change dl { grid-template-columns:minmax(0,1fr); gap:12px; } }

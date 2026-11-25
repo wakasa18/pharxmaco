@@ -1,0 +1,25 @@
+{
+    "checks": [
+        "phpMyAdmin import preserves every existing business record",
+        "Repeat import changes no existing rows or migration registrations",
+        "Native migration safely follows the manual import",
+        "Three restrictive audit foreign keys are enforced",
+        "Migration 000018 recorded once",
+        "Real MySQL release commits stock and inspection",
+        "Retried release returns already recorded",
+        "Released units added exactly once to the original branch",
+        "Original refund and sale amounts\/condition unchanged",
+        "Master stock matches branch balances",
+        "damaged disposition does not deduct stock again",
+        "expired disposition does not deduct stock again",
+        "MySQL audit failure rolls back stock, log and resolution atomically",
+        "Four simultaneous inspectors produce one outcome and one stock increment",
+        "Unique return constraint retains one durable resolution",
+        "Upgrade reimport preserves completed inspections and all stock logs",
+        "Fresh native migration creates and repeats with matching parent key types",
+        "Manual import also follows a fresh native migration"
+    ],
+    "source_business_records_preserved": true,
+    "source_database_written": false,
+    "concurrent_inspectors": 4
+}

@@ -1,0 +1,321 @@
+{
+    "database": "pharxmaco_drugstore",
+    "read_only": true,
+    "audited_on": "2026-10-15",
+    "counts": [
+        {
+            "products": "67",
+            "branch_inventory_rows": "117",
+            "sales": "477",
+            "sale_items": "975"
+        }
+    ],
+    "negative_stock": [
+        {
+            "count": "0"
+        }
+    ],
+    "master_stock_mismatches": [
+        {
+            "count": "9"
+        }
+    ],
+    "master_stock_mismatch_details": [
+        {
+            "id": "2",
+            "product_name": "Erceflora (variant unrecorded)",
+            "master_stock": "16",
+            "branch_sum": "99"
+        },
+        {
+            "id": "4",
+            "product_name": "Erceflora (variant unrecorded)",
+            "master_stock": "100",
+            "branch_sum": "99"
+        },
+        {
+            "id": "7",
+            "product_name": "Neozep Forte tablet",
+            "master_stock": "80",
+            "branch_sum": "113"
+        },
+        {
+            "id": "8",
+            "product_name": "Alaxan FR 200 mg \/ 325 mg capsule",
+            "master_stock": "35",
+            "branch_sum": "79"
+        },
+        {
+            "id": "10",
+            "product_name": "Cetirizine 10 mg",
+            "master_stock": "90",
+            "branch_sum": "130"
+        },
+        {
+            "id": "11",
+            "product_name": "Amoxicillin 500 mg",
+            "master_stock": "70",
+            "branch_sum": "90"
+        },
+        {
+            "id": "12",
+            "product_name": "Vitamin C 500 mg",
+            "master_stock": "50",
+            "branch_sum": "67"
+        },
+        {
+            "id": "14",
+            "product_name": "Loperamide 2 mg",
+            "master_stock": "65",
+            "branch_sum": "82"
+        },
+        {
+            "id": "15",
+            "product_name": "Mefenamic acid 500 mg",
+            "master_stock": "55",
+            "branch_sum": "84"
+        }
+    ],
+    "duplicate_inventory_pairs": [
+        {
+            "count": "0"
+        }
+    ],
+    "orphan_sale_items": [
+        {
+            "count": "0"
+        }
+    ],
+    "duplicate_invoices": [
+        {
+            "count": "0"
+        }
+    ],
+    "invoice_total_mismatches": [
+        {
+            "count": "0"
+        }
+    ],
+    "refund_quantity_or_value_overages": [
+        {
+            "count": "3"
+        }
+    ],
+    "refund_overage_details": [
+        {
+            "sale_item_id": "57",
+            "sale_id": "41",
+            "sold_quantity": "3",
+            "refunded_quantity": "3",
+            "net_item_amount": "180.00",
+            "refunded_amount": "225.00"
+        },
+        {
+            "sale_item_id": "58",
+            "sale_id": "41",
+            "sold_quantity": "4",
+            "refunded_quantity": "4",
+            "net_item_amount": "160.00",
+            "refunded_amount": "200.00"
+        },
+        {
+            "sale_item_id": "59",
+            "sale_id": "41",
+            "sold_quantity": "1",
+            "refunded_quantity": "1",
+            "net_item_amount": "160.00",
+            "refunded_amount": "200.00"
+        }
+    ],
+    "settlement_mismatches": [
+        {
+            "count": "0"
+        }
+    ],
+    "noncash_missing_reference": [
+        {
+            "count": "59"
+        }
+    ],
+    "noncash_with_change": [
+        {
+            "count": "10"
+        }
+    ],
+    "sale_items_without_delivery_snapshot": [
+        {
+            "count": "975"
+        }
+    ],
+    "stock_without_delivery_id": [
+        {
+            "count": "97"
+        }
+    ],
+    "active_stock_unknown_expiry": [
+        {
+            "count": "0"
+        }
+    ],
+    "classification": [
+        {
+            "medicine_type": "non_medicine",
+            "tax_treatment": "taxable",
+            "senior_pwd_eligible": null,
+            "count": "6"
+        },
+        {
+            "medicine_type": "non_medicine",
+            "tax_treatment": "taxable",
+            "senior_pwd_eligible": "0",
+            "count": "9"
+        },
+        {
+            "medicine_type": "branded",
+            "tax_treatment": "taxable",
+            "senior_pwd_eligible": "1",
+            "count": "16"
+        },
+        {
+            "medicine_type": "generic",
+            "tax_treatment": "taxable",
+            "senior_pwd_eligible": "1",
+            "count": "27"
+        },
+        {
+            "medicine_type": "generic",
+            "tax_treatment": "taxable",
+            "senior_pwd_eligible": null,
+            "count": "8"
+        },
+        {
+            "medicine_type": "non_medicine",
+            "tax_treatment": "taxable",
+            "senior_pwd_eligible": "1",
+            "count": "1"
+        }
+    ],
+    "migration_versions": [
+        {
+            "version": "2026_06_17_000001"
+        },
+        {
+            "version": "2026_08_13_000002"
+        },
+        {
+            "version": "2026_08_14_000003"
+        },
+        {
+            "version": "2026_08_20_000004"
+        },
+        {
+            "version": "2026_09_16_000005"
+        },
+        {
+            "version": "2026_09_20_000006"
+        },
+        {
+            "version": "2026_10_03_000006"
+        },
+        {
+            "version": "2026_10_03_000007"
+        },
+        {
+            "version": "2026_10_03_000008"
+        },
+        {
+            "version": "2026_10_03_000009"
+        },
+        {
+            "version": "2026_10_04_000010"
+        },
+        {
+            "version": "2026_10_14_000011"
+        },
+        {
+            "version": "2026_10_14_000012"
+        },
+        {
+            "version": "2026_10_14_000013"
+        },
+        {
+            "version": "2026_10_15_000014"
+        }
+    ],
+    "tables": [
+        {
+            "Tables_in_pharxmaco_drugstore": "activity_logs"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "branch_products"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "branches"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "cashier_drawers"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "cashier_event_reviews"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "cashier_events"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "cashier_held_sales"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "cashier_shift_actions"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "cashier_shift_reviews"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "cashier_shifts"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "categories"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "discounts"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "forecasting_data"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "migrations"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "products"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "receipt_invoice_sequences"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "refund_items"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "report_exports"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "sale_items"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "sales"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "stock_logs"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "suppliers"
+        },
+        {
+            "Tables_in_pharxmaco_drugstore": "users"
+        }
+    ],
+    "invoice_configuration": {
+        "tin_configured": false,
+        "tax_status": "vat",
+        "registered_serial_enabled": false
+    }
+}

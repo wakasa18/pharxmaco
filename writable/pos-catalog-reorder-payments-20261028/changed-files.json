@@ -1,0 +1,20 @@
+[
+  "app/Commands/GenerateReorderForecast.php",
+  "app/Controllers/Admin/ReportsController.php",
+  "app/Controllers/Admin/SaleCorrection.php",
+  "app/Controllers/Cashier/SalesController.php",
+  "app/Libraries/PaymentReference.php",
+  "app/Libraries/ProductExchange.php",
+  "app/Libraries/TopbarNotificationService.php",
+  "app/Views/admin/reports/index.php",
+  "app/Views/admin/reports/reports_pdf.php",
+  "app/Views/admin/sale_correction/edit.php",
+  "app/Views/cashier/sales/exchange.php",
+  "app/Views/cashier/sales/index.php",
+  "app/Views/cashier/sales/product_rows.php",
+  "app/Views/layouts/low_stock_modal.php",
+  "app/Views/layouts/staff.php",
+  "app/Views/partials/payment_reference_assets.php",
+  "public/assets/js/payment-reference.js",
+  "public/assets/js/reports.js"
+]

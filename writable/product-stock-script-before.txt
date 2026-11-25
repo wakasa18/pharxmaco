@@ -1,0 +1,51 @@
+
+document.querySelectorAll('.stock-update-form').forEach(function(form){
+    const mode = form.querySelector('[name="stock_mode"]');
+    const input = form.querySelector('[name="stock"]');
+    const current = Number(form.querySelector('[name="old_stock"]').value);
+    const preview = form.querySelector('.stock-preview');
+    const button = form.querySelector('button[type="submit"]');
+    const reason = form.querySelector('[name="remarks"]');
+    const unit = quantity => quantity === 1 ? form.dataset.unitSingular : form.dataset.unitPlural;
+    function updatePreview() {
+        const removing = mode.value === 'remove';
+        input.max = String(removing ? Math.min(current, 1000000) : 1000000);
+        button.textContent = removing ? 'Remove stock' : 'Add stock';
+        input.setCustomValidity('');
+        const trimmedReason = reason.value.trim();
+        reason.setCustomValidity(trimmedReason.length < 3 || trimmedReason.length > 200
+            ? 'Enter a reason or reference of 3 to 200 characters.' : '');
+        button.disabled = true;
+        const units = Number(input.value);
+        if (!input.value) {
+            preview.textContent = 'Enter a quantity to see the new balance.';
+            return;
+        }
+        if (!/^[0-9]+$/.test(input.value) || !Number.isInteger(units) || units < 1 || units > 1000000) {
+            preview.textContent = 'Enter a whole quantity from 1 to 1,000,000.';
+            input.setCustomValidity('Enter a whole quantity from 1 to 1,000,000.');
+            return;
+        }
+        if (removing && units > current) {
+            preview.textContent = 'Cannot remove more than the current stock.';
+            input.setCustomValidity('Removal quantity exceeds current stock.');
+            return;
+        }
+        const balance = removing ? current - units : current + units;
+        preview.textContent = current + (removing ? ' − ' : ' + ') + units + ' = ' + balance + ' ' + unit(balance) + ' after saving';
+        button.disabled = !input.validity.valid || !reason.validity.valid;
+    }
+    mode.addEventListener('change', updatePreview);
+    input.addEventListener('input', updatePreview);
+    reason.addEventListener('input', updatePreview);
+    reason.addEventListener('change', updatePreview);
+    form.addEventListener('submit', function(event){
+        reason.value = reason.value.trim();
+        updatePreview();
+        if (!form.reportValidity()) {
+            event.preventDefault();
+        }
+    });
+    window.addEventListener('pageshow', updatePreview);
+    updatePreview();
+});

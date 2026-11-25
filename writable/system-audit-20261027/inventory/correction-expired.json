@@ -1,0 +1,7 @@
+{
+    "original_sold_quantity": 5,
+    "corrected_quantity": 3,
+    "expired_on": "2000-01-01",
+    "stock_before": 10,
+    "stock_after": 12
+}

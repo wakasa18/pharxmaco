@@ -1,0 +1,10 @@
+{
+    "database": "pharxmaco_drugstore",
+    "imports": 2,
+    "existing_tables_checked": 24,
+    "existing_records_preserved": true,
+    "old_migrations_preserved": true,
+    "presence_migrations": 1,
+    "presence_records": 0,
+    "hosting_changed": false
+}

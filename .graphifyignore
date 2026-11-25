@@ -1,0 +1,67 @@
+# Graphify ignore rules for a CodeIgniter 4 pharmacy POS project
+# Place this file in the CI4 project root (beside composer.json and spark).
+# Graphify also respects .gitignore; patterns use gitignore-style syntax.
+
+# Third-party dependencies
+/vendor/
+/node_modules/
+/public/assets/vendor/
+/public/assets/plugins/
+
+# CodeIgniter runtime files and generated data
+/writable/
+/public/uploads/
+/public/upload/
+/public/storage/
+
+# Generated output and local tooling
+/graphify-out/
+/.git/
+/.idea/
+/.vscode/
+.obsidian/
+/.phpunit.cache/
+/coverage/
+/dist/
+/build/
+/public/build/
+/public/dist/
+
+# Environment files and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+
+# Logs, caches, backups, and temporary files
+*.log
+*.cache
+*.tmp
+*.bak
+*.backup
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+.DS_Store
+Thumbs.db
+
+# Compiled/minified assets and source maps
+*.min.js
+*.min.css
+*.map
+
+# Keep these useful project sources in the graph:
+# /app/                CI4 controllers, models, views, filters, etc.
+# /app/Database/       Migrations and seeders
+# /public/js/          Custom front-end JavaScript
+# /public/css/         Custom styles
+# /docs/               Obsidian project documentation (for non-code-only scans)
+# /tests/              Tests, if present
+# Uncomment the line below ONLY if you want to exclude documentation too:
+# /docs/

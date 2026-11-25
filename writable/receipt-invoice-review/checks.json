@@ -1,0 +1,366 @@
+[
+  {
+    "variant": "unconfigured",
+    "width": 320,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "unconfigured",
+    "width": 390,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "unconfigured",
+    "width": 768,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "unconfigured",
+    "width": 1440,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "unconfigured",
+    "paper": "58",
+    "print": {
+      "width": 219.203125,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "unconfigured",
+    "paper": "80",
+    "print": {
+      "width": 302.359375,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "non-vat",
+    "width": 320,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "non-vat",
+    "width": 390,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "non-vat",
+    "width": 768,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "non-vat",
+    "width": 1440,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "non-vat",
+    "paper": "58",
+    "print": {
+      "width": 219.203125,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "non-vat",
+    "paper": "80",
+    "print": {
+      "width": 302.359375,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "vat",
+    "width": 320,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "vat",
+    "width": 390,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "vat",
+    "width": 768,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "vat",
+    "width": 1440,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "vat",
+    "paper": "58",
+    "print": {
+      "width": 219.203125,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "vat",
+    "paper": "80",
+    "print": {
+      "width": 302.359375,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "senior",
+    "width": 320,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "senior",
+    "width": 390,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "senior",
+    "width": 768,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "senior",
+    "width": 1440,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "senior",
+    "paper": "58",
+    "print": {
+      "width": 219.203125,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "senior",
+    "paper": "80",
+    "print": {
+      "width": 302.359375,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "pwd",
+    "width": 320,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "pwd",
+    "width": 390,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "pwd",
+    "width": 768,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "pwd",
+    "width": 1440,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "pwd",
+    "paper": "58",
+    "print": {
+      "width": 219.203125,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "pwd",
+    "paper": "80",
+    "print": {
+      "width": 302.359375,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "reprint",
+    "width": 320,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "reprint",
+    "width": 390,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "reprint",
+    "width": 768,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "reprint",
+    "width": 1440,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "reprint",
+    "paper": "58",
+    "print": {
+      "width": 219.203125,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "reprint",
+    "paper": "80",
+    "print": {
+      "width": 302.359375,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "legacy",
+    "width": 320,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "legacy",
+    "width": 390,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "legacy",
+    "width": 768,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "legacy",
+    "width": 1440,
+    "overflow": {
+      "page": false,
+      "paper": false
+    }
+  },
+  {
+    "variant": "legacy",
+    "paper": "58",
+    "print": {
+      "width": 219.203125,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "variant": "legacy",
+    "paper": "80",
+    "print": {
+      "width": 302.359375,
+      "overflow": false,
+      "bg": "rgb(255, 255, 255)",
+      "ink": "rgb(0, 0, 0)"
+    }
+  }
+]

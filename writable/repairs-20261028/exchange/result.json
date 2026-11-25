@@ -1,0 +1,21 @@
+{
+  "runtime_files": [
+    "app/Libraries/ProductExchange.php",
+    "app/Controllers/Cashier/ExchangeController.php",
+    "app/Views/cashier/sales/exchange.php"
+  ],
+  "new_test_trait": "tests/unit/ExchangeRepairCases.php",
+  "focused_tests": 38,
+  "focused_assertions": 239,
+  "new_tests": 16,
+  "new_assertions": 77,
+  "application_database_accessed": false,
+  "hosting_changed": false,
+  "real_mysql_scheduling_verified": false,
+  "hashes": {
+    "app/Libraries/ProductExchange.php": "6ceb7e514e617865f340ffc69358af96e93415304d8014cfa057ceed6fc786ab",
+    "app/Controllers/Cashier/ExchangeController.php": "370e59d2253445b83a797a820c667af22b42940506d41381861d2834e6199094",
+    "app/Views/cashier/sales/exchange.php": "b488edd08c4cc46ebdeeacadd84a617ceb24de07857f0a460667f64d72686933"
+  },
+  "category_promotion_validity": "existing, not archived/deleted; locked current reads during confirmation"
+}

@@ -1,0 +1,28 @@
+{
+  "checks": [
+    "single server range and quiet limit/search note",
+    "date changes wait for explicit Apply",
+    "Apply sends database date range without duplicate link-filter banner",
+    "Clear returns to latest records with blank dates",
+    "reversed date range blocked before navigation",
+    "correcting either bound clears range error",
+    "quick search filters loaded rows without navigation",
+    "rows-per-page and quick-filter clearing remain functional",
+    "numeric sorting preserved",
+    "column filtering preserved",
+    "responsive layout 320/false",
+    "responsive layout 320/true",
+    "responsive layout 390/false",
+    "responsive layout 390/true",
+    "responsive layout 768/false",
+    "responsive layout 768/true",
+    "responsive layout 1440/false",
+    "responsive layout 1440/true",
+    "empty results retain range, search and clear controls",
+    "other tables keep default browser date range and link note",
+    "non-date link filters remain disclosed",
+    "native GET form works when page loaded without JavaScript"
+  ],
+  "javascript_errors": [],
+  "application_database_accessed": false
+}

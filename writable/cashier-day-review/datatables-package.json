@@ -1,0 +1,14 @@
+{
+    "file": "C:\\UniServerZ\\www\\pharxmaco\/build\/hostinger-my-day-datatables-2026-10-15.zip",
+    "files": 6,
+    "bytes": 33110,
+    "sha256": "4ec7e6142917e1b49a0d2295054c98c09d2bf8fffa2fae041798b22589051925",
+    "entries": {
+        "app\/Views\/cashier\/workspace\/index.php": "e1db13f5c110e68636574f21173273a917d78f0f5d886f0c72a2796806af34f9",
+        "app\/Views\/cashier\/workspace\/_tables.php": "28b8a1300294fc082e60d01b14836b45f63f0c5124894f5d95198554dce42833",
+        "app\/Views\/layouts\/staff.php": "cf805adb9770102ec7cc42207fd8bdc89376199474204c174ea018b7329122f4",
+        "public\/assets\/js\/cashier-workspace.js": "15b42335a09494d90aa3bb7129f7ed7da87be7c8ea6be2ef2c8ee82a6c61054a",
+        "public\/assets\/js\/datatables-init.js": "69835eef3b75597d7c102e2359a92893472a8bd15808d0b6dba964cb1b1adb57",
+        "INSTALL.md": "0ef54b209ef98febc06e4b533abf0eb8ca11411a094316d4f03533457204f984"
+    }
+}

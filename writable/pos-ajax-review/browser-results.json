@@ -1,0 +1,157 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "action": "add + duplicate guard + search preservation",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "quantity and Senior benefit",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "add with Senior + automatic promo + preserved payment",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "remove + beneficiary retained",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "server validation remains inline",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "hold + reset customer",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "resume + close dialog",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "clear",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "discard + empty held list",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "502 recovery reads cart without repeat",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "lost quantity-sync response recovers CSRF through GET",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "checkout validation preserves document",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "unexpected HTML redirect checks outcome and preserves POS",
+      "document_preserved": true
+    },
+    {
+      "width": 1440,
+      "action": "confirmed checkout opens completed sale",
+      "intentional_navigation": true
+    },
+    {
+      "width": 1440,
+      "action": "ended cashier login blocks POS and preserves draft/recovery state",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "add + duplicate guard + search preservation",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "quantity and Senior benefit",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "add with Senior + automatic promo + preserved payment",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "remove + beneficiary retained",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "server validation remains inline",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "hold + reset customer",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "resume + close dialog",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "clear",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "discard + empty held list",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "502 recovery reads cart without repeat",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "lost quantity-sync response recovers CSRF through GET",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "checkout validation preserves document",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "unexpected HTML redirect checks outcome and preserves POS",
+      "document_preserved": true
+    },
+    {
+      "width": 390,
+      "action": "confirmed checkout opens completed sale",
+      "intentional_navigation": true
+    },
+    {
+      "width": 390,
+      "action": "ended cashier login blocks POS and preserves draft/recovery state",
+      "document_preserved": true
+    }
+  ],
+  "posts": 42,
+  "javascript_errors": [],
+  "application_database_accessed": false
+}

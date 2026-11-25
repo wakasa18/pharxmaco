@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\UniServerZ\www\pharxmaco\phpunit.xml.dist" tests="6" assertions="59" errors="0" failures="0" skipped="0" time="0.160871">
+    <testsuite name="App" tests="6" assertions="59" errors="0" failures="0" skipped="0" time="0.160871">
+      <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="6" assertions="59" errors="0" failures="0" skipped="0" time="0.160871">
+        <testcase name="testRemovedReorderReportReadsKeepSalesForecastAndManualLowStockCount" file="C:\UniServerZ\www\pharxmaco\tests\unit\RemovedReorderCases.php" line="18" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.070481"/>
+        <testcase name="testRemovedReorderLowStockCountsRespectBranchAndActiveInventory" file="C:\UniServerZ\www\pharxmaco\tests\unit\RemovedReorderCases.php" line="31" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.022338"/>
+        <testcase name="testRemovedReorderUpdateForecastSavesOnlySalesAndKeepsHistoricalProductRows" file="C:\UniServerZ\www\pharxmaco\tests\unit\RemovedReorderCases.php" line="45" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.011210"/>
+        <testcase name="testRemovedReorderNotificationsKeepThresholdAlertsWithoutSuggestedQuantities" file="C:\UniServerZ\www\pharxmaco\tests\unit\RemovedReorderCases.php" line="67" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="10" time="0.013390"/>
+        <testcase name="testRemovedReorderReportScreenAndCsvRetainSalesWithoutSuggestionControls" file="C:\UniServerZ\www\pharxmaco\tests\unit\RemovedReorderCases.php" line="84" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.026822"/>
+        <testcase name="testRemovedReorderFullAndSummaryTemplatesHaveNoSuggestionSections" file="C:\UniServerZ\www\pharxmaco\tests\unit\RemovedReorderCases.php" line="102" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.016629"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

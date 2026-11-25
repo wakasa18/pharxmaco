@@ -1,0 +1,362 @@
+[
+  {
+    "file": "app/Config/Routes.php",
+    "sha256": "9ae0254226cf362cf5543c1e83bb233e662f4188306a3222a1e5fdcd80437f1a"
+  },
+  {
+    "file": "app/Controllers/Admin/ReportsController.php",
+    "sha256": "4a40df9afb9c0ce03201dd05c689eee76f7904a3ee272a92998d5bdcd5160405"
+  },
+  {
+    "file": "app/Controllers/Admin/SaleCorrection.php",
+    "sha256": "668238283ebbab7162bdb589e6febbcfcb96e0496b220b505f65ede196d22b7b"
+  },
+  {
+    "file": "app/Controllers/Auth.php",
+    "sha256": "da9f198662a8e98ecd977574a5982965dbaec10af9d61a280bada3b2c8e3fd0c"
+  },
+  {
+    "file": "app/Controllers/Cashier/ExchangeController.php",
+    "sha256": "dd660d20ff35357f6ce1c018a11e22c559848b5a500869b198390fdd11570f1c"
+  },
+  {
+    "file": "app/Controllers/Cashier/SalesController.php",
+    "sha256": "5e650fafac2caad45494be366847c56adadb3616b2c2cbbad7393e2c944c60ee"
+  },
+  {
+    "file": "app/Controllers/Cashier/WorkspaceController.php",
+    "sha256": "fffa4915da09d860a7dd145a1d785c2d3d5e22a0cb341468540ab7fe47c9ec06"
+  },
+  {
+    "file": "app/Controllers/Dashboard.php",
+    "sha256": "5dcd79c47291cb5cf4ff38e6791237d4fc546f913d710a175d93121f9c5e49fc"
+  },
+  {
+    "file": "app/Controllers/Products.php",
+    "sha256": "c92d3c27aeff3f78239dca1b0c5f3effbf2a96f4096cd001760ff607d82125ac"
+  },
+  {
+    "file": "app/Controllers/StockLogsController.php",
+    "sha256": "07b556f5740c7836f82d49670621b0deee213d886f1c0eb5009a2cb0270e2edf"
+  },
+  {
+    "file": "app/Database/Migrations/2026_10_14_000011_add_receipt_invoice_fields.php",
+    "sha256": "ee8a610d65244b9d1149aed72e56cc97610b3a2fc8500fdaf70c3712f5281a95"
+  },
+  {
+    "file": "app/Database/Migrations/2026_10_14_000012_add_product_medicine_type.php",
+    "sha256": "c0f83a09df0ac5a80b962d892ddbe535beb75804bf04ef36268f61be3a791c7d"
+  },
+  {
+    "file": "app/Database/Migrations/2026_10_14_000013_add_statutory_discount_fields.php",
+    "sha256": "d1c5fc8ae96eb3b9b7083c284d6e96a2126e3d3900f574fd9c604bc8516f18fd"
+  },
+  {
+    "file": "app/Database/Migrations/2026_10_15_000014_add_cashier_shifts.php",
+    "sha256": "23d2e8a72e6d30435d8b0aea60b1aa0b6b7e98e722df4b103d7e8900afeb7883"
+  },
+  {
+    "file": "app/Libraries/BenefitProductPromotion.php",
+    "sha256": "4eda41499e20f61307c09f27316a61ec2452c143c3385350b4bed91236206837"
+  },
+  {
+    "file": "app/Libraries/CashierDayReport.php",
+    "sha256": "8809227c929d8a3098a0a2a96b8ba62e7739a5462c8a3dca0e803472f362e44b"
+  },
+  {
+    "file": "app/Libraries/CashierShift.php",
+    "sha256": "c1862c6f7513288abea7221f6d3ba72a69cb81aee5f4aac7fcd628a8c1937032"
+  },
+  {
+    "file": "app/Libraries/DiscountPolicy.php",
+    "sha256": "a4f027633b2a11be30781015979c71306bd26f7ac9b8f5d204c26fc88f46ad32"
+  },
+  {
+    "file": "app/Libraries/InvoiceConfigurationException.php",
+    "sha256": "efa45a0dc658495fb194b914b5c958692e1ee1952031c4ed08570e5642f6414a"
+  },
+  {
+    "file": "app/Libraries/MedicineType.php",
+    "sha256": "0bf31b6b2993b93d0e366301fd29c7c208764c5378a01c4ba191476e90c8ecdc"
+  },
+  {
+    "file": "app/Libraries/ProductExchange.php",
+    "sha256": "a0e4c2eaee710134df4731b1c19997e8deffeaf30c60c95c26666b4a99b1f8f5"
+  },
+  {
+    "file": "app/Libraries/ProductPromotion.php",
+    "sha256": "ef93ab3313f1626205dd264cab4c35946724184122b1a3c5ba37cdeaf58807a7"
+  },
+  {
+    "file": "app/Libraries/ReceiptInvoice.php",
+    "sha256": "8c70111ac29fd682c8a9441a141885a88596f72173699daa57a51d0ee6ea1fab"
+  },
+  {
+    "file": "app/Libraries/ReportPdf.php",
+    "sha256": "1ca853289ebc28aa850c71655765404bb867b220225f422f81055ade94ce7607"
+  },
+  {
+    "file": "app/Libraries/SaleCorrectionPricing.php",
+    "sha256": "ef0826a89a5df1847ab2c8938200bf63822c73eca5aaad66f5ba51d796fd05ad"
+  },
+  {
+    "file": "app/Libraries/SaleRevision.php",
+    "sha256": "85c19d1df7410fee3005fb9806cddbf503e8f7aa080c28e34667c2e369c74108"
+  },
+  {
+    "file": "app/Libraries/StatutoryDiscount.php",
+    "sha256": "f31b49448721bffa4268743858ac7284c8a3e6ecd9eebff9ea253f5811720ab8"
+  },
+  {
+    "file": "app/Models/ProductModel.php",
+    "sha256": "ec38987405a55202d340e2c462795da898735f95a449d3f3cc10aa72e86e39bc"
+  },
+  {
+    "file": "app/Models/SaleItemModel.php",
+    "sha256": "afe2ec653142066c1f3deba4c87800150380704136acd9448c80fb78875d44c9"
+  },
+  {
+    "file": "app/Models/SalesModel.php",
+    "sha256": "cd8963bddd5d25f0b6dcbb256dfaab331969e59de8272f9a18bf6a645f470d1f"
+  },
+  {
+    "file": "app/Views/admin/discounts/_form.php",
+    "sha256": "e03d3cff22d5dfdadd29da3cd6e951971c52159dd0d5f58893827bfc8072a8d9"
+  },
+  {
+    "file": "app/Views/admin/reports/expiry_report_pdf.php",
+    "sha256": "b675a3d679fcdb3c0642a05059c5c3cfc153ba5448c6e486a5ea2f52f9cf7397"
+  },
+  {
+    "file": "app/Views/admin/reports/index.php",
+    "sha256": "612f1c2f16755b111ea2bca8c1ad3e2e5fd336406c41dccdb1998cc9c33336a4"
+  },
+  {
+    "file": "app/Views/admin/reports/reports_pdf.php",
+    "sha256": "78dcdbef7bfc98b46790062409f0a54ab9f98b44c0300bb0ad2fa8b4c0b03748"
+  },
+  {
+    "file": "app/Views/admin/sale_correction/edit.php",
+    "sha256": "9b34a4c7272002733a7150b7cf8ab9170d7632265589edd669fe66447bff3130"
+  },
+  {
+    "file": "app/Views/cashier/sales/details.php",
+    "sha256": "2b985f611684f49c214faa519d41d4c17348131312a6c7f694ef80aee53be7f3"
+  },
+  {
+    "file": "app/Views/cashier/sales/exchange.php",
+    "sha256": "909999c87facc74b9e239a01148654e045aeb568fd159390c51504b748b1b67d"
+  },
+  {
+    "file": "app/Views/cashier/sales/index.php",
+    "sha256": "73669d92d0069143eb7209c96ad31789876ffd790334dc65fc5dcc30f4eeb7af"
+  },
+  {
+    "file": "app/Views/cashier/sales/receipt.php",
+    "sha256": "d4da5432c8404da8f995c687a74e552c0d6f7cdde17822904952000db400b8e7"
+  },
+  {
+    "file": "app/Views/cashier/workspace/_ledger.php",
+    "sha256": "ae2dcfef6fedfd68b24013775a5c1d56801c52d8a856fa0b13f05a1fa5f41833"
+  },
+  {
+    "file": "app/Views/cashier/workspace/_messages.php",
+    "sha256": "cdb54644a893d0de28b77e20b1c1604ed64311a52638723f2847646eaa2734ae"
+  },
+  {
+    "file": "app/Views/cashier/workspace/_stats.php",
+    "sha256": "1d8fdacbc4c2d6c87816acded99a4081219261e12974a72fb60dca195d878eb1"
+  },
+  {
+    "file": "app/Views/cashier/workspace/_tables.php",
+    "sha256": "28b8a1300294fc082e60d01b14836b45f63f0c5124894f5d95198554dce42833"
+  },
+  {
+    "file": "app/Views/cashier/workspace/index.php",
+    "sha256": "e1db13f5c110e68636574f21173273a917d78f0f5d886f0c72a2796806af34f9"
+  },
+  {
+    "file": "app/Views/cashier/workspace/manager.php",
+    "sha256": "1671a9f66e1bcc9c55191d1093aefb12f0b7318e674dbddb9bf318043e1860ec"
+  },
+  {
+    "file": "app/Views/cashier/workspace/print.php",
+    "sha256": "15282148ec21dcfe241c903ff3a3aefc6f9a6c5f39417da2a14645b25cdbda4c"
+  },
+  {
+    "file": "app/Views/cashier/workspace/shift.php",
+    "sha256": "ac630f06cd96e3b67a2ddc18c034ec983f857c5f650ee770e06ce6cc8fa0cd1b"
+  },
+  {
+    "file": "app/Views/cashier/workspace/start.php",
+    "sha256": "1c76fb30ca4ce6d5437294922d552c74ee6d364c74c4f21ed867c724dd94d990"
+  },
+  {
+    "file": "app/Views/cashier/workspace/unavailable.php",
+    "sha256": "e4a45113c47c57b244bd5d23bc5794f0a37d0829a69aea94efb1c22e761f7119"
+  },
+  {
+    "file": "app/Views/exports/cash_movements_pdf.php",
+    "sha256": "e3ebee93d8546c133e0f094436c08f684ee90ad1516a4557ab822597124883f5"
+  },
+  {
+    "file": "app/Views/exports/pdf_header.php",
+    "sha256": "e77a7b8aca57b812908f69944625225553ea8bd5eda2af9352ace31d4740a743"
+  },
+  {
+    "file": "app/Views/exports/pdf_styles.php",
+    "sha256": "4d45a1fd1d76c077b7836d6044cdb063c6cdc07c96b14b63f42de8549b602f1f"
+  },
+  {
+    "file": "app/Views/exports/pdf_table.php",
+    "sha256": "adfddbc0b23925bcc130ebf73e040fa95c018e090b758cab75c0a666f67b3025"
+  },
+  {
+    "file": "app/Views/layouts/sidebar.php",
+    "sha256": "c9c09d5b38984e46db4678a8218fa0ad94fc72fac01dbe213cd04e4dbd5cd825"
+  },
+  {
+    "file": "app/Views/partials/medicine_type_badge.php",
+    "sha256": "6c2ca893c4fadd1c1f4bac0c9a8b0d8e5c1b7e8a08238a85d19125869a51a184"
+  },
+  {
+    "file": "app/Views/partials/product_invoice_fields.php",
+    "sha256": "f215553d1f7df26adc2dd7bcb6233c4994338492ae9a15d70d471116387e33d0"
+  },
+  {
+    "file": "app/Views/partials/receipt_header.php",
+    "sha256": "cef9becfd704a4c4977012b6a1fd6ba014208b93e1c49423d631a2ef6fe36c1e"
+  },
+  {
+    "file": "app/Views/products/catalog.php",
+    "sha256": "e9c85e2ec22c2cce5dfb22e0ba794f0a3c37def4c4c24b29269b6e5696ce0d18"
+  },
+  {
+    "file": "app/Views/products/create.php",
+    "sha256": "14086c2e7b232706752f362f2dce2ece200061e2ce12734ebefabbacb6866b61"
+  },
+  {
+    "file": "app/Views/products/edit.php",
+    "sha256": "96df29a97f6b835255b4d761b674f14c142727feb88109465898fc8cae35f7f9"
+  },
+  {
+    "file": "app/Views/products/index.php",
+    "sha256": "901629526419e1a43f64a5d4ef61562e66778deee074c17365b1db808e6c2c48"
+  },
+  {
+    "file": "app/Views/stock_logs/pdf.php",
+    "sha256": "d3f4385f1d555f99864ad6993e28c47059ed466a732efa58a34aeeb4a420b543"
+  },
+  {
+    "file": "database/upgrades/2026-10-14-latest-existing-database.md",
+    "sha256": "7f1ee2446c55884b350e4d4a39612f67ed4d3c036cfe3d3e0a841cd88d0ad96d"
+  },
+  {
+    "file": "database/upgrades/2026-10-14-latest-existing-database.sql",
+    "sha256": "39cc23a07edd6108b31d1b2e55955480e047e2ff0577f2f3a34b29eabf95eca7"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-branded-products.md",
+    "sha256": "95a5c458da6bd956a7fafa73a202ef4a18c5b3a11cc77b6df89a0d6f93ac192a"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-branded-products.sql",
+    "sha256": "a202ec119edf54293999fdbd96dc527ddad02c2385fbdd047d073a2416055b73"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-cashier-workspace.md",
+    "sha256": "81e5b465ba89dc94689f1c3c2a52e7483f1200d92bf61cba4e07306e161095e0"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-cashier-workspace.sql",
+    "sha256": "4c6fbf6c059903acb791873a312e625c8b0faa09219f9b307dd97faf6e623de0"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-demo-users.md",
+    "sha256": "3c75c03fa0af3f470279168ed65c962ea501acea72759af2dc287b1bf14e2f03"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-demo-users.sql",
+    "sha256": "a9f45565318ed4b24c8bdae06b1cbafae9f8c85a7c62b910ae3443d544ac8bb9"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-latest-existing-database.md",
+    "sha256": "ae277b0daa28c50a17cae0e5388575c4385667509b958982450bb70415cf26ca"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-latest-existing-database.sql",
+    "sha256": "89d0e43150bbfbdf0f40be334a98b1dd9884abe1dcdda03521d10b97f33792f5"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-product-catalog.md",
+    "sha256": "94e7b430a6ed63e52279717cd4a30c83be0806c25dcde70dbe44db60fb6edf06"
+  },
+  {
+    "file": "database/upgrades/2026-10-15-product-catalog.sql",
+    "sha256": "4ea6e0dd0239bd6c7a82425aae79da9c16ed94596c8aa25268cce0f3fe231b88"
+  },
+  {
+    "file": "database/upgrades/2026-10-16-reconcile-master-stock.sql",
+    "sha256": "33bfcccd6e90b0719c87d97c9df138e2ce29a661ad4b7e54bd69af41a3bed812"
+  },
+  {
+    "file": "database/upgrades/2026-10-16-reconcile-sale41-refunds.md",
+    "sha256": "6e32582ff85d5a5048cdf75944534fdfbb12743f4d029a927f61940fc86be349"
+  },
+  {
+    "file": "database/upgrades/2026-10-16-reconcile-sale41-refunds.sql",
+    "sha256": "78ff79a2f2e19398c95c65a99290e37a86fedd0f74e108da7e5be5e79e97d81a"
+  },
+  {
+    "file": "docs/reviews/2026-10-16-automatic-category-promos.md",
+    "sha256": "ef8aa4b3445f0acca82faec80773a18dc10448d7caaacb0cc961a12d72a966ad"
+  },
+  {
+    "file": "docs/reviews/2026-10-16-checkout-fixes.md",
+    "sha256": "3eafaeaf92f734f844d1f41748500012379f327bd1d5ae595a0a07ac257696ef"
+  },
+  {
+    "file": "docs/reviews/2026-10-16-pdf-export-update.md",
+    "sha256": "72da21be800b33f1114f05a58b8edc27103a00cfc196bbe18f3a372c2b727f19"
+  },
+  {
+    "file": "docs/reviews/2026-10-16-shift-print-update.md",
+    "sha256": "1626f4ac8034a478df59f4123ca56b8ca7202bb6f6b1cedf197625ce068743b1"
+  },
+  {
+    "file": "public/assets/css/cashier-workspace.css",
+    "sha256": "81abf95265390037d318cc30c84041abb50cb2d1e8e13b2933dd3835e4dcc981"
+  },
+  {
+    "file": "public/assets/css/receipts.css",
+    "sha256": "9ad63e626cc38432b2d7e8752aec6ae9473d36e4753169271dd3f90fb49494b7"
+  },
+  {
+    "file": "public/assets/css/shift-print.css",
+    "sha256": "4723c93208862be00f83e4ad22b1f62dd40dee79638a02a52fa17f7d1fec7e6f"
+  },
+  {
+    "file": "public/assets/js/cashier-workspace.js",
+    "sha256": "15b42335a09494d90aa3bb7129f7ed7da87be7c8ea6be2ef2c8ee82a6c61054a"
+  },
+  {
+    "file": "public/assets/js/datatables-init.js",
+    "sha256": "69835eef3b75597d7c102e2359a92893472a8bd15808d0b6dba964cb1b1adb57"
+  },
+  {
+    "file": "public/assets/js/discount-math.js",
+    "sha256": "1511324625f60e2e845ae2785a0ff8eb443a4bd378c59af2d6530afe3cae598c"
+  },
+  {
+    "file": "public/assets/js/shift-print.js",
+    "sha256": "aa7ad0b2ab558a89c647f9f695bbd57a6307fb9bd5b9173574627aaf7563d322"
+  },
+  {
+    "file": "app/Config/ReceiptInvoice.php.example",
+    "sha256": "3466293a33bd74518c1da1ece81d70a8c1ed434068fac4e017672d4ee73b960f"
+  },
+  {
+    "file": "INSTALL.md",
+    "sha256": "f6a88004c601fff8444256190e97e2ab4458335f0e08417a297b6db38a52c179"
+  }
+]

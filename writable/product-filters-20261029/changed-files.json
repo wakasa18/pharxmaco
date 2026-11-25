@@ -1,0 +1,4 @@
+[
+  "app/Controllers/Products.php",
+  "app/Views/products/index.php"
+]

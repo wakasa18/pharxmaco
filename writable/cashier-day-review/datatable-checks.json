@@ -1,0 +1,63 @@
+[
+  {
+    "datatables": "All four My Day tables initialize with search, length and paging controls"
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 320,
+    "dark": false
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 320,
+    "dark": true
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 390,
+    "dark": false
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 390,
+    "dark": true
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 768,
+    "dark": false
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 768,
+    "dark": true
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 1440,
+    "dark": false
+  },
+  {
+    "datatables": "Paged live table layout",
+    "width": 1440,
+    "dark": true
+  },
+  {
+    "datatables": "Header sorting, negative/large money and refreshed dates sort by their actual values"
+  },
+  {
+    "datatables": "Live refresh preserves each table search, sorting and current page without duplicate toolbars"
+  },
+  {
+    "datatables": "Rows-per-page survives refresh and a shrinking result moves back to an available page"
+  },
+  {
+    "datatables": "Empty/refilled results retain controls and show the correct empty message"
+  },
+  {
+    "datatables": "An initially empty day initializes and receives its first live rows"
+  },
+  {
+    "datatables": "Printable shift report stays a complete ordinary table"
+  }
+]

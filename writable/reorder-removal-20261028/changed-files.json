@@ -1,0 +1,10 @@
+[
+  "app/Controllers/Admin/ReportsController.php",
+  "app/Views/admin/reports/index.php",
+  "app/Views/admin/reports/reports_pdf.php",
+  "app/Libraries/TopbarNotificationService.php",
+  "app/Views/layouts/low_stock_modal.php",
+  "app/Views/layouts/staff.php",
+  "app/Commands/GenerateReorderForecast.php",
+  "public/assets/js/reports.js"
+]

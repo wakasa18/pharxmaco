@@ -1,0 +1,45 @@
+PHPUnit 11.5.55 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.0
+Configuration: C:\UniServerZ\www\pharxmaco\phpunit.xml.dist
+
+................................................FEF............  63 / 382 ( 16%)
+............................................................... 126 / 382 ( 32%)
+............................................................... 189 / 382 ( 49%)
+............................................................... 252 / 382 ( 65%)
+............................................................... 315 / 382 ( 82%)
+............................................................... 378 / 382 ( 98%)
+....                                                            382 / 382 (100%)
+
+Time: 00:08.279, Memory: 64.00 MB
+
+There was 1 error:
+
+1) BusinessLogicTest::testExpiryCorrectionIsAdminOnlyAuditedAndDoesNotRewriteSales
+InvalidArgumentException: Select a valid expiry-stock action.
+
+C:\UniServerZ\www\pharxmaco\app\Libraries\ExpiryStockResolution.php:19
+C:\UniServerZ\www\pharxmaco\app\Libraries\ExpiryStockResolution.php:58
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1087
+
+--
+
+There were 2 failures:
+
+1) BusinessLogicTest::testProductEditRejectsForgedExpiryChangeBeforeSavingOtherFields
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'2099-01-01'
++'2099-02-01'
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1071
+
+2) BusinessLogicTest::testExpiryCorrectionRejectsStaleOrInvalidRequestsAndRollsBackAuditFailure
+Failed asserting that 'Select a valid expiry-stock action.' [ASCII](length: 35) contains "changed" [ASCII](length: 7).
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1119
+
+ERRORS!
+Tests: 382, Assertions: 25112, Errors: 1, Failures: 2.

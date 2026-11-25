@@ -1,0 +1,789 @@
+{
+    "database": "pharxmaco_drugstore",
+    "tables": [
+        {
+            "TABLE_NAME": "branches",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "cashier_event_reviews",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "cashier_login_sessions",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_actions",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_reviews",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "sales",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "ENGINE": "InnoDB"
+        },
+        {
+            "TABLE_NAME": "users",
+            "ENGINE": "InnoDB"
+        }
+    ],
+    "columns": [
+        {
+            "TABLE_NAME": "branches",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "COLUMN_NAME": "branch_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "MUL"
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "COLUMN_NAME": "drawer_name",
+            "COLUMN_TYPE": "varchar(60)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "COLUMN_NAME": "status",
+            "COLUMN_TYPE": "varchar(12)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "COLUMN_NAME": "active_shift_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "COLUMN_NAME": "last_shift_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "COLUMN_NAME": "created_at",
+            "COLUMN_TYPE": "datetime",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_event_reviews",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "cashier_event_reviews",
+            "COLUMN_NAME": "event_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": "UNI"
+        },
+        {
+            "TABLE_NAME": "cashier_event_reviews",
+            "COLUMN_NAME": "reviewed_by",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_event_reviews",
+            "COLUMN_NAME": "review_note",
+            "COLUMN_TYPE": "text",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_event_reviews",
+            "COLUMN_NAME": "reviewed_at",
+            "COLUMN_TYPE": "datetime",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "event_key",
+            "COLUMN_TYPE": "varchar(100)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "UNI"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "shift_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": "MUL"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "branch_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "user_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "MUL"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "event_type",
+            "COLUMN_TYPE": "varchar(20)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "sale_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": "MUL"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "payment_method",
+            "COLUMN_TYPE": "varchar(12)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "amount",
+            "COLUMN_TYPE": "decimal(12,2)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "reason",
+            "COLUMN_TYPE": "text",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "snapshot_json",
+            "COLUMN_TYPE": "longtext",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "COLUMN_NAME": "created_at",
+            "COLUMN_TYPE": "datetime",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "COLUMN_NAME": "hold_key",
+            "COLUMN_TYPE": "varchar(64)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "UNI"
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "COLUMN_NAME": "user_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "MUL"
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "COLUMN_NAME": "branch_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "COLUMN_NAME": "label",
+            "COLUMN_TYPE": "varchar(120)",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "COLUMN_NAME": "cart_json",
+            "COLUMN_TYPE": "longtext",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "COLUMN_NAME": "held_at",
+            "COLUMN_TYPE": "datetime",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_login_sessions",
+            "COLUMN_NAME": "user_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "cashier_login_sessions",
+            "COLUMN_NAME": "token_hash",
+            "COLUMN_TYPE": "varchar(64)",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_login_sessions",
+            "COLUMN_NAME": "account_fingerprint",
+            "COLUMN_TYPE": "varchar(64)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_login_sessions",
+            "COLUMN_NAME": "last_seen_at",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_login_sessions",
+            "COLUMN_NAME": "expires_at",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shift_actions",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_actions",
+            "COLUMN_NAME": "shift_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": "MUL"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_actions",
+            "COLUMN_NAME": "user_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shift_actions",
+            "COLUMN_NAME": "action",
+            "COLUMN_TYPE": "varchar(32)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shift_actions",
+            "COLUMN_NAME": "note",
+            "COLUMN_TYPE": "text",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shift_actions",
+            "COLUMN_NAME": "created_at",
+            "COLUMN_TYPE": "datetime",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shift_reviews",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_reviews",
+            "COLUMN_NAME": "shift_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": "UNI"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_reviews",
+            "COLUMN_NAME": "reviewed_by",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shift_reviews",
+            "COLUMN_NAME": "review_note",
+            "COLUMN_TYPE": "text",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shift_reviews",
+            "COLUMN_NAME": "reviewed_at",
+            "COLUMN_TYPE": "datetime",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "drawer_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "branch_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "user_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "MUL"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "active_user_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": "UNI"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "active_drawer_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": "UNI"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "open_key",
+            "COLUMN_TYPE": "varchar(64)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "UNI"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "status",
+            "COLUMN_TYPE": "varchar(12)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "opening_cash",
+            "COLUMN_TYPE": "decimal(12,2)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "opening_expected",
+            "COLUMN_TYPE": "decimal(12,2)",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "opening_difference",
+            "COLUMN_TYPE": "decimal(12,2)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "opening_note",
+            "COLUMN_TYPE": "text",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "opened_at",
+            "COLUMN_TYPE": "datetime",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "closed_at",
+            "COLUMN_TYPE": "datetime",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "expected_cash",
+            "COLUMN_TYPE": "decimal(12,2)",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "counted_cash",
+            "COLUMN_TYPE": "decimal(12,2)",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "cash_difference",
+            "COLUMN_TYPE": "decimal(12,2)",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "cash_left",
+            "COLUMN_TYPE": "decimal(12,2)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "banked_cash",
+            "COLUMN_TYPE": "decimal(12,2)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "closing_note",
+            "COLUMN_TYPE": "text",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "summary_json",
+            "COLUMN_TYPE": "longtext",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "handover_to_user_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "handover_status",
+            "COLUMN_TYPE": "varchar(16)",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "COLUMN_NAME": "handover_accepted_shift_id",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "sales",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "COLUMN_NAME": "token_hash",
+            "COLUMN_TYPE": "varchar(64)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "COLUMN_NAME": "user_id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "MUL"
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "COLUMN_NAME": "account_fingerprint",
+            "COLUMN_TYPE": "varchar(64)",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "COLUMN_NAME": "cashier_token_hash",
+            "COLUMN_TYPE": "varchar(64)",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "COLUMN_NAME": "created_at",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "COLUMN_NAME": "last_seen_at",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "COLUMN_NAME": "expires_at",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "COLUMN_NAME": "ended_at",
+            "COLUMN_TYPE": "bigint unsigned",
+            "IS_NULLABLE": "YES",
+            "COLUMN_KEY": ""
+        },
+        {
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int",
+            "IS_NULLABLE": "NO",
+            "COLUMN_KEY": "PRI"
+        }
+    ],
+    "references": [
+        {
+            "table": "cashier_drawers",
+            "column": "branch_id",
+            "parent": "branches",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_drawers",
+            "column": "active_shift_id",
+            "parent": "cashier_shifts",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_drawers",
+            "column": "last_shift_id",
+            "parent": "cashier_shifts",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shifts",
+            "column": "drawer_id",
+            "parent": "cashier_drawers",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shifts",
+            "column": "branch_id",
+            "parent": "branches",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shifts",
+            "column": "user_id",
+            "parent": "users",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shifts",
+            "column": "active_user_id",
+            "parent": "users",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shifts",
+            "column": "active_drawer_id",
+            "parent": "cashier_drawers",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shifts",
+            "column": "handover_to_user_id",
+            "parent": "users",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shifts",
+            "column": "handover_accepted_shift_id",
+            "parent": "cashier_shifts",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_events",
+            "column": "shift_id",
+            "parent": "cashier_shifts",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_events",
+            "column": "branch_id",
+            "parent": "branches",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_events",
+            "column": "user_id",
+            "parent": "users",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_events",
+            "column": "sale_id",
+            "parent": "sales",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_held_sales",
+            "column": "user_id",
+            "parent": "users",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_held_sales",
+            "column": "branch_id",
+            "parent": "branches",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shift_reviews",
+            "column": "shift_id",
+            "parent": "cashier_shifts",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shift_reviews",
+            "column": "reviewed_by",
+            "parent": "users",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_event_reviews",
+            "column": "event_id",
+            "parent": "cashier_events",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_event_reviews",
+            "column": "reviewed_by",
+            "parent": "users",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shift_actions",
+            "column": "shift_id",
+            "parent": "cashier_shifts",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_shift_actions",
+            "column": "user_id",
+            "parent": "users",
+            "orphans": 0
+        },
+        {
+            "table": "cashier_login_sessions",
+            "column": "user_id",
+            "parent": "users",
+            "orphans": 0
+        },
+        {
+            "table": "user_presence_sessions",
+            "column": "user_id",
+            "parent": "users",
+            "orphans": 0
+        }
+    ],
+    "counts": {
+        "branches": 2,
+        "cashier_drawers": 2,
+        "cashier_event_reviews": 0,
+        "cashier_events": 4,
+        "cashier_held_sales": 0,
+        "cashier_login_sessions": 0,
+        "cashier_shift_actions": 19,
+        "cashier_shift_reviews": 2,
+        "cashier_shifts": 9,
+        "sales": 478,
+        "user_presence_sessions": 2,
+        "users": 7
+    }
+}

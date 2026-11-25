@@ -1,0 +1,89 @@
+PHPUnit 11.5.55 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.0
+Configuration: C:\UniServerZ\www\pharxmaco\phpunit.xml.dist
+
+........................................FFFFFE..FEF.FF.........  63 / 331 ( 19%)
+............................................................... 126 / 331 ( 38%)
+............................................................... 189 / 331 ( 57%)
+............................................................... 252 / 331 ( 76%)
+............................................................... 315 / 331 ( 95%)
+......F.........                                                331 / 331 (100%)
+
+Time: 00:09.415, Memory: 58.00 MB
+
+There were 2 errors:
+
+1) BusinessLogicTest::testQuantityCorrectionsCannotMixDeliveriesOrRestockExpiredItems
+TypeError: PHPUnit\Framework\Assert::assertStringContainsString(): Argument #2 ($haystack) must be of type string, CodeIgniter\HTTP\RedirectResponse given, called in C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php on line 982
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:982
+
+2) BusinessLogicTest::testExpiryCorrectionIsAdminOnlyAuditedAndDoesNotRewriteSales
+InvalidArgumentException: Select a valid expiry-stock action.
+
+C:\UniServerZ\www\pharxmaco\app\Libraries\ExpiryStockResolution.php:19
+C:\UniServerZ\www\pharxmaco\app\Libraries\ExpiryStockResolution.php:58
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1079
+
+--
+
+There were 10 failures:
+
+1) BusinessLogicTest::testRefundRejectsExpiredOriginalDeliveryAfterReplacementAndAllowsQuarantine
+Failed asserting that 21 is identical to 20.
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:901
+
+2) BusinessLogicTest::testReplacementWithTheSameExpiryStillHasDifferentDeliveryIdentity
+Failed asserting that two strings are not identical.
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:917
+
+3) BusinessLogicTest::testLegacyAndUnknownExpiryReturnsCannotBeRestocked
+Failed asserting that 11 is identical to 10.
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:933
+
+4) BusinessLogicTest::testExchangeRejectsOldDeliveryAndCapturesReplacementProvenance
+Old delivery accepted into new stock
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:946
+
+5) BusinessLogicTest::testExchangeReviewRejectsReplacementExpiryChangedBeforeConfirmation
+Stale expiry quote accepted
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:969
+
+6) BusinessLogicTest::testProductEditRejectsForgedExpiryChangeBeforeSavingOtherFields
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'2099-01-01'
++'2099-02-01'
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1063
+
+7) BusinessLogicTest::testExpiryCorrectionRejectsStaleOrInvalidRequestsAndRollsBackAuditFailure
+Failed asserting that 'Select a valid expiry-stock action.' [ASCII](length: 35) contains "changed" [ASCII](length: 7).
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1111
+
+8) BusinessLogicTest::testManualReplenishmentInvalidatesOldReturnsButRemovalKeepsIdentity
+Failed asserting that two strings are not identical.
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1150
+
+9) BusinessLogicTest::testRefundRechecksDeliveryAtTheInventoryLock
+Failed asserting that 11 is identical to 10.
+
+C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php:1162
+
+10) ServerTimeTest::testAnonymousClockSampleUsesServerEpochAndCannotBeCached
+Failed asserting that 204 is identical to 200.
+
+C:\UniServerZ\www\pharxmaco\tests\unit\ServerTimeTest.php:23
+
+ERRORS!
+Tests: 331, Assertions: 24628, Errors: 2, Failures: 10.

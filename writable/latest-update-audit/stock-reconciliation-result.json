@@ -1,0 +1,52 @@
+{
+    "reconciled": 9,
+    "remaining_mismatches": 0,
+    "changes": [
+        {
+            "product_id": 2,
+            "before": 16,
+            "after": 99
+        },
+        {
+            "product_id": 4,
+            "before": 100,
+            "after": 99
+        },
+        {
+            "product_id": 7,
+            "before": 80,
+            "after": 113
+        },
+        {
+            "product_id": 8,
+            "before": 35,
+            "after": 79
+        },
+        {
+            "product_id": 10,
+            "before": 90,
+            "after": 130
+        },
+        {
+            "product_id": 11,
+            "before": 70,
+            "after": 90
+        },
+        {
+            "product_id": 12,
+            "before": 50,
+            "after": 67
+        },
+        {
+            "product_id": 14,
+            "before": 65,
+            "after": 82
+        },
+        {
+            "product_id": 15,
+            "before": 55,
+            "after": 84
+        }
+    ],
+    "backup": "C:\\UniServerZ\\www\\pharxmaco\\writable\\backups\/stock-reconciliation-20261016-033828-5ec0835c.json"
+}

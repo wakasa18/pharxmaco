@@ -1,0 +1,345 @@
+{
+  "source_path": "C:\\Users\\warre\\Downloads\\u315645644_pharxmacotest (3).sql",
+  "source_sha256": "6ab0d7836c2493c6814a3b8175c5f82fd8f15c10982d6647029cf6d0a779b0fe",
+  "upgrade": "C:\\UniServerZ\\www\\pharxmaco\\database\\upgrades\\2026-10-14-latest-existing-database.sql",
+  "product_count": 54,
+  "missing_columns": [
+    "branch_products.stock_delivery_id",
+    "products.generic_name",
+    "products.strength",
+    "products.tax_treatment",
+    "products.medicine_type",
+    "products.senior_pwd_eligible",
+    "sales.receipt_metadata",
+    "sale_items.stock_delivery_id",
+    "sale_items.expiration_date_at_sale",
+    "sale_items.generic_name_snapshot",
+    "sale_items.strength_snapshot",
+    "sale_items.tax_treatment_snapshot",
+    "sale_items.vat_exemption_amount",
+    "sale_items.statutory_discount_kind"
+  ],
+  "upgrades": [
+    "database/upgrades/2026-10-04-stock-expiry-safeguards.sql",
+    "database/upgrades/2026-10-14-receipt-invoice-fields.sql",
+    "database/upgrades/2026-10-14-product-medicine-types.sql",
+    "database/upgrades/2026-10-14-senior-pwd-discounts.sql",
+    "database/upgrades/2026-10-15-cashier-workspace.sql"
+  ],
+  "generic_names": 39,
+  "strengths": 27,
+  "updates": [
+    {
+      "id": 2,
+      "name": "erceflora",
+      "sku": "",
+      "generic_name": "Bacillus clausii",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Bacillus clausii' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 2 AND `product_name` = 'erceflora' AND `sku` <=> '';"
+    },
+    {
+      "id": 6,
+      "name": "Biogesic 500mg",
+      "sku": "BIO500-001",
+      "generic_name": "Paracetamol",
+      "strength": "500 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Paracetamol' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '500 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 6 AND `product_name` = 'Biogesic 500mg' AND `sku` <=> 'BIO500-001';"
+    },
+    {
+      "id": 7,
+      "name": "Neozep Forte",
+      "sku": "NEO-FOR-002",
+      "generic_name": "Phenylephrine hydrochloride + Chlorphenamine maleate + Paracetamol",
+      "strength": "10 mg + 2 mg + 500 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Phenylephrine hydrochloride + Chlorphenamine maleate + Paracetamol' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '10 mg + 2 mg + 500 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 7 AND `product_name` = 'Neozep Forte' AND `sku` <=> 'NEO-FOR-002';"
+    },
+    {
+      "id": 8,
+      "name": "Alaxan FR",
+      "sku": "ALX-FR-003",
+      "generic_name": "Ibuprofen + Paracetamol",
+      "strength": "200 mg + 325 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Ibuprofen + Paracetamol' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '200 mg + 325 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 8 AND `product_name` = 'Alaxan FR' AND `sku` <=> 'ALX-FR-003';"
+    },
+    {
+      "id": 9,
+      "name": "Tempra Syrup",
+      "sku": "TMP-SYP-004",
+      "generic_name": "Paracetamol",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Paracetamol' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 9 AND `product_name` = 'Tempra Syrup' AND `sku` <=> 'TMP-SYP-004';"
+    },
+    {
+      "id": 10,
+      "name": "Cetirizine 10mg",
+      "sku": "CET10-005",
+      "generic_name": "Cetirizine",
+      "strength": "10 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Cetirizine' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '10 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 10 AND `product_name` = 'Cetirizine 10mg' AND `sku` <=> 'CET10-005';"
+    },
+    {
+      "id": 11,
+      "name": "Amoxicillin 500mg",
+      "sku": "AMX500-006",
+      "generic_name": "Amoxicillin",
+      "strength": "500 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Amoxicillin' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '500 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 11 AND `product_name` = 'Amoxicillin 500mg' AND `sku` <=> 'AMX500-006';"
+    },
+    {
+      "id": 12,
+      "name": "Vitamin C 500mg",
+      "sku": "VITC500-007",
+      "generic_name": "Vitamin C",
+      "strength": "500 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Vitamin C' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '500 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 12 AND `product_name` = 'Vitamin C 500mg' AND `sku` <=> 'VITC500-007';"
+    },
+    {
+      "id": 13,
+      "name": "Paracetamol 500mg",
+      "sku": "PAR500-008",
+      "generic_name": "Paracetamol",
+      "strength": "500 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Paracetamol' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '500 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 13 AND `product_name` = 'Paracetamol 500mg' AND `sku` <=> 'PAR500-008';"
+    },
+    {
+      "id": 14,
+      "name": "Loperamide 2mg",
+      "sku": "LOP2-009",
+      "generic_name": "Loperamide",
+      "strength": "2 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Loperamide' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '2 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 14 AND `product_name` = 'Loperamide 2mg' AND `sku` <=> 'LOP2-009';"
+    },
+    {
+      "id": 15,
+      "name": "Mefenamic Acid 500mg",
+      "sku": "MEF500-010",
+      "generic_name": "Mefenamic acid",
+      "strength": "500 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Mefenamic acid' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '500 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 15 AND `product_name` = 'Mefenamic Acid 500mg' AND `sku` <=> 'MEF500-010';"
+    },
+    {
+      "id": 16,
+      "name": "Ibuprofen 200mg Tablet",
+      "sku": "IBU200-011",
+      "generic_name": "Ibuprofen",
+      "strength": "200 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Ibuprofen' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '200 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 16 AND `product_name` = 'Ibuprofen 200mg Tablet' AND `sku` <=> 'IBU200-011';"
+    },
+    {
+      "id": 17,
+      "name": "Aspirin 80mg Tablet",
+      "sku": "ASP80-012",
+      "generic_name": "Aspirin",
+      "strength": "80 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Aspirin' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '80 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 17 AND `product_name` = 'Aspirin 80mg Tablet' AND `sku` <=> 'ASP80-012';"
+    },
+    {
+      "id": 18,
+      "name": "Naproxen Sodium 275mg",
+      "sku": "NAP275-013",
+      "generic_name": "Naproxen sodium",
+      "strength": "275 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Naproxen sodium' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '275 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 18 AND `product_name` = 'Naproxen Sodium 275mg' AND `sku` <=> 'NAP275-013';"
+    },
+    {
+      "id": 19,
+      "name": "Diclofenac Sodium 50mg",
+      "sku": "DIC50-014",
+      "generic_name": "Diclofenac sodium",
+      "strength": "50 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Diclofenac sodium' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '50 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 19 AND `product_name` = 'Diclofenac Sodium 50mg' AND `sku` <=> 'DIC50-014';"
+    },
+    {
+      "id": 20,
+      "name": "Paracetamol Syrup 250mg/5mL",
+      "sku": "PARSYP-015",
+      "generic_name": "Paracetamol",
+      "strength": "250 mg / 5 mL",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Paracetamol' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '250 mg / 5 mL' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 20 AND `product_name` = 'Paracetamol Syrup 250mg/5mL' AND `sku` <=> 'PARSYP-015';"
+    },
+    {
+      "id": 21,
+      "name": "Dextromethorphan Cough Syrup",
+      "sku": "DEXSYP-016",
+      "generic_name": "Dextromethorphan",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Dextromethorphan' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 21 AND `product_name` = 'Dextromethorphan Cough Syrup' AND `sku` <=> 'DEXSYP-016';"
+    },
+    {
+      "id": 22,
+      "name": "Ambroxol 30mg Tablet",
+      "sku": "AMB30-017",
+      "generic_name": "Ambroxol",
+      "strength": "30 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Ambroxol' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '30 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 22 AND `product_name` = 'Ambroxol 30mg Tablet' AND `sku` <=> 'AMB30-017';"
+    },
+    {
+      "id": 23,
+      "name": "Carbocisteine 500mg Capsule",
+      "sku": "CARB500-018",
+      "generic_name": "Carbocisteine",
+      "strength": "500 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Carbocisteine' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '500 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 23 AND `product_name` = 'Carbocisteine 500mg Capsule' AND `sku` <=> 'CARB500-018';"
+    },
+    {
+      "id": 24,
+      "name": "Phenylephrine + Chlorphenamine",
+      "sku": "PHENCPM-019",
+      "generic_name": "Phenylephrine + Chlorphenamine",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Phenylephrine + Chlorphenamine' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 24 AND `product_name` = 'Phenylephrine + Chlorphenamine' AND `sku` <=> 'PHENCPM-019';"
+    },
+    {
+      "id": 25,
+      "name": "Salbutamol Nebule 2.5mg",
+      "sku": "SALNEB-020",
+      "generic_name": "Salbutamol",
+      "strength": "2.5 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Salbutamol' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '2.5 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 25 AND `product_name` = 'Salbutamol Nebule 2.5mg' AND `sku` <=> 'SALNEB-020';"
+    },
+    {
+      "id": 26,
+      "name": "Omeprazole 20mg Capsule",
+      "sku": "OME20-021",
+      "generic_name": "Omeprazole",
+      "strength": "20 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Omeprazole' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '20 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 26 AND `product_name` = 'Omeprazole 20mg Capsule' AND `sku` <=> 'OME20-021';"
+    },
+    {
+      "id": 27,
+      "name": "Famotidine 20mg Tablet",
+      "sku": "FAM20-022",
+      "generic_name": "Famotidine",
+      "strength": "20 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Famotidine' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '20 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 27 AND `product_name` = 'Famotidine 20mg Tablet' AND `sku` <=> 'FAM20-022';"
+    },
+    {
+      "id": 28,
+      "name": "Oral Rehydration Salts",
+      "sku": "ORS-023",
+      "generic_name": "Oral rehydration salts",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Oral rehydration salts' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 28 AND `product_name` = 'Oral Rehydration Salts' AND `sku` <=> 'ORS-023';"
+    },
+    {
+      "id": 30,
+      "name": "Bisacodyl 5mg Tablet",
+      "sku": "BIS5-025",
+      "generic_name": "Bisacodyl",
+      "strength": "5 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Bisacodyl' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '5 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 30 AND `product_name` = 'Bisacodyl 5mg Tablet' AND `sku` <=> 'BIS5-025';"
+    },
+    {
+      "id": 31,
+      "name": "Loratadine 10mg Tablet",
+      "sku": "LOR10-026",
+      "generic_name": "Loratadine",
+      "strength": "10 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Loratadine' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '10 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 31 AND `product_name` = 'Loratadine 10mg Tablet' AND `sku` <=> 'LOR10-026';"
+    },
+    {
+      "id": 32,
+      "name": "Fexofenadine 120mg Tablet",
+      "sku": "FEX120-027",
+      "generic_name": "Fexofenadine",
+      "strength": "120 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Fexofenadine' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '120 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 32 AND `product_name` = 'Fexofenadine 120mg Tablet' AND `sku` <=> 'FEX120-027';"
+    },
+    {
+      "id": 33,
+      "name": "Diphenhydramine 25mg Capsule",
+      "sku": "DPH25-028",
+      "generic_name": "Diphenhydramine",
+      "strength": "25 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Diphenhydramine' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '25 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 33 AND `product_name` = 'Diphenhydramine 25mg Capsule' AND `sku` <=> 'DPH25-028';"
+    },
+    {
+      "id": 34,
+      "name": "Montelukast 10mg Tablet",
+      "sku": "MON10-029",
+      "generic_name": "Montelukast",
+      "strength": "10 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Montelukast' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '10 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 34 AND `product_name` = 'Montelukast 10mg Tablet' AND `sku` <=> 'MON10-029';"
+    },
+    {
+      "id": 35,
+      "name": "Hydrocortisone Cream 1%",
+      "sku": "HYD1-030",
+      "generic_name": "Hydrocortisone",
+      "strength": "1%",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Hydrocortisone' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '1%' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 35 AND `product_name` = 'Hydrocortisone Cream 1%' AND `sku` <=> 'HYD1-030';"
+    },
+    {
+      "id": 36,
+      "name": "Adult Multivitamins Capsule",
+      "sku": "MULTI-031",
+      "generic_name": "Multivitamins",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Multivitamins' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 36 AND `product_name` = 'Adult Multivitamins Capsule' AND `sku` <=> 'MULTI-031';"
+    },
+    {
+      "id": 37,
+      "name": "Vitamin B Complex Tablet",
+      "sku": "VITB-032",
+      "generic_name": "Vitamin B complex",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Vitamin B complex' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 37 AND `product_name` = 'Vitamin B Complex Tablet' AND `sku` <=> 'VITB-032';"
+    },
+    {
+      "id": 38,
+      "name": "Zinc 20mg Tablet",
+      "sku": "ZINC20-033",
+      "generic_name": "Zinc",
+      "strength": "20 mg",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Zinc' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '20 mg' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 38 AND `product_name` = 'Zinc 20mg Tablet' AND `sku` <=> 'ZINC20-033';"
+    },
+    {
+      "id": 39,
+      "name": "Calcium + Vitamin D Tablet",
+      "sku": "CALD-034",
+      "generic_name": "Calcium + Vitamin D",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Calcium + Vitamin D' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 39 AND `product_name` = 'Calcium + Vitamin D Tablet' AND `sku` <=> 'CALD-034';"
+    },
+    {
+      "id": 40,
+      "name": "Iron + Folic Acid Tablet",
+      "sku": "IRONFA-035",
+      "generic_name": "Iron + Folic acid",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Iron + Folic acid' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 40 AND `product_name` = 'Iron + Folic Acid Tablet' AND `sku` <=> 'IRONFA-035';"
+    },
+    {
+      "id": 41,
+      "name": "Isopropyl Alcohol 70% 500mL",
+      "sku": "ALC500-036",
+      "generic_name": "Isopropyl alcohol",
+      "strength": "70%",
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Isopropyl alcohol' ELSE `generic_name` END, `strength` = CASE WHEN `strength` IS NULL OR TRIM(`strength`) = '' THEN '70%' ELSE `strength` END, `updated_at` = `updated_at` WHERE `id` = 41 AND `product_name` = 'Isopropyl Alcohol 70% 500mL' AND `sku` <=> 'ALC500-036';"
+    },
+    {
+      "id": 42,
+      "name": "Povidone Iodine 60mL",
+      "sku": "POV60-037",
+      "generic_name": "Povidone iodine",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Povidone iodine' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 42 AND `product_name` = 'Povidone Iodine 60mL' AND `sku` <=> 'POV60-037';"
+    },
+    {
+      "id": 51,
+      "name": "Pediatric Multivitamin Syrup",
+      "sku": "PEDVIT-046",
+      "generic_name": "Multivitamins",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Multivitamins' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 51 AND `product_name` = 'Pediatric Multivitamin Syrup' AND `sku` <=> 'PEDVIT-046';"
+    },
+    {
+      "id": 54,
+      "name": "Saline Nasal Drops 15mL",
+      "sku": "SAL15-049",
+      "generic_name": "Saline",
+      "strength": null,
+      "sql": "UPDATE `products` SET `generic_name` = CASE WHEN `generic_name` IS NULL OR TRIM(`generic_name`) = '' THEN 'Saline' ELSE `generic_name` END, `updated_at` = `updated_at` WHERE `id` = 54 AND `product_name` = 'Saline Nasal Drops 15mL' AND `sku` <=> 'SAL15-049';"
+    }
+  ]
+}

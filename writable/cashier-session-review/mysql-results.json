@@ -1,0 +1,16 @@
+{
+    "checks": [
+        "Repeatable phpMyAdmin-compatible import",
+        "Native migration agrees with imported schema",
+        "Eight competing PHP processes produce exactly one successful login",
+        "Eight competing administrator logins produce exactly one owner",
+        "MySQL zero-changed-row checks retain ownership",
+        "Reimport preserves the active login",
+        "Expired\/replaced tokens cannot renew or release their replacement",
+        "Account row locking rejects stale credential snapshots"
+    ],
+    "competing_processes": 16,
+    "cashier_successful_claims": 1,
+    "administrator_successful_claims": 1,
+    "application_database_changed": false
+}

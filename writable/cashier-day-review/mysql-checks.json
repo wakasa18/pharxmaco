@@ -1,0 +1,8 @@
+{
+    "passed": [
+        "Stale repeatable-read snapshots detect newly committed money.",
+        "Named handover cannot be bypassed by an older snapshot.",
+        "Two simultaneous opening requests produce exactly one active cashier."
+    ],
+    "live_sales_modified": false
+}

@@ -1,0 +1,79 @@
+{
+  "tests": 331,
+  "pass": 319,
+  "unsuccessful": [
+    {
+      "class": "BusinessLogicTest",
+      "test": "testRefundRejectsExpiredOriginalDeliveryAfterReplacementAndAllowsQuarantine",
+      "kind": "failure",
+      "message": "BusinessLogicTest::testRefundRejectsExpiredOriginalDeliveryAfterReplacementAndAllowsQuarantine\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testReplacementWithTheSameExpiryStillHasDifferentDeliveryIdentity",
+      "kind": "failure",
+      "message": "BusinessLogicTest::testReplacementWithTheSameExpiryStillHasDifferentDeliveryIdentity\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testLegacyAndUnknownExpiryReturnsCannotBeRestocked",
+      "kind": "failure",
+      "message": "BusinessLogicTest::testLegacyAndUnknownExpiryReturnsCannotBeRestocked\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testExchangeRejectsOldDeliveryAndCapturesReplacementProvenance",
+      "kind": "failure",
+      "message": "BusinessLogicTest::testExchangeRejectsOldDeliveryAndCapturesReplacementProvenance\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testExchangeReviewRejectsReplacementExpiryChangedBeforeConfirmation",
+      "kind": "failure",
+      "message": "BusinessLogicTest::testExchangeReviewRejectsReplacementExpiryChangedBeforeConfirmation\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testQuantityCorrectionsCannotMixDeliveriesOrRestockExpiredItems",
+      "kind": "error",
+      "message": "BusinessLogicTest::testQuantityCorrectionsCannotMixDeliveriesOrRestockExpiredItems\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testProductEditRejectsForgedExpiryChangeBeforeSavingOtherFields",
+      "kind": "failure",
+      "message": "BusinessLogicTest::testProductEditRejectsForgedExpiryChangeBeforeSavingOtherFields\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testExpiryCorrectionIsAdminOnlyAuditedAndDoesNotRewriteSales",
+      "kind": "error",
+      "message": "BusinessLogicTest::testExpiryCorrectionIsAdminOnlyAuditedAndDoesNotRewriteSales\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testExpiryCorrectionRejectsStaleOrInvalidRequestsAndRollsBackAuditFailure",
+      "kind": "failure",
+      "message": "BusinessLogicTest::testExpiryCorrectionRejectsStaleOrInvalidRequestsAndRollsBackAuditFailure\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testManualReplenishmentInvalidatesOldReturnsButRemovalKeepsIdentity",
+      "kind": "failure",
+      "message": "BusinessLogicTest::testManualReplenishmentInvalidatesOldReturnsButRemovalKeepsIdentity\r"
+    },
+    {
+      "class": "BusinessLogicTest",
+      "test": "testRefundRechecksDeliveryAtTheInventoryLock",
+      "kind": "failure",
+      "message": "BusinessLogicTest::testRefundRechecksDeliveryAtTheInventoryLock\r"
+    },
+    {
+      "class": "ServerTimeTest",
+      "test": "testAnonymousClockSampleUsesServerEpochAndCannotBeCached",
+      "kind": "failure",
+      "message": "ServerTimeTest::testAnonymousClockSampleUsesServerEpochAndCannotBeCached\r"
+    }
+  ],
+  "warnings": "Counts are full-suite execution results, not a claim of all business scenarios covered."
+}

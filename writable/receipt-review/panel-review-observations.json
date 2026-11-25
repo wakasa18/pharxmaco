@@ -1,0 +1,101 @@
+[
+    {
+        "check": "correction_payment_date",
+        "observed": {
+            "original_day_receipts_before": 50,
+            "original_day_receipts_after": 30,
+            "today_report": {
+                "receipts": 0,
+                "refunds": 0,
+                "net": 0,
+                "cash_net": 0,
+                "unknown_refunds": 0
+            },
+            "today_correction_activity": "Sale correction: INV#TEST-1 | Total: PHP 50.00 -> PHP 30.00; Discount: PHP 0.00 -> PHP 0.00; Paid back to customer: PHP 20.00 via cash; Recorded tender: PHP 100.00 -> PHP 80.00; original change retained; \"Test Item\" qty: 5 \u2192 3 | Reason: Correct quantity"
+        }
+    },
+    {
+        "check": "correction_mixed_payment_methods",
+        "observed": {
+            "original_sale_cash_received": 50,
+            "additional_gcash_confirmed": 10,
+            "stored_sale_method": "gcash",
+            "original_day_report": [
+                {
+                    "date": "2026-09-14",
+                    "method": "gcash",
+                    "receipts": 60,
+                    "refunds": 0,
+                    "net": 60
+                }
+            ]
+        }
+    },
+    {
+        "check": "returned_old_lot_after_stock_replacement",
+        "observed": {
+            "original_lot_expiry": "2026-09-15",
+            "current_delivery_expiry": "2099-01-01",
+            "current_delivery_stock_after_old_return": 11,
+            "refund_records": 1,
+            "error": null
+        }
+    },
+    {
+        "check": "expired_stock_above_reorder_level",
+        "observed": {
+            "physical_stock": 10,
+            "sellable_stock": 0,
+            "reorder_level": 5,
+            "suggestion_count": 0
+        }
+    },
+    {
+        "check": "product_edit_activity_failure",
+        "observed": {
+            "initial_stock": 10,
+            "stock_after_error": 12,
+            "stock_logs_after_error": 1,
+            "activity_logs": 0,
+            "exception": "audit unavailable"
+        }
+    },
+    {
+        "check": "expiry_changed_without_stock_disposition",
+        "observed": {
+            "previous_expiry": "2000-01-01",
+            "new_expiry": "2099-01-01",
+            "stock_retained": 10,
+            "stock_logs": 0,
+            "activity": "Updated product: Test Item (ID: 1)"
+        }
+    },
+    {
+        "check": "discount_rule_change_with_same_original_amount",
+        "observed": {
+            "original_rule": "Fixed PHP 10",
+            "current_rule": "20 percent",
+            "context_error": null,
+            "corrected_discount_using_current_rule": 12,
+            "discount_using_original_rule": 10
+        }
+    },
+    {
+        "check": "login_throttle_with_configured_dummy_fallback",
+        "observed": {
+            "failed_attempts": 6,
+            "filter_blocked": false,
+            "last_error": "Invalid username or password. 4 attempts remaining before lockout.",
+            "recorded_attempts": 6
+        }
+    },
+    {
+        "check": "forecast_historical_origin_uses_later_refunds",
+        "observed": {
+            "forecast_origin": "2026-09-14",
+            "refund_occurred": "2026-10-04",
+            "estimated_daily_quantity_before_later_refund": 5,
+            "estimated_daily_quantity_after_later_refund": 4
+        }
+    }
+]

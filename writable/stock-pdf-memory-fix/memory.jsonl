@@ -1,0 +1,14 @@
+{"path":"\/server-time","peak_bytes":10485760,"memory_limit":"128M"}
+{"path":"\/login","peak_bytes":10485760,"memory_limit":"128M"}
+{"path":"\/login","peak_bytes":12582912,"memory_limit":"128M"}
+{"path":"\/login","peak_bytes":10485760,"memory_limit":"128M"}
+{"path":"\/login","peak_bytes":12582912,"memory_limit":"128M"}
+{"path":"\/login","peak_bytes":10485760,"memory_limit":"128M"}
+{"path":"\/login","peak_bytes":12582912,"memory_limit":"128M"}
+{"path":"\/stock-logs\/export-pdf","peak_bytes":29360128,"memory_limit":"128M"}
+{"path":"\/stock-logs\/export-pdf","peak_bytes":25165824,"memory_limit":"128M"}
+{"path":"\/stock-logs\/export-pdf","peak_bytes":25165824,"memory_limit":"128M"}
+{"path":"\/stock-logs\/export-pdf","peak_bytes":25165824,"memory_limit":"128M"}
+{"path":"\/stock-logs\/export-pdf","peak_bytes":25165824,"memory_limit":"128M"}
+{"path":"\/stock-logs\/export-pdf","peak_bytes":25165824,"memory_limit":"128M"}
+{"path":"\/stock-logs\/export-pdf","peak_bytes":25165824,"memory_limit":"128M"}

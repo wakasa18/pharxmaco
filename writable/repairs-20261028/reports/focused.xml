@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\UniServerZ\www\pharxmaco\phpunit.xml.dist" tests="8" assertions="167" errors="0" failures="0" skipped="0" time="1.571812">
+    <testsuite name="App" tests="8" assertions="167" errors="0" failures="0" skipped="0" time="1.571812">
+      <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="8" assertions="167" errors="0" failures="0" skipped="0" time="1.571812">
+        <testcase name="testReportRepairReleasedQuarantineRecoversCostOnceInAllGroupings" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="34" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="38" time="0.122422"/>
+        <testcase name="testReportRepairMixedReturnsRecoverOnlyResellableAndReleasedCosts" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="63" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.014615"/>
+        <testcase name="testReportRepairUnreleasedAndDamagedRefundsKeepTheirCostLoss" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="81" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.012976"/>
+        <testcase name="testReportRepairLegacySchemaWithoutQuarantineStillReportsResellableCosts" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="94" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="3" time="0.011443"/>
+        <testcase name="testReportRepairCsvGeneratesAttachmentAndRecordsRecoveredTotalsOnce" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="105" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="81" time="0.024639"/>
+        <testcase name="testReportRepairCsvGenerationFailureDoesNotCreateHistoryOrConsumeReceipt" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="130" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.032844"/>
+        <testcase name="testReportRepairFullAndSummaryPdfGenerateDistinctAttachmentsAndHistory" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="148" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="14" time="0.649929"/>
+        <testcase name="testReportRepairActualRoutesReturnAttachmentsAndRejectGuests" file="C:\UniServerZ\www\pharxmaco\tests\unit\ReportRepairCases.php" line="167" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="15" time="0.702943"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

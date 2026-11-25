@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="BusinessLogicTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\BusinessLogicTest.php" tests="10" assertions="68" errors="0" failures="0" skipped="0" time="0.439475">
+    <testcase name="testProductListFiltersUseBranchQuantityAndInclusiveReorderBoundary" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="77" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="6" time="0.148783"/>
+    <testcase name="testProductListManufacturerFilterMatchesExactTrimmedNamesAndEscapesPunctuation" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="87" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.033337"/>
+    <testcase name="testProductListFiltersCombineAndKeepManufacturerChoicesIndependentOfResults" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="100" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="5" time="0.024316"/>
+    <testcase name="testProductListManufacturerChoicesAndRowsStayInCashiersAssignedBranch" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="112" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.034367"/>
+    <testcase name="testProductListFiltersHandleMalformedInputsWithoutExpandingAnExactManufacturerMatch" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="124" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.063371"/>
+    <testcase name="testProductListClearFiltersRetainsBranchContextOnly" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="138" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="7" time="0.031471"/>
+    <testcase name="testProductListAdminManufacturerFilterCanSpanBranches" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="153" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="4" time="0.037040"/>
+    <testcase name="testProductListAjaxFiltersReturnOnlyRowsAndRetainBranchPermissions" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="164" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="12" time="0.022015"/>
+    <testcase name="testProductListAjaxEmptyResultsCanBeClearedAndNamesRemainEscaped" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="183" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="9" time="0.016137"/>
+    <testcase name="testProductListAjaxReadsKeepUnspentStockTokensValid" file="C:\UniServerZ\www\pharxmaco\tests\unit\ProductListFilterCases.php" line="197" class="BusinessLogicTest" classname="BusinessLogicTest" assertions="8" time="0.028638"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,52 @@
+{
+  "focused": {
+    "tests": 27,
+    "assertions": 216,
+    "passed": true
+  },
+  "full": {
+    "tests": 425,
+    "assertions": 25425,
+    "passed": 422,
+    "failures": 2,
+    "errors": 1,
+    "remaining": "Existing A05 dedicated expiry-correction workflow"
+  },
+  "browser": {
+    "total": 120,
+    "pos": 50,
+    "after_sale": 34,
+    "reports": 36,
+    "exceptions": 0,
+    "application_posts": 0,
+    "synthetic_posts": 0
+  },
+  "syntax": {
+    "php": 48,
+    "js": 5,
+    "passed": true
+  },
+  "manual": {
+    "pages": 37,
+    "contents_links": 68,
+    "source_changed": true,
+    "fonts_preserved": true
+  },
+  "report_pdf": {
+    "full_pages": 3,
+    "summary_pages": 1,
+    "no_reorder": true
+  },
+  "package": {
+    "archive": "C:\\UniServerZ\\www\\pharxmaco/build/hostinger-pos-catalog-payment-update-2026-10-29.zip",
+    "runtime_files": 46,
+    "changed_runtime_files": 18,
+    "sql_files": 0,
+    "bytes": 189691,
+    "sha256": "5b2ffaab8a0ac4da0887017602043e5a04bc2d3f6e782f64bb7169c09cbfba18",
+    "hosting_changed": false
+  },
+  "application_database_changed": false,
+  "hosting_changed": false,
+  "sql_import_required": false
+}

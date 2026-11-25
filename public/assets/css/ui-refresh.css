@@ -1,0 +1,219 @@
+/* ==========================================================================
+   Pharxmaco UI refresh: calmer surfaces, clearer hierarchy, light motion.
+   Loaded LAST so it refines the existing styles without rewriting them.
+
+   Performance rules this file follows:
+   - Animate only transform and opacity (compositor-friendly). Colors may fade.
+   - No backdrop-filter, no `transition: all`, no animated blur/box-shadow on lists.
+   - Nothing animates repeatedly; every effect plays once and is short (<= 260ms).
+   - Honors the OS "reduce motion" setting AND the app's own Reduce motion switch.
+   ========================================================================== */
+
+:root {
+    --ease-out: cubic-bezier(.22, 1, .36, 1);
+    --ease-std: cubic-bezier(.4, 0, .2, 1);
+    --dur-1: 120ms;
+    --dur-2: 180ms;
+    --dur-3: 240ms;
+    --ring: 0 0 0 3px color-mix(in srgb, var(--primary) 22%, transparent);
+    --elev-1: 0 1px 2px rgba(16, 36, 54, .05), 0 4px 14px -6px rgba(16, 36, 54, .09);
+    --elev-2: 0 2px 4px rgba(16, 36, 54, .06), 0 12px 28px -10px rgba(16, 36, 54, .16);
+    --scrim: rgba(8, 18, 32, .5);
+}
+html.dark {
+    --elev-1: 0 0 0 1px rgba(255, 255, 255, .03);
+    --elev-2: 0 8px 24px -8px rgba(0, 0, 0, .55);
+    --scrim: rgba(3, 8, 16, .66);
+}
+html.high-contrast { --elev-1: none; --elev-2: none; }
+
+/* ---------- Page canvas ---------------------------------------------------- */
+body { text-rendering: auto; }
+.content :is(h1, h2) { text-wrap: balance; }
+.content :is(p, .kpi-sub, .form-help) { text-wrap: pretty; }
+
+/* Money and counts line up and never jiggle while values change. */
+.kpi-value, .stat-value, .table-number, .money, td.table-number, .low-stock-number, .cart-total-value {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+}
+
+/* ---------- Surfaces ------------------------------------------------------- */
+.card, .stat-card, .dash-page .dash-card {
+    border: 1px solid var(--line);
+    box-shadow: var(--elev-1);
+}
+.card-head { border-bottom: 1px solid var(--line); }
+.card-head h2 { font-size: 16px; letter-spacing: -.2px; }
+
+.page-header h1, .dash-page .dash-header h1 { letter-spacing: -.6px; }
+.dash-page .dash-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 4px 11px; border-radius: 999px; background: var(--primary-light);
+}
+
+/* ---------- Buttons -------------------------------------------------------- */
+.btn {
+    transition: background-color var(--dur-1) var(--ease-std), border-color var(--dur-1) var(--ease-std),
+                color var(--dur-1) var(--ease-std), box-shadow var(--dur-1) var(--ease-std), transform var(--dur-1) var(--ease-out);
+}
+.btn:hover { opacity: 1; }
+.btn:active:not([disabled]) { transform: translateY(1px) scale(.985); }
+.btn-primary {
+    background: var(--primary);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .16), 0 1px 2px rgba(16, 36, 54, .18), 0 6px 14px -8px var(--primary-shadow);
+}
+.btn-primary:hover { background: var(--primary-dark); }
+html.dark .btn-primary { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22), 0 1px 2px rgba(0, 0, 0, .3); }
+.btn-danger:hover, .btn.danger:hover { background: color-mix(in srgb, var(--danger) 88%, #000); }
+.btn-success:hover { background: color-mix(in srgb, var(--success) 88%, #000); }
+.btn-secondary:hover, .btn.secondary:hover { border-color: var(--primary); color: var(--primary); }
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* ---------- Form controls -------------------------------------------------- */
+.field :is(input, select, textarea), .input, input[type="search"], input[type="date"] {
+    transition: border-color var(--dur-1) var(--ease-std), box-shadow var(--dur-1) var(--ease-std), background-color var(--dur-1) var(--ease-std);
+}
+input:focus, select:focus, textarea:focus, .input:focus { box-shadow: var(--ring); }
+
+/* ---------- Badges: a dot so status never relies on color alone ------------- */
+.badge-success, .badge-danger, .badge-warning { gap: 6px; }
+.badge-success::before, .badge-danger::before, .badge-warning::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex: none;
+}
+
+/* ---------- Tables --------------------------------------------------------- */
+table tbody tr { transition: background-color 90ms linear; }
+.pagination li a {
+    transition: background-color var(--dur-1) var(--ease-std), border-color var(--dur-1) var(--ease-std), color var(--dur-1) var(--ease-std);
+}
+.pagination li.active a { box-shadow: 0 2px 6px -2px var(--primary-shadow); }
+
+/* ---------- Dashboard cards ------------------------------------------------ */
+.dash-page .kpi, .dash-page .dash-action {
+    box-shadow: var(--elev-1);
+    transition: transform var(--dur-2) var(--ease-out), border-color var(--dur-2) var(--ease-std), box-shadow var(--dur-2) var(--ease-std);
+}
+@media (hover: hover) and (pointer: fine) {
+    .dash-page a.kpi:hover, .dash-page .dash-action:hover {
+        transform: translateY(-2px);
+        border-color: color-mix(in srgb, var(--primary) 40%, var(--line));
+        box-shadow: var(--elev-2);
+    }
+}
+.dash-page a.kpi:active, .dash-page .dash-action:active { transform: translateY(0) scale(.99); }
+.dash-page .dash-action:first-child { box-shadow: var(--elev-1); }
+.kpi-icon { transition: transform var(--dur-2) var(--ease-out); }
+@media (hover: hover) and (pointer: fine) {
+    a.kpi:hover .kpi-icon { transform: scale(1.08); }
+}
+
+/* Summary cards: a colored top rule tells the story at a glance (green = sales, amber = attention, red = urgent). */
+.dash-page .kpi-grid .kpi { box-shadow: inset 0 3px 0 var(--kpi-accent, var(--primary)), var(--elev-1); }
+.dash-page .kpi.green { --kpi-accent: var(--success); }
+.dash-page .kpi.blue  { --kpi-accent: var(--primary); }
+.dash-page .kpi.amber { --kpi-accent: #d97706; }
+.dash-page .kpi.red   { --kpi-accent: var(--danger); }
+@media (hover: hover) and (pointer: fine) {
+    .dash-page .kpi-grid a.kpi:hover { box-shadow: inset 0 3px 0 var(--kpi-accent, var(--primary)), var(--elev-2); }
+}
+
+/* ---------- Sidebar drawer ------------------------------------------------- */
+.sidebar { will-change: transform; transition: transform var(--dur-3) var(--ease-out); }
+.sidebar.open { box-shadow: 0 0 0 1px var(--line), 10px 0 24px -12px rgba(8, 20, 35, .25); }
+.sidebar .nav-item {
+    transition: background-color var(--dur-1) var(--ease-std), color var(--dur-1) var(--ease-std), border-color var(--dur-1) var(--ease-std);
+}
+.sidebar .nav-icon { transition: transform var(--dur-2) var(--ease-out), color var(--dur-1) var(--ease-std); }
+@media (hover: hover) and (pointer: fine) {
+    .sidebar .nav-item:hover .nav-icon { transform: translateX(2px); }
+}
+.sidebar.open .nav-item.active::before { animation: bar-grow var(--dur-3) var(--ease-out) 120ms backwards; }
+.sidebar.open .nav-item.active { animation: item-in var(--dur-3) var(--ease-out) backwards; }
+
+/* ---------- Overlays & dialogs (no blur: blur is the costliest effect here) - */
+.overlay, #lowStockModal, #forecastModalOverlay, #heldModalOverlay, .held-modal-overlay, .forecast-modal-overlay {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+}
+.overlay { background: var(--scrim); }
+.overlay.show { animation: fade-in var(--dur-2) linear; }
+#lowStockModal, #forecastModalOverlay, #heldModalOverlay, .held-modal-overlay, .forecast-modal-overlay { background: var(--scrim); }
+/* The dim layer appears instantly (fading a full-screen layer is costly on modest hardware);
+   only the dialog itself eases in, with a flat border instead of a large blurred shadow. */
+.inventory-modal-dialog, .forecast-modal, .held-modal {
+    animation: dialog-in var(--dur-3) var(--ease-out) backwards;
+    box-shadow: 0 0 0 1px var(--line);
+}
+@media (max-width: 700px) {
+    .inventory-modal-dialog, .forecast-modal, .held-modal { animation-name: sheet-in; }
+}
+
+/* ---------- Menus ---------------------------------------------------------- */
+.notification-menu.open, .account-panel:not([hidden]) {
+    animation: pop-in var(--dur-2) var(--ease-out) backwards;
+    transform-origin: top right;
+}
+
+/* ---------- Alerts and banners -------------------------------------------- */
+.alert { animation: slide-down var(--dur-3) var(--ease-out) backwards; }
+.global-connection-banner { transition: opacity var(--dur-2) var(--ease-std), transform var(--dur-2) var(--ease-out); }
+.auto-filter-status.show { animation: fade-in var(--dur-2) linear; }
+
+/* ---------- Page entrance: one short, staggered settle per navigation ------ */
+/* Opacity only on wrappers (a transform here would trap position:fixed dialogs).
+   Slide only on leaf cards. Skipped on same-page reloads such as live filters. */
+html:not(.no-enter) .content > * { animation: enter-fade var(--dur-3) linear backwards; }
+html:not(.no-enter) .content :is(.page-header, .dash-header, .dash-actions, .kpi-grid, .dash-watch-grid) {
+    animation: enter-rise var(--dur-3) var(--ease-out) backwards;
+}
+html:not(.no-enter) .content :is(.page-header, .dash-header) { animation-delay: 0ms; }
+html:not(.no-enter) .content > .alert { animation-delay: 30ms; }
+html:not(.no-enter) .content .dash-actions { animation-delay: 40ms; }
+html:not(.no-enter) .content .kpi-grid { animation-delay: 80ms; }
+html:not(.no-enter) .content .dash-watch-grid { animation-delay: 120ms; }
+html:not(.no-enter) .content > .card, html:not(.no-enter) .content > .stack > .card:first-child {
+    animation: enter-rise var(--dur-3) var(--ease-out) 50ms backwards;
+}
+/* The POS needs to be instantly usable: no entrance there. */
+html:not(.no-enter) .content > .pos-root, html:not(.no-enter) .content > .pos-root * { animation: none; }
+
+/* ---------- Navigation progress bar (see ui-motion.js) --------------------- */
+.nav-progress {
+    position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 2000; pointer-events: none;
+    transform: scaleX(0); transform-origin: 0 50%; opacity: 0;
+    background: linear-gradient(90deg, var(--primary), color-mix(in srgb, var(--primary) 55%, #fff));
+}
+.nav-progress.run { opacity: 1; transform: scaleX(.86); transition: transform 7s cubic-bezier(.1, .75, .2, 1); }
+
+/* ---------- Keyframes ------------------------------------------------------ */
+@keyframes fade-in   { from { opacity: 0; } }
+@keyframes enter-fade{ from { opacity: .45; } }
+@keyframes enter-rise{ from { opacity: .45; transform: translateY(8px); } }
+@keyframes slide-down{ from { opacity: 0; transform: translateY(-6px); } }
+@keyframes pop-in    { from { opacity: 0; transform: translateY(-4px) scale(.97); } }
+@keyframes dialog-in { from { opacity: 0; transform: translateY(14px) scale(.985); } }
+@keyframes sheet-in  { from { opacity: 0; transform: translateY(28px); } }
+@keyframes bar-grow  { from { transform: scaleY(.2); opacity: 0; } }
+@keyframes item-in   { from { opacity: .4; } }
+
+/* ---------- Motion off: OS setting, in-app switch, and print --------------- */
+@media (prefers-reduced-motion: reduce) {
+    .content *, .overlay, #lowStockModal, #forecastModalOverlay, #heldModalOverlay,
+    .notification-menu, .account-panel, .alert, .inventory-modal-dialog, .forecast-modal, .held-modal,
+    .sidebar .nav-item, .sidebar .nav-item::before { animation: none !important; }
+    .nav-progress.run { transition: none; }
+    .dash-page a.kpi:hover, .dash-page .dash-action:hover, a.kpi:hover .kpi-icon, .sidebar .nav-item:hover .nav-icon { transform: none; }
+}
+html.reduce-motion .content *, html.reduce-motion .overlay, html.reduce-motion #lowStockModal,
+html.reduce-motion #forecastModalOverlay, html.reduce-motion #heldModalOverlay,
+html.reduce-motion .notification-menu, html.reduce-motion .account-panel, html.reduce-motion .alert,
+html.reduce-motion .inventory-modal-dialog, html.reduce-motion .forecast-modal, html.reduce-motion .held-modal,
+html.reduce-motion .sidebar .nav-item, html.reduce-motion .sidebar .nav-item::before { animation: none !important; }
+html.reduce-motion .nav-progress.run { transition: none; }
+html.reduce-motion :is(.dash-page a.kpi:hover, .dash-page .dash-action:hover, a.kpi:hover .kpi-icon, .sidebar .nav-item:hover .nav-icon) { transform: none; }
+@media print { * { animation: none !important; transition: none !important; } .nav-progress { display: none; } }

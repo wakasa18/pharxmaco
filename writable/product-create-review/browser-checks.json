@@ -1,0 +1,206 @@
+{
+  "checks": [
+    "admin invalid form does not review or save",
+    "admin complete overview has current labels and values",
+    "admin Enter opens review and keyboard focus stays inside",
+    {
+      "role": "admin",
+      "width": 390,
+      "dark": false,
+      "bounds": {
+        "left": 12,
+        "right": 368,
+        "top": 12,
+        "bottom": 888
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "admin",
+      "width": 390,
+      "dark": true,
+      "bounds": {
+        "left": 12,
+        "right": 368,
+        "top": 12,
+        "bottom": 888
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "admin",
+      "width": 768,
+      "dark": false,
+      "bounds": {
+        "left": 24,
+        "right": 734,
+        "top": 24,
+        "bottom": 876
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "admin",
+      "width": 768,
+      "dark": true,
+      "bounds": {
+        "left": 24,
+        "right": 734,
+        "top": 24,
+        "bottom": 876
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "dark": false,
+      "bounds": {
+        "left": 335,
+        "right": 1095,
+        "top": 24,
+        "bottom": 876
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "admin",
+      "width": 1440,
+      "dark": true,
+      "bounds": {
+        "left": 335,
+        "right": 1095,
+        "top": 24,
+        "bottom": 876
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    "admin back keeps entries and restores focus",
+    "admin Escape closes without saving",
+    "admin changed values require a fresh confirmation",
+    "admin backdrop closes without saving",
+    "admin markup is rejected before review",
+    "admin blank SKU is required before review",
+    "admin final confirmation posts once with branch, entered values and CSRF",
+    "cashier invalid form does not review or save",
+    "cashier complete overview has current labels and values",
+    "cashier Enter opens review and keyboard focus stays inside",
+    {
+      "role": "cashier",
+      "width": 390,
+      "dark": false,
+      "bounds": {
+        "left": 12,
+        "right": 368,
+        "top": 12,
+        "bottom": 888
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "cashier",
+      "width": 390,
+      "dark": true,
+      "bounds": {
+        "left": 12,
+        "right": 368,
+        "top": 12,
+        "bottom": 888
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "cashier",
+      "width": 768,
+      "dark": false,
+      "bounds": {
+        "left": 24,
+        "right": 734,
+        "top": 24,
+        "bottom": 876
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "cashier",
+      "width": 768,
+      "dark": true,
+      "bounds": {
+        "left": 24,
+        "right": 734,
+        "top": 24,
+        "bottom": 876
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "dark": false,
+      "bounds": {
+        "left": 335,
+        "right": 1095,
+        "top": 24,
+        "bottom": 876
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    {
+      "role": "cashier",
+      "width": 1440,
+      "dark": true,
+      "bounds": {
+        "left": 335,
+        "right": 1095,
+        "top": 24,
+        "bottom": 876
+      },
+      "inside": true,
+      "overflow": false,
+      "footer": true,
+      "scrollable": true
+    },
+    "cashier back keeps entries and restores focus",
+    "cashier Escape closes without saving",
+    "cashier changed values require a fresh confirmation",
+    "cashier backdrop closes without saving",
+    "cashier markup is rejected before review",
+    "cashier blank SKU is required before review",
+    "cashier final confirmation posts once with branch, entered values and CSRF"
+  ],
+  "posted_count": 2,
+  "application_database_accessed": false
+}

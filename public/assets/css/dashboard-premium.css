@@ -1,0 +1,292 @@
+/* ==========================================================================
+   Dashboard — premium layer. Loads after dashboard.css; delete its <link>
+   in dashboard/index.php to go back to the flat look.
+   Token-driven, so dark mode, accents, high contrast, text size and the
+   reduce-motion setting keep working (dashboard.css already zeroes every
+   animation inside .dash-page for reduced motion).
+   One orchestrated entrance, then motion only in response to the user.
+   ========================================================================== */
+
+.dash-page {
+    --d-radius: 22px;
+    --d-glow: color-mix(in srgb, var(--primary) 55%, #fff);
+    --d-rim: color-mix(in srgb, var(--primary) 28%, var(--line));
+    --heading-font: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+}
+
+@keyframes d-rise { from { opacity: 0; transform: translateY(12px); } }
+@keyframes d-swap { from { opacity: 0; transform: translateY(6px); } }
+@keyframes d-wipe { from { clip-path: inset(0 100% 0 0); } }
+@keyframes d-grow { from { transform: scaleX(0); } }
+@keyframes d-pop  { from { opacity: 0; transform: translate(-50%, -50%) scale(0); } }
+
+/* ---- Entrance: one sequence, top to bottom ---------------------------------- */
+.dash-head, .dash-toolbar, .dash-notice, .dash-today > *, .dash-page > .dash-panel, .dash-split > .dash-panel { animation: d-rise .75s var(--d-ease) backwards; }
+.dash-toolbar { animation-delay: .07s; }
+.dash-notice { animation-delay: .1s; }
+.dash-today > :nth-child(1) { animation-delay: .12s; }
+.dash-today > :nth-child(2) { animation-delay: .22s; }
+.dash-today > :nth-child(3) { animation-delay: .3s; }
+#dashAttention { animation-delay: .4s; }
+#dashTrends > :nth-child(1) { animation-delay: .48s; }
+#dashTrends > :nth-child(2) { animation-delay: .54s; }
+#dashBranches { animation-delay: .6s; }
+#dashActivity > :nth-child(1) { animation-delay: .66s; }
+#dashActivity > :nth-child(2) { animation-delay: .72s; }
+
+/* ---- Header --------------------------------------------------------------------- */
+.dash-page .dash-head h1 { font-weight: 700; font-size: clamp(28px, 3.3vw, 40px); letter-spacing: -.04em; }
+.dash-page .dash-clock { display: inline-flex; margin-top: 14px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); box-shadow: var(--pm-shadow-xs); }
+.dash-clock-date::before { content: ""; display: inline-block; width: 7px; height: 7px; margin: 0 9px 1px 0; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 3px color-mix(in srgb, var(--success) 22%, transparent); }
+
+/* ---- Buttons --------------------------------------------------------------------- */
+.dash-page .dash-btn { min-height: 42px; box-shadow: var(--pm-shadow-xs); transition: transform .25s var(--d-ease), box-shadow .25s ease, border-color .2s ease, background-color .2s ease, color .2s ease; }
+.dash-page .dash-btn:hover { transform: translateY(-2px); box-shadow: var(--pm-shadow-sm); }
+.dash-page .dash-btn:active { transform: scale(.97); transition-duration: .08s; }
+.dash-page .dash-btn svg { transition: transform .35s var(--d-ease), color .2s ease; }
+.dash-page .dash-btn:hover svg { transform: scale(1.14) rotate(-5deg); }
+.dash-page .dash-btn-primary { border-color: transparent; background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 82%, #fff), var(--primary)); box-shadow: inset 0 1px 0 rgba(255,255,255,.28), 0 10px 22px -8px var(--primary-shadow); }
+.dash-page .dash-btn-primary:hover { border-color: transparent; background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 90%, #fff), var(--primary-dark)); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 16px 28px -8px var(--primary-shadow); }
+
+/* ---- Today: hero + two tiles ----------------------------------------------------------- */
+.dash-page .dash-today { grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 1.6vw, 20px); border: 0; }
+.dash-page .dash-stat {
+    --hp: clamp(22px, 2.4vw, 32px);
+    position: relative; isolation: isolate; overflow: hidden; justify-content: center; padding: var(--hp);
+    border: 1px solid transparent; border-radius: var(--d-radius);
+    background: linear-gradient(var(--surface), var(--surface)) padding-box, linear-gradient(150deg, var(--d-rim), var(--line) 60%) border-box;
+    box-shadow: var(--pm-shadow-sm);
+    transition: transform .45s var(--d-ease), box-shadow .45s var(--d-ease);
+}
+.dash-page .dash-stat .dash-figure { font-size: clamp(30px, 3.2vw, 42px); }
+.dash-page .dash-stat:not(.dash-stat-hero)::before {
+    content: ""; position: absolute; top: var(--hp); right: var(--hp); width: 22px; height: 22px; background: var(--primary); opacity: .85;
+    -webkit-mask: var(--d-icon) center / contain no-repeat; mask: var(--d-icon) center / contain no-repeat;
+}
+.dash-today > :nth-child(2) { --d-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h12v18l-3-2-3 2-3-2-3 2z'/%3E%3Cpath d='M9 8h6M9 12h6'/%3E%3C/svg%3E"); }
+.dash-today > :nth-child(3) { --d-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 19V5M4 19h16'/%3E%3Cpath d='m8 14 3-4 3 2 4-6'/%3E%3C/svg%3E"); }
+
+/* Pointer spotlight (positioned by dashboard-premium.js) */
+.dash-stat::after { content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0; pointer-events: none; transition: opacity .4s ease;
+    background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 0%), color-mix(in srgb, var(--primary) 14%, transparent), transparent 65%); }
+.dash-stat-hero::after { background: radial-gradient(440px circle at var(--mx, 50%) var(--my, 0%), var(--h-spot), transparent 62%); }
+@media (hover: hover) {
+    .dash-page .dash-stat:hover { transform: translateY(-3px); box-shadow: var(--pm-shadow-md); }
+    .dash-stat:hover::after { opacity: 1; }
+}
+
+/* Hero: the one bold moment. Follows the theme: bright surface in light mode, deep ink in dark mode. */
+.dash-stat-hero {
+    --h-fg: var(--text); --h-mute: var(--muted); --h-line: var(--primary); --h-dot: var(--primary);
+    --h-ring: color-mix(in srgb, var(--primary) 28%, transparent); --h-spot: color-mix(in srgb, var(--primary) 12%, transparent);
+}
+html.dark .dash-stat-hero {
+    --h-fg: #fff; --h-mute: rgba(255,255,255,.7); --h-line: var(--d-glow); --h-dot: #fff;
+    --h-ring: color-mix(in srgb, var(--primary) 45%, transparent); --h-spot: rgba(255,255,255,.14);
+}
+.dash-page .dash-stat-hero {
+    grid-row: 1 / span 2; justify-content: flex-start; gap: 12px; min-height: clamp(250px, 24vw, 310px); color: var(--h-fg); border-color: var(--d-rim);
+    background:
+        radial-gradient(90% 75% at 100% 0%, color-mix(in srgb, var(--primary) 18%, transparent), transparent 65%),
+        radial-gradient(60% 50% at 0% 100%, color-mix(in srgb, var(--primary) 8%, transparent), transparent 70%),
+        linear-gradient(165deg, var(--surface), var(--surface-2));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.7), var(--pm-shadow-md);
+}
+html.dark .dash-page .dash-stat-hero {
+    border-color: rgba(255,255,255,.08);
+    background:
+        radial-gradient(90% 75% at 100% 0%, color-mix(in srgb, var(--primary) 44%, transparent), transparent 65%),
+        radial-gradient(60% 50% at 0% 100%, color-mix(in srgb, var(--primary) 16%, transparent), transparent 70%),
+        linear-gradient(165deg, var(--sb-bg), var(--sb-header));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.09), var(--pm-shadow-md);
+}
+.dash-stat-hero .dash-label, .dash-stat-hero .dash-compare { color: var(--h-mute); }
+.dash-page .dash-stat-hero .dash-figure, .dash-page .dash-stat-hero:hover .dash-figure { color: var(--h-fg); font-size: clamp(44px, 5.6vw, 76px); }
+.dash-stat-hero .dash-cur, .dash-stat-hero .dash-dec { color: var(--h-mute); }
+html.dark .dash-stat-hero .dash-delta-up { background: rgba(52,194,106,.18); color: #8ef0b5; }
+html.dark .dash-stat-hero .dash-delta-down { background: rgba(240,96,96,.2); color: #ffbcbc; }
+html.dark .dash-stat-hero .dash-delta-flat { background: rgba(255,255,255,.12); color: rgba(255,255,255,.78); }
+
+/* Sparkline bleeds to the card edges; wipes in, then the end dot pops */
+.dash-stat-hero .dash-spark-fig { position: relative; margin: auto calc(-1 * var(--hp)) calc(-1 * var(--hp)); padding-top: 26px; color: var(--h-line); }
+.dash-stat-hero .dash-spark-fig figcaption { position: absolute; top: 0; left: var(--hp); margin: 0; color: var(--h-mute); }
+.dash-spark-box { position: relative; }
+.dash-page .dash-spark { display: block; width: 100%; max-width: none; height: clamp(84px, 9vw, 120px); overflow: hidden; animation: d-wipe 1.5s var(--d-ease) .5s backwards; }
+.dash-spark polygon { opacity: .16; }
+.dash-spark polyline { stroke-width: 2.5px; vector-effect: non-scaling-stroke; }
+.dash-spark-dot { position: absolute; width: 12px; height: 12px; border-radius: 50%; background: var(--h-dot); transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 4px var(--h-ring), 0 0 18px color-mix(in srgb, var(--h-line) 70%, transparent); animation: d-pop .5s var(--d-ease) 1.7s backwards; }
+
+/* ---- Panels ------------------------------------------------------------------------------- */
+.dash-page .dash-panel { border-radius: var(--d-radius); background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 3.5%, var(--surface)), var(--surface) 150px); box-shadow: var(--pm-shadow-sm); }
+.dash-page .dash-panel-head h2 { font-size: calc(18px * var(--ui-font-scale, 1)); font-weight: 700; }
+
+/* Tabs and segmented switches: a sliding indicator (placed by dashboard-premium.js) */
+.dash-tabs { position: relative; }
+.dash-tab-ink, .dash-seg-thumb { position: absolute; width: var(--w, 0); transform: translateX(var(--x, 0)); pointer-events: none; }
+.dash-tab-ink { left: 0; bottom: 0; height: 3px; border-radius: 3px 3px 0 0; background: linear-gradient(90deg, var(--primary), var(--d-glow)); }
+.dash-page .dash-tabs.has-ink .dash-tab[aria-selected="true"] { border-bottom-color: transparent; }
+.dash-seg { position: relative; isolation: isolate; }
+.dash-seg-thumb { left: 0; top: 3px; bottom: 3px; z-index: -1; border-radius: 999px; background: var(--surface); box-shadow: 0 1px 2px rgba(var(--pm-ink), .12), 0 0 0 1px var(--line); }
+.dash-page .dash-seg.has-thumb .dash-seg-btn.active { background: transparent; box-shadow: none; }
+.dash-tab-ink.is-live, .dash-seg-thumb.is-live { transition: transform .5s var(--d-ease), width .5s var(--d-ease); }
+.dash-tabpanel:not([hidden]) { animation: d-swap .4s var(--d-ease); }
+
+/* ---- Numbers, bars --------------------------------------------------------------------------- */
+.dash-rank-bar { height: 6px; }
+.dash-rank-bar > span { background: linear-gradient(90deg, var(--primary), var(--d-glow)); transform-origin: left; animation: d-grow 1s var(--d-ease) backwards; animation-delay: calc(.9s + var(--i, 0) * .07s); }
+.dash-share-bar > span { background: linear-gradient(90deg, var(--primary), var(--d-glow)); transform-origin: left; animation: d-grow 1s var(--d-ease) .95s backwards; }
+.dash-page .dash-glance { gap: 12px; margin: 6px 0 18px; padding: 0 var(--d-pad); border: 0; }
+.dash-page .dash-glance-item { padding: 18px 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface-2); transition: transform .35s var(--d-ease), border-color .25s ease, background-color .25s ease, box-shadow .35s var(--d-ease); }
+.dash-page .dash-glance-item:hover { border-color: var(--d-rim); background: var(--surface); box-shadow: var(--pm-shadow-sm); }
+@media (hover: hover) { .dash-page .dash-glance-item:hover { transform: translateY(-2px); } }
+
+/* ---- Tables -------------------------------------------------------------------------------------- */
+.dash-table tbody tr { animation: d-swap .45s var(--d-ease) backwards; animation-delay: calc(var(--i, 0) * .04s); }
+:is(.dash-table tbody tr, .dash-feed li):nth-child(2) { --i: 1; }
+:is(.dash-table tbody tr, .dash-feed li):nth-child(3) { --i: 2; }
+:is(.dash-table tbody tr, .dash-feed li):nth-child(4) { --i: 3; }
+:is(.dash-table tbody tr, .dash-feed li):nth-child(5) { --i: 4; }
+:is(.dash-table tbody tr, .dash-feed li):nth-child(n+6) { --i: 5; }
+@media (min-width: 1051px) {
+    .dash-page .table-wrap > .dash-table > tbody > tr > td:first-child { position: relative; }
+    .dash-page .table-wrap > .dash-table > tbody > tr > td:first-child::before { content: ""; position: absolute; left: 0; top: 20%; bottom: 20%; width: 3px; border-radius: 0 3px 3px 0; background: var(--primary); transform: scaleY(0); transition: transform .3s var(--d-ease); }
+    .dash-page .table-wrap > .dash-table > tbody > tr:hover > td:first-child::before { transform: scaleY(1); }
+}
+
+/* ---- Team activity as a timeline ----------------------------------------------------------------------- */
+.dash-feed li { position: relative; padding-left: calc(var(--d-pad) + 24px); border-top: 0; }
+.dash-feed li::before { content: ""; position: absolute; left: var(--d-pad); top: 19px; width: 9px; height: 9px; border: 2px solid var(--primary); border-radius: 50%; background: var(--surface); }
+.dash-feed li:not(:last-child)::after { content: ""; position: absolute; left: calc(var(--d-pad) + 5px); top: 32px; bottom: -6px; width: 1px; background: var(--line); }
+
+/* ---- Responsive ------------------------------------------------------------------------------------------ */
+@media (max-width: 900px) {
+    .dash-page .dash-today { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; }
+    .dash-page .dash-stat-hero { grid-column: 1 / -1; grid-row: auto; min-height: 240px; }
+}
+@media (max-width: 480px) {
+    .dash-page .dash-today { grid-template-columns: minmax(0, 1fr); }
+    .dash-page .dash-stat { padding-inline: var(--hp) !important; border-left: 1px solid transparent !important; }
+    .dash-page .dash-stat + .dash-stat:last-child { border-top: 1px solid transparent; }
+    .dash-page .dash-glance { padding-inline: 14px; }
+}
+
+/* ==========================================================================
+   Fixes
+   ========================================================================== */
+
+/* Sticky-table-headers setting: dashboard tables are short summaries, so they
+   never scroll inside the panel. This removes the inner scrollbar and the
+   transparent sticky header that slid over the rows. */
+html.sticky-table-headers .dash-page .table-wrap { max-height: none; overflow-y: visible; }
+html.sticky-table-headers .dash-page .table-wrap table thead th { position: static; box-shadow: none; }
+
+/* No more blank band under the shorter panel in a row. */
+.dash-page .dash-split-end { align-items: start; }
+
+/* Top products fills the height the chart panel sets, instead of leaving a gap. */
+.dash-page #dashTrends > .dash-panel { display: flex; flex-direction: column; }
+.dash-page #dashTrends .dash-rank { flex: 1; display: flex; flex-direction: column; padding-bottom: 12px; }
+.dash-page #dashTrends .dash-rank li { flex: 1; align-content: center; }
+
+/* Status pills stay on one line ("Partially refunded" was wrapping inside the pill). */
+.dash-page .dash-table .badge { white-space: nowrap; }
+
+/* ==========================================================================
+   Less scrolling: foldable panels, floating jump bar, back to top
+   ========================================================================== */
+
+/* Foldable panels (wrappers and buttons are added by dashboard-premium.js) */
+.dash-page .dash-panel { display: flex; flex-direction: column; }
+.dash-fold { display: grid; grid-template-rows: 1fr; flex: 1 1 auto; }
+.dash-fold-in { min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
+.dash-page.is-ready .dash-fold { transition: grid-template-rows .45s var(--d-ease); }
+.dash-panel.is-folded .dash-fold { grid-template-rows: 0fr; flex-grow: 0; }
+.dash-head-end { display: flex; align-items: center; gap: 10px; margin-left: auto; max-width: 100%; }
+.dash-fold-btn { display: grid; place-items: center; flex: 0 0 34px; width: 34px; height: 34px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--muted); cursor: pointer;
+    transition: transform .2s var(--d-ease), background-color .2s ease, border-color .2s ease, color .2s ease; }
+.dash-fold-btn svg { transition: transform .45s var(--d-ease); }
+.dash-fold-btn:hover { border-color: var(--d-rim); color: var(--primary); }
+.dash-fold-btn:active { transform: scale(.92); }
+.dash-panel.is-folded .dash-fold-btn svg { transform: rotate(-180deg); }
+.dash-panel-head p { max-height: 6em; transition: max-height .4s var(--d-ease), opacity .3s ease, margin .4s var(--d-ease); }
+.dash-panel.is-folded .dash-panel-head p { max-height: 0; margin-top: 0; opacity: 0; }
+.dash-panel.is-folded .dash-panel-head { padding-bottom: 18px; }
+.dash-page .dash-panel-head { transition: padding .4s var(--d-ease); }
+.dash-page #dashTrends .dash-fold-in { flex: 1; }
+
+/* Floating jump bar */
+.dash-dock {
+    position: fixed; left: 50%; bottom: 18px; z-index: 90; display: flex; align-items: center; gap: 6px; max-width: calc(100vw - 24px); padding: 6px;
+    border: 1px solid var(--line-2); border-radius: 999px; background: var(--surface); box-shadow: var(--pm-shadow-lg);
+    opacity: 0; visibility: hidden; transform: translate(-50%, 18px);
+    transition: opacity .3s ease, transform .5s var(--d-ease), visibility 0s linear .5s;
+}
+.dash-dock.is-visible { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition-delay: 0s; }
+.dash-dock-chips { position: relative; isolation: isolate; display: flex; gap: 2px; padding: 3px; min-width: 0; overflow-x: auto; scrollbar-width: none; border-radius: 999px; background: var(--surface-2); }
+.dash-dock-chip { flex: 0 0 auto; display: inline-flex; align-items: center; min-height: 32px; padding: 0 14px; border-radius: 999px; color: var(--muted); font-size: calc(13px * var(--ui-font-scale, 1)); font-weight: 600; text-decoration: none; transition: color .2s ease; }
+.dash-dock-chip:hover, .dash-dock-chip.is-active { color: var(--text); }
+.dash-dock-sep { flex: 0 0 1px; align-self: stretch; margin: 6px 2px; background: var(--line); }
+.dash-dock-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex: 0 0 auto; min-height: 38px; min-width: 38px; padding: 0 12px; border: 0; border-radius: 999px; background: transparent; color: var(--text-2); font: inherit; font-size: calc(13px * var(--ui-font-scale, 1)); font-weight: 600; cursor: pointer;
+    transition: background-color .2s ease, color .2s ease, transform .2s var(--d-ease); }
+.dash-dock-btn:hover { background: var(--surface-2); color: var(--primary); }
+.dash-dock-btn:active { transform: scale(.94); }
+.dash-dock-top { padding: 0; background: var(--primary); color: var(--on-primary); }
+.dash-dock-top:hover { background: var(--primary-dark); color: var(--on-primary); }
+.dash-dock a:focus-visible, .dash-dock button:focus-visible, .dash-fold-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+@media (max-width: 700px) {
+    .dash-dock { bottom: 12px; left: 12px; right: 12px; max-width: none; transform: translateY(18px); }
+    .dash-dock.is-visible { transform: translateY(0); }
+    .dash-dock-chips { flex: 1 1 auto; }
+    .dash-dock-btn:not(.dash-dock-top) span { display: none; }
+    .dash-dock-btn:not(.dash-dock-top) { padding: 0; }
+    .dash-head-end { width: 100%; }
+    .dash-head-end .dash-seg { flex: 1; }
+    .dash-head-end .dash-fold-btn { margin-left: auto; }
+}
+
+/* ==========================================================================
+   Jump bar motion
+   ========================================================================== */
+@keyframes d-chip   { from { opacity: 0; transform: translateY(8px) scale(.94); } }
+@keyframes d-swapin { from { opacity: 0; transform: translateY(7px); } }
+@keyframes d-found  { 0% { opacity: 0; } 25% { opacity: 1; } 100% { opacity: 0; } }
+
+/* Springy entrance, quicker exit */
+.dash-dock { transition: opacity .2s ease, transform .35s ease-in, visibility 0s linear .35s; }
+.dash-dock.is-visible { transition: opacity .3s ease, transform .65s cubic-bezier(.34, 1.3, .64, 1), visibility 0s; }
+.dash-dock.is-visible .dash-dock-chip { animation: d-chip .55s var(--d-ease) backwards; animation-delay: calc(.12s + var(--i, 0) * .045s); }
+.dash-dock.is-visible .dash-dock-btn { animation: d-chip .55s var(--d-ease) .38s backwards; }
+.dash-dock.is-visible .dash-dock-top { animation-delay: .46s; }
+
+/* Highlight slides with a little spring */
+.dash-dock .dash-seg-thumb { box-shadow: 0 1px 2px rgba(var(--pm-ink), .1), 0 6px 14px -6px var(--primary-shadow), 0 0 0 1px var(--d-rim); }
+.dash-dock .dash-seg-thumb.is-live { transition: transform .55s cubic-bezier(.34, 1.35, .64, 1), width .55s cubic-bezier(.34, 1.35, .64, 1); }
+.dash-dock-chip { transition: color .2s ease, background-color .2s ease, transform .2s var(--d-ease); }
+.dash-dock-chip:not(.is-active):hover { background: color-mix(in srgb, var(--primary) 8%, transparent); }
+.dash-dock-chip:active { transform: scale(.95); }
+
+/* Collapse/expand label swaps without the pill jumping in width */
+.dash-dock-btn:not(.dash-dock-top) { min-width: 132px; }
+.dash-dock-btn.is-swap > * { animation: d-swapin .4s var(--d-ease) backwards; }
+
+/* Back to top, wrapped in a scroll-progress ring */
+.dash-dock .dash-dock-top, .dash-dock .dash-dock-top:hover {
+    position: relative; width: 40px; height: 40px; min-width: 40px; color: var(--on-primary);
+    background: conic-gradient(var(--primary) calc(var(--p, 0) * 1%), color-mix(in srgb, var(--primary) 20%, var(--surface-2)) 0);
+}
+.dash-dock-top::before { content: ""; position: absolute; inset: 3px; border-radius: 50%; background: var(--primary); transition: background-color .2s ease; }
+.dash-dock-top:hover::before { background: var(--primary-dark); }
+.dash-dock-top svg { position: relative; transition: transform .3s var(--d-ease); }
+.dash-dock-top:hover svg { transform: translateY(-2px); }
+
+/* Panel you jumped to gets a brief outline */
+.dash-page .dash-panel { position: relative; }
+.dash-panel.is-found::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--primary) 70%, transparent), inset 0 0 36px -10px color-mix(in srgb, var(--primary) 45%, transparent);
+    animation: d-found 1.3s ease-out .3s backwards; }
+
+@media (max-width: 700px) {
+    .dash-dock-btn:not(.dash-dock-top) { min-width: 38px; }
+}

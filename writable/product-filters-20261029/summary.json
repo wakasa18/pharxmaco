@@ -1,0 +1,44 @@
+{
+  "focused": {
+    "tests": 7,
+    "assertions": 35,
+    "passed": true
+  },
+  "full": {
+    "tests": 432,
+    "assertions": 25460,
+    "passed": 429,
+    "failures": 2,
+    "errors": 1,
+    "remaining": "Existing A05 expiry-correction workflow"
+  },
+  "browser": {
+    "checks": 72,
+    "widths": [
+      1440,
+      768,
+      390
+    ],
+    "reduced_motion": true,
+    "exceptions": [],
+    "application_posts": 0,
+    "synthetic_posts": 0
+  },
+  "syntax": {
+    "php": 43,
+    "js": 4,
+    "passed": true
+  },
+  "package": {
+    "archive": "C:\\UniServerZ\\www\\pharxmaco/build/hostinger-product-filters-2026-10-29.zip",
+    "runtime_files": 47,
+    "changed_runtime_files": 2,
+    "sql_files": 0,
+    "bytes": 194461,
+    "sha256": "76f40e27217ee573deba0e20812df4fe3e5d78ed7c3d3b74c6521963040006db",
+    "hosting_changed": false
+  },
+  "sql_import_required": false,
+  "application_database_changed": false,
+  "hosting_changed": false
+}

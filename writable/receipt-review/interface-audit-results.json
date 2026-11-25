@@ -1,0 +1,153 @@
+{
+  "typography": {
+    "normal": {
+      ".page-header h1": "34px",
+      ".page-header p": "14px",
+      ".content .table-wrap th": "12px",
+      ".content .table-wrap td": "12px",
+      ".content label": "13px",
+      ".content .input": "14px"
+    },
+    "large": {
+      ".page-header h1": "36.04px",
+      ".page-header p": "15px",
+      ".content .table-wrap th": "13px",
+      ".content .table-wrap td": "15px",
+      ".content label": "15px",
+      ".content .input": "15px"
+    },
+    "extra-large": {
+      ".page-header h1": "38.08px",
+      ".page-header p": "16px",
+      ".content .table-wrap th": "14px",
+      ".content .table-wrap td": "16px",
+      ".content label": "16px",
+      ".content .input": "16px"
+    }
+  },
+  "spacing": {
+    "compact": {
+      ".content": "18px",
+      ".card-head": "13px 15px",
+      ".card-body": null,
+      ".content .table-wrap th": "8px 10px",
+      ".content .table-wrap td": "9px 10px"
+    },
+    "comfortable": {
+      ".content": "30px 24px 48px",
+      ".card-head": "18px 22px",
+      ".card-body": null,
+      ".content .table-wrap th": "12px 16px",
+      ".content .table-wrap td": "14px 16px"
+    },
+    "spacious": {
+      ".content": "30px",
+      ".card-head": "22px 24px",
+      ".card-body": null,
+      ".content .table-wrap th": "14px 17px",
+      ".content .table-wrap td": "16px 17px"
+    }
+  },
+  "contrast": {
+    "false": {
+      ".sidebar": {
+        "color": "rgb(201, 209, 236)",
+        "borderColor": "rgba(255, 255, 255, 0.08) rgba(255, 255, 255, 0.08) rgba(255, 255, 255, 0.08) rgb(201, 209, 236)",
+        "muted": "#8591b6",
+        "line": "rgba(255, 255, 255, .08)"
+      },
+      ".sidebar .sidebar-context": {
+        "color": "rgb(133, 145, 182)",
+        "borderColor": "rgb(133, 145, 182)",
+        "muted": "#8591b6",
+        "line": "rgba(255, 255, 255, .08)"
+      },
+      ".sidebar .sidebar-search": {
+        "color": "rgb(133, 145, 182)",
+        "borderColor": "rgba(255, 255, 255, 0.08)",
+        "muted": "#8591b6",
+        "line": "rgba(255, 255, 255, .08)"
+      },
+      ".content": {
+        "color": "rgb(175, 179, 195)",
+        "borderColor": "rgb(175, 179, 195)",
+        "muted": "",
+        "line": ""
+      }
+    },
+    "true": {
+      ".sidebar": {
+        "color": "rgb(225, 233, 244)",
+        "borderColor": "rgb(140, 160, 188) rgb(140, 160, 188) rgb(140, 160, 188) rgb(225, 233, 244)",
+        "muted": "#b8c7db",
+        "line": "#8ca0bc"
+      },
+      ".sidebar .sidebar-context": {
+        "color": "rgb(184, 199, 219)",
+        "borderColor": "rgb(184, 199, 219)",
+        "muted": "#b8c7db",
+        "line": "#8ca0bc"
+      },
+      ".sidebar .sidebar-search": {
+        "color": "rgb(184, 199, 219)",
+        "borderColor": "rgb(140, 160, 188)",
+        "muted": "#b8c7db",
+        "line": "#8ca0bc"
+      },
+      ".content": {
+        "color": "rgb(255, 255, 255)",
+        "borderColor": "rgb(255, 255, 255)",
+        "muted": "",
+        "line": ""
+      }
+    }
+  },
+  "failedTopbarSave": {
+    "stored": {
+      "theme": "light",
+      "accent": "blue",
+      "textSize": "normal",
+      "density": "comfortable",
+      "largeControls": false,
+      "reduceMotion": false,
+      "highContrast": false,
+      "stickyHeaders": false
+    },
+    "applied": "light",
+    "selected": "light",
+    "feedback": "",
+    "errorShown": true,
+    "dirty": "1 unsaved change"
+  },
+  "afterReload": {
+    "applied": "light",
+    "selected": "light"
+  },
+  "cancelledNavigation": {
+    "page": "/settings-admin.html",
+    "progressRunning": false,
+    "dirty": "1 unsaved change"
+  },
+  "mobileText": {
+    "normal": {
+      ".settings-option > span": "12px",
+      ".settings-switch strong": "13px",
+      "#saveUiSettings": "12px",
+      "#settingsStatus": "12px"
+    },
+    "large": {
+      ".settings-option > span": "14px",
+      ".settings-switch strong": "15px",
+      "#saveUiSettings": "15px",
+      "#settingsStatus": "14px"
+    },
+    "extra-large": {
+      ".settings-option > span": "15px",
+      ".settings-switch strong": "16px",
+      "#saveUiSettings": "16px",
+      "#settingsStatus": "15px"
+    }
+  },
+  "accountIsolation": true,
+  "sampleInput": true
+}

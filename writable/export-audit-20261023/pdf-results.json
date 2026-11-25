@@ -1,0 +1,174 @@
+{
+  "files": 21,
+  "pages": 71,
+  "results": [
+    {
+      "name": "cashier-expiry",
+      "pages": 2,
+      "characters": 2096,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "cashier-stock",
+      "pages": 7,
+      "characters": 11697,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "expiry-all-current",
+      "pages": 18,
+      "characters": 28143,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "expiry-all",
+      "pages": 2,
+      "characters": 2102,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "expiry-expired",
+      "pages": 1,
+      "characters": 1345,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "expiry-good",
+      "pages": 1,
+      "characters": 1331,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "expiry-missing",
+      "pages": 1,
+      "characters": 1356,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "expiry-near",
+      "pages": 1,
+      "characters": 1351,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "print-receipt-receipt",
+      "pages": 1,
+      "characters": 877,
+      "outside_page": 0,
+      "paper": "browser print",
+      "numbering_verified": false
+    },
+    {
+      "name": "print-refund-slip-receipt",
+      "pages": 1,
+      "characters": 601,
+      "outside_page": 0,
+      "paper": "browser print",
+      "numbering_verified": false
+    },
+    {
+      "name": "print-reprint-receipt",
+      "pages": 1,
+      "characters": 904,
+      "outside_page": 0,
+      "paper": "browser print",
+      "numbering_verified": false
+    },
+    {
+      "name": "print-shift-full",
+      "pages": 3,
+      "characters": 2454,
+      "outside_page": 0,
+      "paper": "browser print",
+      "numbering_verified": false
+    },
+    {
+      "name": "print-shift-summary",
+      "pages": 1,
+      "characters": 1688,
+      "outside_page": 0,
+      "paper": "browser print",
+      "numbering_verified": false
+    },
+    {
+      "name": "sales-all-current",
+      "pages": 9,
+      "characters": 12361,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "sales-empty",
+      "pages": 3,
+      "characters": 2973,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "sales-full",
+      "pages": 4,
+      "characters": 4271,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "sales-monthly",
+      "pages": 3,
+      "characters": 3737,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "sales-summary",
+      "pages": 1,
+      "characters": 1501,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "sales-weekly",
+      "pages": 3,
+      "characters": 3848,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "stock-all",
+      "pages": 7,
+      "characters": 11731,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    },
+    {
+      "name": "stock-empty",
+      "pages": 1,
+      "characters": 544,
+      "outside_page": 0,
+      "paper": "A4 landscape",
+      "numbering_verified": true
+    }
+  ]
+}

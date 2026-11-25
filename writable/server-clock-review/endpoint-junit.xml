@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="ServerTimeTest" file="C:\UniServerZ\www\pharxmaco\tests\unit\ServerTimeTest.php" tests="2" assertions="19" errors="0" failures="0" skipped="0" time="0.048450">
+    <testcase name="testAnonymousClockSampleUsesServerEpochAndCannotBeCached" file="C:\UniServerZ\www\pharxmaco\tests\unit\ServerTimeTest.php" line="17" class="ServerTimeTest" classname="ServerTimeTest" assertions="11" time="0.037527"/>
+    <testcase name="testClockRouteIsGetOnlyAndDoesNotUseAccountOrSessionFilters" file="C:\UniServerZ\www\pharxmaco\tests\unit\ServerTimeTest.php" line="34" class="ServerTimeTest" classname="ServerTimeTest" assertions="8" time="0.010923"/>
+  </testsuite>
+</testsuites>

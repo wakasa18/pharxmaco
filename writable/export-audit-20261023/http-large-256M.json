@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "name": "stock-large-256M HTTP 200",
+      "passed": false
+    },
+    {
+      "name": "stock-large-256M MIME type",
+      "passed": false
+    },
+    {
+      "name": "stock-large-256M attachment filename",
+      "passed": false
+    },
+    {
+      "name": "stock-large-256M file signature",
+      "passed": false
+    }
+  ],
+  "downloads": [
+    {
+      "name": "stock-large-256M",
+      "url": "/stock-logs/export-pdf",
+      "status": 500,
+      "type": "pdf",
+      "bytes": 2,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\stock-large-256M.pdf"
+    }
+  ],
+  "failures": [
+    "stock-large-256M HTTP 200",
+    "stock-large-256M MIME type",
+    "stock-large-256M attachment filename",
+    "stock-large-256M file signature"
+  ]
+}

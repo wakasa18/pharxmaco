@@ -1,0 +1,65 @@
+[
+  {
+    "name": "print-receipt-receipt",
+    "pages": 1,
+    "page_sizes": [
+      [
+        227.03999,
+        841.91998
+      ]
+    ],
+    "characters": 877
+  },
+  {
+    "name": "print-refund-slip-receipt",
+    "pages": 1,
+    "page_sizes": [
+      [
+        227.03999,
+        841.91998
+      ]
+    ],
+    "characters": 601
+  },
+  {
+    "name": "print-reprint-receipt",
+    "pages": 1,
+    "page_sizes": [
+      [
+        227.03999,
+        841.91998
+      ]
+    ],
+    "characters": 904
+  },
+  {
+    "name": "print-shift-full",
+    "pages": 3,
+    "page_sizes": [
+      [
+        594.95996,
+        841.91998
+      ],
+      [
+        594.95996,
+        841.91998
+      ],
+      [
+        594.95996,
+        841.91998
+      ]
+    ],
+    "characters": 2452
+  },
+  {
+    "name": "print-shift-summary",
+    "pages": 1,
+    "page_sizes": [
+      [
+        594.95996,
+        841.91998
+      ]
+    ],
+    "characters": 1688
+  }
+]

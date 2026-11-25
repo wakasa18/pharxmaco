@@ -1,0 +1,13 @@
+{
+    "database": "pharxmaco_drugstore",
+    "existing_stock_expiry_upgrade_applied": true,
+    "isolated_clone_verified": true,
+    "existing_field_values_preserved": true,
+    "new_historical_provenance_null": true,
+    "repeat_import_unchanged": true,
+    "added_columns": [
+        "branch_products.stock_delivery_id",
+        "sale_items.stock_delivery_id",
+        "sale_items.expiration_date_at_sale"
+    ]
+}

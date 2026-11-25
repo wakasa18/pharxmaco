@@ -1,0 +1,22 @@
+{
+    "database": "pharxmaco_drugstore",
+    "product_sql_sha256": "4ea6e0dd0239bd6c7a82425aae79da9c16ed94596c8aa25268cce0f3fe231b88",
+    "products": 55,
+    "updated_products": 55,
+    "types": {
+        "non_medicine": 16,
+        "branded": 4,
+        "generic": 35
+    },
+    "eligible": 32,
+    "not_confirmed": 14,
+    "other_product_fields_preserved": true,
+    "all_other_tables_preserved": true,
+    "repeat_import_unchanged": true,
+    "benefit_checks": [
+        "Both Senior Citizen and PWD discounts accept the newly classified branded and generic medicines.",
+        "Two selected PHP112 VAT-inclusive lines produce PHP40 discount and PHP24 VAT relief; an unselected line is untouched.",
+        "An ineligible personal care item is rejected for either statutory discount."
+    ],
+    "backup": "C:\\UniServerZ\\www\\pharxmaco\\writable\\product-catalog-review\/local-before-20261015-114552-448f59.json"
+}

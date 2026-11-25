@@ -1,0 +1,1070 @@
+{
+  "checks": [
+    {
+      "name": "sales-daily HTTP 200",
+      "passed": false
+    },
+    {
+      "name": "sales-daily MIME type",
+      "passed": false
+    },
+    {
+      "name": "sales-daily attachment filename",
+      "passed": false
+    },
+    {
+      "name": "sales-daily file signature",
+      "passed": false
+    },
+    {
+      "name": "Sales CSV exact net after discount/VAT/refund",
+      "passed": false
+    },
+    {
+      "name": "Sales CSV consistent eight columns",
+      "passed": true
+    },
+    {
+      "name": "Sales CSV branch and date boundaries",
+      "passed": false
+    },
+    {
+      "name": "sales-full HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "sales-full MIME type",
+      "passed": true
+    },
+    {
+      "name": "sales-full attachment filename",
+      "passed": true
+    },
+    {
+      "name": "sales-full file signature",
+      "passed": true
+    },
+    {
+      "name": "sales-summary HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "sales-summary MIME type",
+      "passed": true
+    },
+    {
+      "name": "sales-summary attachment filename",
+      "passed": true
+    },
+    {
+      "name": "sales-summary file signature",
+      "passed": true
+    },
+    {
+      "name": "Full and Summary PDFs have distinct filename prefixes",
+      "passed": false
+    },
+    {
+      "name": "sales-weekly HTTP 200",
+      "passed": false
+    },
+    {
+      "name": "sales-weekly MIME type",
+      "passed": false
+    },
+    {
+      "name": "sales-weekly attachment filename",
+      "passed": false
+    },
+    {
+      "name": "sales-weekly file signature",
+      "passed": false
+    },
+    {
+      "name": "sales-weekly HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "sales-weekly MIME type",
+      "passed": true
+    },
+    {
+      "name": "sales-weekly attachment filename",
+      "passed": true
+    },
+    {
+      "name": "sales-weekly file signature",
+      "passed": true
+    },
+    {
+      "name": "sales-monthly HTTP 200",
+      "passed": false
+    },
+    {
+      "name": "sales-monthly MIME type",
+      "passed": false
+    },
+    {
+      "name": "sales-monthly attachment filename",
+      "passed": false
+    },
+    {
+      "name": "sales-monthly file signature",
+      "passed": false
+    },
+    {
+      "name": "sales-monthly HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "sales-monthly MIME type",
+      "passed": true
+    },
+    {
+      "name": "sales-monthly attachment filename",
+      "passed": true
+    },
+    {
+      "name": "sales-monthly file signature",
+      "passed": true
+    },
+    {
+      "name": "sales-empty HTTP 200",
+      "passed": false
+    },
+    {
+      "name": "sales-empty MIME type",
+      "passed": false
+    },
+    {
+      "name": "sales-empty attachment filename",
+      "passed": false
+    },
+    {
+      "name": "sales-empty file signature",
+      "passed": false
+    },
+    {
+      "name": "sales-empty HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "sales-empty MIME type",
+      "passed": true
+    },
+    {
+      "name": "sales-empty attachment filename",
+      "passed": true
+    },
+    {
+      "name": "sales-empty file signature",
+      "passed": true
+    },
+    {
+      "name": "sales-all-current HTTP 200",
+      "passed": false
+    },
+    {
+      "name": "sales-all-current MIME type",
+      "passed": false
+    },
+    {
+      "name": "sales-all-current attachment filename",
+      "passed": false
+    },
+    {
+      "name": "sales-all-current file signature",
+      "passed": false
+    },
+    {
+      "name": "sales-all-current HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "sales-all-current MIME type",
+      "passed": true
+    },
+    {
+      "name": "sales-all-current attachment filename",
+      "passed": true
+    },
+    {
+      "name": "sales-all-current file signature",
+      "passed": true
+    },
+    {
+      "name": "expiry-all HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-all MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-all attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-all file signature",
+      "passed": true
+    },
+    {
+      "name": "Expiry all correct record count",
+      "passed": true
+    },
+    {
+      "name": "Expiry all branch filter",
+      "passed": true
+    },
+    {
+      "name": "expiry-all HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-all MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-all attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-all file signature",
+      "passed": true
+    },
+    {
+      "name": "expiry-expired HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-expired MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-expired attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-expired file signature",
+      "passed": true
+    },
+    {
+      "name": "Expiry expired correct record count",
+      "passed": true
+    },
+    {
+      "name": "Expiry expired branch filter",
+      "passed": true
+    },
+    {
+      "name": "expiry-expired HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-expired MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-expired attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-expired file signature",
+      "passed": true
+    },
+    {
+      "name": "expiry-near HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-near MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-near attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-near file signature",
+      "passed": true
+    },
+    {
+      "name": "Expiry near correct record count",
+      "passed": true
+    },
+    {
+      "name": "Expiry near branch filter",
+      "passed": true
+    },
+    {
+      "name": "expiry-near HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-near MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-near attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-near file signature",
+      "passed": true
+    },
+    {
+      "name": "expiry-good HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-good MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-good attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-good file signature",
+      "passed": true
+    },
+    {
+      "name": "Expiry good correct record count",
+      "passed": true
+    },
+    {
+      "name": "Expiry good branch filter",
+      "passed": true
+    },
+    {
+      "name": "expiry-good HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-good MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-good attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-good file signature",
+      "passed": true
+    },
+    {
+      "name": "expiry-missing HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-missing MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-missing attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-missing file signature",
+      "passed": true
+    },
+    {
+      "name": "Expiry missing correct record count",
+      "passed": true
+    },
+    {
+      "name": "Expiry missing branch filter",
+      "passed": true
+    },
+    {
+      "name": "expiry-missing HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-missing MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-missing attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-missing file signature",
+      "passed": true
+    },
+    {
+      "name": "stock-all HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-all MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-all attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-all file signature",
+      "passed": true
+    },
+    {
+      "name": "Stock CSV includes all 55 matching rows",
+      "passed": true
+    },
+    {
+      "name": "Stock CSV formula escaped",
+      "passed": true
+    },
+    {
+      "name": "Stock CSV preserves complete long remarks",
+      "passed": true
+    },
+    {
+      "name": "stock-all HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-all MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-all attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-all file signature",
+      "passed": true
+    },
+    {
+      "name": "stock-all-current HTTP 200",
+      "passed": false
+    },
+    {
+      "name": "stock-all-current MIME type",
+      "passed": false
+    },
+    {
+      "name": "stock-all-current attachment filename",
+      "passed": false
+    },
+    {
+      "name": "stock-all-current file signature",
+      "passed": false
+    },
+    {
+      "name": "stock-all-current HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-all-current MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-all-current attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-all-current file signature",
+      "passed": true
+    },
+    {
+      "name": "expiry-empty HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-empty MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-empty attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-empty file signature",
+      "passed": true
+    },
+    {
+      "name": "expiry-all-current HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "expiry-all-current MIME type",
+      "passed": true
+    },
+    {
+      "name": "expiry-all-current attachment filename",
+      "passed": true
+    },
+    {
+      "name": "expiry-all-current file signature",
+      "passed": true
+    },
+    {
+      "name": "stock-filtered HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-filtered MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-filtered attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-filtered file signature",
+      "passed": true
+    },
+    {
+      "name": "stock-empty HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "stock-empty MIME type",
+      "passed": true
+    },
+    {
+      "name": "stock-empty attachment filename",
+      "passed": true
+    },
+    {
+      "name": "stock-empty file signature",
+      "passed": true
+    },
+    {
+      "name": "cashier-stock-forged HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "cashier-stock-forged MIME type",
+      "passed": true
+    },
+    {
+      "name": "cashier-stock-forged attachment filename",
+      "passed": true
+    },
+    {
+      "name": "cashier-stock-forged file signature",
+      "passed": true
+    },
+    {
+      "name": "Cashier stock export ignores forged other branch",
+      "passed": true
+    },
+    {
+      "name": "cashier-expiry-forged HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "cashier-expiry-forged MIME type",
+      "passed": true
+    },
+    {
+      "name": "cashier-expiry-forged attachment filename",
+      "passed": true
+    },
+    {
+      "name": "cashier-expiry-forged file signature",
+      "passed": true
+    },
+    {
+      "name": "Cashier expiry export ignores forged other branch",
+      "passed": true
+    },
+    {
+      "name": "cashier-stock HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "cashier-stock MIME type",
+      "passed": true
+    },
+    {
+      "name": "cashier-stock attachment filename",
+      "passed": true
+    },
+    {
+      "name": "cashier-stock file signature",
+      "passed": true
+    },
+    {
+      "name": "cashier-expiry HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "cashier-expiry MIME type",
+      "passed": true
+    },
+    {
+      "name": "cashier-expiry attachment filename",
+      "passed": true
+    },
+    {
+      "name": "cashier-expiry file signature",
+      "passed": true
+    },
+    {
+      "name": "receipt printable HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "receipt renders without server error",
+      "passed": true
+    },
+    {
+      "name": "receipt denies another branch/account",
+      "passed": true
+    },
+    {
+      "name": "reprint printable HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "reprint renders without server error",
+      "passed": true
+    },
+    {
+      "name": "reprint denies another branch/account",
+      "passed": true
+    },
+    {
+      "name": "refund-slip printable HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "refund-slip renders without server error",
+      "passed": true
+    },
+    {
+      "name": "refund-slip denies another branch/account",
+      "passed": true
+    },
+    {
+      "name": "shift printable HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "shift renders without server error",
+      "passed": true
+    },
+    {
+      "name": "shift denies another branch/account",
+      "passed": true
+    },
+    {
+      "name": "Cashier denied /admin/reports/export-excel",
+      "passed": true
+    },
+    {
+      "name": "Cashier denied /admin/reports/pdf",
+      "passed": true
+    },
+    {
+      "name": "Cashier denied /admin/backup-restore/download/not-a-backup.pmbak",
+      "passed": true
+    },
+    {
+      "name": "Guest denied /admin/reports/export-excel",
+      "passed": true
+    },
+    {
+      "name": "Guest denied /admin/reports/pdf",
+      "passed": true
+    },
+    {
+      "name": "Guest denied /admin/expiry-report/export-excel",
+      "passed": true
+    },
+    {
+      "name": "Guest denied /admin/expiry-report/export-pdf",
+      "passed": true
+    },
+    {
+      "name": "Guest denied /stock-logs/export-excel",
+      "passed": true
+    },
+    {
+      "name": "Guest denied /stock-logs/export-pdf",
+      "passed": true
+    },
+    {
+      "name": "Guest denied /cashier/shifts/12/print",
+      "passed": true
+    },
+    {
+      "name": "Guest denied /cashier/sales/receipt/487",
+      "passed": true
+    },
+    {
+      "name": "Backup create accepted",
+      "passed": true
+    },
+    {
+      "name": "Backup download attachment works",
+      "passed": true
+    },
+    {
+      "name": "Backup is valid application data format from isolated database",
+      "passed": true
+    },
+    {
+      "name": "Backup contains declared rows and every table",
+      "passed": true
+    },
+    {
+      "name": "Invalid backup filename rejected",
+      "passed": true
+    }
+  ],
+  "downloads": [
+    {
+      "name": "sales-daily",
+      "url": "/admin/reports/export-excel?branch_id=4&report_date_from=2026-10-20&report_date_to=2026-10-23&forecast_date_from=2026-10-20&forecast_date_to=2026-10-23",
+      "status": 500,
+      "type": "csv",
+      "bytes": 2,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\sales-daily.csv"
+    },
+    {
+      "name": "sales-full",
+      "url": "/admin/reports/pdf?branch_id=4&report_date_from=2026-10-20&report_date_to=2026-10-23&forecast_date_from=2026-10-20&forecast_date_to=2026-10-23",
+      "status": 200,
+      "type": "pdf",
+      "filename": "sales_report_export_qa_north_2026-10-20_to_2026-10-23_20261023_154133.pdf",
+      "bytes": 34734,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\sales-full.pdf"
+    },
+    {
+      "name": "sales-summary",
+      "url": "/admin/reports/pdf?branch_id=4&report_date_from=2026-10-20&report_date_to=2026-10-23&forecast_date_from=2026-10-20&forecast_date_to=2026-10-23&pdf_mode=summary",
+      "status": 200,
+      "type": "pdf",
+      "filename": "sales_report_export_qa_north_2026-10-20_to_2026-10-23_20261023_154133.pdf",
+      "bytes": 24559,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\sales-summary.pdf"
+    },
+    {
+      "name": "sales-weekly",
+      "url": "/admin/reports/export-excel?branch_id=4&report_date_from=2026-10-20&report_date_to=2026-10-23&forecast_date_from=2026-10-20&forecast_date_to=2026-10-23&report_type=weekly&forecast_type=weekly",
+      "status": 500,
+      "type": "csv",
+      "bytes": 2,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\sales-weekly.csv"
+    },
+    {
+      "name": "sales-weekly",
+      "url": "/admin/reports/pdf?branch_id=4&report_date_from=2026-10-20&report_date_to=2026-10-23&forecast_date_from=2026-10-20&forecast_date_to=2026-10-23&report_type=weekly&forecast_type=weekly",
+      "status": 200,
+      "type": "pdf",
+      "filename": "sales_report_export_qa_north_2026-10-20_to_2026-10-23_20261023_154134.pdf",
+      "bytes": 33709,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\sales-weekly.pdf"
+    },
+    {
+      "name": "sales-monthly",
+      "url": "/admin/reports/export-excel?branch_id=4&report_date_from=2026-10-20&report_date_to=2026-10-23&forecast_date_from=2026-10-20&forecast_date_to=2026-10-23&report_type=monthly&forecast_type=monthly",
+      "status": 500,
+      "type": "csv",
+      "bytes": 2,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\sales-monthly.csv"
+    },
+    {
+      "name": "sales-monthly",
+      "url": "/admin/reports/pdf?branch_id=4&report_date_from=2026-10-20&report_date_to=2026-10-23&forecast_date_from=2026-10-20&forecast_date_to=2026-10-23&report_type=monthly&forecast_type=monthly",
+      "status": 200,
+      "type": "pdf",
+      "filename": "sales_report_export_qa_north_2026-10-20_to_2026-10-23_20261023_154135.pdf",
+      "bytes": 33307,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\sales-monthly.pdf"
+    },
+    {
+      "name": "sales-empty",
+      "url": "/admin/reports/export-excel?branch_id=4&report_date_from=2026-10-23&report_date_to=2026-10-23&forecast_date_from=2026-10-20&forecast_date_to=2026-10-23",
+      "status": 500,
+      "type": "csv",
+      "bytes": 2,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\sales-empty.csv"
+    },
+    {
+      "name": "sales-empty",
+      "url": "/admin/reports/pdf?branch_id=4&report_date_from=2026-10-23&report_date_to=2026-10-23&forecast_date_from=2026-10-20&forecast_date_to=2026-10-23",
+      "status": 200,
+      "type": "pdf",
+      "filename": "sales_report_export_qa_north_2026-10-23_to_2026-10-23_20261023_154136.pdf",
+      "bytes": 30758,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\sales-empty.pdf"
+    },
+    {
+      "name": "sales-all-current",
+      "url": "/admin/reports/export-excel",
+      "status": 500,
+      "type": "csv",
+      "bytes": 2,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\sales-all-current.csv"
+    },
+    {
+      "name": "sales-all-current",
+      "url": "/admin/reports/pdf",
+      "status": 200,
+      "type": "pdf",
+      "filename": "sales_report_all_branches_2026-09-24_to_2026-10-23_20261023_154137.pdf",
+      "bytes": 55507,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\sales-all-current.pdf"
+    },
+    {
+      "name": "expiry-all",
+      "url": "/admin/expiry-report/export-excel?branch_id=4&status=all",
+      "status": 200,
+      "type": "csv",
+      "filename": "expiry_report_export_qa_north_all_statuses_20261023_154137.csv",
+      "bytes": 850,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\expiry-all.csv"
+    },
+    {
+      "name": "expiry-all",
+      "url": "/admin/expiry-report/export-pdf?branch_id=4&status=all",
+      "status": 200,
+      "type": "pdf",
+      "filename": "expiry_report_export_qa_north_all_statuses_20261023_154137.pdf",
+      "bytes": 28647,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\expiry-all.pdf"
+    },
+    {
+      "name": "expiry-expired",
+      "url": "/admin/expiry-report/export-excel?branch_id=4&status=expired",
+      "status": 200,
+      "type": "csv",
+      "filename": "expiry_report_export_qa_north_expired_20261023_154138.csv",
+      "bytes": 564,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\expiry-expired.csv"
+    },
+    {
+      "name": "expiry-expired",
+      "url": "/admin/expiry-report/export-pdf?branch_id=4&status=expired",
+      "status": 200,
+      "type": "pdf",
+      "filename": "expiry_report_export_qa_north_expired_20261023_154138.pdf",
+      "bytes": 27003,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\expiry-expired.pdf"
+    },
+    {
+      "name": "expiry-near",
+      "url": "/admin/expiry-report/export-excel?branch_id=4&status=near",
+      "status": 200,
+      "type": "csv",
+      "filename": "expiry_report_export_qa_north_near_expiry_20261023_154138.csv",
+      "bytes": 570,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\expiry-near.csv"
+    },
+    {
+      "name": "expiry-near",
+      "url": "/admin/expiry-report/export-pdf?branch_id=4&status=near",
+      "status": 200,
+      "type": "pdf",
+      "filename": "expiry_report_export_qa_north_near_expiry_20261023_154138.pdf",
+      "bytes": 27009,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\expiry-near.pdf"
+    },
+    {
+      "name": "expiry-good",
+      "url": "/admin/expiry-report/export-excel?branch_id=4&status=good",
+      "status": 200,
+      "type": "csv",
+      "filename": "expiry_report_export_qa_north_good_20261023_154139.csv",
+      "bytes": 552,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\expiry-good.csv"
+    },
+    {
+      "name": "expiry-good",
+      "url": "/admin/expiry-report/export-pdf?branch_id=4&status=good",
+      "status": 200,
+      "type": "pdf",
+      "filename": "expiry_report_export_qa_north_good_20261023_154139.pdf",
+      "bytes": 27009,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\expiry-good.pdf"
+    },
+    {
+      "name": "expiry-missing",
+      "url": "/admin/expiry-report/export-excel?branch_id=4&status=missing",
+      "status": 200,
+      "type": "csv",
+      "filename": "expiry_report_export_qa_north_no_expiry_date_20261023_154139.csv",
+      "bytes": 564,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\expiry-missing.csv"
+    },
+    {
+      "name": "expiry-missing",
+      "url": "/admin/expiry-report/export-pdf?branch_id=4&status=missing",
+      "status": 200,
+      "type": "pdf",
+      "filename": "expiry_report_export_qa_north_no_expiry_date_20261023_154140.pdf",
+      "bytes": 26784,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\expiry-missing.pdf"
+    },
+    {
+      "name": "stock-all",
+      "url": "/stock-logs/export-excel?branch_id=4&date_from=2026-10-20&date_to=2026-10-23",
+      "status": 200,
+      "type": "csv",
+      "filename": "stock_logs_export_qa_north_2026-10-20_to_2026-10-23_20261023_154140.csv",
+      "bytes": 8672,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\stock-all.csv"
+    },
+    {
+      "name": "stock-all",
+      "url": "/stock-logs/export-pdf?branch_id=4&date_from=2026-10-20&date_to=2026-10-23",
+      "status": 200,
+      "type": "pdf",
+      "filename": "stock_logs_export_qa_north_2026-10-20_to_2026-10-23_20261023_154141.pdf",
+      "bytes": 42500,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\stock-all.pdf"
+    },
+    {
+      "name": "stock-all-current",
+      "url": "/stock-logs/export-pdf",
+      "status": 500,
+      "type": "pdf",
+      "bytes": 0,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\stock-all-current.pdf"
+    },
+    {
+      "name": "stock-all-current",
+      "url": "/stock-logs/export-excel",
+      "status": 200,
+      "type": "csv",
+      "filename": "stock_logs_all_branches_all_dates_to_all_dates_20261023_154147.csv",
+      "bytes": 174283,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\stock-all-current.csv"
+    },
+    {
+      "name": "expiry-empty",
+      "url": "/admin/expiry-report/export-excel?branch_id=5&status=expired",
+      "status": 200,
+      "type": "csv",
+      "filename": "expiry_report_export_qa_south_expired_20261023_154147.csv",
+      "bytes": 465,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\expiry-empty.csv"
+    },
+    {
+      "name": "expiry-all-current",
+      "url": "/admin/expiry-report/export-pdf",
+      "status": 200,
+      "type": "pdf",
+      "filename": "expiry_report_all_branches_all_statuses_20261023_154149.pdf",
+      "bytes": 79591,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\expiry-all-current.pdf"
+    },
+    {
+      "name": "stock-filtered",
+      "url": "/stock-logs/export-excel?branch_id=4&date_from=2026-10-20&date_to=2026-10-23&search=EXPORT-QA-LOG-55&action_type=stock_adjustment",
+      "status": 200,
+      "type": "csv",
+      "filename": "stock_logs_export_qa_north_2026-10-20_to_2026-10-23_20261023_154149.csv",
+      "bytes": 1510,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\stock-filtered.csv"
+    },
+    {
+      "name": "stock-empty",
+      "url": "/stock-logs/export-pdf?branch_id=4&date_from=2026-10-20&date_to=2026-10-23&search=does-not-exist-qaxz",
+      "status": 200,
+      "type": "pdf",
+      "filename": "stock_logs_export_qa_north_2026-10-20_to_2026-10-23_20261023_154150.pdf",
+      "bytes": 22049,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\stock-empty.pdf"
+    },
+    {
+      "name": "cashier-stock-forged",
+      "url": "/stock-logs/export-excel?branch_id=5",
+      "status": 200,
+      "type": "csv",
+      "filename": "stock_logs_export_qa_north_all_dates_to_all_dates_20261023_154150.csv",
+      "bytes": 8652,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\cashier-stock-forged.csv"
+    },
+    {
+      "name": "cashier-expiry-forged",
+      "url": "/admin/expiry-report/export-excel?branch_id=5",
+      "status": 200,
+      "type": "csv",
+      "filename": "expiry_report_export_qa_north_all_statuses_20261023_154150.csv",
+      "bytes": 844,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\writable\\export-audit-20261023\\cashier-expiry-forged.csv"
+    },
+    {
+      "name": "cashier-stock",
+      "url": "/stock-logs/export-pdf?branch_id=5",
+      "status": 200,
+      "type": "pdf",
+      "filename": "stock_logs_export_qa_north_all_dates_to_all_dates_20261023_154151.pdf",
+      "bytes": 42487,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\cashier-stock.pdf"
+    },
+    {
+      "name": "cashier-expiry",
+      "url": "/admin/expiry-report/export-pdf?branch_id=5",
+      "status": 200,
+      "type": "pdf",
+      "filename": "expiry_report_export_qa_north_all_statuses_20261023_154151.pdf",
+      "bytes": 28633,
+      "path": "C:\\UniServerZ\\www\\pharxmaco\\tmp\\pdfs\\export-audit\\cashier-expiry.pdf"
+    },
+    {
+      "name": "receipt",
+      "url": "/cashier/sales/receipt/487",
+      "status": 200,
+      "type": "html",
+      "bytes": 6983
+    },
+    {
+      "name": "reprint",
+      "url": "/cashier/sales/reprint/487",
+      "status": 200,
+      "type": "html",
+      "bytes": 7022
+    },
+    {
+      "name": "refund-slip",
+      "url": "/cashier/sales/refund-slip/487?event=export-qa-refund",
+      "status": 200,
+      "type": "html",
+      "bytes": 6183
+    },
+    {
+      "name": "shift",
+      "url": "/cashier/shifts/12/print",
+      "status": 200,
+      "type": "html",
+      "bytes": 8235
+    }
+  ],
+  "failures": [
+    "sales-daily HTTP 200",
+    "sales-daily MIME type",
+    "sales-daily attachment filename",
+    "sales-daily file signature",
+    "Sales CSV exact net after discount/VAT/refund",
+    "Sales CSV branch and date boundaries",
+    "Full and Summary PDFs have distinct filename prefixes",
+    "sales-weekly HTTP 200",
+    "sales-weekly MIME type",
+    "sales-weekly attachment filename",
+    "sales-weekly file signature",
+    "sales-monthly HTTP 200",
+    "sales-monthly MIME type",
+    "sales-monthly attachment filename",
+    "sales-monthly file signature",
+    "sales-empty HTTP 200",
+    "sales-empty MIME type",
+    "sales-empty attachment filename",
+    "sales-empty file signature",
+    "sales-all-current HTTP 200",
+    "sales-all-current MIME type",
+    "sales-all-current attachment filename",
+    "sales-all-current file signature",
+    "stock-all-current HTTP 200",
+    "stock-all-current MIME type",
+    "stock-all-current attachment filename",
+    "stock-all-current file signature"
+  ]
+}

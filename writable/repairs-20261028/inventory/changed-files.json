@@ -1,0 +1,9 @@
+[
+  "app/Controllers/Products.php",
+  "app/Controllers/Admin/SaleCorrection.php",
+  "app/Controllers/Cashier/SalesController.php",
+  "app/Libraries/ExpiryStockResolution.php",
+  "app/Models/BranchProductModel.php",
+  "app/Views/cashier/sales/refund_partial.php",
+  "tests/unit/InventoryRepairCases.php"
+]

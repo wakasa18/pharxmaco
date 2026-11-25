@@ -1,0 +1,176 @@
+{
+    "reportDateFrom": "2026-10-16",
+    "reportDateTo": "2026-10-16",
+    "forecastDateFrom": "2026-10-16",
+    "forecastDateTo": "2026-10-16",
+    "dateFrom": "2026-10-16",
+    "dateTo": "2026-10-16",
+    "branchId": "1",
+    "branchName": "Branch A",
+    "branches": [
+        {
+            "id": 1,
+            "branch_name": "Branch A",
+            "address": null,
+            "contact_number": null,
+            "status": "active"
+        }
+    ],
+    "reportType": "daily",
+    "forecastType": "daily",
+    "cashMovements": {
+        "rows": [
+            {
+                "date": "2026-10-16",
+                "method": "cash",
+                "receipts": 160,
+                "refunds": 80,
+                "net": 80
+            }
+        ],
+        "totals": {
+            "receipts": 160,
+            "refunds": 80,
+            "net": 80,
+            "cash_net": 80,
+            "unknown_refunds": 0
+        },
+        "returns": [
+            {
+                "return_condition": "damaged",
+                "quantity": 1
+            }
+        ]
+    },
+    "salesSummary": {
+        "total_transactions": 1,
+        "gross_sales": 144,
+        "original_sales": 224,
+        "total_discount": 40,
+        "total_vat_relief": 24,
+        "total_refunds": 80,
+        "net_sales": 80
+    },
+    "profitSummary": {
+        "cogs": 8,
+        "gross_profit": 72
+    },
+    "averageTransactionValue": 80,
+    "grossProfitMargin": 90,
+    "topProducts": [
+        {
+            "product_id": 1,
+            "product_name_snapshot": "Test Item",
+            "total_qty_sold": 1,
+            "total_sales": 80
+        }
+    ],
+    "recentSales": [
+        {
+            "id": 2,
+            "invoice_no": "INV-20261016123704-47D7B8",
+            "user_id": 1,
+            "branch_id": 1,
+            "discount_id": null,
+            "total_amount": 224,
+            "discount_amount": 40,
+            "final_total": 160,
+            "amount_paid": 224,
+            "change_amount": 64,
+            "payment_method": "cash",
+            "reference_no": null,
+            "status": "partially_refunded",
+            "notes": "",
+            "sale_date": "2026-10-16 12:37:04",
+            "updated_at": "2026-10-16 12:37:04",
+            "receipt_metadata": "{\"version\":2,\"tin\":\"\",\"tax_status\":\"vat\",\"vat_rate\":12,\"serial\":null,\"discount_name\":\"PWD (20%)\",\"statutory_discount\":{\"kind\":\"pwd\",\"name\":\"Test Beneficiary\",\"id\":\"TEST-ID-123\",\"verified\":true},\"product_promotions\":[]}",
+            "full_name": "Test Staff",
+            "branch_name": "Branch A",
+            "refunded_amount": 80,
+            "remaining_total": 80
+        }
+    ],
+    "reportHistory": [
+        {
+            "period_key": "2026-10-16",
+            "period_date": "2026-10-16",
+            "report_date": "2026-10-16",
+            "total_transactions": 1,
+            "gross_sales": 144,
+            "original_sales": 224,
+            "total_vat_relief": 24,
+            "total_refunds": 80,
+            "total_discount": 40,
+            "net_sales": 80,
+            "cogs": 8,
+            "gross_profit": 72
+        }
+    ],
+    "forecastHistory": [
+        {
+            "period_key": "2026-10-16",
+            "period_date": "2026-10-16",
+            "report_date": "2026-10-16",
+            "total_transactions": 1,
+            "gross_sales": 144,
+            "original_sales": 224,
+            "total_vat_relief": 24,
+            "total_refunds": 80,
+            "total_discount": 40,
+            "net_sales": 80,
+            "cogs": 8,
+            "gross_profit": 72,
+            "forecast": 80
+        }
+    ],
+    "futureForecast": [
+        {
+            "forecast_date": "2026-10-17",
+            "forecast_value": 80
+        },
+        {
+            "forecast_date": "2026-10-18",
+            "forecast_value": 80
+        },
+        {
+            "forecast_date": "2026-10-19",
+            "forecast_value": 80
+        },
+        {
+            "forecast_date": "2026-10-20",
+            "forecast_value": 80
+        },
+        {
+            "forecast_date": "2026-10-21",
+            "forecast_value": 80
+        },
+        {
+            "forecast_date": "2026-10-22",
+            "forecast_value": 80
+        },
+        {
+            "forecast_date": "2026-10-23",
+            "forecast_value": 80
+        }
+    ],
+    "nextForecastValue": 80,
+    "reorderForecast": [
+        {
+            "product_id": 1,
+            "branch_id": 1,
+            "product_name": "Test Item",
+            "sku": "TEST",
+            "branch_name": "Branch A",
+            "stock": 8,
+            "reorder_level": 100,
+            "avg_daily_demand": 1,
+            "monthly_quantity": 31,
+            "price": 112,
+            "days_left": 8,
+            "suggested_qty": 22,
+            "urgency": "warning"
+        }
+    ],
+    "reorderCoverageDays": 30,
+    "forecastingDataLog": []
+}

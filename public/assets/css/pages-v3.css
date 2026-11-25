@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Pharxmaco v3 — page layer (loaded after workspace-v3.css)
+   Visual changes only: colour, borders, radius, shadow, type, motion.
+   Layout rules of each page (grids, breakpoints, tablet POS) are untouched.
+   ========================================================================== */
+
+/* ---------- POS ----------------------------------------------------- */
+.is-workspace .pos-root {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--ws-sheet-shadow);
+    animation: ws-rise .5s var(--ws-ease) .07s backwards;
+}
+.is-workspace .pos-products { border-right: 1px solid var(--line); background: var(--bg); }
+.is-workspace .pos-cart { border-right: 1px solid var(--line); }
+.is-workspace .pos-products-head, .is-workspace .zone-head, .is-workspace .cart-total-bar { border-color: var(--line); border-width: 1px; }
+.is-workspace :is(.pos-zone-title, .zone-head-title, .cart-total-label) {
+    text-transform: none; letter-spacing: 0; font-family: var(--heading-font);
+    font-size: 13px; font-weight: 650; color: var(--text-2);
+}
+.is-workspace .cart-total-val { font-family: var(--heading-font); font-size: 24px; font-weight: 700; letter-spacing: -.03em; }
+.is-workspace .pos-live-stat { border-radius: 12px; }
+.is-workspace .pos-live-stat strong { font-family: var(--heading-font); font-weight: 700; }
+.is-workspace .held-sales-trigger { border-radius: 10px; transition: background-color .16s ease, border-color .16s ease, transform .16s var(--ws-ease); }
+.is-workspace .held-sales-trigger:hover { transform: translateY(-1px); }
+
+.is-workspace .pos-search {
+    border-radius: 11px; background: var(--surface);
+    transition: border-color .16s ease, box-shadow .2s ease;
+}
+.is-workspace .pos-search:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 18%, transparent);
+}
+
+.is-workspace .cat-chip {
+    border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); font-weight: 600;
+    transition: transform .18s var(--ws-ease), background-color .16s ease, border-color .16s ease, color .16s ease, box-shadow .2s ease;
+}
+.is-workspace .cat-chip:hover { transform: translateY(-1px); }
+.is-workspace .cat-chip:active { transform: scale(.96); }
+.is-workspace .cat-chip.active { background: var(--primary); border-color: var(--primary); color: var(--on-primary); box-shadow: 0 6px 12px -8px var(--primary-shadow); }
+
+.is-workspace .prod-card {
+    border: 1px solid var(--line); border-radius: 12px; background: var(--surface);
+    transition: transform .22s var(--ws-ease), border-color .16s ease, box-shadow .24s ease, background-color .16s ease;
+}
+.is-workspace .prod-card:hover:not(.disabled), .is-workspace .prod-card:focus-visible:not(.disabled) {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--primary) 55%, var(--line));
+    background: var(--surface);
+    box-shadow: 0 14px 24px -16px rgb(15 20 25 / .4), 0 0 0 3px color-mix(in srgb, var(--primary) 10%, transparent);
+}
+.is-workspace .prod-card:active:not(.disabled) { transform: translateY(0) scale(.985); transition-duration: .06s; }
+.is-workspace .prod-card.selected {
+    border-color: var(--primary);
+    background: color-mix(in srgb, var(--primary) 7%, var(--surface));
+    box-shadow: inset 0 0 0 1px var(--primary);
+}
+.is-workspace .prod-card-name { font-weight: 650; }
+.is-workspace .prod-card-price { font-family: var(--heading-font); font-weight: 700; letter-spacing: -.015em; }
+.is-workspace .stock-pill { display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; font-weight: 600; }
+.is-workspace .stock-pill::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; flex: none; }
+
+.is-workspace .qty-btn { border-radius: 8px; transition: background-color .14s ease, border-color .14s ease, color .14s ease, transform .14s var(--ws-ease); }
+.is-workspace .qty-btn:active { transform: scale(.9); }
+.is-workspace .cart-item { transition: background-color .14s ease; }
+.is-workspace .cart-item:hover { background: color-mix(in srgb, var(--primary) 4%, var(--surface)); }
+
+.is-workspace .pay-summary-row.grand .val { font-family: var(--heading-font); font-weight: 700; letter-spacing: -.035em; }
+.is-workspace .pay-method {
+    border-width: 1px; border-radius: 12px;
+    transition: transform .18s var(--ws-ease), background-color .16s ease, border-color .16s ease, color .16s ease, box-shadow .2s ease;
+}
+.is-workspace .pay-method:active { transform: scale(.96); }
+.is-workspace .pay-method.active { box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 15%, transparent); }
+.is-workspace .pay-input { border-width: 1px; border-radius: 10px; }
+.is-workspace .pay-input:focus { box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 18%, transparent); }
+.is-workspace .quick-cash-btn { border-radius: 999px; border-width: 1px; font-weight: 600; transition: background-color .14s ease, border-color .14s ease, color .14s ease, transform .14s var(--ws-ease); }
+.is-workspace .change-badge { border-radius: 12px; }
+.is-workspace .change-badge.show { animation: ws-rise .3s var(--ws-ease) backwards; }
+.is-workspace .complete-btn {
+    border-radius: 12px; min-height: 56px; font-weight: 700; letter-spacing: -.005em;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .2), 0 14px 24px -14px rgb(21 128 61 / .75);
+    transition: transform .18s var(--ws-ease), background-color .16s ease, box-shadow .24s ease;
+}
+.is-workspace .complete-btn:hover:not(:disabled) { background: #14733a; transform: translateY(-1px); box-shadow: inset 0 1px 0 rgb(255 255 255 / .2), 0 18px 28px -14px rgb(21 128 61 / .85); }
+.is-workspace .complete-btn:active:not(:disabled) { transform: translateY(0) scale(.985); transition-duration: .06s; }
+.is-workspace .complete-btn:disabled { box-shadow: none; }
+
+/* ---------- Reports -------------------------------------------------- */
+.is-workspace .kpi { border-radius: var(--radius-lg); border: 1px solid var(--line); box-shadow: var(--ws-sheet-shadow); background: var(--surface); }
+.is-workspace .kpi:hover { box-shadow: var(--ws-sheet-shadow); border-color: var(--line-2); }
+.is-workspace .kpi .kpi-label { text-transform: none; letter-spacing: 0; font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.is-workspace .kpi .kpi-value { font-weight: 700; }
+.is-workspace .rp-context, .is-workspace .rp-filter-group { border-radius: 12px; }
+.is-workspace .rp-section-nav a, .is-workspace .rp-date-presets button {
+    border-radius: 999px;
+    transition: background-color .16s ease, border-color .16s ease, color .16s ease, transform .16s var(--ws-ease);
+}
+.is-workspace .rp-section-nav a:hover, .is-workspace .rp-date-presets button:hover { transform: translateY(-1px); }
+.is-workspace .chart-tabs { border-radius: 10px; padding: 3px; gap: 2px; }
+.is-workspace .chart-tab { border-radius: 8px; transition: background-color .18s ease, color .18s ease, box-shadow .2s ease; }
+.is-workspace .chart-tab.active { color: var(--on-primary); box-shadow: 0 4px 10px -6px var(--primary-shadow); }
+.is-workspace .forecast-modal-trigger { border-radius: 10px; transition: background-color .16s ease, border-color .16s ease, transform .16s var(--ws-ease); }
+.is-workspace .forecast-modal-trigger:hover { transform: translateY(-1px); }
+.is-workspace .tag-gray, .is-workspace .tag-blue, .is-workspace .tag-purple, .is-workspace .card-head-tag { border-radius: 999px; font-weight: 600; }
+
+/* ---------- Settings -------------------------------------------------- */
+.is-workspace .settings-section, .is-workspace .settings-preview { border-radius: var(--radius-lg); box-shadow: var(--ws-sheet-shadow); }
+.is-workspace .settings-header h1 { font-family: var(--heading-font); font-weight: 700; letter-spacing: -.028em; }
+.is-workspace .settings-section-head h2, .is-workspace .settings-preview summary strong { font-weight: 650; letter-spacing: -.012em; }
+.is-workspace .settings-eyebrow { text-transform: none; letter-spacing: 0; font-size: 12.5px; font-weight: 650; }
+.is-workspace .settings-option > span { transition: border-color .16s ease, background-color .16s ease, box-shadow .2s ease, transform .16s var(--ws-ease); }
+.is-workspace .settings-option:active > span { transform: scale(.98); }
+.is-workspace .settings-option input:checked + span { animation: ws-select .32s var(--ws-ease); }
+.is-workspace .accent-dot { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3px color-mix(in srgb, currentColor 22%, transparent); transition: transform .24s var(--ws-ease); }
+.is-workspace .settings-option:hover .accent-dot, .is-workspace .settings-option input:checked + span .accent-dot { transform: scale(1.18); }
+.is-workspace .settings-toggle > span { transition: background-color .22s ease, border-color .22s ease; }
+.is-workspace .settings-toggle > span::after { transition: transform .32s cubic-bezier(.34, 1.45, .5, 1); }
+.is-workspace .settings-savebar { border-radius: 14px; box-shadow: var(--ws-pop-shadow); }
+/* The live preview mirrors the real workspace palette. */
+.is-workspace .interface-preview { --pv-bg: #eef0f3; --pv-text: #0f1419; --pv-muted: #5d6879; --pv-line: #e1e4e9; }
+.is-workspace .interface-preview[data-theme="dark"] { --pv-bg: #0b0e13; --pv-surface: #12171e; --pv-text: #eceff4; --pv-muted: #98a3b5; --pv-line: #232a35; }
+@keyframes ws-select { 0% { transform: scale(.96); } 60% { transform: scale(1.015); } 100% { transform: scale(1); } }
+
+/* ---------- Sale screens ---------------------------------------------- */
+/* The finished sale is the one confirmation moment: the check pops, a ring spreads once. */
+.is-workspace .sale-complete-card { border-radius: 18px; box-shadow: var(--ws-pop-shadow); }
+.is-workspace .sale-complete-icon { animation: ws-pop .6s cubic-bezier(.34, 1.56, .64, 1) .12s backwards, ws-ring .9s ease-out .25s backwards; }
+.is-workspace .sale-complete-title { font-family: var(--heading-font); font-weight: 700; letter-spacing: -.03em; }
+.is-workspace .sale-complete-total { font-family: var(--heading-font); font-weight: 700; letter-spacing: -.035em; }
+.is-workspace .sale-summary-item, .is-workspace .sale-summary-card, .is-workspace .refund-history-item, .is-workspace .refund-summary-item { border-radius: 12px; }
+.is-workspace .sale-summary-value, .is-workspace .refund-summary-row strong { font-family: var(--heading-font); font-weight: 700; }
+@keyframes ws-pop  { from { opacity: 0; transform: scale(.55); } }
+@keyframes ws-ring { from { box-shadow: 0 0 0 0 color-mix(in srgb, var(--success) 38%, transparent); } to { box-shadow: 0 0 0 22px transparent; } }
+
+/* ---------- Admin tools ------------------------------------------------ */
+.is-workspace .backup-item, .is-workspace .backup-create-box, .is-workspace .restore-source-option { border-radius: 12px; }
+.is-workspace .backup-item { transition: border-color .16s ease, transform .2s var(--ws-ease), box-shadow .22s ease; }
+.is-workspace .backup-item:hover { border-color: color-mix(in srgb, var(--primary) 40%, var(--line)); transform: translateY(-1px); box-shadow: 0 10px 22px -16px rgb(15 20 25 / .4); }
+.is-workspace .upload-drop { transition: border-color .18s ease, background-color .18s ease, transform .2s var(--ws-ease); }
+.is-workspace .upload-drop:hover, .is-workspace .upload-drop.is-dragover { border-color: var(--primary); background: color-mix(in srgb, var(--primary) 5%, var(--surface)); }
+.is-workspace .import-step, .is-workspace .import-hero { border-radius: var(--radius-lg); }
+.is-workspace .step-number { color: var(--on-primary); font-family: var(--heading-font); }
+.is-workspace .import-action-btn { border-radius: 12px; transition: transform .18s var(--ws-ease), border-color .16s ease, box-shadow .22s ease; }
+.is-workspace .import-action-btn:hover { transform: translateY(-1px); border-color: color-mix(in srgb, var(--primary) 45%, var(--line)); }
+.is-workspace .catalog-product { border-radius: 14px; transition: transform .22s var(--ws-ease), border-color .16s ease, box-shadow .24s ease; }
+.is-workspace .catalog-product:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--primary) 45%, var(--line)); box-shadow: 0 14px 24px -18px rgb(15 20 25 / .45); }
+.is-workspace .cat-pill, .is-workspace .cat-count-badge, .is-workspace .discount-type-pill, .is-workspace .discount-scope-pill { font-weight: 600; }
+.is-workspace .discount-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; flex: none; }
+.is-workspace .discount-stat { border-radius: 12px; }
+
+@media (hover: none) {
+    .is-workspace .prod-card:hover, .is-workspace .backup-item:hover, .is-workspace .catalog-product:hover, .is-workspace .import-action-btn:hover,
+    .is-workspace .cat-chip:hover, .is-workspace .held-sales-trigger:hover, .is-workspace .forecast-modal-trigger:hover { transform: none; }
+}

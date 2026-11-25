@@ -1,0 +1,24 @@
+{
+    "same_receive_request_twice": {
+        "stock": [
+            10,
+            15,
+            20
+        ],
+        "stock_logs": 2
+    },
+    "gcash_overpayment_no_reference": {
+        "final_total": 10,
+        "amount_paid": 100,
+        "change_amount": 90,
+        "payment_method": "gcash",
+        "reference_no": null
+    },
+    "card_overpayment_no_reference": {
+        "final_total": 10,
+        "amount_paid": 100,
+        "change_amount": 90,
+        "payment_method": "card",
+        "reference_no": null
+    }
+}

@@ -1,0 +1,26 @@
+<?= $this->extend('layouts/staff') ?>
+<?= $this->section('content') ?>
+
+<div class="editor-page editor-page--wide">
+
+<div class="page-header">
+    <h1>New Discount</h1>
+    <p>Create a discount that cashiers can select during checkout.</p>
+</div>
+
+<?= view('admin/discounts/_form', [
+    'formTitle' => 'Discount Details',
+    'formSubtitle' => 'Complete the four simple sections below.',
+    'formAction' => site_url('admin/discounts/store'),
+    'submitLabel' => 'Create Discount',
+    'form' => $form,
+    'validation' => $validation,
+    'categories' => $categories,
+    'products' => $products,
+    'reviewOriginal' => [],
+    'reviewMode' => 'create',
+]) ?>
+
+</div>
+
+<?= $this->endSection() ?>

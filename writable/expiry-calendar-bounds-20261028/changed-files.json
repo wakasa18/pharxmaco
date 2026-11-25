@@ -1,0 +1,6 @@
+[
+  "app/Views/partials/expiry_date_field.php",
+  "app/Views/layouts/staff.php",
+  "public/assets/js/expiry-date-field.js",
+  "public/assets/js/date-picker.js"
+]

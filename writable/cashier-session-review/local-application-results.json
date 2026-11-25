@@ -1,0 +1,9 @@
+{
+    "database": "pharxmaco_drugstore",
+    "schema_applied": true,
+    "repeated_import_passed": true,
+    "protected_existing_tables": 23,
+    "existing_application_records_preserved": true,
+    "migration": "2026_10_20_000015",
+    "hosted_database_changed": false
+}

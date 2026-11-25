@@ -1,0 +1,21 @@
+{
+    "database": "isolated in-memory SQLite",
+    "sale": {
+        "total_amount": 224,
+        "discount_amount": 40,
+        "final_total": 160
+    },
+    "vat_relief": 24,
+    "refund": 80,
+    "printed_summary": {
+        "total_transactions": 1,
+        "gross_sales": 144,
+        "original_sales": 224,
+        "total_discount": 40,
+        "total_vat_relief": 24,
+        "total_refunds": 80,
+        "net_sales": 80
+    },
+    "displayed_gross_minus_discount": 104,
+    "printed_net": 80
+}

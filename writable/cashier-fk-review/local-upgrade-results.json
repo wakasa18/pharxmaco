@@ -1,0 +1,370 @@
+{
+    "database": "pharxmaco_drugstore",
+    "backup": "C:\\UniServerZ\\www\\pharxmaco\\writable\\backups\/pharxmaco-pre-cashier-fk-20261021-111346-e870c4.sql",
+    "backup_bytes": 504772,
+    "backup_sha256": "c9ee5e0241acde1aac2f188998e150d79e400b77f4304ae446659d45fb39e2ac",
+    "imports": 2,
+    "existing_data_tables_preserved": 25,
+    "prior_migrations_preserved": true,
+    "migration_000017_count": 1,
+    "constraints": [
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "CONSTRAINT_NAME": "fk_phx_drawer_active_shift",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "CONSTRAINT_NAME": "fk_phx_drawer_branch",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_drawers",
+            "CONSTRAINT_NAME": "fk_phx_drawer_last_shift",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_event_reviews",
+            "CONSTRAINT_NAME": "fk_phx_event_review_event",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_event_reviews",
+            "CONSTRAINT_NAME": "fk_phx_event_review_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "CONSTRAINT_NAME": "fk_phx_event_branch",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "CONSTRAINT_NAME": "fk_phx_event_sale",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "CONSTRAINT_NAME": "fk_phx_event_shift",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_events",
+            "CONSTRAINT_NAME": "fk_phx_event_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "CONSTRAINT_NAME": "fk_phx_hold_branch",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_held_sales",
+            "CONSTRAINT_NAME": "fk_phx_hold_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_login_sessions",
+            "CONSTRAINT_NAME": "fk_phx_login_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_actions",
+            "CONSTRAINT_NAME": "fk_phx_shift_action_shift",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_actions",
+            "CONSTRAINT_NAME": "fk_phx_shift_action_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_reviews",
+            "CONSTRAINT_NAME": "fk_phx_shift_review_shift",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shift_reviews",
+            "CONSTRAINT_NAME": "fk_phx_shift_review_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "CONSTRAINT_NAME": "fk_phx_shift_active_drawer",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "CONSTRAINT_NAME": "fk_phx_shift_active_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "CONSTRAINT_NAME": "fk_phx_shift_branch",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "CONSTRAINT_NAME": "fk_phx_shift_drawer",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "CONSTRAINT_NAME": "fk_phx_shift_handover_accepted",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "CONSTRAINT_NAME": "fk_phx_shift_handover_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "cashier_shifts",
+            "CONSTRAINT_NAME": "fk_phx_shift_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        },
+        {
+            "TABLE_NAME": "user_presence_sessions",
+            "CONSTRAINT_NAME": "fk_phx_presence_user",
+            "DELETE_RULE": "RESTRICT",
+            "UPDATE_RULE": "RESTRICT"
+        }
+    ],
+    "before": {
+        "activity_logs": {
+            "rows": 389,
+            "sha256": "99dd0cff771fd6223750e01f3ced604a3df60ca2501b04bdf75a6bf361517ae1"
+        },
+        "branch_products": {
+            "rows": 117,
+            "sha256": "66be606daf483d0983f953fad8d4d01ee22c908e38ee8ff8a29b51cfb85ba93c"
+        },
+        "branches": {
+            "rows": 2,
+            "sha256": "618b87e5544d2dfb62bb37adfec218bf1f852cb5e14d1ce7faec77db0d24882c"
+        },
+        "cashier_drawers": {
+            "rows": 2,
+            "sha256": "3dbaaba55b00449db3ec0e5118bb5cc4eee62d59904dbcef9b7c760aa023380d"
+        },
+        "cashier_event_reviews": {
+            "rows": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "cashier_events": {
+            "rows": 4,
+            "sha256": "9f4a11ed95ddc09818986ee17bab5e2b792ab890baaa23ceb633f68801f5a524"
+        },
+        "cashier_held_sales": {
+            "rows": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "cashier_login_sessions": {
+            "rows": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "cashier_shift_actions": {
+            "rows": 19,
+            "sha256": "cb084fc4c387c2917889bf22c94d81e30bcf4038270418cbe3215b53a3a97cf1"
+        },
+        "cashier_shift_reviews": {
+            "rows": 2,
+            "sha256": "c96cdb0f9c901d64f45dca827912915911aa1e097c39e789a6782bb2bd19acdc"
+        },
+        "cashier_shifts": {
+            "rows": 9,
+            "sha256": "13695b3bf867e07b1a6010584a896f3b80a882c2c8d00ee43acfb4473f747306"
+        },
+        "categories": {
+            "rows": 12,
+            "sha256": "2525531226b24fdf5c314fefd4d2d2a51adaec2603f7dca92d3bdd89471bbb54"
+        },
+        "discounts": {
+            "rows": 4,
+            "sha256": "64136d26c72b04c1d0b66fd1d7963bc1e7ed1ee7b2d52b154add80776450d069"
+        },
+        "forecasting_data": {
+            "rows": 333,
+            "sha256": "1780a936dbbedd2f54342f7a93f8e6a9c46ffd631394d22face86c1acf4b37a8"
+        },
+        "migrations": {
+            "rows": 17,
+            "sha256": "6c1365a6b19f8b4507d375b1244178c80d75ca4babc5e20e490279056e12fa33"
+        },
+        "phx_backup_20261016_sale41_refunds": {
+            "rows": 6,
+            "sha256": "b787ac4f2b8300defa4920337a57985a743f8d9cacb311357f39774bcda9473e"
+        },
+        "products": {
+            "rows": 67,
+            "sha256": "02a7375b1046073b6c1c4fed156c0784b83efddd3d2eaeb1b1593618e77a1653"
+        },
+        "receipt_invoice_sequences": {
+            "rows": 1,
+            "sha256": "c161938cb34dfed2d4c4fee974a183f21775c56dab435e3761f3a9fd0139c1e5"
+        },
+        "refund_items": {
+            "rows": 21,
+            "sha256": "d254df1783a1b30942a594c5a8277c21329bbfd900d44be537ab08d9568228c1"
+        },
+        "report_exports": {
+            "rows": 25,
+            "sha256": "0c802d544fa33ef7dfc9529bf61a76c536b8467e93d341d77484bf160a19d15c"
+        },
+        "sale_items": {
+            "rows": 976,
+            "sha256": "3b88bb334f0a074127d65a5b68e5a6e083080fc5815e7df381a7fb49fade64d8"
+        },
+        "sales": {
+            "rows": 478,
+            "sha256": "f27b882cf9854ac5229109ff1a42e65e09c8025876b2c6175173bbc5aa786bf6"
+        },
+        "stock_logs": {
+            "rows": 1028,
+            "sha256": "6c1bde3ea9a0767c6eed40a64100ab2a540d1b1092002fe8cf9a300417b319b5"
+        },
+        "suppliers": {
+            "rows": 5,
+            "sha256": "6068b1b8ecd7027e03beafa5968b3b1496fe44a89a1b86f3f5e53da38b10a4f3"
+        },
+        "user_presence_sessions": {
+            "rows": 2,
+            "sha256": "a4624b1d53a3f386cd040294cd72b251a12b2181f818a758ff7f5ec7c3635926"
+        },
+        "users": {
+            "rows": 7,
+            "sha256": "432fe81f0eb92246ea85648a32efb74def89ecc7a84cff7b222da580712a5fcf"
+        }
+    },
+    "after": {
+        "activity_logs": {
+            "rows": 389,
+            "sha256": "99dd0cff771fd6223750e01f3ced604a3df60ca2501b04bdf75a6bf361517ae1"
+        },
+        "branch_products": {
+            "rows": 117,
+            "sha256": "66be606daf483d0983f953fad8d4d01ee22c908e38ee8ff8a29b51cfb85ba93c"
+        },
+        "branches": {
+            "rows": 2,
+            "sha256": "618b87e5544d2dfb62bb37adfec218bf1f852cb5e14d1ce7faec77db0d24882c"
+        },
+        "cashier_drawers": {
+            "rows": 2,
+            "sha256": "3dbaaba55b00449db3ec0e5118bb5cc4eee62d59904dbcef9b7c760aa023380d"
+        },
+        "cashier_event_reviews": {
+            "rows": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "cashier_events": {
+            "rows": 4,
+            "sha256": "9f4a11ed95ddc09818986ee17bab5e2b792ab890baaa23ceb633f68801f5a524"
+        },
+        "cashier_held_sales": {
+            "rows": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "cashier_login_sessions": {
+            "rows": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "cashier_shift_actions": {
+            "rows": 19,
+            "sha256": "cb084fc4c387c2917889bf22c94d81e30bcf4038270418cbe3215b53a3a97cf1"
+        },
+        "cashier_shift_reviews": {
+            "rows": 2,
+            "sha256": "c96cdb0f9c901d64f45dca827912915911aa1e097c39e789a6782bb2bd19acdc"
+        },
+        "cashier_shifts": {
+            "rows": 9,
+            "sha256": "13695b3bf867e07b1a6010584a896f3b80a882c2c8d00ee43acfb4473f747306"
+        },
+        "categories": {
+            "rows": 12,
+            "sha256": "2525531226b24fdf5c314fefd4d2d2a51adaec2603f7dca92d3bdd89471bbb54"
+        },
+        "discounts": {
+            "rows": 4,
+            "sha256": "64136d26c72b04c1d0b66fd1d7963bc1e7ed1ee7b2d52b154add80776450d069"
+        },
+        "forecasting_data": {
+            "rows": 333,
+            "sha256": "1780a936dbbedd2f54342f7a93f8e6a9c46ffd631394d22face86c1acf4b37a8"
+        },
+        "migrations": {
+            "rows": 18,
+            "sha256": "483c5db0feb3963bac67f79c0d3a643caf330abb03507eaa025d15b60917fff9"
+        },
+        "phx_backup_20261016_sale41_refunds": {
+            "rows": 6,
+            "sha256": "b787ac4f2b8300defa4920337a57985a743f8d9cacb311357f39774bcda9473e"
+        },
+        "products": {
+            "rows": 67,
+            "sha256": "02a7375b1046073b6c1c4fed156c0784b83efddd3d2eaeb1b1593618e77a1653"
+        },
+        "receipt_invoice_sequences": {
+            "rows": 1,
+            "sha256": "c161938cb34dfed2d4c4fee974a183f21775c56dab435e3761f3a9fd0139c1e5"
+        },
+        "refund_items": {
+            "rows": 21,
+            "sha256": "d254df1783a1b30942a594c5a8277c21329bbfd900d44be537ab08d9568228c1"
+        },
+        "report_exports": {
+            "rows": 25,
+            "sha256": "0c802d544fa33ef7dfc9529bf61a76c536b8467e93d341d77484bf160a19d15c"
+        },
+        "sale_items": {
+            "rows": 976,
+            "sha256": "3b88bb334f0a074127d65a5b68e5a6e083080fc5815e7df381a7fb49fade64d8"
+        },
+        "sales": {
+            "rows": 478,
+            "sha256": "f27b882cf9854ac5229109ff1a42e65e09c8025876b2c6175173bbc5aa786bf6"
+        },
+        "stock_logs": {
+            "rows": 1028,
+            "sha256": "6c1bde3ea9a0767c6eed40a64100ab2a540d1b1092002fe8cf9a300417b319b5"
+        },
+        "suppliers": {
+            "rows": 5,
+            "sha256": "6068b1b8ecd7027e03beafa5968b3b1496fe44a89a1b86f3f5e53da38b10a4f3"
+        },
+        "user_presence_sessions": {
+            "rows": 2,
+            "sha256": "a4624b1d53a3f386cd040294cd72b251a12b2181f818a758ff7f5ec7c3635926"
+        },
+        "users": {
+            "rows": 7,
+            "sha256": "432fe81f0eb92246ea85648a32efb74def89ecc7a84cff7b222da580712a5fcf"
+        }
+    },
+    "hosting_changed": false,
+    "shift_reset_executed": false
+}
